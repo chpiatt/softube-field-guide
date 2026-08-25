@@ -27,6 +27,7 @@ The 166-entry enrichment layer received a second, claim-level audit after its in
 - Set the Tonelux Tilt insider note to `null` because the available manual contains contradictory filter labels/ranges.
 - Replaced a dead Chandler Curve Bender PDF URL with the current official manual.
 - Refined Reference 1956 from a generic Pultec-family label to the more specific unlicensed Manley Enhanced Pultec identification. Softube documents unnamed modern stereo hardware with added frequencies; Manley's own design notes describe its Enhanced Pultec as a cleaner mastering descendant retaining the original EQ values and adding frequencies. The guide still labels this as an unlicensed identification rather than a Softube attribution.
+- Refined Kraft from a generic vintage-overdrive description to the clear unlicensed Pro Co RAT/RAT 2 identification. Softube does not name the donor, so the guide does not imply licensing; the identification rests on the distinctive black wedge enclosure and exact Distortion/Filter/Volume control vocabulary, cross-checked against the RAT 2 owner’s instructions.
 
 ## Final evidence
 

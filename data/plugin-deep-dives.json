@@ -6818,7 +6818,7 @@
   {
     "name": "TUBE Overdrive",
     "section": 9,
-    "comparative_edge": "Choose TUBE over Kraft when the job is a predictable mid-focused boost that removes low-end slack before an amp. Choose Kraft for broader overdrive-to-fuzz color or bass use where fixed mid emphasis is less welcome.",
+    "comparative_edge": "Choose TUBE over Kraft when the job is a predictable mid-focused boost that removes low-end slack before an amp. Choose the RAT-style Kraft for fuller low mids, harder clipping, or the wider path from overdrive into fuzzy distortion.",
     "advanced_moves": [
       {
         "setup": "Place TUBE before a high-gain amp with the amp at the desired saturation but still flubby.",
@@ -6834,7 +6834,7 @@
       }
     ],
     "insider_note": "The low-Drive/high-Level metal recipe is not magic gain stacking: it is pre-distortion equalization. The pedal's documented mid boost means the amp clips a more focused spectrum, which is why reducing amp Gain afterward often sounds heavier.",
-    "avoid_when": "Avoid it when the source already has narrow, nasal mids or needs full low-end overdrive; Kraft is broader. For transparent loudness into an amp, use a clean boost rather than asking TUBE's voicing to disappear.",
+    "avoid_when": "Avoid it when the source already has narrow, nasal mids or needs full-bodied distortion; the RAT-style Kraft is broader. For transparent loudness into an amp, use a clean boost rather than asking TUBE's voicing to disappear.",
     "evidence": {
       "basis": "documented-plus-editorial-inference",
       "sources": [
@@ -6850,7 +6850,7 @@
         "context": "Extended-range rhythm guitar",
         "source_or_bus": "Extended-range rhythm guitar",
         "application": "In Progressive metal, use low Drive/high Level into ENGL, then lower the amp's own gain after the pedal is engaged.",
-        "why_this_plugin": "Its predictable pre-emphasis tightens the detector input more surgically than Kraft's broader body."
+        "why_this_plugin": "Its predictable pre-emphasis tightens the detector input more surgically than Kraft's fuller RAT-style clipping."
       },
       {
         "context_type": "instrument",
@@ -6876,29 +6876,33 @@
   {
     "name": "Kraft",
     "section": 9,
-    "comparative_edge": "Choose Kraft over TUBE when you need a wider path from warm overdrive into fuzzier distortion, stronger retained body, or equal usefulness on bass and synths. TUBE remains the faster choice for the familiar low-cut/mid-push tightening move.",
+    "comparative_edge": "Choose Kraft as Softube's unlicensed RAT-family counterpoint to TUBE: fuller low mids, harder clipping, and a wider path from warm drive into fuzzy sustain. TUBE remains the faster choice for the familiar Tube Screamer low-cut/mid-push tightening move.",
     "advanced_moves": [
       {
         "setup": "Put Kraft on a parallel send from bass or synth bass.",
-        "action": "Drive the send harder than you would an insert, shape the tone filter around the arrangement's midrange gap, high-pass the return, and blend below the clean source.",
+        "action": "Drive the send harder than you would an insert, turn Filter clockwise to darken the RAT-style edge, high-pass the return, and blend below the clean source.",
         "listen_for": "The line remains deep in the center but reads clearly on small speakers and through dense guitars.",
         "why_it_works": "Kraft retains more body across its gain range, while the filtered parallel return isolates its harmonics from the clean fundamental."
       },
       {
-        "setup": "Use Kraft before a clean amp and automate only its output level between verse and chorus.",
-        "action": "Set pedal drive for the chorus texture, lower output until the verse is nearly clean, then raise output so both pedal and amp contribute in the chorus.",
+        "setup": "Use Kraft before a clean amp and automate only its Volume between verse and chorus.",
+        "action": "Set Distortion for the chorus texture, lower Volume until the verse is nearly clean, then raise Volume so both pedal and amp contribute in the chorus.",
         "listen_for": "The chorus expands in density without changing to an unrelated distortion timbre.",
         "why_it_works": "Output automation changes both pedal audibility and the following amp's operating point while preserving the pedal's tone setting."
       }
     ],
-    "insider_note": "Softube documents Kraft as equally suitable for bass and guitar. Engineering inference: on bass, its safest expert use is often a band-limited parallel lane, because retained body can otherwise double the fundamental into a driven amp.",
+    "insider_note": "Softube does not name the donor, but Kraft's black wedge enclosure and exact Distortion/Filter/Volume control vocabulary identify the Pro Co RAT/RAT 2 family. On bass, a band-limited parallel lane keeps that full-bodied clipping from crowding the fundamental.",
     "avoid_when": "Avoid it when you need a repeatable Tube-Screamer-style tightening curve; use TUBE Overdrive. For speaker or tape degradation rather than pedal clipping, Bad Speaker or Dirty Tape creates a more source-specific texture.",
     "evidence": {
       "basis": "documented-plus-editorial-inference",
       "sources": [
         {
-          "title": "Softube Kraft product page and Amp Room manual",
+          "title": "Softube Kraft product page",
           "url": "https://www.softube.com/plug-ins/kraft"
+        },
+        {
+          "title": "Pro Co RAT 2 owner's instructions",
+          "url": "https://images.equipboard.com/uploads/item/manual/844/pro-co-rat-2-manual.pdf"
         }
       ]
     },
@@ -6908,14 +6912,14 @@
         "context": "Mono bass synth",
         "source_or_bus": "Mono bass synth",
         "application": "In Synthwave, blend a high-passed Kraft return for growl while keeping the oscillator fundamental dry and centered.",
-        "why_this_plugin": "Kraft's body and broad gain range suit synth harmonics better than TUBE's fixed guitar-oriented mid focus."
+        "why_this_plugin": "Kraft's full-bodied RAT-style clipping and broad gain range suit synth harmonics better than TUBE's fixed guitar-oriented mid focus."
       },
       {
         "context_type": "instrument",
         "context": "Clean-to-driven guitar",
         "source_or_bus": "Clean-to-driven guitar",
         "application": "In Indie pop, automate output into the same amp across sections, using one tone-filter position for continuity.",
-        "why_this_plugin": "Its range covers both warm edge and heavier chorus drive without changing pedals or amp."
+        "why_this_plugin": "The RAT-family gain range covers both warm edge and fuzzy chorus sustain without changing pedals or amp."
       }
     ],
     "pairings": [
@@ -6924,7 +6928,7 @@
         "goal": "Add audible bass harmonics while the suite DI retains a stable fundamental.",
         "order": "Split in Amp Room Bass Suite: clean DI parallel to Kraft → amp/cab mid lane",
         "setup": "Set the DI bandwidth first, drive Kraft on the high-passed parallel lane, and blend the lane from silence until the bass reads on small speakers.",
-        "why_it_works": "Kraft supplies body-rich distortion while the separate DI prevents its low-frequency drive from replacing the clean foundation.",
+        "why_it_works": "Kraft supplies full-bodied RAT-style distortion while the separate DI prevents its low-frequency drive from replacing the clean foundation.",
         "caution": "Phase-align the lanes before bus compression and avoid letting both paths own the same sub range.",
         "basis": "engineering-inference",
         "source_url": "https://www.softube.com/user-manuals/amp-room-bass-suite"
