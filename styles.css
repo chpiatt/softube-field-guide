@@ -18,6 +18,7 @@
   --mint-dark: #007f61;
   --mint-wash: #e6f8f2;
   --mint-detail-line: #cce8df;
+  --lineage-unlicensed: #2875be;
   --line-dark: #303431;
   --line-light: #d7dcda;
   --error: #b42318;
@@ -995,6 +996,31 @@ main {
   font-size: 14px;
 }
 
+.lineage-key {
+  margin: 12px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 20px;
+  list-style: none;
+}
+
+.lineage-key li {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--graphite-2);
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.38;
+}
+
+.lineage-key .lineage-dot {
+  width: 9px;
+  height: 9px;
+}
+
 .catalog-total {
   color: var(--mint-dark);
   font-size: 14px;
@@ -1230,29 +1256,18 @@ main {
   width: 10px;
   height: 10px;
   flex: 0 0 auto;
-  border: 1.5px solid var(--graphite-2);
+  border: 1.5px solid var(--mint-dark);
   border-radius: 50%;
 }
 
-.plugin-card[data-lineage*="OFFICIAL"] .lineage-dot,
-.plugin-card[data-lineage*="LICENSED"] .lineage-dot {
-  border-color: var(--mint-dark);
+.lineage-dot--confirmed {
   background: var(--mint);
 }
 
-.plugin-card[data-lineage*="UNLICENSED"] .lineage-dot {
+.lineage-dot--editorial {
   border-style: dashed;
-  border-color: #2875be;
-}
-
-.plugin-card[data-lineage*="ORIGINAL"] .lineage-dot {
-  border-color: var(--graphite-2);
-  background: var(--graphite-2);
-}
-
-.plugin-card[data-lineage*="LEGACY"] .lineage-dot {
-  border-color: #9ba19d;
-  opacity: .6;
+  border-color: var(--lineage-unlicensed);
+  background: transparent;
 }
 
 .plugin-lineage {

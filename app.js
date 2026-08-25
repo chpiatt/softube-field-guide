@@ -45,6 +45,13 @@
       .replaceAll("-", " ")
       .replace(/\b\w/g, (letter) => letter.toUpperCase());
 
+  const lineageEvidence = (value) => {
+    const label = String(value).toUpperCase();
+    return /UNLICENSED|HYBRID LINEAGE|SSL G-SERIES BUS-COMPRESSOR LINEAGE/.test(label)
+      ? "editorial"
+      : "confirmed";
+  };
+
   function makeElement(tagName, className, text) {
     const element = document.createElement(tagName);
     if (className) element.className = className;
@@ -720,6 +727,7 @@
     });
 
     details.dataset.lineage = (details.dataset.lineage || lineage).toUpperCase();
+    details.dataset.lineageEvidence = lineageEvidence(details.dataset.lineage);
     details.dataset.pluginName = name;
     details.id = `plugin-${slugify(name)}`;
     details.dataset.search = normalize(details.dataset.search || card.textContent || `${name} ${lineage}`);
@@ -727,7 +735,7 @@
     const summary = document.createElement("summary");
     summary.className = "plugin-summary";
     summary.innerHTML = `
-      <span class="plugin-name"><span class="lineage-dot" aria-hidden="true"></span>${name}</span>
+      <span class="plugin-name"><span class="lineage-dot lineage-dot--${details.dataset.lineageEvidence}" aria-hidden="true"></span>${name}</span>
       <span class="plugin-lineage">${lineage}</span>
       <span class="plugin-platform-context"></span>
       ${icon("i-chevron", "chevron")}`;
@@ -846,7 +854,14 @@
   catalogIndex.className = "catalog-index";
   catalogIndex.id = "catalog-index";
   catalogIndex.innerHTML = `
-    <div><h2>Catalog index</h2><p>Mixing and mastering lead. Open any category or search the complete researched catalog from the masthead.</p></div>
+    <div>
+      <h2>Catalog index</h2>
+      <p>Mixing and mastering lead. Open any category or search the complete researched catalog from the masthead.</p>
+      <ul class="lineage-key" aria-label="Lineage evidence key">
+        <li><span class="lineage-dot lineage-dot--confirmed" aria-hidden="true"></span>Softube-stated identity</li>
+        <li><span class="lineage-dot lineage-dot--editorial" aria-hidden="true"></span>Field-guide identification</li>
+      </ul>
+    </div>
     <span class="catalog-total">${cards.length} catalog entries</span>`;
 
   const platformFilter = document.createElement("fieldset");
