@@ -47,6 +47,7 @@
 
   const unlicensedLineageNames = new Set([
     "Bus Processor",
+    "Tape",
     "Tape Echoes",
     "Amp Room Metal Suite",
     "Amp Room Vintage Suite",
