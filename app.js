@@ -130,17 +130,37 @@
   function buildTechnique(move, index) {
     const item = makeElement("li", "technique-item");
     item.append(makeElement("span", "technique-number", String(index + 1).padStart(2, "0")));
+    const body = makeElement("div", "technique-body");
+    body.append(makeElement("p", "technique-setup", move.setup));
     const facts = makeElement("dl", "technique-facts");
     [
-      ["Setup", move.setup],
       ["Do this", move.action],
       ["Listen for", move.listen_for],
       ["Why it works", move.why_it_works]
     ].forEach(([label, value]) => {
-      facts.append(makeElement("dt", "", label), makeElement("dd", "", value));
+      const fact = makeElement("div", "technique-fact");
+      fact.append(makeElement("dt", "", label), makeElement("dd", "", value));
+      facts.append(fact);
     });
-    item.append(facts);
+    body.append(facts);
+    item.append(body);
     return item;
+  }
+
+  function buildDeepSection(className, title, description, count, open = false) {
+    const section = makeElement("details", `deep-section ${className}`);
+    section.open = open;
+    const summary = makeElement("summary", "deep-section-summary");
+    const copy = makeElement("span", "deep-section-summary-copy");
+    copy.append(
+      makeElement("strong", "", title),
+      makeElement("span", "", description)
+    );
+    summary.append(copy, makeElement("span", "deep-section-count", count));
+    summary.insertAdjacentHTML("beforeend", icon("i-chevron", "deep-section-chevron"));
+    const body = makeElement("div", "deep-section-body");
+    section.append(summary, body);
+    return { section, body };
   }
 
   function buildUseCase(useCase) {
@@ -209,44 +229,48 @@
     summary.insertAdjacentHTML("beforeend", icon("i-chevron", "deep-dive-chevron"));
 
     const content = makeElement("div", "deep-dive-content");
-    const moves = makeElement("section", "deep-section deep-techniques");
-    const movesHead = makeElement("header", "deep-section-head");
-    movesHead.append(
-      makeElement("h4", "", "Advanced techniques"),
-      makeElement("p", "", "Set the move, then confirm it with the listening checkpoint.")
+    const movesDisclosure = buildDeepSection(
+      "deep-techniques",
+      "Advanced techniques",
+      "Hands-on moves with a listening checkpoint",
+      String(entry.advanced_moves.length).padStart(2, "0"),
+      true
     );
-    moves.append(movesHead);
     const moveList = makeElement("ol", "technique-list");
     entry.advanced_moves.forEach((move, index) => moveList.append(buildTechnique(move, index)));
-    moves.append(moveList);
+    movesDisclosure.body.append(moveList);
 
-    const uses = makeElement("section", "deep-section deep-use-cases");
-    const usesHead = makeElement("header", "deep-section-head");
-    usesHead.append(
-      makeElement("h4", "", "Sources, instruments & buses"),
-      makeElement("p", "", "Starting points organized by the signal you are processing.")
+    const usesDisclosure = buildDeepSection(
+      "deep-use-cases",
+      "Sources, instruments & buses",
+      "Starting points organized by signal",
+      String(entry.use_cases.length).padStart(2, "0")
     );
-    uses.append(usesHead);
     const useList = makeElement("ul", "use-case-list");
     entry.use_cases.forEach((useCase) => useList.append(buildUseCase(useCase)));
-    uses.append(useList);
+    usesDisclosure.body.append(useList);
 
-    content.append(moves, uses);
+    content.append(movesDisclosure.section, usesDisclosure.section);
 
     if (entry.pairings.length) {
-      const pairings = makeElement("section", "deep-section deep-pairings");
-      const pairingsHead = makeElement("header", "deep-section-head");
-      pairingsHead.append(
-        makeElement("h4", "", "Useful pairings"),
-        makeElement("p", "", "Chain order, division of labor, and the point where the combination stops helping.")
+      const pairingsDisclosure = buildDeepSection(
+        "deep-pairings",
+        "Useful pairings",
+        "Chain order, roles and failure points",
+        String(entry.pairings.length).padStart(2, "0")
       );
-      pairings.append(pairingsHead);
       const pairingList = makeElement("div", "pairing-list");
       entry.pairings.forEach((pairing) => pairingList.append(buildPairing(pairing)));
-      pairings.append(pairingList);
-      content.append(pairings);
+      pairingsDisclosure.body.append(pairingList);
+      content.append(pairingsDisclosure.section);
     }
 
+    const notesDisclosure = buildDeepSection(
+      "deep-notes",
+      "Notes, cautions & evidence",
+      "Non-obvious behavior, alternatives and sources",
+      entry.insider_note ? "03" : "02"
+    );
     const notes = makeElement("aside", "expert-notes", undefined);
     if (entry.insider_note) {
       const insight = makeElement("section", "expert-note insider-note");
@@ -259,7 +283,7 @@
     const avoid = makeElement("section", "expert-note avoid-note");
     avoid.append(makeElement("h4", "", "Choose something else when"), makeElement("p", "", entry.avoid_when));
     notes.append(avoid);
-    content.append(notes);
+    notesDisclosure.body.append(notes);
 
     const sources = makeElement("footer", "deep-sources");
     sources.append(makeElement("span", "", "Evidence"));
@@ -274,7 +298,8 @@
       sourceList.append(item);
     });
     sources.append(sourceList);
-    content.append(sources);
+    notesDisclosure.body.append(sources);
+    content.append(notesDisclosure.section);
 
     disclosure.append(summary, content);
     fragment.append(comparison, disclosure);
