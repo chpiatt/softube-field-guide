@@ -899,6 +899,7 @@
     });
   });
 
+  filterCatalog();
   addEventListener("hashchange", openHashTarget);
   openHashTarget();
 
@@ -920,6 +921,4 @@
     { passive: true }
   );
   backTop?.addEventListener("click", () => scrollTo({ top: 0, behavior: "smooth" }));
-
-  filterCatalog();
 })();
