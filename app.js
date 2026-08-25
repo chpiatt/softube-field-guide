@@ -75,6 +75,13 @@
     return "original";
   };
 
+  const sourceLineageByName = new Map(
+    [...main.querySelectorAll(".plugin-card")]
+      .map((card) => [card.querySelector(".plugin-head strong")?.textContent.trim(), card.dataset.lineage || ""])
+      .filter(([name]) => name)
+  );
+  const lineageKindForName = (name) => lineageKind(name, sourceLineageByName.get(name) || "");
+
   function makeElement(tagName, className, text) {
     const element = document.createElement(tagName);
     if (className) element.className = className;
@@ -84,7 +91,7 @@
 
   async function loadDeepDiveData() {
     try {
-      const response = await fetch("data/plugin-deep-dives.json?v=20260825-3");
+      const response = await fetch("data/plugin-deep-dives.json?v=20260825-4");
       if (!response.ok) throw new Error(`Deep-dive request failed with ${response.status}`);
       const rows = await response.json();
       if (!Array.isArray(rows)) throw new Error("Deep-dive data is not an array");
@@ -524,12 +531,18 @@
           <div><h3>${lane.title}</h3><p>${lane.description}</p></div>
         </header>
         <ol class="decision-routes">
-          ${lane.routes.map(([goal, pick, reason, comparePrompt, compare]) => `
-            <li class="decision-route">
-              <span class="decision-goal">${goal}</span>
-              <a class="decision-pick" href="${pluginHref(pick)}"><strong>${pick}</strong><span>${reason}</span></a>
-              <span class="decision-compare">${comparePrompt} <a href="${pluginHref(compare)}">Compare ${compare}</a></span>
-            </li>`).join("")}
+          ${lane.routes.map(([goal, pick, reason, comparePrompt, compare]) => {
+            const kind = lineageKindForName(pick);
+            return `
+              <li class="decision-route">
+                <span class="decision-goal">${goal}</span>
+                <a class="decision-pick" data-lineage-kind="${kind}" href="${pluginHref(pick)}">
+                  <span class="lineage-dot lineage-dot--${kind}" aria-hidden="true"></span>
+                  <span class="decision-pick-copy"><strong>${pick}</strong><span>${reason}</span></span>
+                </a>
+                <span class="decision-compare">${comparePrompt} <a href="${pluginHref(compare)}">Compare ${compare}</a></span>
+              </li>`;
+          }).join("")}
         </ol>
       </section>`).join("");
 

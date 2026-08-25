@@ -302,6 +302,8 @@ Lineage dots use three provenance states, explained by a compact key above the c
 - Softube originals use a ringed graphite dot.
 - Official brand partnerships use a filled mint dot with a grounded-mint border.
 
+The Quick decision map reuses these exact markers beside every first-pick recommendation. Do not introduce a separate recommendation-bullet color system.
+
 The detailed lineage text remains authoritative for exact models, archetypes, hybrids, collections, and legacy status. Lifecycle and product type do not create additional dot styles.
 
 On mobile, the hidden summary-line lineage must be repeated as the first expanded field labeled “Model / inspiration.” Do not remove it from the data model.

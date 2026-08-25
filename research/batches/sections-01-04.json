@@ -1433,7 +1433,7 @@
         "source_url": null
       }
     ],
-    "insider_note": "Documented behavior: Dry/Wet combined with Speed Stability can create chorusing. Crosstalk in Studio One Mix FX controls leakage across session channels, not only within one stereo insert.",
+    "insider_note": "Community identification—not Softube confirmation: Type A is most plausibly from the Studer/Revox family, often narrowed to the 1960s C37/J37 era. Type B is usually identified as Ampex; ATR-102 is the common guess, though the transformer clue also points toward the AG-440 family. Type C most plausibly points to EMI's BTR-2/BTR-3 family. Softube confirms only Swiss, transformer-based, and British origins. Documented behavior: Dry/Wet with Speed Stability can create chorusing; Studio One Mix FX Crosstalk operates across session channels.",
     "avoid_when": "Avoid it when the production needs obvious dropouts or decoupled damage—use Dirty Tape—or when timing modulation must be absent but peak density is wanted—use Overstayer M-A-S.",
     "evidence": {
       "basis": "documented-plus-editorial-inference",
@@ -1441,6 +1441,22 @@
         {
           "title": "Softube Tape user manual",
           "url": "https://www.softube.com/user-manuals/tape"
+        },
+        {
+          "title": "Softube Tape product page",
+          "url": "https://www.softube.com/us/plug-ins/tape"
+        },
+        {
+          "title": "Review Revival Softube Tape review",
+          "url": "https://www.reviewrevival.ca/reviews/softube-tape-review"
+        },
+        {
+          "title": "Producer discussion: Softube Tape machine identifications",
+          "url": "https://www.reddit.com/r/mixingmastering/comments/1dqd8de/softube_tape_which_machines_are_the_types_based_on/"
+        },
+        {
+          "title": "Abbey Road BTR 2 history",
+          "url": "https://www.abbeyroad.com/news/btr-2-gearthatmadeus-3175"
         }
       ]
     }
