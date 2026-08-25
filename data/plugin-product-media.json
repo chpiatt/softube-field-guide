@@ -1036,11 +1036,11 @@
     "match_basis": "evidence-slug"
   },
   {
-    "name": "Amp Room Eden WT800 Suite",
-    "product_url": "https://www.softube.com/amp-room",
-    "image_url": "https://cdn.softube.com/storage/A67D704BAC0974D16895E3793A3C89F5AEEBDD407B6E6F3E9FBD35D4E609AE41/fadce74d196748739ebdf5a5384ac31d/jpg/media/38709b3611d04ef7b638c8878168bd7e/amp-room-video-hero-2.jpg",
+    "name": "Eden WT800",
+    "product_url": "https://www.softube.com/plug-ins/guitar-bass/eden-wt800",
+    "image_url": "https://cdn.softube.com/storage/67EF42D74CEB27BFD052B5C805846B245DEC953774BD4377CB45BF3E0353AF9A/c97ac1c39bff47c099d0a6816920d2b2/590-590-1-jpg.Jpeg/media/f79fdac9050347ada0c1d053e2077f87/eden-wt-800-product-thumbnail-dark-1200x1200.jpeg",
     "page_kind": "product",
-    "match_basis": "title-prefix"
+    "match_basis": "family-override"
   },
   {
     "name": "Celestion Speaker Shaper",

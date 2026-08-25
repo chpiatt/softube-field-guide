@@ -17,6 +17,7 @@
   --mint: #00c795;
   --mint-dark: #007f61;
   --mint-wash: #e6f8f2;
+  --mint-detail-line: #cce8df;
   --line-dark: #303431;
   --line-light: #d7dcda;
   --error: #b42318;
@@ -1001,6 +1002,98 @@ main {
   white-space: nowrap;
 }
 
+.platform-filter {
+  min-width: 0;
+  margin: 24px 0 28px;
+  padding: 0;
+  border: 0;
+}
+
+.platform-filter legend {
+  margin: 0 0 10px;
+  padding: 0;
+  color: var(--black-soft);
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.platform-options {
+  display: grid;
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+  border-top: 1px solid var(--line-light);
+  border-bottom: 1px solid var(--line-light);
+}
+
+.platform-option {
+  position: relative;
+  min-width: 0;
+  border-right: 1px solid var(--line-light);
+  cursor: pointer;
+}
+
+.platform-option:last-child {
+  border-right: 0;
+}
+
+.platform-option input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.platform-option-copy {
+  min-height: 50px;
+  padding: 9px 10px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  border-bottom: 2px solid transparent;
+  color: var(--graphite);
+  transition: color .18s ease, background-color .18s ease, border-color .18s ease;
+}
+
+.platform-option-copy strong {
+  min-width: 0;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.platform-option-copy small {
+  color: var(--graphite-2);
+  font-size: 10px;
+  font-variant-numeric: tabular-nums;
+}
+
+.platform-option:hover .platform-option-copy {
+  background: var(--mist-2);
+}
+
+.platform-option input:checked + .platform-option-copy {
+  border-bottom-color: var(--mint-dark);
+  background: var(--mint-wash);
+  color: var(--black-soft);
+}
+
+.platform-option input:focus-visible + .platform-option-copy {
+  outline: 2px solid var(--mint-dark);
+  outline-offset: -3px;
+}
+
+.platform-filter-note {
+  max-width: 80ch;
+  margin: 9px 0 0;
+  color: var(--graphite-2);
+  font-size: 11px;
+  line-height: 1.45;
+}
+
 .catalog-section {
   margin: 0;
   border-bottom: 1px solid var(--line-light);
@@ -1172,6 +1265,22 @@ main {
   text-transform: uppercase;
 }
 
+.plugin-platform-context {
+  display: none;
+  color: var(--mint-dark);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+body.has-platform-filter .plugin-summary {
+  grid-template-columns: minmax(210px, .7fr) minmax(240px, 1fr) minmax(190px, .75fr) 28px;
+}
+
+body.has-platform-filter .plugin-platform-context {
+  display: block;
+}
+
 .plugin-summary .chevron {
   width: 20px;
   height: 20px;
@@ -1284,6 +1393,71 @@ main {
 .plugin-product-link:hover .icon,
 .plugin-product-link:focus-visible .icon {
   transform: translateX(2px);
+}
+
+.plugin-availability {
+  padding: 18px 22px 16px;
+  display: grid;
+  grid-template-columns: minmax(150px, .24fr) minmax(0, 1fr);
+  gap: 10px 28px;
+  border-bottom: 1px solid var(--line-light);
+  background: var(--mist-soft);
+}
+
+.plugin-availability-heading h3 {
+  margin: 0;
+  color: var(--black-soft);
+  font-size: 14px;
+  font-weight: 650;
+  letter-spacing: -.01em;
+}
+
+.plugin-availability-heading p {
+  margin: 4px 0 0;
+  color: var(--graphite-2);
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.plugin-availability-list {
+  min-width: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 12px 22px;
+}
+
+.plugin-availability-item {
+  min-width: 0;
+}
+
+.plugin-availability-item dt {
+  margin: 0 0 2px;
+  color: var(--mint-dark);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .045em;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.plugin-availability-item dd {
+  margin: 0;
+  color: var(--graphite);
+  font-size: 12px;
+  line-height: 1.42;
+  overflow-wrap: anywhere;
+}
+
+.plugin-availability-note {
+  grid-column: 2;
+  max-width: 82ch;
+  margin: 1px 0 0;
+  padding-top: 9px;
+  border-top: 1px solid var(--line-light);
+  color: var(--graphite-2);
+  font-size: 10px;
+  line-height: 1.45;
 }
 
 .plugin-basics {
@@ -2054,45 +2228,45 @@ blockquote {
   font-size: 13px;
 }
 
-/* Search state */
-body.is-searching .hero,
-body.is-searching .feature-strip,
-body.is-searching .guide-intro,
-body.is-searching .guide-standards,
-body.is-searching .reference-section {
+/* Catalog filter state */
+body.is-filtering .hero,
+body.is-filtering .feature-strip,
+body.is-filtering .guide-intro,
+body.is-filtering .guide-standards,
+body.is-filtering .reference-section {
   display: none;
 }
 
-body.is-searching main {
+body.is-filtering main {
   padding-top: 34px;
 }
 
-body.is-searching .catalog-index {
+body.is-filtering .catalog-index {
   margin-top: 0;
 }
 
 .search-summary {
   display: none;
-  margin: 0 0 24px;
-  padding: 13px 16px;
+  margin: -8px 0 24px;
+  padding: 12px 0;
   align-items: center;
   justify-content: space-between;
   gap: 18px;
-  border: 1px solid #bde8da;
-  border-radius: 10px;
-  background: var(--mint-wash);
+  border-top: 1px solid var(--mint-detail-line);
+  border-bottom: 1px solid var(--mint-detail-line);
+  background: transparent;
   color: var(--black-soft);
   font-size: 14px;
 }
 
-body.is-searching .search-summary {
+body.is-filtering .search-summary {
   display: flex;
 }
 
 .clear-search {
   padding: 6px 10px;
   border: 1px solid var(--mint-dark);
-  border-radius: 7px;
+  border-radius: 0;
   background: transparent;
   color: var(--mint-dark);
   cursor: pointer;
@@ -2198,6 +2372,19 @@ footer {
   .method-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0 24px;
+  }
+
+  .platform-options {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    border-bottom: 0;
+  }
+
+  .platform-option {
+    border-bottom: 1px solid var(--line-light);
+  }
+
+  .platform-option:nth-child(3n) {
+    border-right: 0;
   }
 
   .plugin-basics {
@@ -2326,6 +2513,11 @@ footer {
     gap: 16px;
   }
 
+  body.has-platform-filter .plugin-summary {
+    grid-template-columns: minmax(180px, .75fr) minmax(210px, 1fr) minmax(170px, .8fr) 24px;
+    gap: 14px;
+  }
+
   .recipe-guidance {
     grid-template-columns: 1fr;
   }
@@ -2420,6 +2612,36 @@ footer {
     gap: 8px;
   }
 
+  .platform-filter {
+    margin-block: 20px 24px;
+  }
+
+  .platform-options {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .platform-option:nth-child(3n) {
+    border-right: 1px solid var(--line-light);
+  }
+
+  .platform-option:nth-child(2n) {
+    border-right: 1px solid var(--line-light);
+  }
+
+  .platform-option:nth-child(2n + 1),
+  .platform-option:last-child {
+    border-right: 0;
+  }
+
+  .platform-option:first-child {
+    grid-column: 1 / -1;
+    border-right: 0;
+  }
+
+  .platform-option-copy {
+    min-height: 46px;
+  }
+
   .catalog-section > summary {
     min-height: 76px;
     grid-template-columns: minmax(0, 1fr) 24px;
@@ -2438,6 +2660,27 @@ footer {
     min-height: 68px;
     grid-template-columns: minmax(0, 1fr) 22px;
     gap: 12px;
+  }
+
+  body.has-platform-filter .plugin-summary {
+    grid-template-columns: minmax(0, 1fr) 22px;
+    gap: 4px 12px;
+  }
+
+  body.has-platform-filter .plugin-name {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  body.has-platform-filter .plugin-platform-context {
+    grid-column: 1;
+    grid-row: 2;
+    padding-left: 22px;
+  }
+
+  body.has-platform-filter .plugin-summary .chevron {
+    grid-column: 2;
+    grid-row: 1 / span 2;
   }
 
   .plugin-lineage {
@@ -2467,6 +2710,21 @@ footer {
   }
 
   .plugin-product-media.image-unavailable .plugin-product-link {
+    grid-column: 1;
+  }
+
+  .plugin-availability {
+    padding: 16px;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .plugin-availability-list {
+    grid-template-columns: 1fr;
+    gap: 11px;
+  }
+
+  .plugin-availability-note {
     grid-column: 1;
   }
 
@@ -2622,11 +2880,16 @@ footer {
   .drawer-scrim,
   .back-top,
   .search-summary,
+  .platform-filter,
   .guide-standards > summary,
   .plugin-deep-dive > summary,
   .deep-section-summary,
   .catalog-section > summary .catalog-section-chevron,
   .plugin-summary .chevron {
+    display: none !important;
+  }
+
+  .plugin-platform-context {
     display: none !important;
   }
 

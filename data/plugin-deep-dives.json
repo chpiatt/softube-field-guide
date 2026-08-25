@@ -5932,13 +5932,13 @@
     "comparative_edge": "Choose it over Braids when excitation/resonance physics should remain patchable, and over 4ms SMR when one modeled body with up to four voices matters more than six scale-locked bands.",
     "advanced_moves": [
       {
-        "setup": "MIDI-to-CV plucked voice.",
+        "setup": "MIDI-to-CV plucked voice inside Modular.",
         "action": "Patch pitch/strum, leave In unpatched for internal excitation, map velocity to Brightness, then separate Odd/Even to stereo processing.",
         "listen_for": "Dynamic plucks with contrasting partial groups.",
         "why_it_works": "Normalized excitation and split outputs expose model harmonics."
       },
       {
-        "setup": "External percussion into Rings.",
+        "setup": "External percussion routed into Rings through Modular FX.",
         "action": "Feed short hits to In, leave Strum unpatched, use long Damping and slowly modulate Position.",
         "listen_for": "Input transients becoming tuned resonant drones.",
         "why_it_works": "Rings infers strums from In transients when other triggers are absent."
@@ -5948,14 +5948,14 @@
       {
         "context_type": "instrument",
         "context": "Expressive physical-model voice",
-        "source_or_bus": "MIDI mallet/string role",
+        "source_or_bus": "MIDI mallet/string voice inside Modular",
         "application": "Map velocity to Brightness and use four-voice strums.",
         "why_this_plugin": "More body-specific than Braids’ macro models."
       },
       {
         "context_type": "sound-design",
         "context": "Resonant external processor",
-        "source_or_bus": "Percussion/guitar in Modular FX",
+        "source_or_bus": "Percussion/guitar routed through Modular FX",
         "application": "Use source transients as excitation for sympathetic strings.",
         "why_this_plugin": "Can infer excitation/strum without extra trigger logic."
       }
@@ -5964,8 +5964,8 @@
       {
         "partner": "4ms Pingable Envelope Generator",
         "goal": "Create clock-derived strikes with a separate damping or brightness gesture.",
-        "order": "PEG EOR/EOF → Rings Strum; PEG ENV → Rings Brightness or Damping CV",
-        "setup": "Ping PEG from the sequence clock, patch EOR or EOF to Strum, patch an attenuated short ENV to Brightness or Damping, and leave Rings In unpatched for its internal exciter.",
+        "order": "Inside Modular: PEG EOR/EOF → Rings Strum; PEG ENV → Rings Brightness or Damping CV",
+        "setup": "Inside one Modular patch, ping PEG from the sequence clock, patch EOR or EOF to Strum, patch an attenuated short ENV to Brightness or Damping, and leave Rings In unpatched for its internal exciter.",
         "why_it_works": "PEG's event output triggers Rings' exciter while its envelope independently shapes the resonator parameter, keeping articulation and decay control separate.",
         "caution": "Attenuate parameter CV; full-range modulation can jump between useful physical regimes.",
         "basis": "engineering-inference",
@@ -6103,16 +6103,16 @@
   {
     "name": "Mutable Instruments Clouds",
     "section": 8,
-    "comparative_edge": "Choose it over Echoes/Tape Echoes when live audio must fragment into grains, freezes, and pitch/time texture rather than repeat cleanly. Choose Parallels for pre-recorded playable waveforms; Clouds is a short streaming buffer processor.",
+    "comparative_edge": "Choose it over Echoes/Tape Echoes when live audio routed through Modular FX must fragment into grains, freezes, and pitch/time texture rather than repeat cleanly. Choose Parallels for a self-contained instrument; Clouds is a Modular-only short streaming-buffer processor.",
     "advanced_moves": [
       {
-        "setup": "Modular FX on a familiar loop.",
+        "setup": "A familiar loop routed through Modular FX.",
         "action": "Freeze a transient, set Density near sparse, scrub Position, then tune Size/Pitch and trigger grains externally.",
         "listen_for": "A repeatable playable slice rather than an uncontrolled wash.",
         "why_it_works": "Freeze holds buffer while Position/Trig address grains."
       },
       {
-        "setup": "Continuous ambient input.",
+        "setup": "Continuous ambient input routed through Modular FX.",
         "action": "Set soft Texture window, irregular Density, low feedback, and slowly modulate Position/Size.",
         "listen_for": "A moving cloud without clicks or obvious loop boundaries.",
         "why_it_works": "Hann envelopes smooth overlapping grains."
@@ -6122,24 +6122,24 @@
       {
         "context_type": "sound-design",
         "context": "Frozen micro-sampler",
-        "source_or_bus": "Captured vocal/percussion",
-        "application": "Scrub and externally trigger selected grains.",
+        "source_or_bus": "Vocal/percussion routed through Modular FX",
+        "application": "Capture, scrub, and externally trigger selected grains inside Modular.",
         "why_this_plugin": "More addressable than delay feedback."
       },
       {
-        "context_type": "bus",
-        "context": "Live texture return",
-        "source_or_bus": "Guitar/synth send",
-        "application": "Use soft grains and slow position motion.",
-        "why_this_plugin": "Turns streaming audio into time-stretched texture."
+        "context_type": "sound-design",
+        "context": "Granularized guitar or synth layer",
+        "source_or_bus": "Guitar/synth routed through Modular FX",
+        "application": "Blend a soft-grain, slowly moving Modular FX return beneath the original track.",
+        "why_this_plugin": "Turns streaming audio into time-stretched texture, but only from inside the Modular host."
       }
     ],
     "pairings": [
       {
         "partner": "Mutable Instruments Rings",
         "goal": "Turn a defined resonant strike into a longer granular environment.",
-        "order": "Mutable Instruments Rings → Mutable Instruments Clouds",
-        "setup": "Establish a playable Rings voice first, then use restrained Clouds feedback and slow Position/Size motion on an auxiliary path.",
+        "order": "Inside Modular: Mutable Instruments Rings → Mutable Instruments Clouds",
+        "setup": "Inside one Modular patch, establish a playable Rings voice first, then use restrained Clouds feedback and slow Position/Size motion on an auxiliary path.",
         "why_it_works": "Rings provides pitch and transient identity; Clouds fragments the decaying harmonics into a sustained layer.",
         "caution": "Freeze and high feedback can erase articulation; preserve a dry Rings path.",
         "basis": "engineering-inference",
@@ -6147,7 +6147,7 @@
       }
     ],
     "insider_note": "Documented: Density at center emits no grains; Freeze repurposes Feedback into delay/all-pass buildup, and maximum buffer is eight seconds at reduced quality.",
-    "avoid_when": "Use Echoes for exact rhythmic taps, Tape Echoes for playable feedback, or a sampler for long deterministic playback.",
+    "avoid_when": "Use Echoes for an ordinary DAW insert or send, Tape Echoes for playable feedback, or a sampler for long deterministic playback. Clouds requires Modular or Modular FX.",
     "evidence": {
       "basis": "documented-plus-editorial-inference",
       "sources": [
@@ -6277,16 +6277,16 @@
   {
     "name": "4ms Spectral Multiband Resonator",
     "section": 8,
-    "comparative_edge": "Choose it over Buchla 296e for six tuned resonant bands locked to scales and rotating as chords; choose Rings for one physical body. SMR bridges filter bank, resonator, harmony generator, and spectral-CV source.",
+    "comparative_edge": "Choose it over Buchla 296e for six tuned resonant bands locked to scales and rotating as chords; choose Rings for one physical body. SMR bridges filter bank, resonator, harmony generator, and spectral-CV source inside Modular.",
     "advanced_moves": [
       {
-        "setup": "Noise/pulse excitation.",
+        "setup": "Noise/pulse excitation inside Modular.",
         "action": "Choose a scale, raise Resonance to ringing, lock anchor bands, then rotate/spread remaining bands with CV.",
         "listen_for": "Harmonic percussion evolving around fixed tones.",
         "why_it_works": "Six bandpasses track selected scale positions; locks exempt anchors."
       },
       {
-        "setup": "External loop remix.",
+        "setup": "External loop routed through Modular FX.",
         "action": "Feed loop, lower resonance, rotate bands slowly, and route selected envelope outputs to panning or another filter.",
         "listen_for": "Spectral movement synchronized to source energy.",
         "why_it_works": "Per-band followers output control derived from filtered audio."
@@ -6296,15 +6296,15 @@
       {
         "context_type": "instrument",
         "context": "Scale-locked resonant percussion",
-        "source_or_bus": "Noise/pulse voice",
+        "source_or_bus": "Noise/pulse voice inside Modular",
         "application": "Ping six bands and rotate unlocked notes.",
         "why_this_plugin": "More harmonic/chordal than Rings."
       },
       {
         "context_type": "sound-design",
         "context": "Spectral remix control",
-        "source_or_bus": "Loop in Modular FX",
-        "application": "Use band envelopes to modulate downstream processors.",
+        "source_or_bus": "Loop routed through Modular FX",
+        "application": "Use band envelopes to modulate downstream processors inside the rack.",
         "why_this_plugin": "Combines tuned filtering and CV extraction."
       }
     ],
@@ -6312,8 +6312,8 @@
       {
         "partner": "4ms Pingable Envelope Generator",
         "goal": "Rotate and articulate tuned resonator bands on a shared rhythmic grid.",
-        "order": "4ms Pingable Envelope Generator → 4ms Spectral Multiband Resonator rotation/spread CV",
-        "setup": "Clock PEG from the sequence, use a shallow cyclic contour to move rotation, and lock one or two anchor bands.",
+        "order": "Inside Modular: 4ms Pingable Envelope Generator → 4ms Spectral Multiband Resonator rotation/spread CV",
+        "setup": "Inside one Modular patch, clock PEG from the sequence, use a shallow cyclic contour to move rotation, and lock one or two anchor bands.",
         "why_it_works": "PEG supplies repeatable tempo-shaped movement while the SMR quantizes spectral centers to its selected scale.",
         "caution": "Large CV ranges can skip useful voicings; attenuate modulation and monitor output when resonance is high.",
         "basis": "engineering-inference",
@@ -7960,7 +7960,7 @@
     "pairings": []
   },
   {
-    "name": "Amp Room Eden WT800 Suite",
+    "name": "Eden WT800",
     "section": 9,
     "comparative_edge": "Choose Eden over the Bass Suite's tube amps when clean articulation, semi-parametric shaping, controlled compression, and true bi-amp roles matter. Choose Supernova for intentionally dirty parallel mids; Eden's direct, 1x15, and 4x10 paths are about detailed record-ready balance.",
     "advanced_moves": [

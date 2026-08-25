@@ -1,0 +1,3656 @@
+{
+  "audited_on": "2026-08-25",
+  "installed_softube_version": "2.6.41",
+  "platform_order": [
+    "dedicated",
+    "console1",
+    "equalizers",
+    "modular",
+    "amp_room",
+    "amplifiers",
+    "flow_mixing",
+    "flow_mastering"
+  ],
+  "entries": [
+    {
+      "name": "Reference 1956",
+      "section": 1,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/reference-1956-equalizer"
+        },
+        "console1": {
+          "detail": "Equalizer section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/reference-1956-equalizer"
+        },
+        "equalizers": {
+          "detail": "Reference 1956 model",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/reference-1956-equalizer"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/reference-1956-equalizer"
+        },
+        "flow_mastering": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/reference-1956-equalizer"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Reference 1998",
+      "section": 1,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/reference-1998-equalizer"
+        },
+        "console1": {
+          "detail": "Equalizer section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/reference-1998-equalizer"
+        },
+        "equalizers": {
+          "detail": "Reference 1998 model",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/reference-1998-equalizer"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/reference-1998-equalizer"
+        },
+        "flow_mastering": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/reference-1998-equalizer"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Chandler Limited Curve Bender",
+      "section": 1,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mastering/chandler-limited-curve-bender"
+        },
+        "console1": {
+          "detail": "Equalizer section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mastering/chandler-limited-curve-bender"
+        },
+        "equalizers": {
+          "detail": "Chandler Limited Curve Bender model",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mastering/chandler-limited-curve-bender"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mastering/chandler-limited-curve-bender"
+        },
+        "flow_mastering": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mastering/chandler-limited-curve-bender"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Equalizers",
+      "section": 1,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW host plug-in",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/equalizers"
+        },
+        "equalizers": {
+          "detail": "Equalizers host plug-in",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/equalizers"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/equalizers"
+        },
+        "flow_mastering": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/equalizers"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Core Vintage Equalizers — Single",
+      "section": 1,
+      "availability": {
+        "equalizers": {
+          "detail": "Core Vintage Equalizers model",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/core-vintage-equalizers"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/core-vintage-equalizers"
+        },
+        "flow_mastering": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/core-vintage-equalizers"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Core Vintage Equalizers — Dual",
+      "section": 1,
+      "availability": {
+        "equalizers": {
+          "detail": "Core Vintage Equalizers model",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/core-vintage-equalizers"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/core-vintage-equalizers"
+        },
+        "flow_mastering": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/core-vintage-equalizers"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "British Class A Equalizer",
+      "section": 1,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/british-class-a-equalizer"
+        },
+        "console1": {
+          "detail": "Equalizer section",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/british-class-a-equalizer"
+        },
+        "equalizers": {
+          "detail": "British Class A Equalizer model",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/british-class-a-equalizer"
+        },
+        "amp_room": {
+          "detail": "British Class A Equalizer module",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/british-class-a-equalizer"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/british-class-a-equalizer"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "American Class A Equalizer",
+      "section": 1,
+      "availability": {
+        "console1": {
+          "detail": "Equalizer section",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/american-class-a"
+        },
+        "equalizers": {
+          "detail": "American Class A Equalizer model",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/american-class-a"
+        },
+        "amp_room": {
+          "detail": "American Class A 55 EQ module",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/american-class-a"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/american-class-a"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Trident A-Range",
+      "section": 1,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/trident-a-range"
+        },
+        "console1": {
+          "detail": "Equalizer section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/trident-a-range"
+        },
+        "equalizers": {
+          "detail": "Trident A-Range model",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/trident-a-range"
+        },
+        "amp_room": {
+          "detail": "Trident A-Range",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/trident-a-range"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/trident-a-range"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Abbey Road RS127 Rack",
+      "section": 1,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/abbey-road-brilliance-pack"
+        },
+        "console1": {
+          "detail": "Equalizer section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/abbey-road-brilliance-pack"
+        },
+        "equalizers": {
+          "detail": "Abbey Road RS127 Rack model",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/abbey-road-brilliance-pack"
+        },
+        "amp_room": {
+          "detail": "Abbey Road RS127 Rack",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/abbey-road-brilliance-pack"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/abbey-road-brilliance-pack"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Abbey Road RS127 Box",
+      "section": 1,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/abbey-road-brilliance-pack"
+        },
+        "console1": {
+          "detail": "Equalizer section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/abbey-road-brilliance-pack"
+        },
+        "equalizers": {
+          "detail": "Abbey Road RS127 Box model",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/abbey-road-brilliance-pack"
+        },
+        "amp_room": {
+          "detail": "Abbey Road RS127 Box",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/abbey-road-brilliance-pack"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/abbey-road-brilliance-pack"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Abbey Road RS135",
+      "section": 1,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/abbey-road-brilliance-pack"
+        },
+        "console1": {
+          "detail": "Equalizer section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/abbey-road-brilliance-pack"
+        },
+        "equalizers": {
+          "detail": "Abbey Road RS135 model",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/abbey-road-brilliance-pack"
+        },
+        "amp_room": {
+          "detail": "Abbey Road RS135",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/abbey-road-brilliance-pack"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/abbey-road-brilliance-pack"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Passive Equalizer",
+      "section": 1,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/equalizers-passive-active-pack"
+        },
+        "console1": {
+          "detail": "Equalizer section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/equalizers-passive-active-pack"
+        },
+        "equalizers": {
+          "detail": "Passive Equalizer model",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/equalizers-passive-active-pack"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/equalizers-passive-active-pack"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Active Equalizer",
+      "section": 1,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/equalizers-passive-active-pack"
+        },
+        "console1": {
+          "detail": "Equalizer section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/equalizers-passive-active-pack"
+        },
+        "equalizers": {
+          "detail": "Active Equalizer model",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/equalizers-passive-active-pack"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/equalizers-passive-active-pack"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Focusing Equalizer",
+      "section": 1,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/equalizers-passive-active-pack"
+        },
+        "console1": {
+          "detail": "Equalizer + Drive sections",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/equalizers-passive-active-pack"
+        },
+        "equalizers": {
+          "detail": "Focusing Equalizer model",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/equalizers-passive-active-pack"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/equalizers-passive-active-pack"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Tube-Tech PE 1C",
+      "section": 1,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/equalizers-tube-tech-equalizers-mk-ii"
+        },
+        "console1": {
+          "detail": "Equalizer section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/equalizers-tube-tech-equalizers-mk-ii"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Tube-Tech ME 1B",
+      "section": 1,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/equalizers-tube-tech-equalizers-mk-ii"
+        },
+        "console1": {
+          "detail": "Equalizer section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/equalizers-tube-tech-equalizers-mk-ii"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Tube-Tech Equalizers Mk II",
+      "section": 1,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tube-tech-equalizers-mk-ii"
+        },
+        "console1": {
+          "detail": "Equalizer section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tube-tech-equalizers-mk-ii"
+        },
+        "equalizers": {
+          "detail": "Tube-Tech Equalizers Mk II model",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tube-tech-equalizers-mk-ii"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tube-tech-equalizers-mk-ii"
+        },
+        "flow_mastering": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tube-tech-equalizers-mk-ii"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Summit Audio EQF-100",
+      "section": 1,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/summit-audio-eqf-100"
+        },
+        "console1": {
+          "detail": "Equalizer section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/summit-audio-eqf-100"
+        },
+        "equalizers": {
+          "detail": "Summit Audio EQF-100 model",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/summit-audio-eqf-100"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/summit-audio-eqf-100"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Tonelux Tilt",
+      "section": 1,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/equalizers-tonelux-tilt-and-tilt-live"
+        },
+        "console1": {
+          "detail": "Equalizer section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/equalizers-tonelux-tilt-and-tilt-live"
+        },
+        "equalizers": {
+          "detail": "Tonelux Tilt model",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/equalizers-tonelux-tilt-and-tilt-live"
+        },
+        "amp_room": {
+          "detail": "Tonelux Tilt",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/equalizers-tonelux-tilt-and-tilt-live"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/equalizers-tonelux-tilt-and-tilt-live"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Tonelux Tilt Live",
+      "section": 1,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/equalizers-tonelux-tilt-and-tilt-live"
+        },
+        "console1": {
+          "detail": "Equalizer section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/equalizers-tonelux-tilt-and-tilt-live"
+        },
+        "equalizers": {
+          "detail": "Tonelux Tilt Live model",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/equalizers-tonelux-tilt-and-tilt-live"
+        },
+        "amp_room": {
+          "detail": "Tonelux Tilt Live",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/equalizers-tonelux-tilt-and-tilt-live"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/equalizers-tonelux-tilt-and-tilt-live"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Weiss EQ1",
+      "section": 1,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mastering/weiss-eq1"
+        },
+        "console1": {
+          "detail": "Equalizer section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mastering/weiss-eq1"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mastering/weiss-eq1"
+        },
+        "flow_mastering": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mastering/weiss-eq1"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Weiss EQ MP",
+      "section": 1,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mastering/weiss-eq-mp"
+        },
+        "console1": {
+          "detail": "Equalizer section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mastering/weiss-eq-mp"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mastering/weiss-eq-mp"
+        },
+        "flow_mastering": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mastering/weiss-eq-mp"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Empirical Labs Lil FrEQ",
+      "section": 1,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/empirical-labs-lil-freq"
+        },
+        "console1": {
+          "detail": "Equalizer section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/empirical-labs-lil-freq"
+        },
+        "equalizers": {
+          "detail": "Empirical Labs Lil FrEQ model",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/empirical-labs-lil-freq"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/empirical-labs-lil-freq"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "FET Compressor Mk II",
+      "section": 2,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/fet-compressor-mk-ii"
+        },
+        "console1": {
+          "detail": "Compressor + Drive sections",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/fet-compressor-mk-ii"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/fet-compressor-mk-ii"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "OPTO Compressor",
+      "section": 2,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/opto-compressor"
+        },
+        "console1": {
+          "detail": "Compressor + Drive sections",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/opto-compressor"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/opto-compressor"
+        },
+        "flow_mastering": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/opto-compressor"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "VCA Compressor",
+      "section": 2,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/vca-compressor"
+        },
+        "console1": {
+          "detail": "Compressor + Drive sections",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/vca-compressor"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/vca-compressor"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Bus Processor",
+      "section": 2,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/bus-processor"
+        },
+        "console1": {
+          "detail": "Compressor + Drive sections",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/bus-processor"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/bus-processor"
+        },
+        "flow_mastering": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/bus-processor"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Bus Processor 670",
+      "section": 2,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/bus-processor-670"
+        },
+        "console1": {
+          "detail": "Preamp + Compressor + Drive sections",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/bus-processor-670"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/bus-processor-670"
+        },
+        "flow_mastering": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/bus-processor-670"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "British Class A Compressor",
+      "section": 2,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/british-class-a-compressor"
+        },
+        "console1": {
+          "detail": "Compressor section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/british-class-a-compressor"
+        },
+        "modular": {
+          "detail": "British Class A Compressor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/british-class-a-compressor"
+        },
+        "amp_room": {
+          "detail": "British Class A Compressor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/british-class-a-compressor"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/british-class-a-compressor"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "American Class A Compressor",
+      "section": 2,
+      "availability": {
+        "console1": {
+          "detail": "Compressor section",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/american-class-a"
+        },
+        "amp_room": {
+          "detail": "American Class A 25 Comp module",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/american-class-a"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Tube-Tech CL 1B Mk II",
+      "section": 2,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tube-tech-cl-1b-mk-ii"
+        },
+        "console1": {
+          "detail": "Compressor section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tube-tech-cl-1b-mk-ii"
+        },
+        "amp_room": {
+          "detail": "Tube-Tech CL 1B mk II",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tube-tech-cl-1b-mk-ii"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tube-tech-cl-1b-mk-ii"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Tube-Tech SMC 2B",
+      "section": 2,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tube-tech-smc-2b"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tube-tech-smc-2b"
+        },
+        "flow_mastering": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tube-tech-smc-2b"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Summit Audio TLA-100A",
+      "section": 2,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/summit-audio-tla-100a"
+        },
+        "console1": {
+          "detail": "Compressor section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/summit-audio-tla-100a"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/summit-audio-tla-100a"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Chandler Limited Zener Limiter",
+      "section": 2,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/chandler-limited-zener-limiter"
+        },
+        "console1": {
+          "detail": "Compressor section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/chandler-limited-zener-limiter"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/chandler-limited-zener-limiter"
+        },
+        "flow_mastering": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/chandler-limited-zener-limiter"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Chandler Limited Germanium Compressor",
+      "section": 2,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/chandler-limited-germanium-compressor"
+        },
+        "console1": {
+          "detail": "Compressor section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/chandler-limited-germanium-compressor"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/chandler-limited-germanium-compressor"
+        },
+        "flow_mastering": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/chandler-limited-germanium-compressor"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Valley People Dyna-mite",
+      "section": 2,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/valley-people-dyna-mite"
+        },
+        "console1": {
+          "detail": "Shape + Compressor sections",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/valley-people-dyna-mite"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/valley-people-dyna-mite"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Dyna-mite Gate",
+      "section": 2,
+      "availability": {
+        "console1": {
+          "detail": "Shape section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/valley-people-dyna-mite"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/valley-people-dyna-mite"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Dyna-mite Slam",
+      "section": 2,
+      "availability": {
+        "console1": {
+          "detail": "Compressor section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/valley-people-dyna-mite"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/valley-people-dyna-mite"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Drawmer 1973 Multi-Band Compressor",
+      "section": 2,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mastering/drawmer-1973-multi-band-compressor"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mastering/drawmer-1973-multi-band-compressor"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Drawmer S73 Intelligent Master Processor",
+      "section": 2,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mastering/drawmer-s73-intelligent-master-processor"
+        },
+        "console1": {
+          "detail": "Compressor section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mastering/drawmer-s73-intelligent-master-processor"
+        },
+        "amp_room": {
+          "detail": "Drawmer S73",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mastering/drawmer-s73-intelligent-master-processor"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mastering/drawmer-s73-intelligent-master-processor"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Weiss DS1-MK3",
+      "section": 2,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mastering/weiss-ds1-mk3"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mastering/weiss-ds1-mk3"
+        },
+        "flow_mastering": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mastering/weiss-ds1-mk3"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Weiss DS5 Multiband Compressor",
+      "section": 2,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/weiss-ds5-multiband-compressor"
+        },
+        "flow_mastering": {
+          "detail": "Included processor",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/weiss-ds5-multiband-compressor"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Weiss Compressor/Limiter",
+      "section": 2,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mastering/weiss-compressor-limiter"
+        },
+        "console1": {
+          "detail": "Compressor section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mastering/weiss-compressor-limiter"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mastering/weiss-compressor-limiter"
+        },
+        "flow_mastering": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mastering/weiss-compressor-limiter"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Weiss Deess",
+      "section": 2,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mastering/weiss-deess"
+        },
+        "console1": {
+          "detail": "Shape + Compressor sections",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mastering/weiss-deess"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mastering/weiss-deess"
+        },
+        "flow_mastering": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mastering/weiss-deess"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Weiss MM-1",
+      "section": 2,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mastering/weiss-mm-1-mastering-maximizer"
+        },
+        "console1": {
+          "detail": "Compressor section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mastering/weiss-mm-1-mastering-maximizer"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mastering/weiss-mm-1-mastering-maximizer"
+        },
+        "flow_mastering": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mastering/weiss-mm-1-mastering-maximizer"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Clipper",
+      "section": 2,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/clipper"
+        },
+        "console1": {
+          "detail": "Preamp + Shape + Drive sections",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/clipper"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/clipper"
+        },
+        "flow_mastering": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/clipper"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Transient Shaper",
+      "section": 2,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/transient-shaper"
+        },
+        "console1": {
+          "detail": "Shape section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/transient-shaper"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/transient-shaper"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Deesser",
+      "section": 2,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/deesser"
+        },
+        "console1": {
+          "detail": "Shape section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/deesser"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/deesser"
+        },
+        "flow_mastering": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/deesser"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Empirical Labs Mike-E Comp",
+      "section": 2,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/empirical-labs-mike-e-comp"
+        },
+        "console1": {
+          "detail": "Preamp + Compressor sections",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/empirical-labs-mike-e-comp"
+        },
+        "amp_room": {
+          "detail": "Empirical Labs Mike-E Comp",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/empirical-labs-mike-e-comp"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/empirical-labs-mike-e-comp"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Tube-Tech Blue Tone",
+      "section": 2,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tube-tech-blue-tone"
+        },
+        "console1": {
+          "detail": "Compressor section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tube-tech-blue-tone"
+        },
+        "modular": {
+          "detail": "Tube-Tech Blue Tone",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tube-tech-blue-tone"
+        },
+        "amp_room": {
+          "detail": "Tube-Tech Blue Tone",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tube-tech-blue-tone"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tube-tech-blue-tone"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Console 1 Core Mixing Suite",
+      "section": 3,
+      "availability": {
+        "console1": {
+          "detail": "Preamp + Filter + Shape + Equalizer + Compressor + Drive sections",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/console-1-core-mixing-suite"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "SSL SL 4000 E-Series",
+      "section": 3,
+      "availability": {
+        "console1": {
+          "detail": "Filter + Shape + Equalizer + Compressor + Drive sections",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/ssl-sl-4000-e-series"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "SSL XL 9000 K-Series",
+      "section": 3,
+      "availability": {
+        "console1": {
+          "detail": "Filter + Shape + Equalizer + Compressor + Drive sections",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/ssl-xl-9000-k-series"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "British Class A",
+      "section": 3,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/british-class-a"
+        },
+        "console1": {
+          "detail": "Filter + Shape + Equalizer + Compressor + Drive sections",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/british-class-a"
+        },
+        "modular": {
+          "detail": "British Class A Compressor + British Class A Drive + British Class A EQ + British Class A Filter",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/british-class-a"
+        },
+        "amp_room": {
+          "detail": "British Class A Compressor + British Class A Drive + British Class A AmpRoom EQ + British Class A Filter",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/british-class-a"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/british-class-a"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "British Class A Drive",
+      "section": 3,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/british-class-a-drive"
+        },
+        "console1": {
+          "detail": "Drive section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/british-class-a-drive"
+        },
+        "modular": {
+          "detail": "British Class A Drive",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/british-class-a-drive"
+        },
+        "amp_room": {
+          "detail": "British Class A Drive",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/british-class-a-drive"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/british-class-a-drive"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "American Class A",
+      "section": 3,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/american-class-a"
+        },
+        "console1": {
+          "detail": "Filter + Shape + Equalizer + Compressor + Drive sections",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/american-class-a"
+        },
+        "amp_room": {
+          "detail": "ACA 25 COMP + ACA 55 EQ",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/american-class-a"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/american-class-a"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Summit Audio Grand Channel",
+      "section": 3,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/summit-audio-grand-channel"
+        },
+        "console1": {
+          "detail": "Filter + Equalizer + Compressor + Drive sections",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/summit-audio-grand-channel"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/summit-audio-grand-channel"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Tube-Tech Classic Channel Mk II",
+      "section": 3,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/user-manuals/tube-tech-classic-channel-and-classic-channel-mk-ii"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/user-manuals/tube-tech-classic-channel-and-classic-channel-mk-ii"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Chandler Zener-Bender",
+      "section": 3,
+      "availability": {
+        "console1": {
+          "detail": "Filter + Equalizer + Compressor + Drive sections",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/chandler-limited-zener-bender"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Chandler Zener-Bender for Console 1",
+      "section": 3,
+      "availability": {
+        "console1": {
+          "detail": "Filter + Equalizer + Compressor + Drive sections",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/chandler-limited-zener-bender"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Empirical Labs Trak Pak for Console 1",
+      "section": 3,
+      "availability": {
+        "console1": {
+          "detail": "Filter + Shape + Equalizer + Compressor + Drive sections",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/empirical-labs-trak-pak-for-console-1"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Weiss Gambit Series for Console 1",
+      "section": 3,
+      "availability": {
+        "console1": {
+          "detail": "Filter + Shape + Equalizer + Compressor + Drive sections",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/weiss-gambit-series-for-console-1"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Tape",
+      "section": 4,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tape"
+        },
+        "console1": {
+          "detail": "Preamp + Shape + Drive sections",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tape"
+        },
+        "amp_room": {
+          "detail": "Tape",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tape"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tape"
+        },
+        "flow_mastering": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tape"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Dirty Tape",
+      "section": 4,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/dirty-tape"
+        },
+        "console1": {
+          "detail": "Shape + Drive sections",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/dirty-tape"
+        },
+        "amp_room": {
+          "detail": "Dirty Tape",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/dirty-tape"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/dirty-tape"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Harmonics Analog Saturation Processor",
+      "section": 4,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/harmonics-analog-saturation-processor"
+        },
+        "console1": {
+          "detail": "Shape + Drive sections",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/harmonics-analog-saturation-processor"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/harmonics-analog-saturation-processor"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Saturation Knob",
+      "section": 4,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/saturation-knob"
+        },
+        "console1": {
+          "detail": "Drive section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/saturation-knob"
+        },
+        "modular": {
+          "detail": "Saturation Knob",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/saturation-knob"
+        },
+        "amp_room": {
+          "detail": "Saturation Knob",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/saturation-knob"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/saturation-knob"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Overstayer M-A-S",
+      "section": 4,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/overstayer-m-a-s"
+        },
+        "console1": {
+          "detail": "Shape + Drive sections",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/overstayer-m-a-s"
+        },
+        "modular": {
+          "detail": "Overstayer M-A-S",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/overstayer-m-a-s"
+        },
+        "amp_room": {
+          "detail": "Overstayer M-A-S",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/overstayer-m-a-s"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/overstayer-m-a-s"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Overstayer M-A-S Extended",
+      "section": 4,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/overstayer-m-a-s"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/overstayer-m-a-s"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Drawmer 1976 Three Band Saturator",
+      "section": 4,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/drawmer-1976-three-band-saturator"
+        },
+        "console1": {
+          "detail": "Preamp + Shape + Drive sections",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/drawmer-1976-three-band-saturator"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/drawmer-1976-three-band-saturator"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "OTO Biscuit 8-bit Effects",
+      "section": 4,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/oto-biscuit-8-bit-effects"
+        },
+        "modular": {
+          "detail": "OTO Biscuit 8-bit Effects",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/oto-biscuit-8-bit-effects"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/oto-biscuit-8-bit-effects"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Bad Speaker",
+      "section": 4,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/bad-speaker"
+        },
+        "console1": {
+          "detail": "Shape + Drive sections",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/bad-speaker"
+        },
+        "amp_room": {
+          "detail": "Bad Speaker",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/bad-speaker"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/bad-speaker"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Empirical Labs Professor Punch-Knuckles",
+      "section": 4,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/empirical-labs-professor-punch-knuckles"
+        },
+        "console1": {
+          "detail": "Shape + Drive sections",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/empirical-labs-professor-punch-knuckles"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/empirical-labs-professor-punch-knuckles"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Weiss Exciter",
+      "section": 4,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/weiss-exciter"
+        },
+        "console1": {
+          "detail": "Shape section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/weiss-exciter"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/weiss-exciter"
+        },
+        "flow_mastering": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/weiss-exciter"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Dimensions",
+      "section": 5,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/dimensions"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/dimensions"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Core Dimensions",
+      "section": 5,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/core-dimensions"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/core-dimensions"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "TSAR-1 Reverb",
+      "section": 5,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tsar-1-reverb"
+        },
+        "modular": {
+          "detail": "TSAR-1 Reverb",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tsar-1-reverb"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tsar-1-reverb"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "TSAR-1R Reverb",
+      "section": 5,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tsar-1r-reverb"
+        },
+        "modular": {
+          "detail": "TSAR-1R Reverb",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tsar-1r-reverb"
+        },
+        "amp_room": {
+          "detail": "TSAR-1R Reverb",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tsar-1r-reverb"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tsar-1r-reverb"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Atlantis Dual Chambers",
+      "section": 5,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/atlantis-dual-chambers"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/atlantis-dual-chambers"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Model 77 Reverb",
+      "section": 5,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/model-77-reverb"
+        },
+        "modular": {
+          "detail": "Model 77 Reverb",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/model-77-reverb"
+        },
+        "amp_room": {
+          "detail": "Model 77 Reverb",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/model-77-reverb"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/model-77-reverb"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Spring Reverb",
+      "section": 5,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/spring-reverb"
+        },
+        "modular": {
+          "detail": "Spring Reverb",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/spring-reverb"
+        },
+        "amp_room": {
+          "detail": "SPRING REVERB",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/spring-reverb"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/spring-reverb"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Doom Chvrch",
+      "section": 5,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/doom-chvrch"
+        },
+        "amp_room": {
+          "detail": "DOOM CHVRCH",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/doom-chvrch"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/doom-chvrch"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Wasted Space",
+      "section": 5,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/wasted-space"
+        },
+        "modular": {
+          "detail": "Wasted Space",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/wasted-space"
+        },
+        "amp_room": {
+          "detail": "Wasted Space",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/wasted-space"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/wasted-space"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Stereo Delay",
+      "section": 5,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/stereo-delay"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/stereo-delay"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Echoes",
+      "section": 5,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/echoes"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/echoes"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Tape Echoes",
+      "section": 5,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tape-echoes"
+        },
+        "modular": {
+          "detail": "Tape Echoes",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tape-echoes"
+        },
+        "amp_room": {
+          "detail": "Tape Echoes",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tape-echoes"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tape-echoes"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Tube Delay",
+      "section": 5,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tube-delay"
+        },
+        "console1": {
+          "detail": "Drive section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tube-delay"
+        },
+        "modular": {
+          "detail": "Tube Delay",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tube-delay"
+        },
+        "amp_room": {
+          "detail": "TUBE DELAY",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tube-delay"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tube-delay"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Model 84 Chorus",
+      "section": 5,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/model-84-chorus"
+        },
+        "amp_room": {
+          "detail": "Model 84 Chorus",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/model-84-chorus"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/model-84-chorus"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Fix Flanger and Doubler",
+      "section": 5,
+      "availability": {
+        "dedicated": {
+          "detail": "Two DAW plug-ins: Fix Flanger + Fix Doubler",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/fix-flanger-and-doubler"
+        },
+        "modular": {
+          "detail": "Fix Doubler + Fix Flanger",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/fix-flanger-and-doubler"
+        },
+        "amp_room": {
+          "detail": "Fix Doubler + Fix Flanger",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/fix-flanger-and-doubler"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/fix-flanger-and-doubler"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Fix Doubler",
+      "section": 5,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/fix-doubler"
+        },
+        "modular": {
+          "detail": "Fix Doubler",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/fix-doubler"
+        },
+        "amp_room": {
+          "detail": "Fix Doubler",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/fix-doubler"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/fix-doubler"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Fix Phaser",
+      "section": 5,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/fix-phaser"
+        },
+        "modular": {
+          "detail": "Fix Phaser",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/fix-phaser"
+        },
+        "amp_room": {
+          "detail": "Fix Phaser",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/fix-phaser"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/fix-phaser"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Layers",
+      "section": 5,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/layers"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/layers"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Widener",
+      "section": 5,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/widener"
+        },
+        "console1": {
+          "detail": "Shape section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/widener"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/widener"
+        },
+        "flow_mastering": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/widener"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Lion Head Vibrato",
+      "section": 5,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/lion-head-vibrato"
+        },
+        "amp_room": {
+          "detail": "LION HEAD",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/lion-head-vibrato"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/lion-head-vibrato"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Tinnerö Tremolo",
+      "section": 5,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/tinnero-tremolo"
+        },
+        "amp_room": {
+          "detail": "TINNERO",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/tinnero-tremolo"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/tinnero-tremolo"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Vocal Tuner",
+      "section": 6,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/vocal-tuner"
+        },
+        "console1": {
+          "detail": "Shape section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/vocal-tuner"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/vocal-tuner"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Vocoder",
+      "section": 6,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/vocoder"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/vocoder"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Model 72 Envelope Filter",
+      "section": 6,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/model-72-envelope-filter"
+        },
+        "amp_room": {
+          "detail": "Model 72 Envelope Filter",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/model-72-envelope-filter"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/model-72-envelope-filter"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Mutronics Mutator",
+      "section": 6,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/mutronics-mutator"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/mutronics-mutator"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Model 72 Synth System",
+      "section": 7,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW instrument; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/model-72-synthesizer-system"
+        },
+        "modular": {
+          "detail": "Model 72 Amplifier + Model 72 Doubling + Model 72 Envelope + Model 72 Filter + Model 72 Noise + Model 72 Oscillator + Model 72 Pre Amp",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/model-72-synthesizer-system"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Model 77 Dual Layer Synth",
+      "section": 7,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW instrument; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/model-77-dual-layer-synth"
+        },
+        "modular": {
+          "detail": "Model 77 Envelope + Model 77 LFO + Model 77 Reverb + Model 77 Ring Mod + Model 77 Amplifier + Model 77 Dual Mode Filter + Model 77 Oscillator",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/model-77-dual-layer-synth"
+        },
+        "amp_room": {
+          "detail": "Model 77 Reverb + Model 77 Ring Mod",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/model-77-dual-layer-synth"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/model-77-dual-layer-synth"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Model 80 Five Voice Synthesizer",
+      "section": 7,
+      "availability": {
+        "dedicated": {
+          "detail": "Native instrument plug-in",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/model-80-five-voice-synthesizer"
+        },
+        "modular": {
+          "detail": "ADSR, LFO, Multi Pan, Noise Generator, VCF, and VCO modules",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/model-80-five-voice-synthesizer"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Model 82 Sequencing Mono Synth",
+      "section": 7,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW instrument; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/model-82-sequencing-mono-synth"
+        },
+        "modular": {
+          "detail": "Model 82 Arpeggiator + Model 82 ENV + Model 82 FX + Model 82 LFO + Model 82 VCF + Model 82 VCO",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/model-82-sequencing-mono-synth"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Model 84 Polyphonic Synthesizer",
+      "section": 7,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW instrument; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/model-84-polyphonic-synthesizer"
+        },
+        "modular": {
+          "detail": "Model 84 VCA + Model 84 Chorus + Model 84 Envelope + Model 84 LPF + Model 84 HighPass + Model 84 LFO + Model 84 Noise + Model 84 DCO",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/model-84-polyphonic-synthesizer"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/model-84-polyphonic-synthesizer"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Statement Lead",
+      "section": 7,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW instrument; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/statement-lead"
+        },
+        "modular": {
+          "detail": "Statement Effects + Statement Lead Delay + Statement Lead Drive + Statement Lead Multiband + Statement Lead Reverb + Statement Lead Spatialization + Statement Filter + Statement Source",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/statement-lead"
+        },
+        "amp_room": {
+          "detail": "Statement Effects + Statement Filter",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/statement-lead"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Monoment Bass",
+      "section": 7,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW instrument; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/monoment-bass"
+        },
+        "modular": {
+          "detail": "Monoment Filter + Monoment Effects + Monoment Bass Drive + Monoment Bass EQ + Monoment Bass Multiband + Monoment Bass Spatialization + Monoment Source",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/monoment-bass"
+        },
+        "amp_room": {
+          "detail": "Monoment Filter + Monoment Effects",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/monoment-bass"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Parallels",
+      "section": 7,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW instrument; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/parallels"
+        },
+        "modular": {
+          "detail": "Parallels Effects + Parallels FX Chorus + Parallels FX Delay + Parallels FX Distortion + Parallels FX Flanger + Parallels FX Reverb + Parallels Mod Envelope + Parallels Modulation + Parallels Mod Euclidian + Parallels Mod LFO + Parallels Mod Random> + Parallels Mod Sequencer + Parallels Shaper + Parallels Shape LPG + Parallels Shape RES + Parallels Shape SVF + Parallels Source",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/parallels"
+        },
+        "amp_room": {
+          "detail": "Parallels Effects + Parallels Shaper",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/parallels"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Heartbeat",
+      "section": 7,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW instrument; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/heartbeat"
+        },
+        "modular": {
+          "detail": "Heartbeat Bass Drum 1 + Heartbeat Bass Drum 2 + Heartbeat Snare Drum / Rimshot + Heartbeat Snare Drum / Clap + Heartbeat Hihat + Heartbeat Cymbal + Heartbeat Percussion + Heartbeat EQ",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/heartbeat"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Modular",
+      "section": 8,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW instrument + Modular FX plug-ins",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/modular"
+        },
+        "modular": {
+          "detail": "Modular instrument + Modular FX hosts",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/modular"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Vermona Random Rhythm",
+      "section": 8,
+      "availability": {
+        "modular": {
+          "detail": "Vermona Random Rhythm module",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/modular"
+        }
+      },
+      "note": "Requires the Modular host. To process external audio, load Modular FX; this module is not a standalone plug-in."
+    },
+    {
+      "name": "Buchla 296e Spectral Processor",
+      "section": 8,
+      "availability": {
+        "modular": {
+          "detail": "Buchla 296e Spectral Processor module",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/modular"
+        }
+      },
+      "note": "Requires the Modular host. To process external audio, load Modular FX; this module is not a standalone plug-in."
+    },
+    {
+      "name": "Mutable Instruments Rings",
+      "section": 8,
+      "availability": {
+        "modular": {
+          "detail": "Mutable Instruments Rings module",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/modular"
+        }
+      },
+      "note": "Requires the Modular host. To process external audio, load Modular FX; this module is not a standalone plug-in."
+    },
+    {
+      "name": "Doepfer A-188-1 BBD",
+      "section": 8,
+      "availability": {
+        "modular": {
+          "detail": "Doepfer A-188-1 BBD module",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/modular"
+        }
+      },
+      "note": "Requires the Modular host. To process external audio, load Modular FX; this module is not a standalone plug-in."
+    },
+    {
+      "name": "Mutable Instruments Braids",
+      "section": 8,
+      "availability": {
+        "modular": {
+          "detail": "Mutable Instruments Braids module",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/modular"
+        }
+      },
+      "note": "Requires the Modular host. To process external audio, load Modular FX; this module is not a standalone plug-in."
+    },
+    {
+      "name": "Mutable Instruments Clouds",
+      "section": 8,
+      "availability": {
+        "modular": {
+          "detail": "Mutable Instruments Clouds module",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/modular"
+        }
+      },
+      "note": "Requires the Modular host. To process external audio, load Modular FX; this module is not a standalone plug-in."
+    },
+    {
+      "name": "4ms Pingable Envelope Generator",
+      "section": 8,
+      "availability": {
+        "modular": {
+          "detail": "4ms Pingable Envelope Generator module",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/modular"
+        }
+      },
+      "note": "Requires the Modular host. To process external audio, load Modular FX; this module is not a standalone plug-in."
+    },
+    {
+      "name": "Buchla 259e Twisted Waveform Generator",
+      "section": 8,
+      "availability": {
+        "modular": {
+          "detail": "Buchla 259e Twisted Waveform Generator module",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/modular"
+        }
+      },
+      "note": "Requires the Modular host. To process external audio, load Modular FX; this module is not a standalone plug-in."
+    },
+    {
+      "name": "4ms Spectral Multiband Resonator",
+      "section": 8,
+      "availability": {
+        "modular": {
+          "detail": "4ms Spectral Multiband Resonator module",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/modular"
+        }
+      },
+      "note": "Requires the Modular host. To process external audio, load Modular FX; this module is not a standalone plug-in."
+    },
+    {
+      "name": "Doepfer A-101-2 Vactrol LPG",
+      "section": 8,
+      "availability": {
+        "modular": {
+          "detail": "Doepfer A-101-2 Vactrol LPG module",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/modular"
+        }
+      },
+      "note": "Requires the Modular host. To process external audio, load Modular FX; this module is not a standalone plug-in."
+    },
+    {
+      "name": "Intellijel Korgasmatron II",
+      "section": 8,
+      "availability": {
+        "modular": {
+          "detail": "Intellijel Korgasmatron II module",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/modular"
+        }
+      },
+      "note": "Requires the Modular host. To process external audio, load Modular FX; this module is not a standalone plug-in."
+    },
+    {
+      "name": "Intellijel Rubicon",
+      "section": 8,
+      "availability": {
+        "modular": {
+          "detail": "Intellijel Rubicon module",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/modular"
+        }
+      },
+      "note": "Requires the Modular host. To process external audio, load Modular FX; this module is not a standalone plug-in."
+    },
+    {
+      "name": "Intellijel uFold II",
+      "section": 8,
+      "availability": {
+        "modular": {
+          "detail": "Intellijel uFold II module",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/synthesizers/modular"
+        }
+      },
+      "note": "Requires the Modular host. To process external audio, load Modular FX; this module is not a standalone plug-in."
+    },
+    {
+      "name": "Amp Room",
+      "section": 9,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW host plug-in",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/amp-room"
+        },
+        "amp_room": {
+          "detail": "Amp Room host plug-in",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/amp-room"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "American Mainstayer",
+      "section": 9,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/american-mainstayer"
+        },
+        "amp_room": {
+          "detail": "AMERICAN MAINSTAYER 100W",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/american-mainstayer"
+        },
+        "amplifiers": {
+          "detail": "American Mainstayer 100W",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/american-mainstayer"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/american-mainstayer"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Bass Standard Line V8",
+      "section": 9,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/bass-standard-line-v8"
+        },
+        "amp_room": {
+          "detail": "BASS STANDARD LINE V8",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/bass-standard-line-v8"
+        },
+        "amplifiers": {
+          "detail": "Bass Standard Line V8",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/bass-standard-line-v8"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/bass-standard-line-v8"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Pacific Dual Tremolo 100W Black",
+      "section": 9,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/pacific-dual-tremolo-100w-black"
+        },
+        "amp_room": {
+          "detail": "Pacific Dual Tremolo 100W Black",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/pacific-dual-tremolo-100w-black"
+        },
+        "amplifiers": {
+          "detail": "Pacific Dual Tremolo 100W Black",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/pacific-dual-tremolo-100w-black"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/pacific-dual-tremolo-100w-black"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Pacific Dual Tremolo 100W Silver",
+      "section": 9,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/pacific-dual-tremolo-100w-silver"
+        },
+        "amp_room": {
+          "detail": "Pacific Dual Tremolo 100W Silver",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/pacific-dual-tremolo-100w-silver"
+        },
+        "amplifiers": {
+          "detail": "Pacific Dual Tremolo 100W Silver",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/pacific-dual-tremolo-100w-silver"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/pacific-dual-tremolo-100w-silver"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Custom 100W",
+      "section": 9,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/custom-100w"
+        },
+        "amp_room": {
+          "detail": "CUSTOM 100W + Bass Amp Room Cabs",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/custom-100w"
+        },
+        "amplifiers": {
+          "detail": "Custom 100W",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/custom-100w"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/custom-100w"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Top Boost",
+      "section": 9,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/top-boost"
+        },
+        "amp_room": {
+          "detail": "30W TOP BOOST",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/top-boost"
+        },
+        "amplifiers": {
+          "detail": "30W Top Boost",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/top-boost"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/top-boost"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "TUBE Overdrive",
+      "section": 9,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/tube-overdrive"
+        },
+        "amp_room": {
+          "detail": "TUBE Overdrive",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/tube-overdrive"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/tube-overdrive"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Kraft",
+      "section": 9,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/kraft"
+        },
+        "amp_room": {
+          "detail": "KRAFT",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/kraft"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/kraft"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Lion Head Vibrato (Amp Room)",
+      "section": 9,
+      "availability": {
+        "amp_room": {
+          "detail": "Lion Head Vibrato pedal",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/lion-head-vibrato"
+        }
+      },
+      "note": "This card covers the Amp Room module. See the matching effect card in section 5 for the native plug-in."
+    },
+    {
+      "name": "Tinnerö Tremolo (Amp Room)",
+      "section": 9,
+      "availability": {
+        "amp_room": {
+          "detail": "Tinnerö Tremolo pedal",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/tinnero-tremolo"
+        }
+      },
+      "note": "This card covers the Amp Room module. See the matching effect card in section 5 for the native plug-in."
+    },
+    {
+      "name": "Doom Chvrch (Amp Room)",
+      "section": 9,
+      "availability": {
+        "amp_room": {
+          "detail": "Doom Chvrch Reverb pedal",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/doom-chvrch"
+        }
+      },
+      "note": "This card covers the Amp Room module. See the matching effect card in section 5 for the native plug-in."
+    },
+    {
+      "name": "Blaze Works Amplification",
+      "section": 9,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/blaze-works-amplification"
+        },
+        "amp_room": {
+          "detail": "Overvolt II + Arc Line IV amps; German Viper 4x12 cabinet",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/blaze-works-amplification"
+        },
+        "amplifiers": {
+          "detail": "Overvolt II + Arc Line IV amps; German Viper 4x12 cabinet",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/blaze-works-amplification"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/blaze-works-amplification"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Amp Room ENGL Savage Mark II Suite",
+      "section": 9,
+      "availability": {
+        "amp_room": {
+          "detail": "Savage Mark II 120W + 60W amps, five ENGL cabinets, four pedals, and studio effects",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/amp-room-engl-savage-mark-ii-suite"
+        },
+        "amplifiers": {
+          "detail": "Savage Mark II 120W + 60W amps and five ENGL cabinets",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/amp-room-engl-savage-mark-ii-suite"
+        }
+      },
+      "note": "Suite product: the listed gear loads through Amp Room or Amplifiers rather than as separate native processors."
+    },
+    {
+      "name": "Amp Room Marshall Suite",
+      "section": 9,
+      "availability": {
+        "amp_room": {
+          "detail": "Marshall amps, cabinets, pedals, and studio effects",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/amp-room-marshall-suite"
+        },
+        "amplifiers": {
+          "detail": "Marshall amps and cabinets",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/amp-room-marshall-suite"
+        }
+      },
+      "note": "Suite product: its amps and cabinets load through Amp Room or Amplifiers."
+    },
+    {
+      "name": "Marshall Bluesbreaker 1962",
+      "section": 9,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/marshall-bluesbreaker-1962"
+        },
+        "amp_room": {
+          "detail": "Marshall Bluesbreaker 1962 + Marshall Bluesbreaker 2x12 Tony Platt",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/marshall-bluesbreaker-1962"
+        },
+        "amplifiers": {
+          "detail": "Marshall Bluesbreaker 1962",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/marshall-bluesbreaker-1962"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/marshall-bluesbreaker-1962"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Marshall Plexi Super Lead 1959",
+      "section": 9,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/marshall-plexi-super-lead-1959"
+        },
+        "amp_room": {
+          "detail": "Marshall Plexi Super Lead 1959 + Marshall 1960BHW Tony Platt",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/marshall-plexi-super-lead-1959"
+        },
+        "amplifiers": {
+          "detail": "Marshall Plexi Super Lead 1959",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/marshall-plexi-super-lead-1959"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/marshall-plexi-super-lead-1959"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Marshall JMP 2203",
+      "section": 9,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/marshall-jmp-2203"
+        },
+        "amp_room": {
+          "detail": "Marshall JMP 2203 + Marshall 1960B Tony Platt",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/marshall-jmp-2203"
+        },
+        "amplifiers": {
+          "detail": "Marshall JMP 2203",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/marshall-jmp-2203"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/marshall-jmp-2203"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Marshall Silver Jubilee 2555",
+      "section": 9,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/marshall-silver-jubilee-2555"
+        },
+        "amp_room": {
+          "detail": "Marshall Silver Jubilee 2555 + Marshall 2551AV Tony Platt",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/marshall-silver-jubilee-2555"
+        },
+        "amplifiers": {
+          "detail": "Marshall Silver Jubilee 2555",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/marshall-silver-jubilee-2555"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/marshall-silver-jubilee-2555"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Marshall Murder One Lemmy Signature",
+      "section": 9,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/marshall-murder-one-lemmy-signature"
+        },
+        "amp_room": {
+          "detail": "Murder One amp + Lemmy cabinet setup",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/marshall-murder-one-lemmy-signature"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Marshall Cabinet Collection",
+      "section": 9,
+      "availability": {
+        "amp_room": {
+          "detail": "Marshall Cabinet Collection",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/marshall-cabinet-collection"
+        },
+        "amplifiers": {
+          "detail": "Marshall cabinet collection",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/marshall-cabinet-collection"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Amp Room Metal Suite",
+      "section": 9,
+      "availability": {
+        "amp_room": {
+          "detail": "High-gain amps, cabinets, pedals, and studio effects",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/amp-room-metal-suite"
+        },
+        "amplifiers": {
+          "detail": "High-gain amps and cabinets",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/amp-room-metal-suite"
+        }
+      },
+      "note": "Suite product: its amps, cabinets, pedals, and effects load through Amp Room or Amplifiers."
+    },
+    {
+      "name": "Amp Room Vintage Suite",
+      "section": 9,
+      "availability": {
+        "amp_room": {
+          "detail": "Vintage amps, cabinets, pedals, and studio effects",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/amp-room-vintage-suite"
+        },
+        "amplifiers": {
+          "detail": "Vintage amps and cabinets",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/amp-room-vintage-suite"
+        }
+      },
+      "note": "Suite product: its amps, cabinets, pedals, and effects load through Amp Room or Amplifiers."
+    },
+    {
+      "name": "Amp Room Bass Suite",
+      "section": 9,
+      "availability": {
+        "amp_room": {
+          "detail": "Bass amps, cabinets, pedals, and studio effects",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/amp-room-bass-suite"
+        },
+        "amplifiers": {
+          "detail": "Bass amps and cabinets",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/amp-room-bass-suite"
+        }
+      },
+      "note": "Suite product: its amps, cabinets, pedals, and effects load through Amp Room or Amplifiers."
+    },
+    {
+      "name": "Supernova Parallel Channel 300W",
+      "section": 9,
+      "availability": {
+        "amp_room": {
+          "detail": "Supernova Parallel Channel 300W",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/amp-room-bass-suite"
+        },
+        "amplifiers": {
+          "detail": "Supernova Parallel Channel 300W",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/amp-room-bass-suite"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/amp-room-bass-suite"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Cardinal 100W",
+      "section": 9,
+      "availability": {
+        "amp_room": {
+          "detail": "THE CARDINAL 100W",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/amp-room-bass-suite"
+        },
+        "amplifiers": {
+          "detail": "The Cardinal 100W",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/amp-room-bass-suite"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/amp-room-bass-suite"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Eden WT800",
+      "section": 9,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/eden-wt800"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Celestion Speaker Shaper",
+      "section": 9,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/celestion-speaker-shaper"
+        },
+        "amp_room": {
+          "detail": "Celestion Speaker Shaper module",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/celestion-speaker-shaper"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Acoustic Feedback",
+      "section": 9,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/acoustic-feedback"
+        },
+        "flow_mixing": {
+          "detail": "Included processor",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/guitar-bass/acoustic-feedback"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Softube Flow Complete Suite",
+      "section": 10,
+      "availability": {
+        "flow_mixing": {
+          "detail": "Collection includes the Flow Mixing Suite host",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/flow-complete-suite"
+        },
+        "flow_mastering": {
+          "detail": "Collection includes the Flow Mastering Suite host",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/flow-complete-suite"
+        }
+      },
+      "note": "Collection/license product. The listed environments describe included processors, not a separate processor with this product name."
+    },
+    {
+      "name": "Flow Mixing Suite",
+      "section": 10,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW host plug-in",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/flow-mixing-suite"
+        },
+        "flow_mixing": {
+          "detail": "Flow Mixing Suite host",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/flow-mixing-suite"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Flow Mastering Suite",
+      "section": 10,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW host plug-in",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/flow-mastering-suite"
+        },
+        "flow_mastering": {
+          "detail": "Flow Mastering Suite host",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/flow-mastering-suite"
+        }
+      },
+      "note": null
+    },
+    {
+      "name": "Volume 6",
+      "section": 10,
+      "availability": {},
+      "note": "Collection/license bundle. It is not a processor or host, so no single platform designation is asserted."
+    },
+    {
+      "name": "Softube Essentials",
+      "section": 10,
+      "availability": {},
+      "note": "Collection/license bundle. Open the included plug-in cards for exact host compatibility."
+    },
+    {
+      "name": "Icons Compressor Collection",
+      "section": 10,
+      "availability": {
+        "console1": {
+          "detail": "Included FET, OPTO, and VCA models map to Compressor and Drive sections",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/icons-the-compressor-collection"
+        },
+        "flow_mixing": {
+          "detail": "Included processors",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/icons-the-compressor-collection"
+        }
+      },
+      "note": "Collection/license product. The listed environments describe included processors, not a separate processor with this product name."
+    },
+    {
+      "name": "Weiss Complete Collection 3",
+      "section": 10,
+      "availability": {
+        "console1": {
+          "detail": "Included processors map across Filter, Shape, Equalizer, Compressor, and Drive sections",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/weiss-complete-collection-3"
+        },
+        "flow_mixing": {
+          "detail": "Included processors",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/weiss-complete-collection-3"
+        },
+        "flow_mastering": {
+          "detail": "Included processors",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/weiss-complete-collection-3"
+        }
+      },
+      "note": "Collection/license product. The listed environments describe included processors, not a separate processor with this product name."
+    },
+    {
+      "name": "Empirical Labs Complete Collection 2",
+      "section": 10,
+      "availability": {
+        "console1": {
+          "detail": "Included processors map across Preamp, Shape, Equalizer, Compressor, and Drive sections",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/empirical-labs-complete-collection-2"
+        },
+        "equalizers": {
+          "detail": "Lil FrEQ model",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/empirical-labs-complete-collection-2"
+        },
+        "amp_room": {
+          "detail": "Mike-E Comp module",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/empirical-labs-complete-collection-2"
+        },
+        "flow_mixing": {
+          "detail": "Included processors",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/empirical-labs-complete-collection-2"
+        }
+      },
+      "note": "Collection/license product. The listed environments describe included processors, not a separate processor with this product name."
+    },
+    {
+      "name": "Tube-Tech Complete Collection 2",
+      "section": 10,
+      "availability": {
+        "console1": {
+          "detail": "Included processors map to Equalizer and Compressor sections",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tube-tech-complete-collection-2"
+        },
+        "equalizers": {
+          "detail": "Tube-Tech Equalizers Mk II model",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tube-tech-complete-collection-2"
+        },
+        "modular": {
+          "detail": "Blue Tone module",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tube-tech-complete-collection-2"
+        },
+        "amp_room": {
+          "detail": "CL 1B Mk II + Blue Tone modules",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tube-tech-complete-collection-2"
+        },
+        "flow_mixing": {
+          "detail": "Included processors",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tube-tech-complete-collection-2"
+        },
+        "flow_mastering": {
+          "detail": "Included processors",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tube-tech-complete-collection-2"
+        }
+      },
+      "note": "Collection/license product. The listed environments describe included processors, not a separate processor with this product name."
+    },
+    {
+      "name": "Reference Equalizers Bundle",
+      "section": 10,
+      "availability": {
+        "console1": {
+          "detail": "Reference 1956 + Reference 1998 in the Equalizer section",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/reference-equalizers-bundle"
+        },
+        "equalizers": {
+          "detail": "Reference 1956 + Reference 1998 models",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/reference-equalizers-bundle"
+        },
+        "flow_mixing": {
+          "detail": "Included processors",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/reference-equalizers-bundle"
+        },
+        "flow_mastering": {
+          "detail": "Included processors",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/reference-equalizers-bundle"
+        }
+      },
+      "note": "Collection/license product. The listed environments describe included processors, not a separate processor with this product name."
+    },
+    {
+      "name": "The Dirty, Bad, and Wasted Collection",
+      "section": 10,
+      "availability": {
+        "console1": {
+          "detail": "Dirty Tape and Bad Speaker map to Shape and Drive sections",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/the-dirty-the-bad-and-the-wasted-collection"
+        },
+        "modular": {
+          "detail": "Wasted Space module",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/the-dirty-the-bad-and-the-wasted-collection"
+        },
+        "amp_room": {
+          "detail": "Dirty Tape + Bad Speaker + Wasted Space modules",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/the-dirty-the-bad-and-the-wasted-collection"
+        },
+        "flow_mixing": {
+          "detail": "Included processors",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/the-dirty-the-bad-and-the-wasted-collection"
+        }
+      },
+      "note": "Collection/license product. The listed environments describe included processors, not a separate processor with this product name."
+    },
+    {
+      "name": "Passive-Active Pack",
+      "section": 10,
+      "availability": {
+        "console1": {
+          "detail": "Passive, Active, and Focusing models in Equalizer; Focusing also in Drive",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/passive-active-pack"
+        },
+        "equalizers": {
+          "detail": "Passive + Active + Focusing models",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/passive-active-pack"
+        },
+        "flow_mixing": {
+          "detail": "Included processors",
+          "evidence": "official-current-page",
+          "source_url": "https://www.softube.com/plug-ins/mixing/passive-active-pack"
+        }
+      },
+      "note": "Collection/license product. The listed environments describe included processors, not a separate processor with this product name."
+    },
+    {
+      "name": "Tube-Tech CL 1B Mk I",
+      "section": 10,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tube-tech-cl-1b-mk-ii"
+        },
+        "console1": {
+          "detail": "Compressor section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tube-tech-cl-1b-mk-ii"
+        }
+      },
+      "note": "Collection/license product. The listed environments describe included processors, not a separate processor with this product name."
+    },
+    {
+      "name": "Tube-Tech Classic Channel Mk I",
+      "section": 10,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tube-tech-complete-collection-2"
+        },
+        "console1": {
+          "detail": "Equalizer section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/tube-tech-complete-collection-2"
+        }
+      },
+      "note": "Collection/license product. The listed environments describe included processors, not a separate processor with this product name."
+    },
+    {
+      "name": "Tube-Tech PE 1C / ME 1B legacy standalones",
+      "section": 10,
+      "availability": {
+        "dedicated": {
+          "detail": "DAW plug-in; no Softube host required",
+          "evidence": "installed-softube-2.6.41-component",
+          "source_url": "https://www.softube.com/plug-ins/mixing/equalizers-tube-tech-equalizers-mk-ii"
+        },
+        "console1": {
+          "detail": "Equalizer section",
+          "evidence": "installed-softube-2.6.41-map",
+          "source_url": "https://www.softube.com/plug-ins/mixing/equalizers-tube-tech-equalizers-mk-ii"
+        }
+      },
+      "note": "Legacy pair: both remain native plug-ins; each maps to the Console 1 Equalizer section."
+    }
+  ]
+}

@@ -54,7 +54,7 @@
 
   async function loadDeepDiveData() {
     try {
-      const response = await fetch("data/plugin-deep-dives.json?v=20260825-2");
+      const response = await fetch("data/plugin-deep-dives.json?v=20260825-3");
       if (!response.ok) throw new Error(`Deep-dive request failed with ${response.status}`);
       const rows = await response.json();
       if (!Array.isArray(rows)) throw new Error("Deep-dive data is not an array");
@@ -68,7 +68,7 @@
 
   async function loadProductMedia() {
     try {
-      const response = await fetch("data/plugin-product-media.json");
+      const response = await fetch("data/plugin-product-media.json?v=20260825-2");
       if (!response.ok) throw new Error(`Product-media request failed with ${response.status}`);
       const rows = await response.json();
       if (!Array.isArray(rows)) throw new Error("Product-media data is not an array");
@@ -78,6 +78,68 @@
       body.classList.add("product-media-unavailable");
       return new Map();
     }
+  }
+
+  async function loadPlatformAvailability() {
+    try {
+      const response = await fetch("data/plugin-platforms.json?v=20260825-2");
+      if (!response.ok) throw new Error(`Platform request failed with ${response.status}`);
+      const payload = await response.json();
+      if (!Array.isArray(payload.entries)) throw new Error("Platform data does not contain entries");
+      return {
+        order: Array.isArray(payload.platform_order) ? payload.platform_order : [],
+        byName: new Map(payload.entries.map((row) => [row.name, row]))
+      };
+    } catch (error) {
+      console.error("Platform availability could not be loaded.", error);
+      body.classList.add("platform-data-unavailable");
+      return { order: [], byName: new Map() };
+    }
+  }
+
+  const platformLabels = {
+    dedicated: "Native plug-in",
+    console1: "Console 1",
+    equalizers: "Equalizers",
+    modular: "Modular",
+    amp_room: "Amp Room",
+    amplifiers: "Amplifiers",
+    flow_mixing: "Flow Mixing",
+    flow_mastering: "Flow Mastering"
+  };
+
+  function buildAvailability(entry, order) {
+    const section = makeElement("section", "plugin-availability");
+    const heading = makeElement("div", "plugin-availability-heading");
+    heading.append(
+      makeElement("h3", "", "Available in"),
+      makeElement("p", "", "Only verified environments are listed.")
+    );
+    section.append(heading);
+
+    const availablePlatforms = order.filter((platform) => entry.availability?.[platform]);
+    if (availablePlatforms.length) {
+      const list = makeElement("dl", "plugin-availability-list");
+      availablePlatforms.forEach((platform) => {
+        const item = makeElement("div", "plugin-availability-item");
+        item.append(
+          makeElement("dt", "", platformLabels[platform] || humanize(platform)),
+          makeElement("dd", "", entry.availability[platform].detail)
+        );
+        list.append(item);
+      });
+      section.append(list);
+    }
+
+    const note = makeElement(
+      "p",
+      "plugin-availability-note",
+      entry.note || (availablePlatforms.length
+        ? "An environment not listed here is not currently documented for this item."
+        : "No single host designation is asserted for this collection; open its included processors instead.")
+    );
+    section.append(note);
+    return section;
   }
 
   function buildProductMedia(entry) {
@@ -372,7 +434,7 @@
           ["Sequenced mono line", "Model 82 Sequencing Mono Synth", "Integrated mono synth and sequencer behavior", "Want a broader classic mono system?", "Model 72 Synth System"],
           ["Expressive layered pad", "Model 77 Dual Layer Synth", "Performance-oriented dual-layer architecture", "Want a source-morphing hybrid?", "Parallels"],
           ["Synthetic drums", "Heartbeat", "Dedicated modeled drum synthesis and mixing", "Want to patch the voice yourself?", "Modular"],
-          ["Filter external audio", "Model 72 Envelope Filter", "Classic synth-filter response as an effect", "Need dual-filter modulation?", "Intellijel Korgasmatron II"],
+          ["Filter external audio", "Model 72 Envelope Filter", "Classic synth-filter response as a direct effect", "Comfortable routing through Modular FX?", "Intellijel Korgasmatron II"],
           ["Vintage chorus movement", "Model 84 Chorus", "Focused Juno-family modulation", "Need a broader modulation palette?", "Dimensions"]
         ]
       },
@@ -413,7 +475,7 @@
         routes: [
           ["Build a custom signal path", "Modular", "Open routing across modeled modules", "Need a finished layered instrument?", "Model 77 Dual Layer Synth"],
           ["Start from a complex oscillator", "Buchla 259e Twisted Waveform Generator", "Unstable digital wavefolding source", "Need the complete patching environment?", "Modular"],
-          ["Granularize a performance", "Mutable Instruments Clouds", "Texture, freeze, and time dispersion", "Need filtered lo-fi space instead?", "Wasted Space"],
+          ["Granularize a performance", "Mutable Instruments Clouds", "Texture, freeze, and time dispersion inside Modular FX", "Need a direct plug-in instead?", "Wasted Space"],
           ["Create BBD smear", "Doepfer A-188-1 BBD", "Clocked delay artifacts inside a patch", "Need a finished tape-echo workflow?", "Tape Echoes"],
           ["Destroy digital resolution", "OTO Biscuit 8-bit Effects", "Stepped conversion and filter character", "Want analog-style wear and drift?", "Dirty Tape"],
           ["Change speaker perspective", "Bad Speaker", "Fast band-limit and breakup viewpoint", "Need the effect inside a reverb field?", "Wasted Space"]
@@ -573,8 +635,8 @@
       {
         title: "Industrial sound design",
         goal: "A controllable source that can fracture, smear, and collapse into curated moments.",
-        stages: [["Buchla 259e Twisted Waveform Generator", "Unstable source"], ["Doepfer A-188-1 BBD", "Time smear"], ["OTO Biscuit 8-bit Effects", "Digital damage"], ["Wasted Space", "Filtered environment"]],
-        first: "Establish a useful dry gesture first, then automate one destructive stage at a time. Record long passes with headroom, mark the strongest transitions, and edit those moments rather than leaving every processor fully engaged.",
+        stages: [["Buchla 259e Twisted Waveform Generator", "Modular source"], ["Doepfer A-188-1 BBD", "Modular time smear"], ["OTO Biscuit 8-bit Effects", "Digital damage"], ["Wasted Space", "Filtered environment"]],
+        first: "Build the 259e → A-188-1 portion inside one Modular patch, record that result with headroom, then automate the native destructive stages one at a time. Mark the strongest transitions and edit those moments rather than leaving every processor fully engaged.",
         swap: "Use Dirty Tape when the source needs age and drift without the Biscuit's stepped digital destruction. Remove Wasted Space when the BBD already supplies enough depth.",
         watch: "Feedback, resonance, and bit reduction can create sudden level jumps. Capture below your normal print level and monitor the return after any resonant filter."
       },
@@ -597,10 +659,10 @@
       {
         title: "Ambient guitar",
         goal: "A huge evolving field with a dry location cue that keeps the performance legible.",
-        stages: [["Custom 100W", "Clean foundation"], ["Fix Doubler", "Width"], ["Mutable Instruments Clouds", "Granular layer"], ["Dimensions", "Long environment"]],
-        first: "Keep the amp foundation cleaner than the final texture suggests, build width before the granular stage, and feed the long hall from a return. Preserve a dry or short-room center as the location cue.",
+        stages: [["Custom 100W", "Clean foundation"], ["Fix Doubler", "Width"], ["Mutable Instruments Clouds", "Granular layer via Modular FX"], ["Dimensions", "Long environment"]],
+        first: "Keep the amp foundation cleaner than the final texture suggests. Send a copy into Modular FX for Clouds, return it as a separate granular layer, and feed the long hall from another return. Preserve a dry or short-room center as the location cue.",
         swap: "Compare TSAR-1 Reverb when the tail should behave like a conventional space. Remove Fix Doubler when Clouds already produces enough lateral motion.",
-        watch: "Every stage lengthens or multiplies the gesture. Automate return levels around new notes so the previous cloud does not mask the next performance decision."
+        watch: "Clouds is not a direct insert plug-in; the extra Modular FX routing is part of the setup. Every stage lengthens or multiplies the gesture, so automate return levels around new notes."
       }
     ];
 
@@ -667,6 +729,7 @@
     summary.innerHTML = `
       <span class="plugin-name"><span class="lineage-dot" aria-hidden="true"></span>${name}</span>
       <span class="plugin-lineage">${lineage}</span>
+      <span class="plugin-platform-context"></span>
       ${icon("i-chevron", "chevron")}`;
 
     const content = document.createElement("div");
@@ -703,6 +766,7 @@
     details.className = "catalog-section";
     details.id = section.id;
     details.dataset.defaultOpen = index === 0 ? "true" : "false";
+    details.dataset.entryCount = String(sectionCards.length);
     if (index === 0 && window.innerWidth > 600) details.open = true;
 
     const summary = document.createElement("summary");
@@ -744,13 +808,22 @@
   const sourceCatalogSections = [...main.querySelectorAll(":scope > .level1")].filter((section) => /^\d+-/.test(section.id));
   const catalogSections = sourceCatalogSections.map(upgradeCatalogSection).filter(Boolean);
   const cards = [...main.querySelectorAll(".plugin-card")];
-  const [deepDiveByName, productMediaByName] = await Promise.all([
+  const [deepDiveByName, productMediaByName, platformData] = await Promise.all([
     loadDeepDiveData(),
-    loadProductMedia()
+    loadProductMedia(),
+    loadPlatformAvailability()
   ]);
   cards.forEach((card) => {
     const media = productMediaByName.get(card.dataset.pluginName);
     if (media) card.querySelector(":scope > .plugin-body")?.prepend(buildProductMedia(media));
+    const platformEntry = platformData.byName.get(card.dataset.pluginName);
+    if (platformEntry) {
+      const platforms = Object.keys(platformEntry.availability || {});
+      card.dataset.platforms = platforms.join(" ");
+      card.dataset.search += ` ${normalize(JSON.stringify(platformEntry))}`;
+      const basics = card.querySelector(":scope > .plugin-body > .plugin-basics");
+      basics?.before(buildAvailability(platformEntry, platformData.order));
+    }
     const entry = deepDiveByName.get(card.dataset.pluginName);
     if (entry) {
       card.querySelector(":scope > .plugin-body")?.append(buildDeepDive(entry));
@@ -761,11 +834,13 @@
   });
   body.classList.toggle("has-deep-dives", deepDiveByName.size > 0);
   body.classList.toggle("has-product-media", productMediaByName.size > 0);
+  body.classList.toggle("has-platform-data", platformData.byName.size === cards.length);
 
   const searchSummary = document.createElement("div");
   searchSummary.className = "search-summary";
   searchSummary.setAttribute("role", "status");
-  searchSummary.innerHTML = `<span id="search-summary-text">Showing catalog matches.</span><button class="clear-search" type="button">Clear search</button>`;
+  searchSummary.setAttribute("aria-live", "polite");
+  searchSummary.innerHTML = `<span id="search-summary-text">Showing catalog matches.</span><button class="clear-search" type="button">Reset filters</button>`;
 
   const catalogIndex = document.createElement("header");
   catalogIndex.className = "catalog-index";
@@ -774,9 +849,43 @@
     <div><h2>Catalog index</h2><p>Mixing and mastering lead. Open any category or search the complete researched catalog from the masthead.</p></div>
     <span class="catalog-total">${cards.length} catalog entries</span>`;
 
+  const platformFilter = document.createElement("fieldset");
+  platformFilter.className = "platform-filter";
+  const platformLegend = document.createElement("legend");
+  platformLegend.textContent = "Show plug-ins available in";
+  const platformOptions = makeElement("div", "platform-options");
+  const platformChoices = ["all", ...platformData.order];
+  platformChoices.forEach((platform) => {
+    const option = makeElement("label", "platform-option");
+    const input = document.createElement("input");
+    input.type = "radio";
+    input.name = "catalog-platform";
+    input.value = platform;
+    input.checked = platform === "all";
+    const copy = makeElement("span", "platform-option-copy");
+    const label = platform === "all" ? "All environments" : platformLabels[platform] || humanize(platform);
+    const platformCount = platform === "all"
+      ? cards.length
+      : cards.filter((card) => (card.dataset.platforms || "").split(" ").includes(platform)).length;
+    copy.append(makeElement("strong", "", label), makeElement("small", "", String(platformCount)));
+    option.append(input, copy);
+    platformOptions.append(option);
+  });
+  platformFilter.append(
+    platformLegend,
+    platformOptions,
+    makeElement(
+      "p",
+      "platform-filter-note",
+      "Verified against installed Softube 2.6.41 component maps and current official product pages. Missing environments are not inferred."
+    )
+  );
+  const hasCompletePlatformData = platformData.byName.size === cards.length && platformData.order.length > 0;
+  if (!hasCompletePlatformData) platformFilter.hidden = true;
+
   const firstCatalogSection = catalogSections[0];
   if (firstCatalogSection) {
-    firstCatalogSection.before(searchSummary, catalogIndex);
+    firstCatalogSection.before(catalogIndex, platformFilter, searchSummary);
   }
 
   [...main.querySelectorAll(":scope > .level1")].forEach((section) => {
@@ -789,43 +898,78 @@
       section.hidden = false;
       section.classList.remove("is-hidden");
       section.open = section.dataset.defaultOpen === "true" && window.innerWidth > 600;
+      const total = Number(section.dataset.entryCount);
+      const sectionCount = section.querySelector(":scope > summary .catalog-section-count");
+      if (sectionCount) sectionCount.textContent = `${total} ${total === 1 ? "entry" : "entries"}`;
     });
   }
 
   function filterCatalog() {
     const query = normalize(search.value.trim());
     const searching = query.length > 0;
-    const wasSearching = body.classList.contains("is-searching");
+    const activePlatform = platformFilter.querySelector('input[name="catalog-platform"]:checked')?.value || "all";
+    const filteringPlatform = activePlatform !== "all";
+    const filtering = searching || filteringPlatform;
+    const wasFiltering = body.classList.contains("is-filtering");
     let visibleCount = 0;
 
     body.classList.toggle("is-searching", searching);
+    body.classList.toggle("is-filtering", filtering);
+    body.classList.toggle("has-platform-filter", filteringPlatform);
 
     cards.forEach((card) => {
-      const matches = !searching || card.dataset.search.includes(query);
+      const matchesSearch = !searching || card.dataset.search.includes(query);
+      const matchesPlatform = !filteringPlatform || (card.dataset.platforms || "").split(" ").includes(activePlatform);
+      const matches = matchesSearch && matchesPlatform;
       card.classList.toggle("is-hidden", !matches);
       if (matches) visibleCount += 1;
-      if (!searching) card.open = false;
+      if (!filtering) card.open = false;
+      const context = card.querySelector(":scope > .plugin-summary .plugin-platform-context");
+      const platformEntry = platformData.byName.get(card.dataset.pluginName)?.availability?.[activePlatform];
+      if (context) {
+        context.textContent = filteringPlatform && platformEntry
+          ? `${platformLabels[activePlatform]} · ${platformEntry.detail}`
+          : "";
+      }
     });
 
     catalogSections.forEach((section) => {
       const matches = [...section.querySelectorAll(".plugin-card:not(.is-hidden)")].length;
-      section.classList.toggle("is-hidden", searching && matches === 0);
-      if (searching && matches > 0) section.open = true;
+      const total = Number(section.dataset.entryCount);
+      const sectionCount = section.querySelector(":scope > summary .catalog-section-count");
+      section.classList.toggle("is-hidden", filtering && matches === 0);
+      if (filtering && matches > 0) section.open = true;
+      if (sectionCount) {
+        sectionCount.textContent = filtering
+          ? `${matches}/${total} ${total === 1 ? "entry" : "entries"}`
+          : `${total} ${total === 1 ? "entry" : "entries"}`;
+      }
     });
 
-    if (!searching) resetCatalogOpenState();
+    if (!filtering) resetCatalogOpenState();
 
-    if (wasSearching && !searching) {
+    if (wasFiltering && !filtering) {
       requestAnimationFrame(() => catalogIndex.scrollIntoView({ block: "start" }));
     }
 
-    count.textContent = searching ? `${visibleCount}/${cards.length}` : String(cards.length);
-    empty.classList.toggle("show", searching && visibleCount === 0);
+    count.textContent = filtering ? `${visibleCount}/${cards.length}` : String(cards.length);
+    empty.classList.toggle("show", filtering && visibleCount === 0);
     const summaryText = document.querySelector("#search-summary-text");
     if (summaryText) {
-      summaryText.textContent = visibleCount === 0
-        ? `No catalog entries match “${search.value.trim()}”.`
-        : `${visibleCount} ${visibleCount === 1 ? "entry" : "entries"} match “${search.value.trim()}”.`;
+      const platformName = platformLabels[activePlatform];
+      if (visibleCount === 0) {
+        summaryText.textContent = searching && filteringPlatform
+          ? `No entries match “${search.value.trim()}” in ${platformName}.`
+          : searching
+            ? `No entries match “${search.value.trim()}”.`
+            : `No entries are currently verified for ${platformName}.`;
+      } else if (searching && filteringPlatform) {
+        summaryText.textContent = `${visibleCount} ${visibleCount === 1 ? "entry matches" : "entries match"} “${search.value.trim()}” in ${platformName}.`;
+      } else if (searching) {
+        summaryText.textContent = `${visibleCount} ${visibleCount === 1 ? "entry matches" : "entries match"} “${search.value.trim()}”.`;
+      } else if (filteringPlatform) {
+        summaryText.textContent = `${visibleCount} ${visibleCount === 1 ? "entry is" : "entries are"} verified for ${platformName}.`;
+      }
     }
   }
 
@@ -839,8 +983,14 @@
 
   document.querySelector(".clear-search")?.addEventListener("click", () => {
     search.value = "";
+    const allPlatforms = platformFilter.querySelector('input[value="all"]');
+    if (allPlatforms) allPlatforms.checked = true;
     filterCatalog();
     search.focus();
+  });
+
+  platformFilter.addEventListener("change", (event) => {
+    if (event.target.matches('input[name="catalog-platform"]')) filterCatalog();
   });
 
   function openDrawer() {
@@ -886,10 +1036,21 @@
     }
   });
 
+  function revealFilteredTarget(target) {
+    const card = target?.classList.contains("plugin-card") ? target : null;
+    const section = target?.classList.contains("catalog-section") ? target : card?.closest(".catalog-section");
+    if (!card?.classList.contains("is-hidden") && !section?.classList.contains("is-hidden")) return;
+    search.value = "";
+    const allPlatforms = platformFilter.querySelector('input[value="all"]');
+    if (allPlatforms) allPlatforms.checked = true;
+    filterCatalog();
+  }
+
   function openHashTarget() {
     const id = decodeURIComponent(location.hash.slice(1));
     if (!id) return;
     const target = document.getElementById(id);
+    revealFilteredTarget(target);
     if (target?.classList.contains("catalog-section")) target.open = true;
     if (target?.classList.contains("plugin-card")) {
       target.closest(".catalog-section")?.setAttribute("open", "");
@@ -915,6 +1076,7 @@
   document.querySelectorAll('a[href^="#"]').forEach((link) => {
     link.addEventListener("click", () => {
       const target = document.querySelector(link.getAttribute("href"));
+      revealFilteredTarget(target);
       if (target?.classList.contains("catalog-section")) target.open = true;
       if (target?.classList.contains("plugin-card")) {
         target.closest(".catalog-section")?.setAttribute("open", "");

@@ -52,6 +52,7 @@ const familyOverrides = new Map(Object.entries({
   'Lion Head Vibrato (Amp Room)': 'lion-head-vibrato',
   'Tinnerö Tremolo (Amp Room)': 'tinnero-tremolo',
   'Doom Chvrch (Amp Room)': 'doom-chvrch',
+  'Eden WT800': 'eden-wt800',
   'Tube-Tech PE 1C / ME 1B legacy standalones': 'tube-tech-equalizers-mk-ii'
 }));
 
