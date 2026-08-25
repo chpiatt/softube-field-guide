@@ -637,7 +637,7 @@
         "why_it_works": "Separating input amount from decay length creates a throw without leaving a permanently dense reverb bed."
       }
     ],
-    "insider_note": "The tank comes from the large hall developed for Parallels, while modulation and diffusion draw inspiration from early digital reverb. Softube explicitly says it was not designed to sound realistic—use that as permission to automate it as an instrument.",
+    "insider_note": "Documented: Doom Chvrch was inspired by Domkyrkan, the cathedral in Softube's home city of Linköping. Its tank comes from the large hall developed for Parallels, while modulation and diffusion draw inspiration from early digital reverb. Softube explicitly says it was not designed to sound realistic—use that as permission to automate it as an instrument.",
     "avoid_when": "Avoid it for believable rooms, transparent vocal space, or dense mixes needing predictable decay; TSAR-1/1R or Atlantis is easier to seat. Use Spring Reverb when the source needs a distinct physical splash rather than an evolving synthetic tail.",
     "evidence": {
       "basis": "documented-plus-editorial-inference",
@@ -645,6 +645,10 @@
         {
           "title": "Softube Amp Room ENGL Savage Mark II Suite user manual",
           "url": "https://www.softube.com/eu/user-manuals/amp-room-engl-savage-mark-ii-suite"
+        },
+        {
+          "title": "Softube About Us",
+          "url": "https://www.softube.com/us/about-us"
         }
       ]
     },
