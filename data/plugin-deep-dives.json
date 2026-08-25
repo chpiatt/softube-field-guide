@@ -2037,6 +2037,12 @@
         "action": "Feed kick to external sidechain, use Fast Exp or Gate, set Release as note length, and leave HF Boost off.",
         "listen_for": "Each kick opens one coherent note without bright clicks causing double triggers.",
         "why_it_works": "The external detector supplies rhythm, and gate release becomes audible decay."
+      },
+      {
+        "setup": "A thin snare or kick needs an aggressive synthesized body rather than transparent cleanup.",
+        "action": "Stack two or three Dyna-mite Gate instances in hard Gate mode, give each a different short Release and output-clipping amount, then blend or print the composite beneath the original hit.",
+        "listen_for": "Each stage should contribute a distinct decay layer; stop before repeated clipping turns the attack into an undifferentiated click.",
+        "why_it_works": "Softube documents stacked gates with different release and distortion settings as a way to build fat drum sounds from one source."
       }
     ],
     "use_cases": [
@@ -5361,10 +5367,16 @@
         "why_it_works": "Sequence stores legato/velocity and can transpose from keyboard input."
       },
       {
-        "setup": "Audio-rate modulation patch.",
-        "action": "Use LFO/internal clock at high rate on pulse width/filter, then blend sub oscillator underneath before output Drive.",
-        "listen_for": "Complex edge with a stable low fundamental.",
-        "why_it_works": "One modulator reaches pitch, PWM, and cutoff while sub remains a separate source."
+        "setup": "A bass sequence needs a different filter offset on every played note without drawing automation.",
+        "action": "Set Env Mode to LFO, slow the LFO nearly to a stop, choose RND for filter modulation, and let incoming notes reset the LFO. Tune modulation depth after the pattern is running.",
+        "listen_for": "Each note should hold one random cutoff state rather than sweeping continuously; reduce depth if pitch identity disappears.",
+        "why_it_works": "Note reset samples a new point from the random waveform, turning the LFO into a note-controlled sample-and-hold source."
+      },
+      {
+        "setup": "A mono lead needs a second pitched voice without adding another oscillator plug-in.",
+        "action": "Push filter resonance into self-oscillation, engage keyboard tracking, tune the filter against the VCO, then drive both together for controlled intermodulation.",
+        "listen_for": "The filter tone should follow the keyboard as a stable second voice; high input levels should add beating texture before collapsing into noise.",
+        "why_it_works": "The tracked self-oscillating filter generates its own pitch, and Softube documents deliberate intermodulation when it is driven by the main oscillator."
       }
     ],
     "use_cases": [
@@ -5377,10 +5389,17 @@
       },
       {
         "context_type": "sound-design",
-        "context": "Driven modulation voice",
-        "source_or_bus": "Mono lead/percussion",
-        "application": "Push fast modulation, sub, and output Drive, then print.",
-        "why_this_plugin": "Simple topology makes radical modulation readable."
+        "context": "Robotic random-offset bass",
+        "source_or_bus": "Mono bass or sequence",
+        "application": "Reset an ultra-slow random LFO on each note so every hit receives a held filter offset.",
+        "why_this_plugin": "Its note-reset behavior turns a normal LFO into a playable sample-and-hold source without extra routing."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Two-voice mono lead",
+        "source_or_bus": "Lead instrument role",
+        "application": "Tune the self-oscillating tracked filter against the VCO, then raise mixer level for controlled intermodulation.",
+        "why_this_plugin": "The filter becomes a second pitched source inside a nominally single-oscillator synth."
       }
     ],
     "pairings": [
@@ -5395,7 +5414,7 @@
         "source_url": null
       }
     ],
-    "insider_note": "Documented: DAW-synced sequence/arpeggio requires host transport; internal-clock mode runs independently.",
+    "insider_note": "Softube labels these as hidden features: note-reset can turn the random LFO into sample-and-hold, while the keyboard-tracked self-oscillating filter can act as a second oscillator and intermodulate with the VCO.",
     "avoid_when": "Use Model 72 for three oscillators/feedback or a poly model for chords; Model 82 is strictly monophonic.",
     "evidence": {
       "basis": "documented-plus-editorial-inference",
@@ -5423,6 +5442,12 @@
         "action": "Switch Poly 2 for predictable glide or Unison for six-voice mono, then tune expanded detune/velocity response.",
         "listen_for": "Consistent glide assignment or focused stacked lead.",
         "why_it_works": "Voice modes change allocation rather than only note count."
+      },
+      {
+        "setup": "Build a playable electronic hi-hat patch instead of starting from a drum sample.",
+        "action": "Use the noise source with zero Attack, short Decay, zero Sustain, and a longer Release. Release notes before the decay finishes for open hats; hold notes past the decay for closed hats, then tune the filter and resonance.",
+        "listen_for": "Open and closed articulation should come from note length, with one consistent timbre rather than two disconnected samples.",
+        "why_it_works": "Softube documents the envelope's note-off timing as a way to switch between short closed-hat and longer open-hat behavior."
       }
     ],
     "use_cases": [
@@ -5439,6 +5464,13 @@
         "source_or_bus": "Lead role",
         "application": "Stack six voices, control detune, and disable chorus if center focus matters.",
         "why_this_plugin": "Hardware-style combined voice mode gives a distinct mono response."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Playable open and closed hi-hats",
+        "source_or_bus": "Electronic percussion role",
+        "application": "Shape noise with a zero-attack, short-decay envelope and use played note length to select closed or open articulation.",
+        "why_this_plugin": "One synthesized patch produces continuously related hat articulations instead of switching samples."
       }
     ],
     "pairings": [
@@ -5453,7 +5485,7 @@
         "source_url": null
       }
     ],
-    "insider_note": "Documented: Poly 1 and Poly 2 have different assignment/glide behavior; AAX does not support clicking the on-screen keyboard.",
+    "insider_note": "Documented second identity: above roughly 9 resonance, the keyboard-tracked filter self-oscillates and becomes a pitched oscillator. Half tracking creates six chromatic steps per octave for deliberately dissonant organ or drone overtones.",
     "avoid_when": "Use Model 80 for oscillator sync/per-voice modulation or Model 77 for layered/poly-aftertouch performance.",
     "evidence": {
       "basis": "documented-plus-editorial-inference",
@@ -5597,6 +5629,12 @@
         "action": "Put Euclidean and step modulators in separate Mod Pod slots, route one to Color and one to effect mix, and leave amp envelopes simple.",
         "listen_for": "Rhythm in timbre/effects without retriggering every note.",
         "why_it_works": "Mod Pod destinations operate beyond pitch and amplitude."
+      },
+      {
+        "setup": "A held source needs tremolo or irregular chopping without using the amp envelope as the obvious destination.",
+        "action": "Turn one Source off and modulate the layer Mix with an LFO, or choose a waveform with a late-start silent region and modulate playback position across it. Shape the LFO after the rhythm works.",
+        "listen_for": "The amplitude rhythm should come from moving between sound and silence, with timbre changing differently from a normal VCA tremolo.",
+        "why_it_works": "Softube documents both routes: Mix modulation against a disabled layer, and playback modulation across a waveform's silent start region."
       }
     ],
     "use_cases": [
@@ -5613,10 +5651,17 @@
         "source_or_bus": "Held chord/drone",
         "application": "Modulate Color and effects with independent rhythmic sources.",
         "why_this_plugin": "Four multi-type slots make rhythm independent of MIDI notes."
+      },
+      {
+        "context_type": "sound-design",
+        "context": "Playback-position tremolo",
+        "source_or_bus": "Held waveform or drone",
+        "application": "Sweep a late-start waveform between its silent and sounding regions, or modulate Mix against a disabled layer.",
+        "why_this_plugin": "Its source architecture turns waveform position and layer balance into unconventional amplitude processors."
       }
     ],
     "pairings": [],
-    "insider_note": "Documented: 14 voices are shared across both layers; MIDI range is G0–C#6 and bend is fixed at ±2 semitones.",
+    "insider_note": "Documented hidden modulation: assign a Mod Pod LFO to the Flanger's own LFO speed or to Delay speed for an unusual nested-modulation flange rather than a conventional sweep.",
     "avoid_when": "Use Statement for faster finished leads, Monoment for dedicated bass, or Model synths for component-modeled oscillator behavior.",
     "evidence": {
       "basis": "documented-plus-editorial-inference",
@@ -5644,6 +5689,12 @@
         "action": "Build a four-event flam/fill from different voices, set deterministic pattern first, then add only enough Chaos for variation.",
         "listen_for": "Recognizable fill grammar with occasional mutation.",
         "why_it_works": "ALM triggers layered/serial events before adding controlled randomness."
+      },
+      {
+        "setup": "A snare or percussion voice needs a gated, breathing ambience without an external reverb-and-gate chain.",
+        "action": "Send the voice to TSAR-1D or Filter Echo, engage that effect's Pre switch, then set Dyna-mite to Gate for chopped tails or Slow compression for a pumping room. Tune Release to the groove.",
+        "listen_for": "The ambience should open, breathe, or disappear as part of the hit envelope while the dry drum remains intelligible.",
+        "why_it_works": "Pre routes the shared effect return into Dyna-mite, so its gate or compressor reshapes the reverb/delay tail together with the kit bus."
       }
     ],
     "use_cases": [
@@ -5660,6 +5711,13 @@
         "source_or_bus": "Auto Layer channels",
         "application": "Create four-step cross-voice fills with restrained Chaos.",
         "why_this_plugin": "Pattern layering is integrated with the kit and MIDI mapping."
+      },
+      {
+        "context_type": "bus",
+        "context": "Self-contained gated drum ambience",
+        "source_or_bus": "Heartbeat master and shared effects",
+        "application": "Place TSAR-1D or Filter Echo before Dyna-mite, then gate or compress the return as part of the kit envelope.",
+        "why_this_plugin": "The internal Pre routing turns its shared ambience into a dynamically playable layer without extra plug-ins."
       }
     ],
     "pairings": [
@@ -5674,7 +5732,7 @@
         "source_url": null
       }
     ],
-    "insider_note": "Documented: effect Pre places Echo/Reverb before Dyna-mite, so tails are dynamically processed; Mono Cut collapses lows on the master.",
+    "insider_note": "Documented: effect Pre places Echo/Reverb before Dyna-mite, so tails are dynamically processed. In Gate mode with Bass Drums ducking, the kick can instead key other voices into existence only on each kick hit.",
     "avoid_when": "Use samples for exact acoustic capture/round-robin libraries or Modular when every trigger and processor must be freely patched.",
     "evidence": {
       "basis": "documented-plus-editorial-inference",
@@ -5702,6 +5760,12 @@
         "action": "Split dry and processed paths, build a filtered feedback loop through Delay, then return below unity and print automation.",
         "listen_for": "Evolving repeats without runaway level.",
         "why_it_works": "Audio-rate patching permits external loop processing but no automatic safety."
+      },
+      {
+        "setup": "A single-oscillator bass patch needs octave weight without adding another tuned oscillator.",
+        "action": "Feed a pulse-wave oscillator into the Clock Divider and mix its /2, /4, or /8 output beneath the original before the filter. Change division between sections rather than retuning pitch.",
+        "listen_for": "Stable octave-down reinforcement should follow every note; reduce the divided layer if square-wave edges dominate the filter.",
+        "why_it_works": "Softube documents the Clock Divider's utility circuit as a sub-oscillator when driven by an oscillator pulse output."
       }
     ],
     "use_cases": [
@@ -5718,10 +5782,17 @@
         "source_or_bus": "Modular FX insert",
         "application": "Route audio through filters/delay/control-rate feedback and print.",
         "why_this_plugin": "It treats host audio and CV inside one rack."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Utility-generated sub oscillator",
+        "source_or_bus": "Pulse-based bass voice",
+        "application": "Use fixed Clock Divider outputs as octave-down audio layers before the filter.",
+        "why_this_plugin": "A timing utility becomes a pitch-stable tone generator, adding weight without another VCO or tuning control."
       }
     ],
     "pairings": [],
-    "insider_note": "Documented: dynamic parameter sets can make saved MIDI maps confusing when recalled onto a different rack.",
+    "insider_note": "Documented utility misuse: the mathematically clean Sine Oscillator began as a development test source but doubles as a compact LFO or FM operator; the Signal Tool can compare audio levels in faux-compressor patches.",
     "avoid_when": "Use a Model synth or Parallels when fast preset recall and bounded signal flow matter more than patch architecture.",
     "evidence": {
       "basis": "documented-plus-editorial-inference",

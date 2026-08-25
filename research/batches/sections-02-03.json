@@ -584,6 +584,12 @@
         "action": "Feed kick to external sidechain, use Fast Exp or Gate, set Release as note length, and leave HF Boost off.",
         "listen_for": "Each kick opens one coherent note without bright clicks causing double triggers.",
         "why_it_works": "The external detector supplies rhythm, and gate release becomes audible decay."
+      },
+      {
+        "setup": "A thin snare or kick needs an aggressive synthesized body rather than transparent cleanup.",
+        "action": "Stack two or three Dyna-mite Gate instances in hard Gate mode, give each a different short Release and output-clipping amount, then blend or print the composite beneath the original hit.",
+        "listen_for": "Each stage should contribute a distinct decay layer; stop before repeated clipping turns the attack into an undifferentiated click.",
+        "why_it_works": "Softube documents stacked gates with different release and distortion settings as a way to build fat drum sounds from one source."
       }
     ],
     "use_cases": [
