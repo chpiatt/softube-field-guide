@@ -1403,6 +1403,12 @@
         "action": "Build the envelope linked, then audition unlinked dual mono at lower gain reduction and restore attacks with Dry/Wet.",
         "listen_for": "Linked mode anchors the room; unlinked may add depth but must not make ambience lurch toward cymbal hits.",
         "why_it_works": "Linked detectors impose one envelope on both sides; dual mono preserves independent motion and parallel blend restores untreated attacks."
+      },
+      {
+        "setup": "A bass, synth, or drum loop needs analog urgency but its envelope is already right.",
+        "action": "Set Ratio to 1:1 so no gain reduction occurs, then raise Input into the modeled path and compensate with Output. Compare FET Drive and Transformer Drive at equal loudness.",
+        "listen_for": "The source should move forward through harmonic color without attacks being shortened or sustain being leveled.",
+        "why_it_works": "Softube explicitly models 1:1 as a no-compression color path; Input can still drive the amplifier, transformer, and added nonlinear stages."
       }
     ],
     "use_cases": [
@@ -1555,6 +1561,12 @@
         "action": "Set Mono Bass first, adjust Width around that foundation, then add Air with compressor and saturator bypassed.",
         "listen_for": "Sub stays centered while upper layers widen; added side level is not mistaken for clarity.",
         "why_it_works": "Mono Bass narrows a selected low range, Width changes side gain, and Air adds separate M/S high-frequency emphasis."
+      },
+      {
+        "setup": "A snare, kick, or drum bus needs peak shaving but not bus compression.",
+        "action": "Bypass Compressor and Spatial, leave Hrmc off, and drive only the Saturator. Use Tone Shift to decide which frequencies reach the clipping stage hardest, then level-match.",
+        "listen_for": "Exceptional peaks should shorten and the source should feel denser without the pumping or recovery curve of a compressor.",
+        "why_it_works": "With Hrmc off, Softube identifies the Saturator as an analog solid-state output-stage clipper; each section has its own bypass."
       }
     ],
     "use_cases": [
@@ -2589,10 +2601,10 @@
         "why_it_works": "Dual slots allow serial architectures, and sidechain filtering prevents chest energy dominating either detector."
       },
       {
-        "setup": "A stereo percussion track needs repositioning without mono loss.",
-        "action": "Load Core Panner, establish placement, check mono, then use Core Dual Dynamics to shorten only low-band activity.",
-        "listen_for": "Placement survives mono while low tails tighten without narrowing upper ambience.",
-        "why_it_works": "Core Panner is mono-compatible; Dual Dynamics divides envelope control into low and high regions."
+        "setup": "A drum bus has loose low tails but cymbals need more apparent life.",
+        "action": "In Core Dual Dynamics, reduce Lo Dynamics into expansion/gating while increasing Hi Dynamics into compression with Auto Make-Up on. Set the crossover by soloing each band, then adjust Speed.",
+        "listen_for": "Kick and tom decay should tighten while cymbal sustain comes forward; reject settings that split the kit into obviously separate bands.",
+        "why_it_works": "The two bands cross through 1:1 in opposite directions, and Auto Make-Up turns high-band compression into tail enhancement."
       }
     ],
     "use_cases": [
@@ -2604,15 +2616,15 @@
         "why_this_plugin": "One surface preserves consistency while swapping sections avoids one console color on every channel."
       },
       {
-        "context_type": "instrument",
-        "context": "Layered percussion placement",
-        "source_or_bus": "Percussion tracks",
-        "application": "Use Core Panner for mono-safe placement and Dual Dynamics to separate low sustain from upper attack.",
-        "why_this_plugin": "Its spatial and dual-band Shape options exceed fixed gate/transient console strips."
+        "context_type": "bus",
+        "context": "Wide-range drum bus",
+        "source_or_bus": "Full drum subgroup",
+        "application": "Expand/gate the low band while compressing the high band with Auto Make-Up, tightening shells while lifting cymbal sustain.",
+        "why_this_plugin": "Core Dual Dynamics can move its two bands in opposite directions, a faster hidden alternative to a full multiband dynamics setup."
       }
     ],
     "pairings": [],
-    "insider_note": "Documented: two extra Modern EQ mid bands require the plug-in UI or Mk III hardware, and dual compressor slots depend on Channel Mk III.",
+    "insider_note": "Softube explicitly calls opposed low/high processing a secret trick. For a second identity, turn Auto Make-Up off, set the crossover around 1–5 kHz, and compress only Hi Dynamics to use the Shape section as an HF limiter or de-esser.",
     "avoid_when": "Avoid it when a single historically coherent circuit is the value; British, American, or SSL strips make that commitment explicit.",
     "evidence": {
       "basis": "documented-plus-editorial-inference",
@@ -3252,10 +3264,10 @@
     "comparative_edge": "Choose Harmonics over Saturation Knob when the nonlinear family, pre-emphasis, filters, blend, and post-distortion dynamics need separate control. Choose Overstayer M-A-S for hardware-specific peak bending and emphasis profiles, or Weiss Exciter when additive, frequency-targeted harmonics with minimal fundamental/EQ change are the priority.",
     "advanced_moves": [
       {
-        "setup": "On drums or bass, choose a Drive Type and amount with Dynamics switched off, matching Input and Output around the processed path.",
-        "action": "Turn Dynamics clockwise until attacks recover, then compare against reducing Drive. If the source needs density instead, move Dynamics counterclockwise and reduce Dry/Wet to retain a clean transient layer.",
-        "listen_for": "Clockwise should restore envelope without removing harmonic tone; counterclockwise should lift detail without turning sustain into flat noise.",
-        "why_it_works": "Dynamics analyzes the pre-distortion waveform and can reconstruct its movement clockwise or increase energy and low-level detail counterclockwise."
+        "setup": "On a kick, choose the least intrusive Drive Type, leave Drive at minimum or near-minimum, switch Dynamics on, and level-match the plug-in output.",
+        "action": "Treat Dynamics as the main processor: move it counterclockwise for a denser, rounder hit or clockwise for more front-edge separation. Only add Drive afterward if the kick actually needs overt saturation.",
+        "listen_for": "Counterclockwise should pull body and low-level detail forward like colorful compression; clockwise should make the attack separate without the click becoming detached.",
+        "why_it_works": "Dynamics analyzes the waveform before distortion and reconstructs or suppresses its movement, so the control can behave like a colored compressor/expander even when saturation is not the goal."
       },
       {
         "setup": "For a full-range source, duplicate Harmonics in series at low drive rather than pushing one full-band instance.",
@@ -3265,6 +3277,13 @@
       }
     ],
     "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Techno or house — Kick drum",
+        "source_or_bus": "Kick drum track",
+        "application": "Keep Drive at minimum or near-minimum and use Dynamics alone as a one-knob colored transient shaper: left for density and weight, right for greater attack contrast.",
+        "why_this_plugin": "Its pre-distortion envelope analysis gives a different, more nonlinear-feeling result than a conventional attack/sustain shaper."
+      },
       {
         "context_type": "bus",
         "context": "Techno — Sequenced synth bus",
@@ -3292,7 +3311,7 @@
         "source_url": null
       }
     ],
-    "insider_note": "Documented behavior: in Master Type, Drive changes harmonic composition as well as amount. Comparing two Drive positions is therefore not equivalent to comparing more or less of one fixed transfer curve.",
+    "insider_note": "Producer practice: the catalog's sleeper move is to ignore overt saturation and use Dynamics as a colorful compressor/expander, especially on kicks. Softube documents the pre-distortion analysis and envelope reconstruction; the Drive-minimum application is a producer technique, not an official preset recipe.",
     "avoid_when": "Avoid it when one protected-band macro is enough—Saturation Knob is faster—or when the goal is only newly generated, precisely targeted harmonics—use Weiss Exciter.",
     "evidence": {
       "basis": "documented-plus-editorial-inference",
@@ -3300,6 +3319,10 @@
         {
           "title": "Softube Harmonics Analog Saturation Processor user manual",
           "url": "https://www.softube.com/user-manuals/harmonics-analog-saturation-processor"
+        },
+        {
+          "title": "Bobby Owsinski: Softube Harmonics production review",
+          "url": "https://bobbyowsinskiblog.com/softube-harmonics/"
         }
       ]
     }

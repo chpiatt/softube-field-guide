@@ -1498,10 +1498,10 @@
     "comparative_edge": "Choose Harmonics over Saturation Knob when the nonlinear family, pre-emphasis, filters, blend, and post-distortion dynamics need separate control. Choose Overstayer M-A-S for hardware-specific peak bending and emphasis profiles, or Weiss Exciter when additive, frequency-targeted harmonics with minimal fundamental/EQ change are the priority.",
     "advanced_moves": [
       {
-        "setup": "On drums or bass, choose a Drive Type and amount with Dynamics switched off, matching Input and Output around the processed path.",
-        "action": "Turn Dynamics clockwise until attacks recover, then compare against reducing Drive. If the source needs density instead, move Dynamics counterclockwise and reduce Dry/Wet to retain a clean transient layer.",
-        "listen_for": "Clockwise should restore envelope without removing harmonic tone; counterclockwise should lift detail without turning sustain into flat noise.",
-        "why_it_works": "Dynamics analyzes the pre-distortion waveform and can reconstruct its movement clockwise or increase energy and low-level detail counterclockwise."
+        "setup": "On a kick, choose the least intrusive Drive Type, leave Drive at minimum or near-minimum, switch Dynamics on, and level-match the plug-in output.",
+        "action": "Treat Dynamics as the main processor: move it counterclockwise for a denser, rounder hit or clockwise for more front-edge separation. Only add Drive afterward if the kick actually needs overt saturation.",
+        "listen_for": "Counterclockwise should pull body and low-level detail forward like colorful compression; clockwise should make the attack separate without the click becoming detached.",
+        "why_it_works": "Dynamics analyzes the waveform before distortion and reconstructs or suppresses its movement, so the control can behave like a colored compressor/expander even when saturation is not the goal."
       },
       {
         "setup": "For a full-range source, duplicate Harmonics in series at low drive rather than pushing one full-band instance.",
@@ -1511,6 +1511,13 @@
       }
     ],
     "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Techno or house — Kick drum",
+        "source_or_bus": "Kick drum track",
+        "application": "Keep Drive at minimum or near-minimum and use Dynamics alone as a one-knob colored transient shaper: left for density and weight, right for greater attack contrast.",
+        "why_this_plugin": "Its pre-distortion envelope analysis gives a different, more nonlinear-feeling result than a conventional attack/sustain shaper."
+      },
       {
         "context_type": "bus",
         "context": "Techno — Sequenced synth bus",
@@ -1538,7 +1545,7 @@
         "source_url": null
       }
     ],
-    "insider_note": "Documented behavior: in Master Type, Drive changes harmonic composition as well as amount. Comparing two Drive positions is therefore not equivalent to comparing more or less of one fixed transfer curve.",
+    "insider_note": "Producer practice: the catalog's sleeper move is to ignore overt saturation and use Dynamics as a colorful compressor/expander, especially on kicks. Softube documents the pre-distortion analysis and envelope reconstruction; the Drive-minimum application is a producer technique, not an official preset recipe.",
     "avoid_when": "Avoid it when one protected-band macro is enough—Saturation Knob is faster—or when the goal is only newly generated, precisely targeted harmonics—use Weiss Exciter.",
     "evidence": {
       "basis": "documented-plus-editorial-inference",
@@ -1546,6 +1553,10 @@
         {
           "title": "Softube Harmonics Analog Saturation Processor user manual",
           "url": "https://www.softube.com/user-manuals/harmonics-analog-saturation-processor"
+        },
+        {
+          "title": "Bobby Owsinski: Softube Harmonics production review",
+          "url": "https://bobbyowsinskiblog.com/softube-harmonics/"
         }
       ]
     }
