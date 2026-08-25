@@ -79,7 +79,7 @@ spacing:
   md: "16px"
   lg: "20px"
   xl: "24px"
-  frame: "34px"
+  frame: "clamp(34px, 3vw, 52px)"
 components:
   masthead-search:
     backgroundColor: "{colors.control-dark}"
@@ -225,9 +225,9 @@ The palette is near-monochrome equipment black and paper white, with mint acting
 
 ## Layout
 
-The site uses broad page-scale fields constrained to a centered maximum width of 1520px. The sticky masthead is 68px high on larger screens, followed by a sticky category rail; their combined offset informs deep-link positioning. The black opening composition is a two-column grid pairing the title and promise with five production-job links. The white reading canvas then begins with a full-width decision map and compact method strip before settling into full-width catalog disclosures and lower-priority reference sections.
+The site uses broad page-scale fields constrained to a centered maximum width of 1440px. The sticky masthead is 68px high on larger screens, followed by a sticky category rail; their combined offset informs deep-link positioning. The black opening composition is a two-column grid pairing the title and promise with five production-job links. The white reading canvas then begins with a full-width decision map and compact method strip before settling into full-width catalog disclosures and lower-priority reference sections.
 
-Desktop frame padding is 34px for the masthead, category rail, reading canvas, and footer. The opening field uses a wider 70px inset and a deliberately large flexible column gap. The catalog is a ruled one-column index, not a multi-column card wall. Expanded record content uses four equal data columns, while recipes may use a three-column grid. Tables are allowed their own horizontal scroller; the page itself must never overflow horizontally.
+Desktop frame padding scales from 34px to 52px for the masthead, category rail, reading canvas, and footer, while the 1440px ceiling preserves visible outer breathing room on wide displays. The opening field uses a wider 70px inset and a deliberately large flexible column gap. The catalog is a ruled one-column index, not a multi-column card wall. Expanded record content uses four equal data columns, while recipes may use a three-column grid. Tables are allowed their own horizontal scroller; the page itself must never overflow horizontally.
 
 Responsive behavior is content-led at three implemented breakpoints:
 
