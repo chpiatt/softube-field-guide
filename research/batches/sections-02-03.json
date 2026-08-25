@@ -11,10 +11,10 @@
         "why_it_works": "Detector filtering keeps chest energy from stealing reduction, while independent nonlinear stages separate envelope control from two color sources."
       },
       {
-        "setup": "A stereo drum room feels exciting but unstable at the sides.",
-        "action": "Build the envelope linked, then audition unlinked dual mono at lower gain reduction and restore attacks with Dry/Wet.",
-        "listen_for": "Linked mode anchors the room; unlinked may add depth but must not make ambience lurch toward cymbal hits.",
-        "why_it_works": "Linked detectors impose one envelope on both sides; dual mono preserves independent motion and parallel blend restores untreated attacks."
+        "setup": "Classic hardware move — build an explosive parallel drum, room, or vocal layer with the 1176-style All Buttons In behavior.",
+        "action": "Engage British Mode, start with a slower Attack and fast Release, then raise Input until the wet signal pumps and distorts. Pull Dry/Wet back instead of making the wet path polite.",
+        "listen_for": "Transients should jump ahead of a breathing, harmonically dense body; stop if cymbals turn into constant white noise or the groove loses its downbeat.",
+        "why_it_works": "Softube authentically models the hardware accident where engaging every ratio button disrupts multiple bias levels, producing a slower attack, unusual ratio curve, pumping, and extra distortion."
       },
       {
         "setup": "A bass, synth, or drum loop needs analog urgency but its envelope is already right.",
@@ -51,7 +51,7 @@
         "source_url": "https://www.softube.com/plug-ins/opto-compressor"
       }
     ],
-    "insider_note": "Documented: Input acts as gain and reverse threshold, so increasing compression also drives the modeled path. Input VU red is allowed, but the output can still digitally clip.",
+    "insider_note": "Classic hardware behavior is genuinely present: British Mode activates the 1176-style All Buttons In state. Input simultaneously raises gain, reduction, and analog-path distortion; the low-ratio bank also provides 1:1 color without compression.",
     "avoid_when": "Avoid it when reduction must remain harmonically invisible; Weiss Compressor/Limiter is the clearer Softube direction.",
     "evidence": {
       "basis": "documented-plus-editorial-inference",
@@ -206,6 +206,12 @@
         "action": "Use M/S, unlink, compress Side gently with longer recovery, keep Mid near unity, then reduce Width instead of raising Mid.",
         "listen_for": "Ambience settles without narrowing entrances; central attacks and bass retain scale.",
         "why_it_works": "Independent M/S dynamics treat ambience separately, while Width adjusts Side level after the dynamics."
+      },
+      {
+        "setup": "Classic hardware move — use the Fairchild-style Time Constant 5 as a set-and-listen program-dependent mix-bus recovery.",
+        "action": "Switch to Classic mode and Time Constant 5, start around 1–2 dB of reduction, and compare against setting 2 without changing threshold. Use M/S unlinked only for light, deliberate control.",
+        "listen_for": "Short peaks should recover quickly while sustained passages release more slowly, creating density without one fixed release audibly pumping every phrase.",
+        "why_it_works": "Time Constant 5 preserves the famous medium-attack, dual program-dependent release behavior; the original Lat/Vert architecture is exposed as modern Mid/Side."
       }
     ],
     "use_cases": [
@@ -322,8 +328,8 @@
     "comparative_edge": "Choose it over OPTO Compressor when explicit timing architecture and a two-generation comparison matter; choose TLA-100A when headroom-driven tube saturation should be first-class. CL 1B is the optical option for tailoring the envelope while retaining stable linked stereo behavior.",
     "advanced_moves": [
       {
-        "setup": "A lead vocal levels well in Fixed mode but runs lose articulation.",
-        "action": "Switch to Fixed/Manual, lengthen manual Attack, then tune manual Release while the fixed circuit still contributes.",
+        "setup": "Classic hardware move — use the CL 1B's unusual Fixed/Manual mode when one release time cannot handle both short peaks and long vocal phrases.",
+        "action": "Switch to Fixed/Manual, turn Attack clockwise to delay the handoff from the fixed fast release to the manual Release, then tune Release for the longer phrase recovery.",
         "listen_for": "Run beginnings reappear without the compressor fully releasing between syllables.",
         "why_it_works": "Fixed/Manual combines the hardware fixed behavior with user timing rather than selecting only one system."
       },
@@ -351,7 +357,7 @@
       }
     ],
     "pairings": [],
-    "insider_note": "Documented: stereo gain reduction is always linked and calculated from both channels, like hardware units sharing a sidechain; true dual mono is unavailable.",
+    "insider_note": "Classic CL 1B behavior: in Fixed/Manual, Attack no longer sets attack—it delays when the manual Release takes over after the fixed fast release. Short peaks therefore recover differently from sustained phrases.",
     "avoid_when": "Avoid it when independent L/R or M/S dynamics are central; Germanium Compressor or Weiss DS1-MK3 provides that routing.",
     "evidence": {
       "basis": "documented-plus-editorial-inference",
@@ -448,7 +454,7 @@
     "comparative_edge": "Choose it over British Class A Compressor for configurable Comp 1, Comp 2, Limit, THD, impedance, and M/S control. Choose Bus Processor 670 for softer variable-mu movement. Zener is the choice when compression and deliberate high-THD transistor drive must share one circuit.",
     "advanced_moves": [
       {
-        "setup": "A drum room needs tone but not more envelope movement.",
+        "setup": "Classic Zener hardware move — a drum room needs the line amplifier's tone but not more envelope movement.",
         "action": "Select THD, raise Input while shift-compensating Output, and compare impedance positions before adding any compressor mode.",
         "listen_for": "Room density and bite change while the envelope remains intact; judge at matched level.",
         "why_it_works": "THD uses the Zener path as saturator, and linked input/output adjustment isolates drive from loudness."
@@ -500,6 +506,12 @@
         "action": "Start GERM SOFT or MED, choose medium-slow Attack, move Ratio after Curve, then compare Dirty Comp last.",
         "listen_for": "The front stays connected to a denser body; Dirty adds FET artifacts rather than merely more reduction.",
         "why_it_works": "Curve selects diode topology and knee, Ratio fine-tunes slope, and Dirty bypasses FET compensation."
+      },
+      {
+        "setup": "Hardware-manual move — divide tone and remaining dynamics across two serial Germanium Compressor stages.",
+        "action": "Run the first stage slightly toward Dry so its Germanium Drive colors the whole path while only part of the signal is compressed; use a second, gentler stage to catch the remaining movement.",
+        "listen_for": "The first stage should establish attitude and transient shape; the second should stabilize what remains without doubling the same pumping envelope.",
+        "why_it_works": "The hardware designer specifically recommends this serial approach: the colored Dry contribution escapes first-stage reduction and becomes new program material for the second compressor."
       }
     ],
     "use_cases": [
@@ -542,6 +554,12 @@
         "action": "Select Expand, external detector, and Gate or Peak; send clean percussion, tune closure with Release, and preserve a floor with Range.",
         "listen_for": "Texture follows the key while Range prevents unwanted absolute silence.",
         "why_it_works": "External detection supplies the trigger; expansion attenuates below-threshold audio according to that key."
+      },
+      {
+        "setup": "Original-hardware accident — turn the Dyna-mite's normally avoided switch combination into negative-ratio 'organ' or broken-envelope effects.",
+        "action": "Select LIMIT, internal detector, and GATE for the 1:-20 mode. Use a longer Release and constrain Range before lowering Threshold; try DS-FM only after the basic envelope is controllable.",
+        "listen_for": "Signals crossing threshold should collapse instead of merely being contained, producing inverted, crackling articulation; increase Release or Range if pops dominate unintentionally.",
+        "why_it_works": "This preserved switch interaction makes every 1 dB above threshold drive roughly 20 dB of attenuation—the kind of unintended hardware state engineers discovered by combining modes."
       }
     ],
     "use_cases": [
@@ -1223,6 +1241,12 @@
         "action": "Set compressor for phrases, meter it alone, then add limiter only for outliers while checking Comp, Lim, and All meters.",
         "listen_for": "Compressor moves routinely; limiter acts sparsely.",
         "why_it_works": "Softube implemented compressor then limiter as separate serial processors."
+      },
+      {
+        "setup": "Classic console move — build a kick or drum-bus low contour with the British Class A's 35 Hz shelf and 45 Hz high-pass rather than a narrow bell.",
+        "action": "Boost the 35 Hz low shelf while engaging the 45 Hz Low Cut, then reduce both until the fundamental feels larger but subsonic spread and upper-bass hangover recede. Set Drive only after the contour works.",
+        "listen_for": "The kick should gain a focused floor without longer sub decay or extra compressor pumping.",
+        "why_it_works": "The resonant filter and low shelf overlap without sharing the same corner, creating the console's documented instant-gratification lift-and-trim contour."
       }
     ],
     "use_cases": [

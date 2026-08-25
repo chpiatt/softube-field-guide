@@ -5,7 +5,7 @@
     "comparative_edge": "Choose it over Tube-Tech PE 1C when you want the more colored Manley Enhanced Pultec-style branch of the EQP-1A family: expanded frequency choices, independent dual-channel or M/S shaping, and adjustable transformer/headroom contribution. Choose Reference 1998 for four overlapping bands; choose Equalizers for precise removal.",
     "advanced_moves": [
       {
-        "setup": "On a bass or kick whose fundamental is strong but the note reads cloudy, start linked in L/R with the mid bell and high attenuation neutral.",
+        "setup": "Classic Pultec-family move — on a bass or kick whose fundamental is strong but the note reads cloudy, start linked in L/R with the mid bell and high attenuation neutral.",
         "action": "Select the low frequency nearest the weight you want, raise Boost, then add Cut until the upper-bass shoulder recedes without losing the fundamental. Level-match with the center Gain control.",
         "listen_for": "The hit should feel larger at its base but shorter and less congested immediately above it; stop if the next bass note loses pitch definition.",
         "why_it_works": "The boost and cut shelves have offset corners, so simultaneous use forms a low lift followed by a dip instead of cancelling."
@@ -483,7 +483,7 @@
     "comparative_edge": "Choose it over British or American Class A when audible cross-band interaction and a dedicated post-EQ saturation stage are useful, especially on sources that should feel altered rather than merely balanced. Choose either Class A model for more repeatable stepped contour, or Equalizers for correction.",
     "advanced_moves": [
       {
-        "setup": "Set both mid gains to zero, choose a useful High Mid frequency, and play sustained material while moving the Low Mid frequency selector.",
+        "setup": "Classic A-Range hardware quirk — set both mid gains to zero, choose a useful High Mid frequency, and play sustained material while moving the Low Mid frequency selector.",
         "action": "Keep the zero-gain Low Mid position that improves the High Mid response, then add gain only after the interaction helps. Repeat with the outer bands bypassed.",
         "listen_for": "The chosen upper-mid feature should change shape or urgency even before Low Mid gain moves; avoid combinations that introduce a nasal ring.",
         "why_it_works": "The modeled filters interact electrically, so a zero-gain band's frequency selection can alter another band's response."
@@ -903,7 +903,7 @@
     "comparative_edge": "Use this legacy single chiefly for recalling sessions that already contain it. For new work, Equalizers Mk II provides the same PE role beside ME 1B in a current container. Reference 1956 adds M/S, independent channels, and Headroom; PE 1C retains the specific Tube-Tech frequency set and filter interaction.",
     "advanced_moves": [
       {
-        "setup": "On a bass-heavy source, set Low Frequency to the musical weight area and begin with Boost alone at a conservative amount.",
+        "setup": "Classic Pultec Low End Trick — on a bass-heavy source, set Low Frequency to the musical weight area and begin with Boost alone at a conservative amount.",
         "action": "Raise Atten until the low-mid shoulder clears, then reduce both controls together if the contour is right but the effect is oversized. Match output before deciding.",
         "listen_for": "Fundamental weight should remain while boxiness above it recedes; stop when short notes lose body or the low end separates from the source.",
         "why_it_works": "The low Boost and Atten shelves use slightly different cutoff positions despite sharing a selector, creating a contour rather than cancellation."
@@ -1399,10 +1399,10 @@
         "why_it_works": "Detector filtering keeps chest energy from stealing reduction, while independent nonlinear stages separate envelope control from two color sources."
       },
       {
-        "setup": "A stereo drum room feels exciting but unstable at the sides.",
-        "action": "Build the envelope linked, then audition unlinked dual mono at lower gain reduction and restore attacks with Dry/Wet.",
-        "listen_for": "Linked mode anchors the room; unlinked may add depth but must not make ambience lurch toward cymbal hits.",
-        "why_it_works": "Linked detectors impose one envelope on both sides; dual mono preserves independent motion and parallel blend restores untreated attacks."
+        "setup": "Classic hardware move — build an explosive parallel drum, room, or vocal layer with the 1176-style All Buttons In behavior.",
+        "action": "Engage British Mode, start with a slower Attack and fast Release, then raise Input until the wet signal pumps and distorts. Pull Dry/Wet back instead of making the wet path polite.",
+        "listen_for": "Transients should jump ahead of a breathing, harmonically dense body; stop if cymbals turn into constant white noise or the groove loses its downbeat.",
+        "why_it_works": "Softube authentically models the hardware accident where engaging every ratio button disrupts multiple bias levels, producing a slower attack, unusual ratio curve, pumping, and extra distortion."
       },
       {
         "setup": "A bass, synth, or drum loop needs analog urgency but its envelope is already right.",
@@ -1439,7 +1439,7 @@
         "source_url": "https://www.softube.com/plug-ins/opto-compressor"
       }
     ],
-    "insider_note": "Documented: Input acts as gain and reverse threshold, so increasing compression also drives the modeled path. Input VU red is allowed, but the output can still digitally clip.",
+    "insider_note": "Classic hardware behavior is genuinely present: British Mode activates the 1176-style All Buttons In state. Input simultaneously raises gain, reduction, and analog-path distortion; the low-ratio bank also provides 1:1 color without compression.",
     "avoid_when": "Avoid it when reduction must remain harmonically invisible; Weiss Compressor/Limiter is the clearer Softube direction.",
     "evidence": {
       "basis": "documented-plus-editorial-inference",
@@ -1614,6 +1614,12 @@
         "action": "Use M/S, unlink, compress Side gently with longer recovery, keep Mid near unity, then reduce Width instead of raising Mid.",
         "listen_for": "Ambience settles without narrowing entrances; central attacks and bass retain scale.",
         "why_it_works": "Independent M/S dynamics treat ambience separately, while Width adjusts Side level after the dynamics."
+      },
+      {
+        "setup": "Classic hardware move — use the Fairchild-style Time Constant 5 as a set-and-listen program-dependent mix-bus recovery.",
+        "action": "Switch to Classic mode and Time Constant 5, start around 1–2 dB of reduction, and compare against setting 2 without changing threshold. Use M/S unlinked only for light, deliberate control.",
+        "listen_for": "Short peaks should recover quickly while sustained passages release more slowly, creating density without one fixed release audibly pumping every phrase.",
+        "why_it_works": "Time Constant 5 preserves the famous medium-attack, dual program-dependent release behavior; the original Lat/Vert architecture is exposed as modern Mid/Side."
       }
     ],
     "use_cases": [
@@ -1745,8 +1751,8 @@
     "comparative_edge": "Choose it over OPTO Compressor when explicit timing architecture and a two-generation comparison matter; choose TLA-100A when headroom-driven tube saturation should be first-class. CL 1B is the optical option for tailoring the envelope while retaining stable linked stereo behavior.",
     "advanced_moves": [
       {
-        "setup": "A lead vocal levels well in Fixed mode but runs lose articulation.",
-        "action": "Switch to Fixed/Manual, lengthen manual Attack, then tune manual Release while the fixed circuit still contributes.",
+        "setup": "Classic hardware move — use the CL 1B's unusual Fixed/Manual mode when one release time cannot handle both short peaks and long vocal phrases.",
+        "action": "Switch to Fixed/Manual, turn Attack clockwise to delay the handoff from the fixed fast release to the manual Release, then tune Release for the longer phrase recovery.",
         "listen_for": "Run beginnings reappear without the compressor fully releasing between syllables.",
         "why_it_works": "Fixed/Manual combines the hardware fixed behavior with user timing rather than selecting only one system."
       },
@@ -1774,7 +1780,7 @@
       }
     ],
     "pairings": [],
-    "insider_note": "Documented: stereo gain reduction is always linked and calculated from both channels, like hardware units sharing a sidechain; true dual mono is unavailable.",
+    "insider_note": "Classic CL 1B behavior: in Fixed/Manual, Attack no longer sets attack—it delays when the manual Release takes over after the fixed fast release. Short peaks therefore recover differently from sustained phrases.",
     "avoid_when": "Avoid it when independent L/R or M/S dynamics are central; Germanium Compressor or Weiss DS1-MK3 provides that routing.",
     "evidence": {
       "basis": "documented-plus-editorial-inference",
@@ -1886,7 +1892,7 @@
     "comparative_edge": "Choose it over British Class A Compressor for configurable Comp 1, Comp 2, Limit, THD, impedance, and M/S control. Choose Bus Processor 670 for softer variable-mu movement. Zener is the choice when compression and deliberate high-THD transistor drive must share one circuit.",
     "advanced_moves": [
       {
-        "setup": "A drum room needs tone but not more envelope movement.",
+        "setup": "Classic Zener hardware move — a drum room needs the line amplifier's tone but not more envelope movement.",
         "action": "Select THD, raise Input while shift-compensating Output, and compare impedance positions before adding any compressor mode.",
         "listen_for": "Room density and bite change while the envelope remains intact; judge at matched level.",
         "why_it_works": "THD uses the Zener path as saturator, and linked input/output adjustment isolates drive from loudness."
@@ -1943,6 +1949,12 @@
         "action": "Start GERM SOFT or MED, choose medium-slow Attack, move Ratio after Curve, then compare Dirty Comp last.",
         "listen_for": "The front stays connected to a denser body; Dirty adds FET artifacts rather than merely more reduction.",
         "why_it_works": "Curve selects diode topology and knee, Ratio fine-tunes slope, and Dirty bypasses FET compensation."
+      },
+      {
+        "setup": "Hardware-manual move — divide tone and remaining dynamics across two serial Germanium Compressor stages.",
+        "action": "Run the first stage slightly toward Dry so its Germanium Drive colors the whole path while only part of the signal is compressed; use a second, gentler stage to catch the remaining movement.",
+        "listen_for": "The first stage should establish attitude and transient shape; the second should stabilize what remains without doubling the same pumping envelope.",
+        "why_it_works": "The hardware designer specifically recommends this serial approach: the colored Dry contribution escapes first-stage reduction and becomes new program material for the second compressor."
       }
     ],
     "use_cases": [
@@ -1990,6 +2002,12 @@
         "action": "Select Expand, external detector, and Gate or Peak; send clean percussion, tune closure with Release, and preserve a floor with Range.",
         "listen_for": "Texture follows the key while Range prevents unwanted absolute silence.",
         "why_it_works": "External detection supplies the trigger; expansion attenuates below-threshold audio according to that key."
+      },
+      {
+        "setup": "Original-hardware accident — turn the Dyna-mite's normally avoided switch combination into negative-ratio 'organ' or broken-envelope effects.",
+        "action": "Select LIMIT, internal detector, and GATE for the 1:-20 mode. Use a longer Release and constrain Range before lowering Threshold; try DS-FM only after the basic envelope is controllable.",
+        "listen_for": "Signals crossing threshold should collapse instead of merely being contained, producing inverted, crackling articulation; increase Release or Range if pops dominate unintentionally.",
+        "why_it_works": "This preserved switch interaction makes every 1 dB above threshold drive roughly 20 dB of attenuation—the kind of unintended hardware state engineers discovered by combining modes."
       }
     ],
     "use_cases": [
@@ -2752,6 +2770,12 @@
         "action": "Set compressor for phrases, meter it alone, then add limiter only for outliers while checking Comp, Lim, and All meters.",
         "listen_for": "Compressor moves routinely; limiter acts sparsely.",
         "why_it_works": "Softube implemented compressor then limiter as separate serial processors."
+      },
+      {
+        "setup": "Classic console move — build a kick or drum-bus low contour with the British Class A's 35 Hz shelf and 45 Hz high-pass rather than a narrow bell.",
+        "action": "Boost the 35 Hz low shelf while engaging the 45 Hz Low Cut, then reduce both until the fundamental feels larger but subsonic spread and upper-bass hangover recede. Set Drive only after the contour works.",
+        "listen_for": "The kick should gain a focused floor without longer sub decay or extra compressor pumping.",
+        "why_it_works": "The resonant filter and low shelf overlap without sharing the same corner, creating the console's documented instant-gratification lift-and-trim contour."
       }
     ],
     "use_cases": [
@@ -6857,7 +6881,7 @@
     "comparative_edge": "Choose Top Boost over Pacific when upper-mid chime, early compression, and channel blending should shape the performance; choose Custom 100W when you need firmer headroom. Unlike a simple AC-style preset, this model exposes patched Vib-Trem, Normal, and Brilliant channels as a mixer.",
     "advanced_moves": [
       {
-        "setup": "Start with Normal as the dry anchor and both other channels down.",
+        "setup": "Classic AC30 hardware move — start with Normal as the dry anchor and both other patched channels down.",
         "action": "Bring in Brilliant until pick definition appears, then add Vib-Trem for drive and motion. If modulation feels too deep, reduce that channel and restore Normal rather than searching for a depth knob.",
         "listen_for": "Chime and motion sit around a stable dry core instead of swallowing it.",
         "why_it_works": "The documented modulation depth is fixed; channel blending is the intended wet/dry control."
@@ -6915,7 +6939,7 @@
     "comparative_edge": "Choose TUBE over Kraft when the job is a predictable mid-focused boost that removes low-end slack before an amp. Choose the RAT-style Kraft for fuller low mids, harder clipping, or the wider path from overdrive into fuzzy distortion.",
     "advanced_moves": [
       {
-        "setup": "Place TUBE before a high-gain amp with the amp at the desired saturation but still flubby.",
+        "setup": "Classic Tube Screamer-family boost move — place TUBE before a high-gain amp with the amp at the desired saturation but still flubby.",
         "action": "Set Drive near minimum, Level above unity, and Tone just bright enough to expose pick attack; then reduce amp Gain until chord detail returns.",
         "listen_for": "Palm mutes stop blooming after the hit and complex chords regain individual strings.",
         "why_it_works": "The pedal's documented mid emphasis changes the spectral balance driving the amp while Level preserves total drive."
@@ -7419,7 +7443,7 @@
     "comparative_edge": "Choose Plexi over Bluesbreaker for firmer, louder power-stage authority and over JMP 2203 when non-master-volume complexity matters more than compact preamp focus. Its bright/normal channel blend is the primary tone control before any post EQ.",
     "advanced_moves": [
       {
-        "setup": "Patch both channels and start with the bright path carrying the part.",
+        "setup": "Classic four-input Marshall move — jumper the Plexi's bright and normal channels, then start with the bright path carrying the part.",
         "action": "Raise the normal channel only until low strings gain body, then reduce Bass as total volume rises; level-match before deciding the blend is bigger.",
         "listen_for": "Single notes keep edge while chords gain chest without a late, woolly low-end bloom.",
         "why_it_works": "The parallel channel blend changes the spectrum entering a driven non-master-volume circuit."
@@ -7466,7 +7490,7 @@
     "comparative_edge": "Choose JMP over Plexi when focused preamp gain, tighter attack, and a master-volume workflow fit the arrangement; choose Silver Jubilee for smoother, more saturated sustain. JMP is the most direct Marshall here for lean, percussive rhythm guitars.",
     "advanced_moves": [
       {
-        "setup": "Make two states with the same perceived distortion amount.",
+        "setup": "Classic master-volume Marshall move — make two states with the same perceived distortion amount but opposite Pre-Amp/Master balances.",
         "action": "Use high Pre-Amp/low Master for one and lower Pre-Amp/higher Master for the other, then level-match before touching EQ.",
         "listen_for": "The first is tighter and more immediate; the second is looser with more vintage power-stage movement.",
         "why_it_works": "The documented Pre-Amp/Master relationship shifts where distortion occurs, not merely its volume."

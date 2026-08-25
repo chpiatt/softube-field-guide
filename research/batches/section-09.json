@@ -331,7 +331,7 @@
     "comparative_edge": "Choose Top Boost over Pacific when upper-mid chime, early compression, and channel blending should shape the performance; choose Custom 100W when you need firmer headroom. Unlike a simple AC-style preset, this model exposes patched Vib-Trem, Normal, and Brilliant channels as a mixer.",
     "advanced_moves": [
       {
-        "setup": "Start with Normal as the dry anchor and both other channels down.",
+        "setup": "Classic AC30 hardware move — start with Normal as the dry anchor and both other patched channels down.",
         "action": "Bring in Brilliant until pick definition appears, then add Vib-Trem for drive and motion. If modulation feels too deep, reduce that channel and restore Normal rather than searching for a depth knob.",
         "listen_for": "Chime and motion sit around a stable dry core instead of swallowing it.",
         "why_it_works": "The documented modulation depth is fixed; channel blending is the intended wet/dry control."
@@ -389,7 +389,7 @@
     "comparative_edge": "Choose TUBE over Kraft when the job is a predictable mid-focused boost that removes low-end slack before an amp. Choose the RAT-style Kraft for fuller low mids, harder clipping, or the wider path from overdrive into fuzzy distortion.",
     "advanced_moves": [
       {
-        "setup": "Place TUBE before a high-gain amp with the amp at the desired saturation but still flubby.",
+        "setup": "Classic Tube Screamer-family boost move — place TUBE before a high-gain amp with the amp at the desired saturation but still flubby.",
         "action": "Set Drive near minimum, Level above unity, and Tone just bright enough to expose pick attack; then reduce amp Gain until chord detail returns.",
         "listen_for": "Palm mutes stop blooming after the hit and complex chords regain individual strings.",
         "why_it_works": "The pedal's documented mid emphasis changes the spectral balance driving the amp while Level preserves total drive."
@@ -893,7 +893,7 @@
     "comparative_edge": "Choose Plexi over Bluesbreaker for firmer, louder power-stage authority and over JMP 2203 when non-master-volume complexity matters more than compact preamp focus. Its bright/normal channel blend is the primary tone control before any post EQ.",
     "advanced_moves": [
       {
-        "setup": "Patch both channels and start with the bright path carrying the part.",
+        "setup": "Classic four-input Marshall move — jumper the Plexi's bright and normal channels, then start with the bright path carrying the part.",
         "action": "Raise the normal channel only until low strings gain body, then reduce Bass as total volume rises; level-match before deciding the blend is bigger.",
         "listen_for": "Single notes keep edge while chords gain chest without a late, woolly low-end bloom.",
         "why_it_works": "The parallel channel blend changes the spectrum entering a driven non-master-volume circuit."
@@ -940,7 +940,7 @@
     "comparative_edge": "Choose JMP over Plexi when focused preamp gain, tighter attack, and a master-volume workflow fit the arrangement; choose Silver Jubilee for smoother, more saturated sustain. JMP is the most direct Marshall here for lean, percussive rhythm guitars.",
     "advanced_moves": [
       {
-        "setup": "Make two states with the same perceived distortion amount.",
+        "setup": "Classic master-volume Marshall move — make two states with the same perceived distortion amount but opposite Pre-Amp/Master balances.",
         "action": "Use high Pre-Amp/low Master for one and lower Pre-Amp/higher Master for the other, then level-match before touching EQ.",
         "listen_for": "The first is tighter and more immediate; the second is looser with more vintage power-stage movement.",
         "why_it_works": "The documented Pre-Amp/Master relationship shifts where distortion occurs, not merely its volume."

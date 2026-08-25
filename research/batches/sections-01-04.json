@@ -5,7 +5,7 @@
     "comparative_edge": "Choose it over Tube-Tech PE 1C when you want the more colored Manley Enhanced Pultec-style branch of the EQP-1A family: expanded frequency choices, independent dual-channel or M/S shaping, and adjustable transformer/headroom contribution. Choose Reference 1998 for four overlapping bands; choose Equalizers for precise removal.",
     "advanced_moves": [
       {
-        "setup": "On a bass or kick whose fundamental is strong but the note reads cloudy, start linked in L/R with the mid bell and high attenuation neutral.",
+        "setup": "Classic Pultec-family move — on a bass or kick whose fundamental is strong but the note reads cloudy, start linked in L/R with the mid bell and high attenuation neutral.",
         "action": "Select the low frequency nearest the weight you want, raise Boost, then add Cut until the upper-bass shoulder recedes without losing the fundamental. Level-match with the center Gain control.",
         "listen_for": "The hit should feel larger at its base but shorter and less congested immediately above it; stop if the next bass note loses pitch definition.",
         "why_it_works": "The boost and cut shelves have offset corners, so simultaneous use forms a low lift followed by a dip instead of cancelling."
@@ -483,7 +483,7 @@
     "comparative_edge": "Choose it over British or American Class A when audible cross-band interaction and a dedicated post-EQ saturation stage are useful, especially on sources that should feel altered rather than merely balanced. Choose either Class A model for more repeatable stepped contour, or Equalizers for correction.",
     "advanced_moves": [
       {
-        "setup": "Set both mid gains to zero, choose a useful High Mid frequency, and play sustained material while moving the Low Mid frequency selector.",
+        "setup": "Classic A-Range hardware quirk — set both mid gains to zero, choose a useful High Mid frequency, and play sustained material while moving the Low Mid frequency selector.",
         "action": "Keep the zero-gain Low Mid position that improves the High Mid response, then add gain only after the interaction helps. Repeat with the outer bands bypassed.",
         "listen_for": "The chosen upper-mid feature should change shape or urgency even before Low Mid gain moves; avoid combinations that introduce a nasal ring.",
         "why_it_works": "The modeled filters interact electrically, so a zero-gain band's frequency selection can alter another band's response."
@@ -903,7 +903,7 @@
     "comparative_edge": "Use this legacy single chiefly for recalling sessions that already contain it. For new work, Equalizers Mk II provides the same PE role beside ME 1B in a current container. Reference 1956 adds M/S, independent channels, and Headroom; PE 1C retains the specific Tube-Tech frequency set and filter interaction.",
     "advanced_moves": [
       {
-        "setup": "On a bass-heavy source, set Low Frequency to the musical weight area and begin with Boost alone at a conservative amount.",
+        "setup": "Classic Pultec Low End Trick — on a bass-heavy source, set Low Frequency to the musical weight area and begin with Boost alone at a conservative amount.",
         "action": "Raise Atten until the low-mid shoulder clears, then reduce both controls together if the contour is right but the effect is oversized. Match output before deciding.",
         "listen_for": "Fundamental weight should remain while boxiness above it recedes; stop when short notes lose body or the low end separates from the source.",
         "why_it_works": "The low Boost and Atten shelves use slightly different cutoff positions despite sharing a selector, creating a contour rather than cancellation."
