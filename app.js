@@ -91,7 +91,7 @@
 
   async function loadDeepDiveData() {
     try {
-      const response = await fetch("data/plugin-deep-dives.json?v=20260825-4");
+      const response = await fetch("data/plugin-deep-dives.json?v=20260825-5");
       if (!response.ok) throw new Error(`Deep-dive request failed with ${response.status}`);
       const rows = await response.json();
       if (!Array.isArray(rows)) throw new Error("Deep-dive data is not an array");

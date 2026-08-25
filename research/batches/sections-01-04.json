@@ -1394,9 +1394,9 @@
     "advanced_moves": [
       {
         "setup": "On a bus, set 15 or 30 ips, disable Noise, Stability modulation, and Crosstalk, then switch the VU meters to THD.",
-        "action": "For each Type, adjust Input and Amount to the same subtle THD reading and match Output before comparing. Add HF Trim only after selecting the machine behavior.",
-        "listen_for": "Compare transient rounding, low-frequency contour, and sustain at equal distortion and loudness; reject a type that wins only because it is hotter.",
-        "why_it_works": "The three tape types are input-dependent, and both Input and Amount change their color; matching THD and loudness reduces drive-level bias without pretending the harmonic spectra are identical."
+        "action": "For each Type, adjust Input and Amount to the same subtle THD reading and match Output before comparing. Start with A for the cleanest, most linear result; try B for more audible tape weight that still stays controlled; reserve C for deliberate vintage color.",
+        "listen_for": "A should preserve the original balance most closely, B should make transformer weight and tape identity easier to hear, and C should sound intentionally vintage. Reject a type that wins only because it is hotter.",
+        "why_it_works": "The three input-dependent types have intentionally different voicings: A is the flattest, B adds more low-end weight and color, and C supplies the overtly vintage British character. Matching THD and loudness keeps those differences from being confused with drive level."
       },
       {
         "setup": "On a stereo pad, echo, or backing-vocal return, select a stable Type and set Dry/Wet below full.",
@@ -1410,8 +1410,8 @@
         "context_type": "bus",
         "context": "Melodic techno — Mix bus",
         "source_or_bus": "Mix bus",
-        "application": "Compare Types at equal THD and output, use a higher speed for restrained transient control, then compensate only the high-frequency loss that remains.",
-        "why_this_plugin": "Tape exposes machine family, speed, THD, and HF compensation directly; Dirty Tape bundles those concerns into a degradation effect."
+        "application": "At 15 or 30 ips, start with A for the cleanest mastering-grade cohesion. Move to B if A is too polite and the mix needs an audible but still restrained tape signature; choose C only when vintage color is part of the brief.",
+        "why_this_plugin": "Its A-to-C progression separates clean linearity, transformer-weighted tape vibe, and vintage color more clearly than a single generic tape control."
       },
       {
         "context_type": "bus",
@@ -1433,7 +1433,7 @@
         "source_url": null
       }
     ],
-    "insider_note": "Community identification—not Softube confirmation: Type A is most plausibly from the Studer/Revox family, often narrowed to the 1960s C37/J37 era. Type B is usually identified as Ampex; ATR-102 is the common guess, though the transformer clue also points toward the AG-440 family. Type C most plausibly points to EMI's BTR-2/BTR-3 family. Softube confirms only Swiss, transformer-based, and British origins. Documented behavior: Dry/Wet with Speed Stability can create chorusing; Studio One Mix FX Crosstalk operates across session channels.",
+    "insider_note": "Practical shorthand supported by reviews and user reports: A is the cleanest and most linear option, B gives the most recognizable tape weight while remaining subtle, and C is the vintage-color choice. Likely but unconfirmed hardware families are A: Studer/Revox, often narrowed to the C37/J37 era; B: Ampex, commonly guessed as ATR-102 with AG-440 also plausible from the transformer clue; C: EMI BTR-2/BTR-3. Dry/Wet with Speed Stability can create chorusing, and Studio One Mix FX Crosstalk operates across session channels.",
     "avoid_when": "Avoid it when the production needs obvious dropouts or decoupled damage—use Dirty Tape—or when timing modulation must be absent but peak density is wanted—use Overstayer M-A-S.",
     "evidence": {
       "basis": "documented-plus-editorial-inference",
@@ -1457,6 +1457,14 @@
         {
           "title": "Abbey Road BTR 2 history",
           "url": "https://www.abbeyroad.com/news/btr-2-gearthatmadeus-3175"
+        },
+        {
+          "title": "MusicRadar Softube Tape review",
+          "url": "https://www.musicradar.com/reviews/softube-tape"
+        },
+        {
+          "title": "Producer discussion: Softube Tape A, B and C character",
+          "url": "https://www.reddit.com/r/AudioProductionDeals/comments/1mpeggx/softube_tape_physical_modeling_of_three_different/"
         }
       ]
     }
