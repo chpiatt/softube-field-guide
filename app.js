@@ -91,7 +91,7 @@
 
   async function loadDeepDiveData() {
     try {
-      const response = await fetch("data/plugin-deep-dives.json?v=20260825-5");
+      const response = await fetch("data/plugin-deep-dives.json?v=20260825-6");
       if (!response.ok) throw new Error(`Deep-dive request failed with ${response.status}`);
       const rows = await response.json();
       if (!Array.isArray(rows)) throw new Error("Deep-dive data is not an array");
@@ -99,6 +99,20 @@
     } catch (error) {
       console.error("Producer deep dives could not be loaded.", error);
       body.classList.add("deep-dives-unavailable");
+      return new Map();
+    }
+  }
+
+  async function loadModeGuides() {
+    try {
+      const response = await fetch("data/plugin-mode-guides.json?v=20260825-1");
+      if (!response.ok) throw new Error(`Mode-guide request failed with ${response.status}`);
+      const rows = await response.json();
+      if (!Array.isArray(rows)) throw new Error("Mode-guide data is not an array");
+      return new Map(rows.map((row) => [row.name, row]));
+    } catch (error) {
+      console.error("Mode and personality guides could not be loaded.", error);
+      body.classList.add("mode-guides-unavailable");
       return new Map();
     }
   }
@@ -302,7 +316,56 @@
     return item;
   }
 
-  function buildDeepDive(entry) {
+  function buildMode(mode) {
+    const item = makeElement("li", "mode-item");
+    item.append(makeElement("h5", "", mode.name));
+    const facts = makeElement("dl", "mode-facts");
+    [
+      ["Reach for it when", mode.choose_for],
+      ["Expect", mode.sound],
+      ["Watch", mode.watch_for]
+    ].forEach(([label, value]) => {
+      const fact = makeElement("div", "mode-fact");
+      fact.append(makeElement("dt", "", label), makeElement("dd", "", value));
+      facts.append(fact);
+    });
+    item.append(facts);
+    return item;
+  }
+
+  function buildModeGuide(guide) {
+    const groups = makeElement("div", "mode-groups");
+    guide.groups.forEach((group) => {
+      const section = makeElement("section", "mode-group");
+      const heading = makeElement("header", "mode-group-heading");
+      heading.append(
+        makeElement("h5", "", group.control),
+        makeElement("p", "", group.summary)
+      );
+      const list = makeElement("ul", "mode-list");
+      group.modes.forEach((mode) => list.append(buildMode(mode)));
+      section.append(heading, list);
+      groups.append(section);
+    });
+
+    const sources = makeElement("div", "mode-guide-sources");
+    sources.append(makeElement("span", "", "Mode evidence"));
+    const sourceList = makeElement("ul", "");
+    guide.sources.forEach((source) => {
+      const item = makeElement("li", "");
+      const link = makeElement("a", "", source.title);
+      link.href = source.url;
+      link.target = "_blank";
+      link.rel = "noreferrer";
+      item.append(link);
+      sourceList.append(item);
+    });
+    sources.append(sourceList);
+    groups.append(sources);
+    return groups;
+  }
+
+  function buildDeepDive(entry, modeGuide) {
     const fragment = document.createDocumentFragment();
     const comparison = makeElement("section", "plugin-comparison");
     comparison.append(
@@ -318,6 +381,10 @@
       `${entry.advanced_moves.length} techniques`,
       `${entry.use_cases.length} source & bus uses`
     ];
+    if (modeGuide) {
+      const modeCount = modeGuide.groups.reduce((sum, group) => sum + group.modes.length, 0);
+      countParts.unshift(`${modeCount} ${modeCount === 1 ? "mode" : "modes"}`);
+    }
     if (pairingCount) countParts.push(`${pairingCount} ${pairingCount === 1 ? "pairing" : "pairings"}`);
     summaryCopy.append(
       makeElement("strong", "", "Producer deep dive"),
@@ -328,6 +395,18 @@
     summary.insertAdjacentHTML("beforeend", icon("i-chevron", "deep-dive-chevron"));
 
     const content = makeElement("div", "deep-dive-content");
+    if (modeGuide) {
+      const modeCount = modeGuide.groups.reduce((sum, group) => sum + group.modes.length, 0);
+      const modesDisclosure = buildDeepSection(
+        "deep-modes",
+        "Modes & personalities",
+        "What each selector changes—and when to reach for it",
+        String(modeCount).padStart(2, "0")
+      );
+      modesDisclosure.body.append(buildModeGuide(modeGuide));
+      content.append(modesDisclosure.section);
+    }
+
     const movesDisclosure = buildDeepSection(
       "deep-techniques",
       "Advanced techniques",
@@ -852,8 +931,9 @@
   const sourceCatalogSections = [...main.querySelectorAll(":scope > .level1")].filter((section) => /^\d+-/.test(section.id));
   const catalogSections = sourceCatalogSections.map(upgradeCatalogSection).filter(Boolean);
   const cards = [...main.querySelectorAll(".plugin-card")];
-  const [deepDiveByName, productMediaByName, platformData] = await Promise.all([
+  const [deepDiveByName, modeGuideByName, productMediaByName, platformData] = await Promise.all([
     loadDeepDiveData(),
+    loadModeGuides(),
     loadProductMedia(),
     loadPlatformAvailability()
   ]);
@@ -870,13 +950,19 @@
     }
     const entry = deepDiveByName.get(card.dataset.pluginName);
     if (entry) {
-      card.querySelector(":scope > .plugin-body")?.append(buildDeepDive(entry));
+      const modeGuide = modeGuideByName.get(card.dataset.pluginName);
+      card.querySelector(":scope > .plugin-body")?.append(buildDeepDive(entry, modeGuide));
       card.dataset.search += ` ${normalize(JSON.stringify(entry))}`;
+      if (modeGuide) {
+        card.dataset.search += ` ${normalize(JSON.stringify(modeGuide))}`;
+        card.classList.add("has-mode-guide");
+      }
       card.classList.add("has-deep-dive");
     }
     if (media) card.classList.add("has-product-media");
   });
   body.classList.toggle("has-deep-dives", deepDiveByName.size > 0);
+  body.classList.toggle("has-mode-guides", modeGuideByName.size > 0);
   body.classList.toggle("has-product-media", productMediaByName.size > 0);
   body.classList.toggle("has-platform-data", platformData.byName.size === cards.length);
 

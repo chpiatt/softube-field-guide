@@ -1,0 +1,493 @@
+[
+  {
+    "name": "Focusing Equalizer",
+    "groups": [
+      {
+        "control": "Equalizer Type",
+        "summary": "Choose the circuit character and filter slope before adding saturation.",
+        "modes": [
+          {"name": "Active", "choose_for": "Narrower, controlled 1970s-style focus and decisive range trimming.", "sound": "Harder, more localized shaping with 18 dB/octave cuts.", "watch_for": "The steeper edges can sound too deliberate on broad acoustic sources."},
+          {"name": "Passive", "choose_for": "Wider sources and broad, glowing 1960s-style contour.", "sound": "Softer interaction with 6 dB/octave cuts and a more acoustic-feeling spread.", "watch_for": "Maxing both outer boosts can effectively cancel the Mid control."},
+          {"name": "Off", "choose_for": "Using only the independent saturation circuit.", "sound": "No EQ or range-filter contribution; the color stage remains available.", "watch_for": "Re-level before comparing—the missing EQ may change perceived energy."}
+        ]
+      },
+      {
+        "control": "Saturation Type",
+        "summary": "The label names the spectral extreme that stays comparatively intact.",
+        "modes": [
+          {"name": "Keep Low", "choose_for": "Bass, kick, or full-range material whose foundation must stay firm.", "sound": "The higher part of the signal saturates more than the low end.", "watch_for": "It is easy to misread this as the band being distorted; it is the protected band."},
+          {"name": "Neutral", "choose_for": "Even full-band density without protecting either extreme.", "sound": "All frequencies encounter the saturation more evenly.", "watch_for": "Low end can fuzz and highs can harden together when driven too far."},
+          {"name": "Keep High", "choose_for": "Bright percussion or vocals whose air and articulation must survive.", "sound": "Lower frequencies saturate more while the top stays clearer.", "watch_for": "Too much can thicken low mids while leaving the source deceptively bright."}
+        ]
+      }
+    ],
+    "sources": [{"title": "Softube Passive-Active Pack manual", "url": "https://www.softube.com/user-manuals/passive-active-pack"}]
+  },
+  {
+    "name": "FET Compressor Mk II",
+    "groups": [
+      {
+        "control": "Ratio family and British mode",
+        "summary": "Separate lighter modern ratios from the classic hardware ratios and its famous accidental state.",
+        "modes": [
+          {"name": "Low ratios", "choose_for": "Gentler track control, parallel work, or 1:1 color without normal compression.", "sound": "Less assertive gain reduction while retaining the modeled FET and transformer stages.", "watch_for": "Drive stages can still add attitude even when the ratio is low."},
+          {"name": "High ratios", "choose_for": "The familiar fast, forward FET envelope on vocals, drums, bass, and guitars.", "sound": "Classic 4:1 through 20:1-style urgency with increasingly firm peak control.", "watch_for": "Fast attack can remove the very transient that made the source feel close."},
+          {"name": "British", "choose_for": "Explosive room mics, parallel drums, or deliberately unruly vocal effects.", "sound": "The modeled all-buttons-in state pumps hard and produces substantially more distortion.", "watch_for": "Treat it as a special effect; level-match and blend before assuming more is better."}
+        ]
+      }
+    ],
+    "sources": [{"title": "Softube FET Compressor Mk II manual", "url": "https://www.softube.com/user-manuals/fet-compressor-mk-ii"}]
+  },
+  {
+    "name": "Bus Processor",
+    "groups": [
+      {
+        "control": "Hrmc saturation",
+        "summary": "The switch changes the saturator itself, not merely the amount of color.",
+        "modes": [
+          {"name": "Hrmc Off", "choose_for": "Peak shaving, harder density, and output-stage-style solid-state clipping.", "sound": "Subtle until the signal reaches the clip point, then increasingly obvious.", "watch_for": "Use section bypasses to prove the density is not compressor movement."},
+          {"name": "Hrmc On", "choose_for": "Smooth harmonic enhancement that should read as richer rather than clipped.", "sound": "A tapered overtone structure designed to add harmonics without obvious breakup.", "watch_for": "Added brightness or loudness can masquerade as better glue; output-match it."}
+        ]
+      }
+    ],
+    "sources": [{"title": "Softube Bus Processor manual", "url": "https://www.softube.com/user-manuals/bus-processor"}]
+  },
+  {
+    "name": "Bus Processor 670",
+    "groups": [
+      {
+        "control": "Compressor Mode",
+        "summary": "Choose the detector topology before deciding how much vintage color to retain.",
+        "modes": [
+          {"name": "Classic", "choose_for": "Variable-mu-style bloom, feedback movement, and program-dependent vintage behavior.", "sound": "Softer, more interactive compression whose coloration changes with Calibration.", "watch_for": "Low end and release behavior can become the event rather than transparent control."},
+          {"name": "Modern", "choose_for": "Cleaner feed-forward control while still using the transformer and tube stages.", "sound": "More explicit, less colored gain reduction with less compression-dependent distortion.", "watch_for": "Do not expect Calibration to behave like a generic age control in this mode."}
+        ]
+      },
+      {
+        "control": "Calibration",
+        "summary": "Calibration changes compression-dependent push-pull crossover distortion in Classic mode.",
+        "modes": [
+          {"name": "Clean", "choose_for": "The 670 envelope with the least extra crossover grit.", "sound": "Cleaner and more open than the nominal modeled condition.", "watch_for": "Transformer and tube-stage controls can still color the path."},
+          {"name": "Nominal", "choose_for": "The expected healthy-hardware balance of movement and coloration.", "sound": "The reference amount of modeled compression-linked distortion.", "watch_for": "Judge it at the same gain reduction as the other states."},
+          {"name": "Worn", "choose_for": "Audible antique density, rougher buses, and intentionally aged program material.", "sound": "Substantially more distortion tied to the compressor’s action.", "watch_for": "It can cloud low mids quickly when reduction is already deep."}
+        ]
+      }
+    ],
+    "sources": [{"title": "Softube Bus Processor 670 manual", "url": "https://www.softube.com/user-manuals/bus-processor-670"}]
+  },
+  {
+    "name": "Tube-Tech CL 1B Mk II",
+    "groups": [
+      {
+        "control": "Generation",
+        "summary": "Two complete Softube model generations share the current interface.",
+        "modes": [
+          {"name": "Mk I", "choose_for": "The earlier Softube model’s familiar tone or deliberate continuity with that sound.", "sound": "The legacy generation, not merely a darker preset of Mk II.", "watch_for": "It does not make the current plug-in a drop-in substitute for old Mk I sessions."},
+          {"name": "Mk II", "choose_for": "New work and the later ground-up remodel with current workflow features.", "sound": "Softube’s newer component model and present-day default CL 1B character.", "watch_for": "Compare at matched gain reduction; the movement matters more than output level."}
+        ]
+      },
+      {
+        "control": "Attack / Release Select",
+        "summary": "The combined position is a genuinely different program-dependent timing system.",
+        "modes": [
+          {"name": "Fixed", "choose_for": "Fast, simple peak control on drums and other percussive sources.", "sound": "A fixed 1 ms attack and 50 ms release.", "watch_for": "It can be too abrupt for exposed sustained phrases."},
+          {"name": "Manual", "choose_for": "Vocals, bass, piano, guitar, and any source needing authored attack and release.", "sound": "Both timing controls work conventionally across their full ranges.", "watch_for": "A setting that flatters one phrase may recover poorly on another."},
+          {"name": "Fixed / Manual", "choose_for": "Program material with both short peaks and longer phrases.", "sound": "Fast fixed attack and a two-stage release that hands off to the manual Release setting.", "watch_for": "Here Attack sets the release handoff delay; it is no longer an attack control."}
+        ]
+      }
+    ],
+    "sources": [{"title": "Softube Tube-Tech CL 1B manual", "url": "https://www.softube.com/user-manuals/tube-tech-cl-1b-and-cl-1b-mk-ii-compressors"}]
+  },
+  {
+    "name": "Chandler Limited Zener Limiter",
+    "groups": [
+      {
+        "control": "Compression / THD mode",
+        "summary": "The three curves cover different EMI-derived timing roles; THD removes gain reduction but keeps the audio path.",
+        "modes": [
+          {"name": "Comp 1", "choose_for": "Gentle mix-bus or subgroup glue and slower, RS124-inspired movement.", "sound": "A 2:1 curve with slower time constants and the softest behavior of the three.", "watch_for": "Deep reduction can still darken or thicken the program despite the gentle ratio."},
+          {"name": "Comp 2", "choose_for": "Punchier control that keeps Comp 1’s curve but recovers more quickly.", "sound": "A modern middle state: Comp 1-like compression with release behavior nearer Limit.", "watch_for": "Faster recovery can become audible on low-frequency-heavy material."},
+          {"name": "Limit", "choose_for": "Firm peak containment, forward drums, and the fastest Fairchild-inspired response.", "sound": "The quickest and most assertive limiting curve.", "watch_for": "Use the sidechain filter if bass makes the action too aggressive."},
+          {"name": "THD", "choose_for": "Using the Zener’s transistor path as a dedicated color stage.", "sound": "The limiter threshold is disengaged while signal still traverses the complete audio path.", "watch_for": "Input gain, impedance, and level now determine tone without a reduction meter to explain it."}
+        ]
+      }
+    ],
+    "sources": [{"title": "Softube Chandler Limited Zener Limiter manual", "url": "https://www.softube.com/user-manuals/chandler-limited-zener-limiter"}]
+  },
+  {
+    "name": "Chandler Limited Germanium Compressor",
+    "groups": [
+      {
+        "control": "Comp Curve",
+        "summary": "Choose the diode network and knee character first, then use Ratio to fine-tune the result.",
+        "modes": [
+          {"name": "R Soft", "choose_for": "Mastering, stereo buses, or the least audible compression artifacts.", "sound": "The most neutral and gentle resistance-based curve.", "watch_for": "It supplies less of the diode color that makes the other settings distinctive."},
+          {"name": "Germ Soft", "choose_for": "General use, buses, bass, and drums needing smooth color with preserved attack.", "sound": "A gentle single-germanium knee with mild character.", "watch_for": "Its softness can invite more reduction than the arrangement needs."},
+          {"name": "Germ Med", "choose_for": "More punch and color while retaining the forgiving germanium family.", "sound": "A sharper five-diode germanium curve with additional vibe.", "watch_for": "Revisit Ratio after switching; Curve and Ratio are intentionally interactive."},
+          {"name": "Silicon Med", "choose_for": "A firmer knee and different tonal edge without reaching the hardest states.", "sound": "Sharper than Germ Med with a distinct silicon character.", "watch_for": "Transient definition can turn into hardness on bright close mics."},
+          {"name": "Silicon Hard", "choose_for": "Parallel submix smash and clearly audible envelope shaping.", "sound": "A hard two-silicon-diode knee with pronounced character.", "watch_for": "Blend or constrain it; full-wet use can flatten the front of a bus."},
+          {"name": "Zener Hard", "choose_for": "The most extreme crush, hard parallel effects, and deliberate attitude.", "sound": "The sharpest knee and the most different character in the selector.", "watch_for": "Small control changes can become large audible changes at this end of the range."}
+        ]
+      }
+    ],
+    "sources": [{"title": "Softube Chandler Limited Germanium Compressor manual", "url": "https://www.softube.com/user-manuals/chandler-limited-germanium-comp"}]
+  },
+  {
+    "name": "Valley People Dyna-mite",
+    "groups": [
+      {
+        "control": "Mode",
+        "summary": "Start with the main job, then choose how the detector should react.",
+        "modes": [
+          {"name": "Limit", "choose_for": "Squashing drums, catching peaks, ducking, or the unit’s stranger negative-ratio effects.", "sound": "Gain falls above Threshold; the detector and source switches determine how conventionally.", "watch_for": "Gate detector in Limit creates extreme 1:-20 behavior, not a normal limiter."},
+          {"name": "Expand", "choose_for": "Noise gating, dynamic expansion, keyed rhythms, and opening space below Threshold.", "sound": "Gain falls below Threshold, from soft expansion to hard gating.", "watch_for": "Use Range to avoid turning natural decay into abrupt silence."}
+        ]
+      },
+      {
+        "control": "Detector Type",
+        "summary": "Detector Type changes attack behavior and, in Gate, the actual ratio.",
+        "modes": [
+          {"name": "Avg", "choose_for": "Smoother limiting, punch from preserved transients, and natural soft gating.", "sound": "A slower, complex 1–15 ms attack using Valley’s averaging detector.", "watch_for": "The fastest peaks can escape and reach the modeled output clipping."},
+          {"name": "Peak", "choose_for": "Fast transient limiting, longer snare tails, or tighter soft gating.", "sound": "Roughly 50 µs attack with more conventional peak behavior.", "watch_for": "It can sound more distorted or abrupt than Avg on full program material."},
+          {"name": "Gate", "choose_for": "Hard gates in Expand or broken, inverted-envelope effects in Limit.", "sound": "A 1:20 gate below threshold—or an extreme 1:-20 negative limiter above it.", "watch_for": "Longer Release and restricted Range are often essential to control pops and crackle."}
+        ]
+      }
+    ],
+    "sources": [{"title": "Softube Valley People Dyna-mite manual", "url": "https://www.softube.com/user-manuals/Valley-People-Dyna-mite"}]
+  },
+  {
+    "name": "Drawmer S73 Intelligent Master Processor",
+    "groups": [
+      {
+        "control": "Style",
+        "summary": "Styles are problem-specific multiband designs; audition at low Amount and chain only complementary jobs.",
+        "modes": [
+          {"name": "Clarity 1", "choose_for": "Immediate separation and definition on a generally congested mix.", "sound": "A direct clarity lift intended to be used gently.", "watch_for": "It can become an over-processed sheen when the mix is already open."},
+          {"name": "Clarity 2", "choose_for": "Midrange definition when the top also needs some harshness control.", "sound": "More focus through the mids with simultaneous high-frequency taming.", "watch_for": "Do not mistake reduced harshness for a universally better tonal balance."},
+          {"name": "Neutral", "choose_for": "A strong mix that needs only restrained polish.", "sound": "The least directional S73 style with gentle sheen.", "watch_for": "If it seems inactive, that may be the correct result; do not force Amount."},
+          {"name": "Gentle Comp", "choose_for": "Glue and density without choosing crossover and timing settings manually.", "sound": "Broad multiband cohesion rather than a tonal repair.", "watch_for": "Softube suggests keeping gain reduction around 3 dB."},
+          {"name": "More Air", "choose_for": "A mix that needs breathing room and controllable top-end sheen.", "sound": "Amount controls the air treatment; the Air switch adds still more sheen.", "watch_for": "Level-match carefully—top lift can win comparisons at first listen."},
+          {"name": "De-Rumble", "choose_for": "Low-frequency rumble or mud that obscures the rest of the mix.", "sound": "Low-end cleanup with improved overall definition.", "watch_for": "Follow with Clarity only if a second, different problem remains."},
+          {"name": "Punch", "choose_for": "Kick and bass that need firmer definition and impact.", "sound": "A low-end-focused punch treatment rather than general loudness.", "watch_for": "It cannot repair kick/bass arrangement conflicts by itself."},
+          {"name": "Wide Mix", "choose_for": "Gentle expansion of an already coherent stereo mix.", "sound": "A controlled stereo widening treatment.", "watch_for": "Spatial styles are not compatible with mono or multi-mono versions."},
+          {"name": "Ambience", "choose_for": "Bringing forward room tone and existing spatial detail.", "sound": "More audible ambience rather than simple left-right expansion.", "watch_for": "Noise, reverb buildup, and cymbal wash can rise with the desired room."},
+          {"name": "Vocals Enhance", "choose_for": "Moving a lead vocal forward from within a stereo mix.", "sound": "A spatially informed emphasis of the central vocal presence.", "watch_for": "It is not a substitute for stem-level vocal automation or repair."}
+        ]
+      }
+    ],
+    "sources": [{"title": "Softube Drawmer S73 manual", "url": "https://www.softube.com/user-manuals/drawmer-s73-intelligent-master-processor"}]
+  },
+  {
+    "name": "Weiss MM-1",
+    "groups": [
+      {
+        "control": "Style",
+        "summary": "Style processing happens before the final brick-wall limiter; Parallel Mix does not bypass that limiter.",
+        "modes": [
+          {"name": "Transparent", "choose_for": "The least invasive loudness and control path.", "sound": "The most restrained of the five mastering styles.", "watch_for": "Limiter Gain is a separate downstream decision; do not hide excessive Style processing with it."},
+          {"name": "Loud", "choose_for": "High-RMS production references and deliberately dense masters.", "sound": "The style most explicitly aimed at average loudness.", "watch_for": "Compare punch and tonal balance at matched playback level."},
+          {"name": "Punch", "choose_for": "Adding weight and impact before final limiting.", "sound": "More perceived punch and body than Transparent.", "watch_for": "Too much Amount can turn transient emphasis into limiter workload."},
+          {"name": "Wide", "choose_for": "A stereo master that needs more dimensional spread.", "sound": "M/S processing produces a wider, more three-dimensional presentation.", "watch_for": "It is not compatible with mono or multi-mono instances."},
+          {"name": "Deess", "choose_for": "Master-bus sibilance, brittle cymbals, or broader high-frequency containment.", "sound": "An M/S-aware all-round de-essing algorithm usable in mixing or mastering.", "watch_for": "If the harshness is localized, Weiss Deess offers more explicit control."}
+        ]
+      }
+    ],
+    "sources": [{"title": "Softube Weiss MM-1 manual", "url": "https://www.softube.com/user-manuals/weiss-mm-1-mastering-maximizer"}]
+  },
+  {
+    "name": "Empirical Labs Mike-E Comp",
+    "groups": [
+      {
+        "control": "Emphasis",
+        "summary": "The two hidden hardware variants change whether emphasis reaches saturation, compression, or both.",
+        "modes": [
+          {"name": "HF", "choose_for": "The original tape-like CompSat warmth and high-frequency peak softening.", "sound": "High frequencies hit the saturation harder while compression behavior stays unchanged.", "watch_for": "In 1:1, this is still an active soft-clipping color even without compression."},
+          {"name": "HF2", "choose_for": "Stronger high-frequency control when bright material should trigger compression as well.", "sound": "The HF emphasis reaches the whole CompSat circuit, including the detector behavior.", "watch_for": "Sibilance and cymbals can drive more reduction than in HF."},
+          {"name": "LF", "choose_for": "Preserving more high-frequency openness while controlling lower-frequency energy.", "sound": "Highs are attenuated into the detector, so they trigger less compression.", "watch_for": "Low-frequency events may dominate the envelope if the source is bass-heavy."}
+        ]
+      }
+    ],
+    "sources": [{"title": "Softube Empirical Labs Mike-E Comp manual", "url": "https://www.softube.com/user-manuals/empirical-labs-mike-e-comp"}]
+  },
+  {
+    "name": "Tube-Tech Blue Tone",
+    "groups": [
+      {
+        "control": "Mode",
+        "summary": "Each mode changes hidden multiband compression, timing, de-essing, EQ, and sometimes width; start at Amount zero.",
+        "modes": [
+          {"name": "Vocal Clarify", "choose_for": "A vocal that needs low-end control, articulation, and reduced masking.", "sound": "Moderate de-essing and clarity EQ around a controlled low end.", "watch_for": "Add post High Band only after the de-essing behavior is right."},
+          {"name": "Vocal Focus", "choose_for": "A lead that must stay firmly forward through a dense production.", "sound": "Harder, higher-ratio compression with de-essing and mid-presence emphasis.", "watch_for": "The extra focus can overstate breath, nasal tone, or room noise."},
+          {"name": "Mix Bus", "choose_for": "General glue with more midrange punch and smoother spectral extremes.", "sound": "Lows and highs settle while the center gains definition.", "watch_for": "Reject it if it wins only by making the mix seem brighter or denser."},
+          {"name": "Mix Bus Wide", "choose_for": "A stereo mix that needs width and a cleaner middle.", "sound": "A wider presentation with less central congestion.", "watch_for": "Check mono and make sure the lead remains anchored."},
+          {"name": "Drum Bus", "choose_for": "Glue, less boxiness, and a little more midrange hit on a kit.", "sound": "A denser drum envelope with tuned tonal cleanup.", "watch_for": "Use Dry/Wet to restore attacks before changing the hidden envelope with more Amount."},
+          {"name": "Bass Instruments", "choose_for": "Uneven bass, synth bass, or low strings needing richness plus articulation.", "sound": "A more even low end with luxurious weight and some midrange clarity.", "watch_for": "It can make already-layered bass occupy too much low-mid space."},
+          {"name": "Keys / Guitar", "choose_for": "Piano, Rhodes, synths, or individual guitars needing glue and presence.", "sound": "Coordinated compression and presence enhancement for harmonic instruments.", "watch_for": "Chords can expose multiband movement more readily than single notes."},
+          {"name": "Stereo Guitars Wide", "choose_for": "Hard-panned guitar pairs or keyboard buses needing extra span and clarity.", "sound": "More width, presence, and high-end definition across the stereo pair.", "watch_for": "It assumes meaningful left-right content; mono or near-mono sources are a poor fit."}
+        ]
+      }
+    ],
+    "sources": [{"title": "Softube Tube-Tech Blue Tone manual", "url": "https://www.softube.com/user-manuals/tube-tech-blue-tone"}]
+  },
+  {
+    "name": "Tape",
+    "groups": [
+      {
+        "control": "Type",
+        "summary": "Softube does not license or identify the machines; these are producer-facing character choices, not confirmed hardware claims.",
+        "modes": [
+          {"name": "A", "choose_for": "Mastering-scale cohesion, clean buses, and the most linear starting point.", "sound": "The cleanest and most restrained type, with the least obvious tape personality.", "watch_for": "Match THD and output before comparing; clean can lose to louder in a quick A/B."},
+          {"name": "B", "choose_for": "The recognizable tape feel most producers want while keeping the effect controlled.", "sound": "More audible weight and machine identity than A without jumping straight to vintage coloration.", "watch_for": "Transformer-like low-end weight can accumulate across many instances."},
+          {"name": "C", "choose_for": "Deliberate vintage color, softened bandwidth, and obviously aged tone.", "sound": "The strongest old-machine impression of the three.", "watch_for": "It is a character choice, not the automatic answer for every mix bus."}
+        ]
+      }
+    ],
+    "sources": [
+      {"title": "Softube Tape manual", "url": "https://www.softube.com/user-manuals/tape"},
+      {"title": "Review Revival Softube Tape review", "url": "https://www.reviewrevival.ca/reviews/softube-tape-review"}
+    ]
+  },
+  {
+    "name": "Harmonics Analog Saturation Processor",
+    "groups": [
+      {
+        "control": "Drive Type",
+        "summary": "Choose the nonlinear family first, then use Character, Dynamics, filters, and blend to fit it.",
+        "modes": [
+          {"name": "Solid", "choose_for": "Vocals, drums, and tracks that need definition and separation.", "sound": "Early-1970s-inspired solid-state color that helps a source stand out in the soundstage.", "watch_for": "Forward definition can become brittle on already aggressive transients."},
+          {"name": "Transf", "choose_for": "Kick, bass, full mixes, and material that benefits from American-console low-end weight.", "sound": "Transformer-inspired density with a strong low-frequency signature.", "watch_for": "The foundation can thicken before the midrange actually improves."},
+          {"name": "Master", "choose_for": "Buses and masters needing subtle analog touch while preserving transients.", "sound": "Smooth mastering-oriented saturation whose Drive changes harmonic content as well as amount.", "watch_for": "There is no single neutral Drive position; search for the program-specific sweet spot."},
+          {"name": "Tube", "choose_for": "Bass and guitar that need warm, mid-1960s boutique tube character.", "sound": "Rounded tube warmth that Softube specifically recommends for bass and guitar.", "watch_for": "Low-mid warmth can reduce apparent articulation when the arrangement is already dense."},
+          {"name": "Modern", "choose_for": "Immediate warmth and punch with a more contemporary all-valve distortion voice.", "sound": "An English modern triode-inspired character that becomes audible quickly.", "watch_for": "Its instant punch can overstate sources that already have a hard front edge."}
+        ]
+      }
+    ],
+    "sources": [{"title": "Softube Harmonics manual", "url": "https://www.softube.com/user-manuals/harmonics-analog-saturation-processor"}]
+  },
+  {
+    "name": "Saturation Knob",
+    "groups": [
+      {
+        "control": "Saturation Type",
+        "summary": "The labels describe what is protected, not the band being saturated.",
+        "modes": [
+          {"name": "Keep Low", "choose_for": "Bass, kick, and loops whose low-end envelope must remain recognizable.", "sound": "Higher frequencies saturate more while the bottom stays comparatively intact.", "watch_for": "Do not read the label backward; this is not a low-band distortion mode."},
+          {"name": "Neutral", "choose_for": "Simple full-band thickening when neither extreme needs special protection.", "sound": "A more even distribution of saturation across the spectrum.", "watch_for": "Both low-end fuzz and high-end hardness can arrive together."},
+          {"name": "Keep High", "choose_for": "Bright percussion, vocals, and sources whose top-end detail must remain clear.", "sound": "Lower frequencies saturate more while the highs stay comparatively intact.", "watch_for": "Preserved brightness can conceal too much low-mid distortion in solo."}
+        ]
+      }
+    ],
+    "sources": [{"title": "Softube Saturation Knob manual", "url": "https://www.softube.com/user-manuals/saturation-knob"}]
+  },
+  {
+    "name": "Overstayer M-A-S",
+    "groups": [
+      {
+        "control": "Emphasis Type",
+        "summary": "Re-adjust Input when comparing: each profile reaches a similar amount of bending at a different level.",
+        "modes": [
+          {"name": "Classic M-A-S", "choose_for": "General mix or bus energy with fundamentals left relatively unclipped.", "sound": "Harmonics focus through the mids and upper range while the foundation stays steadier.", "watch_for": "Color begins below the first saturation LED; an unlit meter is not necessarily neutral."},
+          {"name": "Low Bandwidth", "choose_for": "Broken-speaker drums, narrow grit, and deliberately constrained lo-fi material.", "sound": "Highs and lows distort first while the mids remain comparatively unaffected.", "watch_for": "The hollowed mid behavior can make a source sound smaller rather than simply dirtier."},
+          {"name": "Low Presence", "choose_for": "Vocals and instruments that need upper-mid clarity and articulation.", "sound": "The saturation emphasis brings forward the vocal-presence region.", "watch_for": "Sibilance and pick noise can become the first thing the ear notices."},
+          {"name": "High Presence", "choose_for": "Air, shimmer, and a more elevated high-frequency polish.", "sound": "Emphasis moves above Low Presence into the lower-treble / air region.", "watch_for": "Use Dual and 2nd sparingly if the added brightness becomes brittle."},
+          {"name": "Bass Distortion", "choose_for": "Bass-heavy sources needing transformer-like low-end color or deliberate thinning.", "sound": "The bass distorts while the highs stay comparatively unaffected.", "watch_for": "Softube notes that it can thin the bass even while adding low-frequency character."},
+          {"name": "Treble Distortion", "choose_for": "Smoothing harsh transients and rough edges with a tape-like high-frequency bias.", "sound": "High frequencies bend more than the rest of the signal.", "watch_for": "Too much can turn useful attack into dullness before the body gains enough color."}
+        ]
+      }
+    ],
+    "sources": [{"title": "Softube Overstayer M-A-S manual", "url": "https://www.softube.com/user-manuals/overstayer-mas"}]
+  },
+  {
+    "name": "OTO Biscuit 8-bit Effects",
+    "groups": [
+      {
+        "control": "Brain Effect",
+        "summary": "One Brain effect runs at a time after the core bit mutation, sample-rate reduction, and analog-modeled filter.",
+        "modes": [
+          {"name": "Wave", "choose_for": "Radical distortion, octave effects, bit swaps, or input-tracking synthesized waveforms.", "sound": "Eight shapers range from rectification and folding to tracked saw and square waves.", "watch_for": "Tracking modes need enough Drive; begin with all eight data bits in their normal state."},
+          {"name": "Delay", "choose_for": "Lo-fi echoes from gentle repeats to screaming feedback.", "sound": "An 8-bit stereo delay whose degraded path can interact with the clock and filter.", "watch_for": "Sample-rate reduction and filtering apply only to the delayed signal in this mode."},
+          {"name": "Pitch", "choose_for": "Crude harmonies, chorus-like detune, and shifts from two octaves down to one up.", "sound": "A short-buffer 8-bit mono shifter returned to both outputs.", "watch_for": "Clock reduction and bit mutation can turn it into a pitch-shifting delay rather than clean transposition."},
+          {"name": "Step", "choose_for": "Tempo-synced rhythmic filtering, gates, and deterministic or random filter patterns.", "sound": "An eight-step multimode-filter sequencer with Freeze, Forward, Alternating, and Random motion.", "watch_for": "Use DAW sync for exact tempo; free-running mode shares the delay clock."}
+        ]
+      }
+    ],
+    "sources": [{"title": "Softube OTO Biscuit manual", "url": "https://www.softube.com/user-manuals/oto-biscuit-8-bit-effects"}]
+  },
+  {
+    "name": "Bad Speaker",
+    "groups": [
+      {
+        "control": "Speaker",
+        "summary": "Choose the physical playback perspective before adding Drive, Width, or parallel blend.",
+        "modes": [
+          {"name": "Portable Radio", "choose_for": "The smallest, most collapsed lo-fi cue and obvious vocal or drum filtering.", "sound": "The most fragile speaker response; it falls apart dramatically when driven.", "watch_for": "It can remove too much body to work as more than a parallel or automated effect."},
+          {"name": "Cassette Deck", "choose_for": "1980s boombox tone, snarly mids, and a lo-fi sound that retains useful bass.", "sound": "Tighter low end and a more aggressive midrange bite than Portable Radio.", "watch_for": "The bite can pile up around vocals and guitars in an already mid-forward mix."},
+          {"name": "Hi-Fi Speaker", "choose_for": "Subtle speaker-in-room perspective and the most flexible starting point.", "sound": "A genuinely good speaker response in a room rather than an obviously broken device.", "watch_for": "Width and intermediate Dry/Wet settings can make placement ambiguous; check mono."}
+        ]
+      }
+    ],
+    "sources": [{"title": "Softube Bad Speaker manual", "url": "https://www.softube.com/user-manuals/bad-speaker"}]
+  },
+  {
+    "name": "Empirical Labs Professor Punch-Knuckles",
+    "groups": [
+      {
+        "control": "Distortion",
+        "summary": "Choose the ELI circuit first; the meter changes from THD to gain reduction in Distress.",
+        "modes": [
+          {"name": "Toasty", "choose_for": "Subtle warmth and colorful density below roughly 10–14% THD.", "sound": "The warm saturation circuit from Mike-E’s CompSat section.", "watch_for": "At heavy Drive the distinction from Crunchy becomes less informative."},
+          {"name": "Crunchy", "choose_for": "Harder breakup and shaving transients from drums or other percussive material.", "sound": "Mike-E preamp distortion with a firmer, crunchier edge than Toasty.", "watch_for": "The extra edge can read as level or presence unless output-matched."},
+          {"name": "Distress", "choose_for": "Forward vocals, controlled snares, or brutally crushed parallel drums.", "sound": "Distressor/Mike-E compression at its fastest, most aggressive setting.", "watch_for": "The meter now reads gain reduction; 3–5 dB is already a meaningful starting range."}
+        ]
+      },
+      {
+        "control": "Mode",
+        "summary": "This second selector applies Empirical Labs-style emphasis around the chosen distortion circuit.",
+        "modes": [
+          {"name": "XFRM", "choose_for": "Transformer-like weight and more distortion emphasis in the low end.", "sound": "The nonlinear focus shifts downward.", "watch_for": "Bass buildup can obscure the envelope you chose with the Distortion selector."},
+          {"name": "Wide", "choose_for": "The broadest, most even distortion bandwidth.", "sound": "A wide-range tonal treatment without deliberate low- or high-end emphasis.", "watch_for": "Full-band density can expose noise and room tone along with the wanted source."},
+          {"name": "Tape", "choose_for": "Smoother top-end emphasis and a tape-like way of rounding rough punch.", "sound": "The distortion focus shifts toward the high frequencies.", "watch_for": "Too much can soften articulation before the body is sufficiently altered."}
+        ]
+      }
+    ],
+    "sources": [{"title": "Softube Professor Punch-Knuckles manual", "url": "https://www.softube.com/user-manuals/empirical-labs-prof-punch-knuckles"}]
+  },
+  {
+    "name": "Weiss Exciter",
+    "groups": [
+      {
+        "control": "Harmonics Mode",
+        "summary": "The modes choose the mathematical overtone generator; Adaptive usually keeps each one in its intended sweet spot.",
+        "modes": [
+          {"name": "Soft", "choose_for": "The safest all-round excitement on instruments, buses, and masters.", "sound": "A very soft knee with a smooth, broad spectrum of harmonics.", "watch_for": "Its easy transition can encourage more processing than the mix needs."},
+          {"name": "Hard", "choose_for": "A firmer, more obvious edge while retaining a broad overtone spectrum.", "sound": "A slightly harder knee than Soft with many harmonics.", "watch_for": "Watch the Harmonics LED; constant red means hard clipping rather than elegant excitation."},
+          {"name": "Poly 3", "choose_for": "Very transparent third-harmonic emphasis and precise mastering work.", "sound": "Only third harmonics are generated inside the non-clipping range.", "watch_for": "The transition into clipping is less smooth than Soft or Hard."},
+          {"name": "Poly 5", "choose_for": "Transparent third- and fifth-harmonic structure with slightly more complexity.", "sound": "Third and fifth harmonics dominate until the generator clips.", "watch_for": "Keep Adaptive on unless you specifically want only loud events to excite."}
+        ]
+      }
+    ],
+    "sources": [{"title": "Softube Weiss Exciter manual", "url": "https://www.softube.com/user-manuals/weiss-exciter"}]
+  },
+  {
+    "name": "Dimensions",
+    "groups": [
+      {
+        "control": "Reverb Algorithm",
+        "summary": "The current manual exposes seven algorithms, including Chamber. Do not automate the selector.",
+        "modes": [
+          {"name": "Spring", "choose_for": "Guitars and obvious character where a limited-bandwidth spring belongs in the arrangement.", "sound": "Bright and unmistakable, between a tape-echo spring and a cleaner studio tank.", "watch_for": "Use Bright instead of Full when the richer low end is too much; avoid full mixes."},
+          {"name": "Plate", "choose_for": "Vocals and drums needing dense, dark, immediately recognizable depth.", "sound": "Choose Digital for the early classic digital-plate design or Analog for modeled mechanical resonance.", "watch_for": "Analog Bright, Medium, and Dark change onset and decay character; this is not one generic plate."},
+          {"name": "Room", "choose_for": "Dense, versatile studio ambience, shorter spaces, and buses that need depth without a long tail.", "sound": "A smaller, denser variation of the 224-derived Concert Hall design with less pronounced echoes.", "watch_for": "Its modulation can sound pitchy on piano; System Noise models internal quantization artifacts."},
+          {"name": "Concert Hall", "choose_for": "Lush vocals, strings, pads, and other non-percussive sources needing a sparse ethereal tail.", "sound": "The chorus-like 224-derived hall associated with long, beautifully modulated space.", "watch_for": "Pitch modulation can become seasick or unstable on exposed piano and other tuned attacks."},
+          {"name": "Random Hall", "choose_for": "Open, clear, expensive-feeling depth on almost any source.", "sound": "480-derived spatialization with Size decoupled from Time in Effect mode.", "watch_for": "Many parameter combinations are intentionally less forgiving; start from a preset."},
+          {"name": "Cathedral", "choose_for": "Pads, synths, shimmer, and long synthetic tails unconcerned with room realism.", "sound": "A lush, modulated wash that diffuses pitch over long decays.", "watch_for": "Percussive drums can disappear into its long, noise-like tail."},
+          {"name": "Chamber", "choose_for": "Short drum rooms, buses, or long tails that should preserve pitch.", "sound": "Maximally dense and modulated without audible pitch artifacts; Flat, Chamber A, and B set tone.", "watch_for": "Freeze buffers do not save with the project; print or automate the gesture."}
+        ]
+      }
+    ],
+    "sources": [{"title": "Softube Dimensions manual", "url": "https://www.softube.com/user-manuals/dimensions"}]
+  },
+  {
+    "name": "Core Dimensions",
+    "groups": [
+      {
+        "control": "Reverb Algorithm",
+        "summary": "Five curated algorithms share one control set; do not automate the selector.",
+        "modes": [
+          {"name": "Spring", "choose_for": "Guitars and obvious vintage flavor without the full Dimensions editing surface.", "sound": "A bright tape-echo-derived spring, neither amp-tank dirty nor pristine studio clean.", "watch_for": "Its 7.5 kHz bandwidth makes it a character decision, not a neutral full-mix room."},
+          {"name": "Plate Digital", "choose_for": "Warm, lush vocals and guitars with early-digital plate identity.", "sound": "A recreation of the first commercial digital reverb’s constrained but beautiful design.", "watch_for": "It is not the cleanest option and is not intended for a whole mix."},
+          {"name": "Plate Analog", "choose_for": "Dark, dense vocals and drums with a modeled mechanical onset.", "sound": "Resonance modeling supplies plate-like attack and a carefully tuned mechanical tail.", "watch_for": "The dense low-mid energy can crowd a full mix."},
+          {"name": "Synth Hall", "choose_for": "Long pads, synths, anti-shimmer, and abstract ambient wash.", "sound": "The lush Cathedral algorithm from Dimensions, improved for long synthetic diffusion.", "watch_for": "Avoid drums when pitch diffusion and long bloom obscure the pulse."},
+          {"name": "Chamber", "choose_for": "Short drum depth, buses, and long reverb that should retain tonal center.", "sound": "Dense, immediate, maximally modulated space without audible pitch artifacts.", "watch_for": "Width can mute the mid at maximum; verify the center and mono sum."}
+        ]
+      }
+    ],
+    "sources": [{"title": "Softube Core Dimensions manual", "url": "https://www.softube.com/user-manuals/core-dimensions"}]
+  },
+  {
+    "name": "Wasted Space",
+    "groups": [
+      {
+        "control": "Filter Type",
+        "summary": "Filter slope decides whether lowering Sample Rate becomes bandwidth reduction or audible foldback.",
+        "modes": [
+          {"name": "48 dB", "choose_for": "A cleaner vocal plate or darker digital reverb with the fewest aliasing artifacts.", "sound": "The steepest anti-alias filter makes Sample Rate behave most like a low-pass limit.", "watch_for": "The early-digital bandwidth remains; clean here does not mean full-frequency modern reverb."},
+          {"name": "24 dB", "choose_for": "A middle ground between controlled bandwidth and audible converter personality.", "sound": "More foldback than 48 dB without the obvious damage of the shallowest settings.", "watch_for": "Judge on sustained tails, where atonal artifacts are easier to hear."},
+          {"name": "12 dB", "choose_for": "Crunchy snares, robotic tails, and audible early-converter character.", "sound": "A shallow filter lets more above-Nyquist energy fold back into the reverb.", "watch_for": "The added high-frequency content is atonal, not a conventional brightness boost."},
+          {"name": "Off", "choose_for": "Maximum aliasing, sound design, and the most deliberately broken converter behavior.", "sound": "Unfiltered foldback becomes part of the tail as Sample Rate falls.", "watch_for": "Monitor level and high-frequency fatigue; this is a destruction mode, not a neutral plate."}
+        ]
+      }
+    ],
+    "sources": [{"title": "Softube Wasted Space manual", "url": "https://www.softube.com/user-manuals/wasted-space"}]
+  },
+  {
+    "name": "Echoes",
+    "groups": [
+      {
+        "control": "Echo Mode",
+        "summary": "Every mode changes the feedback character, modulation behavior, and the controls exposed around the same tap pattern.",
+        "modes": [
+          {"name": "Filter", "choose_for": "Cleanly composed tap rhythms with deliberate alternating low- and high-pass behavior.", "sound": "A normal delay whose tap filters range from all-low-pass to all-high-pass patterns.", "watch_for": "Filter contrast can become the rhythm; make sure the actual tap timing still works."},
+          {"name": "Reverb", "choose_for": "Living echoes, diffuse clusters, and tap patterns that should cross into algorithmic space.", "sound": "FDN-oriented pitch and amplitude modulation plus diffusion in the feedback loop.", "watch_for": "High diffusion consumes mix energy quickly even when individual taps seem quiet."},
+          {"name": "BBD", "choose_for": "Clocked bucket-brigade grit, darker repeats, and pitch movement tied to delay time.", "sound": "Longer delay lowers the modeled clock rate, increasing aliasing and changing playback pitch.", "watch_for": "Automating time moves audio already in the delay line; print intentionally."},
+          {"name": "Tape", "choose_for": "Drive, dirt, wobble, and a more performable mechanical feedback loop.", "sound": "Tape-style degradation with drive that strongly affects feedback behavior.", "watch_for": "Feedback can rise dramatically as Drive increases."},
+          {"name": "Pan", "choose_for": "Rhythmic stereo motion with controlled waveform, speed, and amount.", "sound": "A useful preset phase relationship animates the taps across the panorama.", "watch_for": "Movement can distract from the source if every tap crosses the center."},
+          {"name": "Lo-Fi", "choose_for": "Organic degraded repeats and evolving sound-design returns.", "sound": "Bit crushing plus resonant four-pole filtering driven by an envelope follower.", "watch_for": "Resonance and envelope motion can create sudden spectral peaks."}
+        ]
+      }
+    ],
+    "sources": [{"title": "Softube Echoes manual", "url": "https://www.softube.com/user-manuals/echoes"}]
+  },
+  {
+    "name": "Model 84 Chorus",
+    "groups": [
+      {
+        "control": "Chorus Mode",
+        "summary": "The original hardware allowed one speed at a time; the plug-in preserves that limitation.",
+        "modes": [
+          {"name": "I", "choose_for": "Lush, slower widening on pads, guitars, bass parallels, and restrained 1980s color.", "sound": "The slower of the two fixed modulation speeds.", "watch_for": "High input can distort the modeled chorus stage; use that deliberately."},
+          {"name": "II", "choose_for": "More animated chorus, fills, and parts that need a faster audible shimmer.", "sound": "A faster modulation rate with more obvious movement.", "watch_for": "It can pitch-wobble exposed sustained notes more readily than Mode I."}
+        ]
+      }
+    ],
+    "sources": [{"title": "Softube Model 84 manual", "url": "https://www.softube.com/user-manuals/model-84-polyphonic-synthesizer"}]
+  },
+  {
+    "name": "Layers",
+    "groups": [
+      {
+        "control": "Widening Algorithm",
+        "summary": "The first five come from Widener; Slow Mod is Layers’ extra chorus-derived option.",
+        "modes": [
+          {"name": "Classic", "choose_for": "Predictable mono-to-stereo widening when a little delay-based character is acceptable.", "sound": "Mid-derived delayed sides with the center left untouched.", "watch_for": "Left/right comb filtering and audible echo can appear on percussive sources."},
+          {"name": "Frequency Spread", "choose_for": "Percussive or upper-frequency width with fewer obvious echoes than Classic.", "sound": "Phase shifts move energy into the sides while leaving the mid untouched.", "watch_for": "Low frequencies can appear panned; raise the Low Frequency boundary."},
+          {"name": "Rotation", "choose_for": "Natural mono-source width without changing left/right frequency response.", "sound": "Phase rotation creates a smooth image but dips the mid near Emphasis.", "watch_for": "It softens transients and does little for an already-stereo source."},
+          {"name": "Ambience", "choose_for": "Guitars, drums, and layers that should feel bigger as well as wider.", "sound": "A short reverb-like network adds cross-channel ambience.", "watch_for": "Lower High Frequency if it turns tinny."},
+          {"name": "Reflections", "choose_for": "Stereo enlargement with echo patterns shuffled to reduce obvious chorusing.", "sound": "Dense short reflections mask comb filtering and audible pitch movement.", "watch_for": "It changes both mid/side and left/right information; mono-check the whole sum."},
+          {"name": "Slow Mod", "choose_for": "Syrupy, thick chorus width rather than artifact-minimizing stereo conversion.", "sound": "A hardware-rack-inspired slow modulation effect with three intensity speeds.", "watch_for": "It is the most overtly chorus-like choice; use Wet Only when the center must remain stable."}
+        ]
+      }
+    ],
+    "sources": [
+      {"title": "Softube Layers manual", "url": "https://www.softube.com/user-manuals/layers"},
+      {"title": "Softube Widener manual", "url": "https://www.softube.com/user-manuals/widener"}
+    ]
+  },
+  {
+    "name": "Widener",
+    "groups": [
+      {
+        "control": "Algorithm",
+        "summary": "Every method places its unavoidable stereo artifacts somewhere different; choose the least damaging tradeoff.",
+        "modes": [
+          {"name": "Classic", "choose_for": "Predictable mono widening and strong apparent spread from a simple source.", "sound": "Delay-derived sides leave the mid untouched and collapse cleanly to mono.", "watch_for": "Left/right comb filtering and slap can be audible; adjust Size and darken the added signal."},
+          {"name": "Frequency Spread", "choose_for": "Percussive sounds and upper-mid/high widening without audible echoes.", "sound": "Phase spreading leaves the mid untouched and is smoother than Classic.", "watch_for": "Low frequencies can pull toward one side; raise Low Frequency."},
+          {"name": "Rotation", "choose_for": "A natural-feeling mono source, especially snare, with no left/right EQ change.", "sound": "Phase rotation widens while introducing a soft dip in the mid at Emphasis.", "watch_for": "Avoid important mono elements at Emphasis; it also softens transients."},
+          {"name": "Ambience", "choose_for": "Drum buses, guitars, and tracks that should gain both width and a sense of space.", "sound": "A very short reverb-like figure-eight network crosses energy between channels.", "watch_for": "It can sound tinny; lower High Frequency and adjust Size."},
+          {"name": "Reflections", "choose_for": "The most reverb-like widening with reduced audible echo and chorusing.", "sound": "Shuffled short reflections mask comb-filter artifacts across the stereo field.", "watch_for": "It alters the mid as well as the sides; use the meters and verify mono."}
+        ]
+      }
+    ],
+    "sources": [{"title": "Softube Widener manual", "url": "https://www.softube.com/user-manuals/widener"}]
+  }
+]
