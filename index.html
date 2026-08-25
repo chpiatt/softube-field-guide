@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="A comprehensive field guide to Softube's 2026 plug-in roster, hardware lineage, comparisons, tips, and genre recipes.">
-  <meta name="theme-color" content="#ee4d2d">
+  <meta name="theme-color" content="#050505">
   <title>The Softube Field Guide 2026</title>
   <style>
     :root{
@@ -67,39 +67,76 @@
     @media (max-width:780px){.topbar-note{display:none}.search-wrap{min-width:0;flex:1}.topbar-inner{padding:0 14px;gap:12px}.wordmark span{display:none}.layout{display:block}.sidebar{display:none}.hero-inner{padding:70px 24px 46px;min-height:590px}.hero h1{font-size:18vw}.feature-strip-inner{grid-template-columns:1fr}.feature{border-right:0;border-bottom:1px solid rgba(255,255,255,.24);padding:20px 24px}main{padding:54px 20px 80px}.plugin-card>p:not(.plugin-head){padding:15px 20px}.plugin-card>p strong{position:static;display:block;width:auto;margin-bottom:5px}.recipe-grid{grid-template-columns:1fr}#research-notes-and-sources ul{columns:1}footer{display:block;padding:28px 24px}.hero-meta dl{gap:18px}.topbar{height:58px}html{scroll-padding-top:70px}}
     @media print{body{background:#fff}.topbar,.sidebar,.back-top{display:none!important}.hero{break-after:page}.hero-inner{min-height:92vh}.layout{display:block;box-shadow:none}.card-grid{display:block}.plugin-card{break-inside:avoid;margin:0 0 14px;box-shadow:none}.level1{break-before:page}.level1:first-child{break-before:auto}main{padding:30px}.table-wrap{overflow:visible;box-shadow:none}.recipe-grid{display:block}.recipe{break-inside:avoid;margin-bottom:12px}a{color:#000;text-decoration:none}}
   </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!--
+  THESIS: A job-first independent reference that refuses the undifferentiated catalog dump.
+  OWN-WORLD: Matte black equipment fields resolve into a white reading canvas, with mint signal lines, square regions, fine graphite rules, and one coherent monoline icon system.
+  STORY: A producer understands the guide, chooses a production job, sees grounded first picks, then searches or opens the complete catalog without losing context.
+  FIRST VIEWPORT: A compact masthead holds one catalog search; below it, a large title and five job links share a black field, followed by a horizontal category rail and the opening of the white decision map.
+  FORM: Category standard, Overview first composition; seed key b88d8d97.
+  FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+  -->
   <a class="skip-link" href="#guide">Skip to guide</a>
+  <svg class="icon-sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m5 5 14 14M19 5 5 19"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.1"/></symbol>
+    <symbol id="i-tone" viewBox="0 0 24 24"><path d="M2 13c3 0 3-7 6-7s3 12 6 12 3-8 8-8"/></symbol>
+    <symbol id="i-dynamics" viewBox="0 0 24 24"><path d="M3 12h2l1-6 2 12 2-15 2 18 2-13 2 8 2-4h3"/></symbol>
+    <symbol id="i-color" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 4v3M12 17v3M4 12h3M17 12h3M6.5 6.5l2 2M15.5 15.5l2 2"/></symbol>
+    <symbol id="i-space" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2"/><circle cx="12" cy="12" r="7" stroke-dasharray="2.4 3.2"/></symbol>
+    <symbol id="i-keys" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M7 5v9M12 5v9M17 5v9M5.5 14h13"/></symbol>
+    <symbol id="i-mix" viewBox="0 0 24 24"><path d="M6 3v18M12 3v18M18 3v18"/><rect x="4" y="7" width="4" height="5" rx="1"/><rect x="10" y="13" width="4" height="5" rx="1"/><rect x="16" y="5" width="4" height="5" rx="1"/></symbol>
+    <symbol id="i-master" viewBox="0 0 24 24"><path d="M4 20V12M9 20V7M14 20V3M19 20v-5"/><path d="M3 20h18"/></symbol>
+    <symbol id="i-synth" viewBox="0 0 24 24"><path d="M2 13h3l2-6 3 11 3-13 3 11 2-6 2 3h2"/></symbol>
+    <symbol id="i-guitar" viewBox="0 0 24 24"><path d="m15 4 5-2 2 2-2 5-5 5c.2 3.7-2.6 7-6.2 7A5.8 5.8 0 0 1 3 15.2C3 11.6 6.3 8.8 10 9l5-5Z"/><circle cx="9" cy="15" r="1.8"/></symbol>
+    <symbol id="i-modular" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="8" cy="8" r="1.5"/><circle cx="16" cy="8" r="1.5"/><circle cx="8" cy="16" r="1.5"/><circle cx="16" cy="16" r="1.5"/><path d="m9.5 8 5 0M8 9.5v5M16 9.5v5M9.5 16h5"/></symbol>
+    <symbol id="i-suites" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 12 9 5 9-5M3 16l9 5 9-5"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 4h7a3 3 0 0 1 3 3v13a3 3 0 0 0-3-3H4V4ZM20 4h-3a3 3 0 0 0-3 3v13a3 3 0 0 1 3-3h3V4Z"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 1v3M12 20v3M1 12h3M20 12h3"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></symbol>
+  </svg>
   <header class="topbar">
     <div class="topbar-inner">
-      <div class="wordmark" aria-label="Softube Field Guide"><i aria-hidden="true"></i><span>Softube Field Guide</span></div>
-      <div class="topbar-note">Independent studio reference · 2026</div>
-      <label class="search-wrap"><span class="search-icon" aria-hidden="true">⌕</span><span class="sr-only">Search plug-ins</span><input id="search" type="search" placeholder="Search plug-ins, hardware, genres…" autocomplete="off"><span class="result-count" id="result-count">166</span></label>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-label="Open guide navigation" aria-controls="nav-drawer" aria-expanded="false"><svg class="icon"><use href="#i-menu"/></svg></button>
+      <a class="wordmark" href="#page-title" aria-label="The Softube Field Guide, home"><span class="wordmark-lines" aria-hidden="true"><i></i><i></i><i></i></span><span>The Softube<br>Field Guide</span></a>
+      <label class="search-wrap"><svg class="icon search-icon" aria-hidden="true"><use href="#i-search"/></svg><span class="sr-only">Search the complete catalog</span><input id="search" type="search" placeholder="Search 166 plug-ins, hardware, jobs, or genres" autocomplete="off"><span class="result-count" id="result-count" aria-live="polite">166</span></label>
+      <div class="topbar-note"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg><span>Independent catalog reference</span></div>
     </div>
   </header>
   <section class="hero" aria-labelledby="page-title">
     <div class="hero-inner">
-      <div>
-        <div class="eyebrow">Complete roster reference</div>
-        <h1 id="page-title">The Softube<br><span>Field Guide</span></h1>
+      <div class="hero-copy">
+        <p class="hero-eyebrow">Independent catalog reference</p>
+        <h1 id="page-title">The Softube<br>Field Guide</h1>
+        <p class="hero-promise">Find the right tool for the job.</p>
         <p class="deck">What every current plug-in does best, what it models, when to choose it—and how to get more from it.</p>
       </div>
-      <div class="hero-meta">
-        <dl>
-          <div><dt>Catalog entries</dt><dd>166</dd></div>
-          <div><dt>Genre recipes</dt><dd>12</dd></div>
-          <div class="wide"><dt>Roster verified</dt><dd>24 August 2026 · Mixing, mastering, synthesis, modular, guitar, bass, suites, and legacy compatibility.</dd></div>
-        </dl>
-      </div>
+      <nav class="job-nav" aria-label="Start by production job">
+        <h2>Start by job</h2>
+        <a href="#1-equalizers-tone-surgery-and-broad-stroke-color"><svg class="icon" aria-hidden="true"><use href="#i-tone"/></svg><span>Shape tone</span><svg class="icon chevron" aria-hidden="true"><use href="#i-chevron"/></svg></a>
+        <a href="#2-dynamics-compressors-limiters-gates-and-transient-control"><svg class="icon" aria-hidden="true"><use href="#i-dynamics"/></svg><span>Control dynamics</span><svg class="icon chevron" aria-hidden="true"><use href="#i-chevron"/></svg></a>
+        <a href="#4-saturation-tape-lo-fi-and-distortion"><svg class="icon" aria-hidden="true"><use href="#i-color"/></svg><span>Add color</span><svg class="icon chevron" aria-hidden="true"><use href="#i-chevron"/></svg></a>
+        <a href="#5-reverb-delay-modulation-and-stereo-space"><svg class="icon" aria-hidden="true"><use href="#i-space"/></svg><span>Create space</span><svg class="icon chevron" aria-hidden="true"><use href="#i-chevron"/></svg></a>
+        <a href="#7-synthesizers-and-drum-instruments"><svg class="icon" aria-hidden="true"><use href="#i-keys"/></svg><span>Build an instrument</span><svg class="icon chevron" aria-hidden="true"><use href="#i-chevron"/></svg></a>
+      </nav>
     </div>
   </section>
-  <section class="feature-strip" aria-label="Guide features"><div class="feature-strip-inner">
-    <div class="feature"><b>Modeling</b><span>Named hardware and candid lineage notes</span></div>
-    <div class="feature"><b>Comparison</b><span>Like-for-like decision guidance</span></div>
-    <div class="feature"><b>Application</b><span>Practical tips and genre-specific moves</span></div>
-  </div></section>
+  <nav class="feature-strip" aria-label="Catalog areas"><div class="feature-strip-inner">
+    <a class="feature active" href="#catalog-index"><svg class="icon" aria-hidden="true"><use href="#i-mix"/></svg><span>Mixing &amp; mastering</span></a>
+    <a class="feature" href="#7-synthesizers-and-drum-instruments"><svg class="icon" aria-hidden="true"><use href="#i-synth"/></svg><span>Synthesizers</span></a>
+    <a class="feature" href="#5-reverb-delay-modulation-and-stereo-space"><svg class="icon" aria-hidden="true"><use href="#i-space"/></svg><span>Space &amp; effects</span></a>
+    <a class="feature" href="#9-guitar-and-bass-amps-cabinets-pedals-and-amp-room-suites"><svg class="icon" aria-hidden="true"><use href="#i-guitar"/></svg><span>Guitar &amp; bass</span></a>
+    <a class="feature" href="#8-modular-platform-and-officially-modeled-eurorackbuchla-modules"><svg class="icon" aria-hidden="true"><use href="#i-modular"/></svg><span>Modular</span></a>
+    <a class="feature" href="#10-suites-collections-and-compatibility-only-products"><svg class="icon" aria-hidden="true"><use href="#i-suites"/></svg><span>Suites</span></a>
+  </div></nav>
   <div class="layout">
-    <aside class="sidebar" aria-label="Document navigation"><div class="toc-label">In this guide</div><nav class="toc" id="toc"><a href="#how-to-use-this-guide">How to use this guide</a><a href="#1-equalizers-tone-surgery-and-broad-stroke-color"><span class="num">01</span> Equalizers: tone, surgery, and broad-stroke color</a><a href="#2-dynamics-compressors-limiters-gates-and-transient-control"><span class="num">02</span> Dynamics: compressors, limiters, gates, and transient control</a><a href="#3-channel-strips-and-integrated-workflows"><span class="num">03</span> Channel strips and integrated workflows</a><a href="#4-saturation-tape-lo-fi-and-distortion"><span class="num">04</span> Saturation, tape, lo-fi, and distortion</a><a href="#5-reverb-delay-modulation-and-stereo-space"><span class="num">05</span> Reverb, delay, modulation, and stereo space</a><a href="#6-vocal-pitch-filter-and-utility-processors"><span class="num">06</span> Vocal, pitch, filter, and utility processors</a><a href="#7-synthesizers-and-drum-instruments"><span class="num">07</span> Synthesizers and drum instruments</a><a href="#8-modular-platform-and-officially-modeled-eurorackbuchla-modules"><span class="num">08</span> Modular platform and officially modeled Eurorack/Buchla modules</a><a href="#9-guitar-and-bass-amps-cabinets-pedals-and-amp-room-suites"><span class="num">09</span> Guitar and bass: amps, cabinets, pedals, and Amp Room suites</a><a href="#10-suites-collections-and-compatibility-only-products"><span class="num">10</span> Suites, collections, and compatibility-only products</a><a href="#genre-recipes-choosing-a-chain-for-a-reason">Genre recipes: choosing a chain for a reason</a><a href="#hardware-lineage-index">Hardware lineage index</a><a href="#research-notes-and-sources">Research notes and sources</a></nav><div class="sidebar-footer">Independent editorial field guide. Product names and trademarks belong to their respective owners.</div></aside>
+    <aside class="sidebar" id="nav-drawer" role="dialog" aria-modal="true" aria-label="Guide navigation" aria-hidden="true" inert><div class="sidebar-head"><div><span>The complete guide</span><strong>Jump to a section</strong></div><button class="nav-close" id="nav-close" type="button" aria-label="Close guide navigation"><svg class="icon"><use href="#i-close"/></svg></button></div><nav class="toc" id="toc"><a href="#how-to-use-this-guide">How to use this guide</a><a href="#1-equalizers-tone-surgery-and-broad-stroke-color">Equalizers</a><a href="#2-dynamics-compressors-limiters-gates-and-transient-control">Dynamics</a><a href="#3-channel-strips-and-integrated-workflows">Channel strips</a><a href="#4-saturation-tape-lo-fi-and-distortion">Saturation, tape &amp; distortion</a><a href="#5-reverb-delay-modulation-and-stereo-space">Reverb, delay &amp; space</a><a href="#6-vocal-pitch-filter-and-utility-processors">Vocal, pitch &amp; utility</a><a href="#7-synthesizers-and-drum-instruments">Synthesizers &amp; drums</a><a href="#8-modular-platform-and-officially-modeled-eurorackbuchla-modules">Modular</a><a href="#9-guitar-and-bass-amps-cabinets-pedals-and-amp-room-suites">Guitar &amp; bass</a><a href="#10-suites-collections-and-compatibility-only-products">Suites &amp; compatibility</a><a href="#genre-recipes-choosing-a-chain-for-a-reason">Genre recipes</a><a href="#hardware-lineage-index">Hardware lineage index</a><a href="#research-notes-and-sources">Research notes &amp; sources</a></nav><div class="sidebar-footer">Independent editorial field guide. Product names and trademarks belong to their respective owners.</div></aside>
+    <button class="drawer-scrim" id="drawer-scrim" type="button" tabindex="-1" aria-label="Close guide navigation"></button>
     <main id="guide">
       <div class="no-results" id="no-results"><strong>No matching plug-ins.</strong><br>Try a hardware family, job, genre, or shorter term.</div>
       <section id="how-to-use-this-guide" class="level1">
@@ -224,12 +261,12 @@
       <section id="1-equalizers-tone-surgery-and-broad-stroke-color" class="level1">
       <h1>1. Equalizers: tone, surgery, and broad-stroke color</h1>
       <p><em>The fastest choice is by curve behavior: modern/dynamic for repair, active proportional-Q for focus, passive parallel curves for weight and sheen, and console EQs for fast musical commitment.</em></p>
-      <div class="card-grid"><article class="plugin-card" data-lineage="· UNLICENSED ID: PULTEC EQP-1/EQP-1A PRINCIPLE; MODERN STEREO EXPANDED-FREQUENCY DESCENDANT" data-search="reference 1956   · unlicensed id: pultec eqp-1/eqp-1a principle; modern stereo expanded-frequency descendant 
+      <div class="card-grid"><article class="plugin-card" data-lineage="· UNLICENSED ID: MANLEY ENHANCED PULTEC EQ; PULTEC EQP-1A DESCENDANT" data-search="reference 1956   · unlicensed id: manley enhanced pultec eq; pultec eqp-1a descendant
        best at —  huge, soft shelves and the simultaneous boost/attenuation “pultec trick,” with audible tube-stage wear. 
        choose it when —  you want more patina and nonlinear personality than tube-tech pe 1c, or m/s widening without leaving the plug-in. 
        get more from it —  drive the input before boosting; offset low boost with low attenuation; in m/s, add air to side while keeping sub boosts in mid. 
        genre move —  on boom-bap drums, boost/attenuate 60 hz for a round kick that still leaves room for bass. 
-      "><p class="plugin-head"><strong>Reference 1956</strong> <em>· UNLICENSED ID: Pultec EQP-1/EQP-1A principle; modern stereo expanded-frequency descendant</em></p>
+      "><p class="plugin-head"><strong>Reference 1956</strong> <em>· UNLICENSED ID: Manley Enhanced Pultec EQ; Pultec EQP-1A descendant</em></p>
       <p><strong>Best at —</strong> Huge, soft shelves and the simultaneous boost/attenuation “Pultec trick,” with audible tube-stage wear.</p>
       <p><strong>Choose it when —</strong> You want more patina and nonlinear personality than Tube-Tech PE 1C, or M/S widening without leaving the plug-in.</p>
       <p><strong>Get more from it —</strong> Drive the input before boosting; offset low boost with low attenuation; in M/S, add air to Side while keeping sub boosts in Mid.</p>
@@ -1861,12 +1898,12 @@
       <p><strong>Get more from it —</strong> Use one generation mode consistently per project unless contrast is intentional; avoid stacking every tube stage at high drive.</p>
       <p><strong>Genre move —</strong> On R&amp;B album mixes, use CL 1B on leads, Equalizers on bass, and SMC 2B only on the master when needed.</p>
       </article><article class="plugin-card" data-lineage="· COLLECTION: REFERENCE 1956 + REFERENCE 1998" data-search="reference equalizers bundle   · collection: reference 1956 + reference 1998 
-       best at —  two complementary unlicensed passive/tube equalizer lineages: pultec and massive passive. 
+       best at —  two complementary unlicensed manley passive/tube equalizer lineages: enhanced pultec and massive passive.
        choose it when —  choose it when broad analog tone is more important than corrective eq. 
        get more from it —  use 1956 for focused low/air gestures and 1998 for multi-band mix-bus contour. 
        genre move —  on soul mastering, shape bass with 1956 and final broad sheen with 1998. 
       "><p class="plugin-head"><strong>Reference Equalizers Bundle</strong> <em>· COLLECTION: Reference 1956 + Reference 1998</em></p>
-      <p><strong>Best at —</strong> Two complementary unlicensed passive/tube equalizer lineages: Pultec and Massive Passive.</p>
+      <p><strong>Best at —</strong> Two complementary unlicensed Manley passive/tube equalizer lineages: Enhanced Pultec and Massive Passive.</p>
       <p><strong>Choose it when —</strong> Choose it when broad analog tone is more important than corrective EQ.</p>
       <p><strong>Get more from it —</strong> Use 1956 for focused low/air gestures and 1998 for multi-band mix-bus contour.</p>
       <p><strong>Genre move —</strong> On soul mastering, shape bass with 1956 and final broad sheen with 1998.</p>
@@ -1949,7 +1986,7 @@
       </thead>
       <tbody>
       <tr class="odd">
-      <td><strong>Pultec EQP-1/EQP-1A</strong></td>
+      <td><strong>Manley Enhanced Pultec EQ / Pultec EQP-1A</strong></td>
       <td>Reference 1956 (unlicensed ID); Tube-Tech PE 1C / Equalizers Mk II (licensed Tube-Tech derivative)</td>
       </tr>
       <tr class="even">
@@ -2051,6 +2088,7 @@
       <li><p><a href="https://www.softube.com/plug-ins/guitar-bass"><u>Softube product catalog: Guitar &amp; Bass</u></a></p></li>
       <li><p><a href="https://www.softube.com/flow-complete-suite"><u>Softube Flow Complete Suite roster</u></a></p></li>
       <li><p><a href="https://www.softube.com/reference-equalizers"><u>Softube Reference Equalizers</u></a></p></li>
+      <li><p><a href="https://www.manley.com/s/MiniMassive-03-29-09cd.pdf"><u>Manley Mini Massive manual — Enhanced Pultec design notes</u></a></p></li>
       <li><p><a href="https://www.softube.com/tube-tech-complete-collection-2"><u>Softube Tube-Tech Complete Collection 2</u></a></p></li>
       <li><p><a href="https://www.softube.com/user-manuals/passive-active-pack"><u>Softube Passive-Active Pack manual</u></a></p></li>
       <li><p><a href="https://www.softube.com/user-manuals/tape"><u>Softube Tape manual</u></a></p></li>
@@ -2081,37 +2119,8 @@
       </section>
     </main>
   </div>
-  <button class="back-top" id="back-top" aria-label="Back to top">↑</button>
-  <footer><span>The Softube Field Guide · Roster verified 24 August 2026</span><span>A practical studio handbook—not a preset list.</span></footer>
-  <script>
-  (()=>{
-    const main=document.querySelector('main');
-    const direct=[...main.querySelectorAll('.level1 > p')];
-    let cards=[];
-    for(let i=0;i<direct.length;i++){
-      const p=direct[i], em=p.querySelector(':scope > em'), strong=p.querySelector(':scope > strong');
-      if(!strong||!em||!em.textContent.trim().startsWith('·')) continue;
-      const next=[]; let node=p.nextElementSibling;
-      while(node&&node.tagName==='P'&&next.length<4){next.push(node);node=node.nextElementSibling}
-      if(next.length!==4||!next.every(x=>x.querySelector('strong'))) continue;
-      const article=document.createElement('article');article.className='plugin-card';
-      article.dataset.lineage=em.textContent.toUpperCase();article.dataset.search=(p.textContent+' '+next.map(x=>x.textContent).join(' ')).toLowerCase();
-      p.classList.add('plugin-head');p.parentNode.insertBefore(article,p);article.append(p,...next);cards.push(article);
-    }
-    document.querySelectorAll('.level1').forEach(section=>{
-      const sectionCards=[...section.children].filter(x=>x.classList&&x.classList.contains('plugin-card'));
-      if(sectionCards.length){const grid=document.createElement('div');grid.className='card-grid';section.insertBefore(grid,sectionCards[0]);sectionCards.forEach(c=>grid.appendChild(c))}
-      [...section.querySelectorAll(':scope > table')].forEach(table=>{const wrap=document.createElement('div');wrap.className='table-wrap';table.parentNode.insertBefore(wrap,table);wrap.appendChild(table)});
-    });
-    [...main.querySelectorAll('table')].forEach(table=>{if(table.parentElement.classList.contains('table-wrap'))return;const wrap=document.createElement('div');wrap.className='table-wrap';table.parentNode.insertBefore(wrap,table);wrap.appendChild(table)});
-    cards=[...main.querySelectorAll('.plugin-card')];
-    const sections=[...main.querySelectorAll('.level1')],headings=sections.map(s=>s.querySelector(':scope > h1'));const toc=document.querySelector('#toc');if(!toc.children.length)headings.forEach((h,i)=>{const a=document.createElement('a');a.href='#'+h.parentElement.id;const match=h.textContent.match(/^(\d+)\./);a.innerHTML=(match?'<span class="num">'+match[1].padStart(2,'0')+'</span> ':'')+h.textContent.replace(/^\d+\.\s*/, '');toc.appendChild(a)});
-    const search=document.querySelector('#search'),count=document.querySelector('#result-count'),empty=document.querySelector('#no-results');
-    const normalize=s=>s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
-    function filter(){const q=normalize(search.value.trim());let shown=0;cards.forEach(c=>{const yes=!q||normalize(c.dataset.search).includes(q);c.classList.toggle('is-hidden',!yes);if(yes)shown++});count.textContent=q?shown+'/'+cards.length:cards.length;empty.classList.toggle('show',!!q&&!shown)}search.addEventListener('input',filter);filter();
-    const links=[...toc.querySelectorAll('a')];const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>a.classList.toggle('active',a.hash==='#'+e.target.id))}}),{rootMargin:'-15% 0px -75%'});sections.forEach(s=>obs.observe(s));
-    const top=document.querySelector('#back-top');addEventListener('scroll',()=>top.classList.toggle('show',scrollY>900),{passive:true});top.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
-  })();
-  </script>
+  <button class="back-top" id="back-top" type="button" aria-label="Back to top"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 14 7-7 7 7M12 7v13"/></svg></button>
+  <footer><span>The Softube Field Guide · Roster verified 24 August 2026</span><span>Independent research for producers—not an official Softube publication.</span></footer>
+  <script src="app.js"></script>
 </body>
 </html>

@@ -1,0 +1,1563 @@
+[
+  {
+    "name": "Amp Room",
+    "section": 9,
+    "comparative_edge": "Choose Amp Room over a single amp plug-in when the production problem is the whole recorded rig: pedal order, amp, two-cab blend, microphone perspective, parallel lanes, and post processing. Choose the lighter Amplifiers companion when the amp/cab sound is already known and routing experiments would only slow the take.",
+    "advanced_moves": [
+      {
+        "setup": "Reamp one DI and copy the starting rig into multistates A-D.",
+        "action": "Keep amp, gain, and output fixed; change only cabinet and one close mic per state. Match loudness, choose the cabinet on low-mid shape, then move the mic from center toward edge to trade attack for body.",
+        "listen_for": "A cabinet that solves most of the mix placement before any parametric EQ.",
+        "why_it_works": "Cabinet resonance and mic position impose broader, more source-like changes than corrective EQ after the fact."
+      },
+      {
+        "setup": "In Studio mode, split a bass or baritone-guitar path into low and high lanes.",
+        "action": "Leave the low lane clean or lightly compressed; drive the high lane through amp and cabinet. Set the crossover while listening in mono, then use Short Delay or Variable Phase until the combined low mids stop hollowing out.",
+        "listen_for": "Stable fundamental weight with distortion that remains audible on small speakers.",
+        "why_it_works": "The split keeps nonlinear processing away from the sub while Amp Room's alignment utilities repair timing between parallel paths."
+      }
+    ],
+    "insider_note": "Documented behavior: Amp Room stores a user IR inside the DAW project and preset, so the session can recall it on another computer even if the original IR file is absent. Only the first second of a loaded WAV is used.",
+    "avoid_when": "Avoid Amp Room when you need one known amp/cab sound with minimal CPU and setup; use the suite's Amplifiers companion. Avoid Headphone mode during final rendering unless its added room and softened top are intentionally part of the print.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Amp Room user manual",
+          "url": "https://www.softube.com/user-manuals/amp-room"
+        }
+      ]
+    },
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Double-tracked rhythm guitars",
+        "source_or_bus": "Double-tracked rhythm guitars",
+        "application": "In Indie rock, use the same amp performance through two different cabinets, keeping one mic near center for pick and the other farther toward the edge for body.",
+        "why_this_plugin": "Amp Room makes cabinet and mic contrast a controlled production decision without changing the player's gain response."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Reese-bass mid layer",
+        "source_or_bus": "Reese-bass mid layer",
+        "application": "In Drum and bass, send only the band above the sub crossover through a guitar amp/cab lane, then automate cabinet blend between verse and drop.",
+        "why_this_plugin": "Studio mode's crossover, parallel routing, and phase tools keep the sub independent while the mids gain physical speaker character."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Celestion Speaker Shaper",
+        "goal": "Replace a fixed cabinet choice with a continuously shapeable speaker and microphone stage.",
+        "order": "Amp/pedals in Amp Room → Celestion Speaker Shaper module → room or post effects",
+        "setup": "Bypass the ordinary cabinet, start Speaker Shaper from a real Celestion/default physical configuration, and solve cabinet scale before adding room.",
+        "why_it_works": "Amp Room supplies the gain-and-routing ecosystem while Speaker Shaper exposes speaker construction, breakup, and capture as the next production decision.",
+        "caution": "The Amp Room module has one speaker and no native room section; add a parallel second module or RoomIR only when needed.",
+        "basis": "documented",
+        "source_url": "https://www.softube.com/user-manuals/celestion-speaker-shaper"
+      }
+    ]
+  },
+  {
+    "name": "American Mainstayer",
+    "section": 9,
+    "comparative_edge": "Choose it over ENGL Savage for wider, looser American low-end mass and over JMP 2203 for deeper saturation with less upper-mid bark. Its first channel is the better sound-design platform; channel two is the faster route to finished high gain.",
+    "advanced_moves": [
+      {
+        "setup": "Use channel one with less Gain than a finished metal preset and place TUBE Overdrive before it.",
+        "action": "Set pedal Drive low, Level high, and trim lows before the amp; then balance Presence, Master, and Gain instead of maxing Gain alone.",
+        "listen_for": "Palm mutes that stop blooming late while sustained chords retain width.",
+        "why_it_works": "The pedal's documented mid emphasis changes the spectrum driving the deliberately loose channel, while the three amp controls redistribute saturation and high-frequency feedback."
+      },
+      {
+        "setup": "Duplicate one DI into two Amp Room multistates with the same amp settings.",
+        "action": "Pair one oversized V30-style cab for low-mid authority with a tighter, more mid-forward cab; pan only after checking the summed mono tone and phase alignment.",
+        "listen_for": "One layer supplies size and the other readable pick attack without a scooped combined center.",
+        "why_it_works": "Cabinet resonance, not extra amp gain, creates complementary spectral roles while preserving a common distortion envelope."
+      }
+    ],
+    "insider_note": "Softube's manual explicitly singles out Presence, Master Volume, and Gain as a productive three-control search space. Engineering inference: auditioning those three before the tone stack prevents post-EQ from compensating for the wrong gain architecture.",
+    "avoid_when": "Avoid it when extended-range chord separation must stay exact under heavy gain; ENGL Savage is the cleaner choice. For lean punk or classic-rock midrange, JMP 2203 usually occupies less low-frequency space.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Amp Room Metal Suite user manual",
+          "url": "https://www.softube.com/user-manuals/amp-room-metal-suite"
+        }
+      ]
+    },
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Drop-tuned rhythm guitars",
+        "source_or_bus": "Drop-tuned rhythm guitars",
+        "application": "In Metalcore, use the tightened first channel for quad tracks at lower gain, reserving channel two for a narrower center reinforcement.",
+        "why_this_plugin": "Its low-frequency mass survives layering better when split between a tightened wide role and a denser center role."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Single wide guitar part",
+        "source_or_bus": "Single wide guitar part",
+        "application": "In Alternative rock, let channel one remain slightly loose, blend two contrasting cabinets, and automate pedal level rather than amp gain for the chorus.",
+        "why_this_plugin": "Mainstayer's imperfect low-end movement sounds larger and less clinically controlled than ENGL when one performance must fill space."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "TUBE Overdrive",
+        "goal": "Tighten low-frequency drive before high-gain clipping while preserving saturation.",
+        "order": "TUBE Overdrive → American Mainstayer",
+        "setup": "On channel one, keep pedal Drive low, raise Level, trim Tone for pick definition, then reduce amp Gain until chord separation returns.",
+        "why_it_works": "The pedal's documented mid emphasis shifts the balance of what reaches Mainstayer’s deliberately loose first channel.",
+        "caution": "Do not compensate for the tighter input by adding excessive bass before the amp; restore weight at the cabinet or clean lane.",
+        "basis": "documented",
+        "source_url": "https://www.softube.com/user-manuals/amp-room-metal-suite"
+      }
+    ]
+  },
+  {
+    "name": "Bass Standard Line V8",
+    "section": 9,
+    "comparative_edge": "Choose it over Supernova when you want one coherent tube-amp envelope instead of an explicit clean/dirty parallel design, and over Eden WT800 when low-mid bloom and power-stage compression matter more than hi-fi articulation. It also doubles unusually well as a clean guitar amp.",
+    "advanced_moves": [
+      {
+        "setup": "Split bass into a clean DI and a V8 lane before the amp.",
+        "action": "High-pass the V8 lane around the region where the DI becomes solid, push the amp until notes thicken, then blend the V8 only until bass remains readable on small speakers.",
+        "listen_for": "The note speaks on phone-size playback without the full-range mix gaining extra sub bloom.",
+        "why_it_works": "The clean lane owns the fundamental while the tube lane supplies compressed harmonics and low-mid density."
+      },
+      {
+        "setup": "Feed a bright single-coil guitar into V8 with conservative input drive.",
+        "action": "Pair it with a smaller or brighter cabinet than the default bass choices and raise input only until the pick softens.",
+        "listen_for": "Large, glassy clean notes with less scoop than Pacific Black and less chime compression than Top Boost.",
+        "why_it_works": "The 100-watt tube platform has clean headroom and fullness that Softube specifically documents as useful for guitar."
+      }
+    ],
+    "insider_note": "Softube explicitly recommends trying the bass amp for sparkling clean guitar. That is more than a novelty: its bass-designed headroom can keep heavily effected guitar transients intact before modulation and reverb.",
+    "avoid_when": "Avoid it for clean slap, extended-range bass, or detailed bi-amping where Eden WT800 exposes more targeted shaping. Use Supernova when the production needs clean sub and distorted mids inside one purpose-built parallel module.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Amp Room Bass Suite user manual",
+          "url": "https://www.softube.com/user-manuals/amp-room-bass-suite"
+        }
+      ]
+    },
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Picked electric bass",
+        "source_or_bus": "Picked electric bass",
+        "application": "In Garage rock, keep the DI centered and let a driven V8 lane carry 500 Hz-3 kHz grit under dense guitars.",
+        "why_this_plugin": "Its tube compression makes aggressive picking consistent without the explicit modern polish of Eden."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Clean electric guitar",
+        "source_or_bus": "Clean electric guitar",
+        "application": "In Dream pop, use V8 as a high-headroom amp before chorus and long reverb, with a compact cabinet to keep modulation lows controlled.",
+        "why_this_plugin": "It stays full under spatial effects without Pacific's deep scoop or Top Boost's pronounced upper-mid compression."
+      }
+    ],
+    "pairings": []
+  },
+  {
+    "name": "Pacific Dual Tremolo 100W Black",
+    "section": 9,
+    "comparative_edge": "Choose Black over Silver when you want the earlier combo's simpler volume-dependent breakup and sweeter clean-to-hair transition. Choose it over Top Boost for a wider, more scooped pedal platform, and over Custom 100W when rigid British low end would fight the arrangement.",
+    "advanced_moves": [
+      {
+        "setup": "Start with Volume low enough that Bright still operates and Bass below noon.",
+        "action": "Raise Bass and Volume together until the first attractive breakup appears, then back Bass down to recover headroom without losing the selected volume feel.",
+        "listen_for": "The attack clears while the note still carries a soft edge and low-mid warmth.",
+        "why_it_works": "Softube documents that the tone stack—especially Bass—changes the amount of modeled distortion, while Bright works only at lower volume."
+      },
+      {
+        "setup": "Use the built-in tremolo before a separate spring or chamber reverb.",
+        "action": "Set tremolo depth by how much dry center must remain, then time the reverb pre-delay so the first reflection lands after the tremolo's initial dip.",
+        "listen_for": "The dry guitar pulses clearly while the reverb fills gaps instead of flattening the motion.",
+        "why_it_works": "Amplitude modulation before the reverb imprints rhythm on what enters the tail; a small delay lets the unmodulated pick remain localizable."
+      }
+    ],
+    "insider_note": "The front-panel 'vibrato' is actually tremolo, and the Bass control changes distortion as well as frequency response. Those two documented quirks explain why conventional clean-amp knob recipes can mislead.",
+    "avoid_when": "Avoid it when you need to separate preamp and power-stage drive; Silver or Custom exposes that choice. For harmonically dense upper mids and earlier compression, Top Boost is the more decisive voice.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Amp Room Vintage Suite user manual",
+          "url": "https://www.softube.com/user-manuals/amp-room-vintage-suite"
+        }
+      ]
+    },
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Bridge-pickup rhythm guitar",
+        "source_or_bus": "Bridge-pickup rhythm guitar",
+        "application": "In Surf rock, keep the amp clean by trimming Bass, use deep tremolo, and place Spring Reverb after the amp for a moving but readable attack.",
+        "why_this_plugin": "The wide American scoop leaves room for spring splash and bass guitar in a way Top Boost's mids do not."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Clean chord guitar",
+        "source_or_bus": "Clean chord guitar",
+        "application": "In Neo-soul, run just below breakup, disable deep tremolo, and let pick velocity produce brief edge on accented chord stabs.",
+        "why_this_plugin": "Black's volume-and-tone-stack interaction gives dynamic hair without Silver's extra master-stage decision."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Spring Reverb",
+        "goal": "Create the classic pulsing clean-amp-plus-spring depth without flattening the guitar attack.",
+        "order": "Pacific Dual Tremolo 100W Black → Spring Reverb",
+        "setup": "Keep the amp clean by trimming Bass, set tremolo first, then add a restrained spring return after the amp.",
+        "why_it_works": "The amp’s amplitude motion shapes what excites the spring, while the downstream spring fills the tremolo gaps without altering amp breakup.",
+        "caution": "Deep tremolo plus a fully wet spring can remove the dry center; preserve enough direct signal for timing and pitch location.",
+        "basis": "engineering-inference",
+        "source_url": null
+      }
+    ]
+  },
+  {
+    "name": "Pacific Dual Tremolo 100W Silver",
+    "section": 9,
+    "comparative_edge": "Choose Silver over Black when the production needs the same broad American clean family but explicit control over where distortion happens. Its added Master lets you favor tone-stack overdrive or power-stage drive; Black is faster when that distinction is unnecessary.",
+    "advanced_moves": [
+      {
+        "setup": "Match a clean reference level, then create two states with identical tone controls.",
+        "action": "In one state push the tone stack with Master lower; in the other reduce front-end drive and raise Master. Level-match and choose by pick edge versus bloom, not loudness.",
+        "listen_for": "Tone-stack drive feels brighter and more immediate; higher Master produces a broader, more yielding envelope.",
+        "why_it_works": "The Silver model exposes separate control over front-end and power-stage contribution."
+      },
+      {
+        "setup": "Place a compressor after the amp, before slap delay.",
+        "action": "Use slow enough attack to leave the pick, release in time with eighth notes, and only 1-3 dB reduction; use Master for amp feel rather than asking the compressor to create sustain.",
+        "listen_for": "Even country-style attacks with audible string snap and no pumping into the slap.",
+        "why_it_works": "The amp supplies broad clean headroom while the downstream compressor controls performance variance independently."
+      }
+    ],
+    "insider_note": "Documented behavior: turning Master down lets the tone stack dominate overdrive; pushing Master brings more power-amp distortion. Treating Master as a simple output trim throws away the model's main advantage over Black.",
+    "avoid_when": "Avoid Silver when a one-knob clean-to-breakup sweep is the goal; Black is faster. For dense British midrange or obvious channel blending, choose Top Boost instead.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Amp Room Vintage Suite user manual",
+          "url": "https://www.softube.com/user-manuals/amp-room-vintage-suite"
+        }
+      ]
+    },
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Compressed clean electric guitar",
+        "source_or_bus": "Compressed clean electric guitar",
+        "application": "In Modern country, keep the tone stack mostly clean, use Master for a small amount of give, then add short slap after the amp.",
+        "why_this_plugin": "Silver's firmer clean platform lets the producer add controlled sustain without the mid push of Top Boost."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Reverb-before-amp guitar",
+        "source_or_bus": "Reverb-before-amp guitar",
+        "application": "In Shoegaze, feed a low-mix long reverb into mild tone-stack overdrive while keeping Master moderate, so reflections distort more than the dry transient.",
+        "why_this_plugin": "Its separate stages let the reverb smear at the front while the power section retains a stable center."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Stereo Delay",
+        "goal": "Build a clean country-style slap that retains pick attack and stereo placement.",
+        "order": "Pacific Dual Tremolo 100W Silver → light compression if needed → Stereo Delay",
+        "setup": "Keep the amp mostly clean, use a short low-feedback delay after it, and filter repeats before raising their level.",
+        "why_it_works": "Silver provides firm clean transients; post-amp delay repeats the finished pick tone without feeding echoes into the amp’s distortion stages.",
+        "caution": "Check mono compatibility and do not let the first repeat become louder than the dry pick transient.",
+        "basis": "engineering-inference",
+        "source_url": null
+      }
+    ]
+  },
+  {
+    "name": "Custom 100W",
+    "section": 9,
+    "comparative_edge": "Choose it over Plexi when note separation and low-end authority matter more than soft power-stage bloom, and over Top Boost when a large pedal-friendly platform is preferable to early chime compression. Its grainy preamp and smoother power amp are unusually separable.",
+    "advanced_moves": [
+      {
+        "setup": "Create two level-matched states with the same cabinet.",
+        "action": "For the first, raise Normal Volume and hold Master back; for the second, reduce Normal and push Master. Blend or choose by texture before adding pedals.",
+        "listen_for": "Preamp drive has a grainier edge; power-stage drive feels broader and smoother around the note.",
+        "why_it_works": "Softube documents the two volume controls as distinct preamp and power-amp distortion stages."
+      },
+      {
+        "setup": "Feed a wet post-rock guitar part with delays into the amp at low preamp gain.",
+        "action": "Raise Master for authority, low-cut only the delay return before it reaches the amp, and keep the dry lane full-range.",
+        "listen_for": "Repeats stay separate instead of turning the low mids into one sustained block.",
+        "why_it_works": "The cleaner front end preserves layered transients while the power stage supplies common density."
+      }
+    ],
+    "insider_note": "Softube recommends the low input-gain setting for bass when preamp 'gunk' is not desired. That switch is a production control: it lets the same amp act as a clean foundation or a deliberately dirty mid layer.",
+    "avoid_when": "Avoid it for soft rectifier sag or singing early breakup; Bluesbreaker and Top Boost reach those behaviors more naturally. For modern high gain, use Mainstayer or ENGL rather than stacking distortion into Custom.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Amp Room Vintage Suite user manual",
+          "url": "https://www.softube.com/user-manuals/amp-room-vintage-suite"
+        }
+      ]
+    },
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Delay-heavy guitar",
+        "source_or_bus": "Delay-heavy guitar",
+        "application": "In Post-rock, use low Normal Volume, higher Master, and a controlled low-frequency delay feed for large chords that remain countable.",
+        "why_this_plugin": "Its headroom and rigid low end tolerate time effects better than Plexi or Top Boost."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Electric bass amp layer",
+        "source_or_bus": "Electric bass amp layer",
+        "application": "In Classic rock, select the low input-gain option, drive the power stage more than the preamp, and blend under a clean DI.",
+        "why_this_plugin": "Custom's smoother power section adds guitar-like authority to bass without V8's rounder tube-bass bloom."
+      }
+    ],
+    "pairings": []
+  },
+  {
+    "name": "Top Boost",
+    "section": 9,
+    "comparative_edge": "Choose Top Boost over Pacific when upper-mid chime, early compression, and channel blending should shape the performance; choose Custom 100W when you need firmer headroom. Unlike a simple AC-style preset, this model exposes patched Vib-Trem, Normal, and Brilliant channels as a mixer.",
+    "advanced_moves": [
+      {
+        "setup": "Start with Normal as the dry anchor and both other channels down.",
+        "action": "Bring in Brilliant until pick definition appears, then add Vib-Trem for drive and motion. If modulation feels too deep, reduce that channel and restore Normal rather than searching for a depth knob.",
+        "listen_for": "Chime and motion sit around a stable dry core instead of swallowing it.",
+        "why_it_works": "The documented modulation depth is fixed; channel blending is the intended wet/dry control."
+      },
+      {
+        "setup": "Place a boost before the amp with all three channel levels moderate.",
+        "action": "Automate boost output between sections while leaving its drive low; reduce amp bass as the chorus boost rises and use the Cut/Tone control last.",
+        "listen_for": "More harmonic urgency without a separate, smaller-sounding distortion layer.",
+        "why_it_works": "The boost changes how hard the amp's tube stages are driven, and the clockwise Tone control then removes excess high end."
+      }
+    ],
+    "insider_note": "The Vib-Trem channel contains an extra tube stage before its volume control, making it the most distorted path. Also, the Tone control works backwards by common convention: farther clockwise means less treble.",
+    "avoid_when": "Avoid Top Boost when the arrangement already has crowded upper mids or needs large, neutral pedal headroom; Pacific Silver or Custom 100W will leave more space. Use a dedicated tremolo if variable modulation depth is essential.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Amp Room Vintage Suite user manual",
+          "url": "https://www.softube.com/user-manuals/amp-room-vintage-suite"
+        }
+      ]
+    },
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Double-tracked rhythm guitars",
+        "source_or_bus": "Double-tracked rhythm guitars",
+        "application": "In Britpop, use more Brilliant on one side and more Normal/Vib-Trem on the other, matching gain but not channel balance.",
+        "why_this_plugin": "The same amp envelope ties the pair together while channel blends create stereo contrast without unrelated cabinets."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Clean interlocking guitar",
+        "source_or_bus": "Clean interlocking guitar",
+        "application": "In Afrobeat, anchor with Normal, add a small Brilliant contribution, and keep Vib-Trem low so syncopated attacks remain distinct.",
+        "why_this_plugin": "Its upper-mid compression makes repeated clean figures consistent without a separate heavy compressor."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "TUBE Overdrive",
+        "goal": "Drive the patched channel blend harder without changing its internal balance.",
+        "order": "TUBE Overdrive → Top Boost",
+        "setup": "Set Normal/Brilliant/Vib-Trem balance first, then use low pedal Drive and automate Level for section lift; reduce amp bass as drive rises.",
+        "why_it_works": "The overdrive changes input level and spectral emphasis before all three amp paths while the channel mixer retains the chosen dry/bright/modulated relationship.",
+        "caution": "Both pedal and amp emphasize mids; stop when chord density turns nasal rather than adding more post treble.",
+        "basis": "documented",
+        "source_url": "https://www.softube.com/user-manuals/amp-room-vintage-suite"
+      }
+    ]
+  },
+  {
+    "name": "TUBE Overdrive",
+    "section": 9,
+    "comparative_edge": "Choose TUBE over Kraft when the job is a predictable mid-focused boost that removes low-end slack before an amp. Choose Kraft for broader overdrive-to-fuzz color or bass use where fixed mid emphasis is less welcome.",
+    "advanced_moves": [
+      {
+        "setup": "Place TUBE before a high-gain amp with the amp at the desired saturation but still flubby.",
+        "action": "Set Drive near minimum, Level above unity, and Tone just bright enough to expose pick attack; then reduce amp Gain until chord detail returns.",
+        "listen_for": "Palm mutes stop blooming after the hit and complex chords regain individual strings.",
+        "why_it_works": "The pedal's documented mid emphasis changes the spectral balance driving the amp while Level preserves total drive."
+      },
+      {
+        "setup": "Use a clean Pacific or Top Boost amp and treat TUBE as the main distortion source.",
+        "action": "Raise Drive for sustain, lower Level to avoid unintended amp breakup, and sweep Tone while the full mix plays rather than in solo.",
+        "listen_for": "A vocal-like guitar midrange that remains audible without simply becoming louder.",
+        "why_it_works": "Separating pedal clipping from amp clipping keeps the classic mid contour recognizable."
+      }
+    ],
+    "insider_note": "The low-Drive/high-Level metal recipe is not magic gain stacking: it is pre-distortion equalization. The pedal's documented mid boost means the amp clips a more focused spectrum, which is why reducing amp Gain afterward often sounds heavier.",
+    "avoid_when": "Avoid it when the source already has narrow, nasal mids or needs full low-end overdrive; Kraft is broader. For transparent loudness into an amp, use a clean boost rather than asking TUBE's voicing to disappear.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Amp Room Marshall Suite user manual",
+          "url": "https://www.softube.com/user-manuals/amp-room-marshall-suite"
+        }
+      ]
+    },
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Extended-range rhythm guitar",
+        "source_or_bus": "Extended-range rhythm guitar",
+        "application": "In Progressive metal, use low Drive/high Level into ENGL, then lower the amp's own gain after the pedal is engaged.",
+        "why_this_plugin": "Its predictable pre-emphasis tightens the detector input more surgically than Kraft's broader body."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Lead guitar",
+        "source_or_bus": "Lead guitar",
+        "application": "In Blues rock, use higher pedal Drive into a mostly clean Pacific Black and roll guitar volume back for verses.",
+        "why_this_plugin": "The fixed mid focus keeps the lead forward while the clean amp preserves dynamic cleanup."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "American Mainstayer",
+        "goal": "Turn loose high-gain low end into faster palm-muted response.",
+        "order": "TUBE Overdrive → American Mainstayer",
+        "setup": "Use near-minimum Drive and elevated Level, set Tone by pick clarity, then lower Mainstayer Gain rather than stacking equal amounts of both distortions.",
+        "why_it_works": "The pedal’s documented mid emphasis reshapes which bands dominate the amp’s nonlinear stages.",
+        "caution": "This is pre-distortion EQ as much as overdrive; it is the wrong move when the amp already sounds thin or the part needs loose scale.",
+        "basis": "documented",
+        "source_url": "https://www.softube.com/user-manuals/amp-room-metal-suite"
+      }
+    ]
+  },
+  {
+    "name": "Kraft",
+    "section": 9,
+    "comparative_edge": "Choose Kraft over TUBE when you need a wider path from warm overdrive into fuzzier distortion, stronger retained body, or equal usefulness on bass and synths. TUBE remains the faster choice for the familiar low-cut/mid-push tightening move.",
+    "advanced_moves": [
+      {
+        "setup": "Put Kraft on a parallel send from bass or synth bass.",
+        "action": "Drive the send harder than you would an insert, shape the tone filter around the arrangement's midrange gap, high-pass the return, and blend below the clean source.",
+        "listen_for": "The line remains deep in the center but reads clearly on small speakers and through dense guitars.",
+        "why_it_works": "Kraft retains more body across its gain range, while the filtered parallel return isolates its harmonics from the clean fundamental."
+      },
+      {
+        "setup": "Use Kraft before a clean amp and automate only its output level between verse and chorus.",
+        "action": "Set pedal drive for the chorus texture, lower output until the verse is nearly clean, then raise output so both pedal and amp contribute in the chorus.",
+        "listen_for": "The chorus expands in density without changing to an unrelated distortion timbre.",
+        "why_it_works": "Output automation changes both pedal audibility and the following amp's operating point while preserving the pedal's tone setting."
+      }
+    ],
+    "insider_note": "Softube documents Kraft as equally suitable for bass and guitar. Engineering inference: on bass, its safest expert use is often a band-limited parallel lane, because retained body can otherwise double the fundamental into a driven amp.",
+    "avoid_when": "Avoid it when you need a repeatable Tube-Screamer-style tightening curve; use TUBE Overdrive. For speaker or tape degradation rather than pedal clipping, Bad Speaker or Dirty Tape creates a more source-specific texture.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Kraft product page and Amp Room manual",
+          "url": "https://www.softube.com/plug-ins/kraft"
+        }
+      ]
+    },
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Mono bass synth",
+        "source_or_bus": "Mono bass synth",
+        "application": "In Synthwave, blend a high-passed Kraft return for growl while keeping the oscillator fundamental dry and centered.",
+        "why_this_plugin": "Kraft's body and broad gain range suit synth harmonics better than TUBE's fixed guitar-oriented mid focus."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Clean-to-driven guitar",
+        "source_or_bus": "Clean-to-driven guitar",
+        "application": "In Indie pop, automate output into the same amp across sections, using one tone-filter position for continuity.",
+        "why_this_plugin": "Its range covers both warm edge and heavier chorus drive without changing pedals or amp."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Amp Room Bass Suite",
+        "goal": "Add audible bass harmonics while the suite DI retains a stable fundamental.",
+        "order": "Split in Amp Room Bass Suite: clean DI parallel to Kraft → amp/cab mid lane",
+        "setup": "Set the DI bandwidth first, drive Kraft on the high-passed parallel lane, and blend the lane from silence until the bass reads on small speakers.",
+        "why_it_works": "Kraft supplies body-rich distortion while the separate DI prevents its low-frequency drive from replacing the clean foundation.",
+        "caution": "Phase-align the lanes before bus compression and avoid letting both paths own the same sub range.",
+        "basis": "engineering-inference",
+        "source_url": "https://www.softube.com/user-manuals/amp-room-bass-suite"
+      }
+    ]
+  },
+  {
+    "name": "Lion Head Vibrato (Amp Room)",
+    "section": 9,
+    "comparative_edge": "Choose Lion Head over Tinnerö when actual pitch motion, not volume pulsing, should make the part feel unstable. Choose Model 84 Chorus or Fix Doubler when ensemble width is more important than a single, audible pitch trajectory.",
+    "advanced_moves": [
+      {
+        "setup": "Place Lion Head after a mostly clean amp and choose Random waveform.",
+        "action": "Keep Speed and Depth low, engage stereo only after the mono motion feels natural, and level-match because widened modulation can appear louder.",
+        "listen_for": "Sustains feel alive without each note advertising an obvious periodic wobble.",
+        "why_it_works": "Random modulation avoids a fixed cycle, while post-amp placement moves the complete recorded tone."
+      },
+      {
+        "setup": "Place Lion Head after a dirty amp for an obvious effect transition.",
+        "action": "Use Vibe mode with Multisine, automate Depth into phrase endings, and narrow or mono the low-frequency lane before the effect.",
+        "listen_for": "Leads bend into a controlled seasick tail while their attacks remain centered.",
+        "why_it_works": "Multiple modulation components create complex pitch motion; band-limiting keeps low-frequency stereo pitch shifts from pulling the image."
+      }
+    ],
+    "insider_note": "Softube's own manual suggests Random after a cleanish amp for subtle dimension and Vibe/Multisine after a dirty amp for stronger vintage motion. The useful secret is placement: the same settings feel far more integrated before versus after distortion.",
+    "avoid_when": "Avoid it on sources where stable pitch and mono center are non-negotiable; use Tinnerö for rhythmic movement or Layers/Fix Doubler for controlled width. Deep stereo settings should be mono-checked before committing.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Amp Room Vintage Suite user manual",
+          "url": "https://www.softube.com/user-manuals/amp-room-vintage-suite"
+        }
+      ]
+    },
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Clean electric guitar",
+        "source_or_bus": "Clean electric guitar",
+        "application": "In Psychedelic soul, use slow Random motion after the amp and before a short chamber, with shallow stereo depth.",
+        "why_this_plugin": "Lion Head adds aged pitch drift without the obvious ensemble signature of chorus."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Sustained lead guitar",
+        "source_or_bus": "Sustained lead guitar",
+        "application": "In Desert rock, automate Vibe/Multisine depth on held notes after distortion, leaving fast passages nearly dry.",
+        "why_this_plugin": "Its pitch trajectory turns sustain into a performance effect where Tinnerö would only pulse loudness."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Doom Chvrch (Amp Room)",
+        "goal": "Turn irregular pitch drift into an evolving stereo ambience rather than a dry modulation effect.",
+        "order": "Lion Head Vibrato → Doom Chvrch",
+        "setup": "Use shallow Random movement first, then a dark low-mix Doom Chvrch tail; increase reverb Time before increasing vibrato Depth.",
+        "why_it_works": "Pitch variation continuously changes what enters the modulated reverb, creating motion in the decay without destabilizing the dry attack as much.",
+        "caution": "Deep stereo vibrato plus long stereo reverb can make the center vanish; check mono and keep lows comparatively dry.",
+        "basis": "engineering-inference",
+        "source_url": null
+      }
+    ]
+  },
+  {
+    "name": "Tinnerö Tremolo (Amp Room)",
+    "section": 9,
+    "comparative_edge": "Choose Tinnerö over amp tremolo when placement and envelope response matter, and over Lion Head when rhythmic amplitude motion is desired without changing pitch. Its Dynamics control can preserve attacks while letting the tremolo emerge on note tails.",
+    "advanced_moves": [
+      {
+        "setup": "For conventional tremolo, place Tinnerö after drive with Dynamics at zero.",
+        "action": "Set Speed in musical relation to the part by ear, raise Depth until the pulse reads, then back it down while listening against kick and hi-hat.",
+        "listen_for": "The guitar creates a complementary rhythm rather than fighting the existing percussion grid.",
+        "why_it_works": "With Dynamics removed, the full signal follows the modulation waveform predictably."
+      },
+      {
+        "setup": "For tail-only movement, use sustained chords and raise Dynamics.",
+        "action": "Set a faster Speed than the traditional patch, increase Dynamics until attacks pass nearly intact, and place reverb after Tinnerö.",
+        "listen_for": "The chord begins solid, then breaks into a pulsing tail that feeds the reverb.",
+        "why_it_works": "Dynamics restores direct attack and makes modulation become more audible as the played envelope decays."
+      }
+    ],
+    "insider_note": "At very slow Speed a new note may land in the waveform's quiet phase and nearly disappear. The documented workaround is not merely less Depth: raise Dynamics to blend back direct signal and make the performance dependable.",
+    "avoid_when": "Avoid it when the movement must be pitch-based, chorused, or stereo-ensemble-like; use Lion Head, Model 84 Chorus, or Fix Doubler. For strict tempo divisions with numerical sync, verify the current plug-in's control options before relying on a free-running feel.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Amp Room Vintage Suite user manual",
+          "url": "https://www.softube.com/user-manuals/amp-room-vintage-suite"
+        }
+      ]
+    },
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Clean arpeggiated guitar",
+        "source_or_bus": "Clean arpeggiated guitar",
+        "application": "In Americana, use low Depth and modest Dynamics after the amp so attacks stay natural and held notes move gently.",
+        "why_this_plugin": "It offers subtler envelope-aware motion than a fixed-depth amp tremolo."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Sustained synth resample",
+        "source_or_bus": "Sustained synth resample",
+        "application": "In Experimental electronic, set extremely slow Speed, automate Dynamics, and print several passes for unpredictable gaps and swells.",
+        "why_this_plugin": "Its unusually slow range and direct-signal recovery create broken shapes without changing pitch."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "TSAR-1R Reverb",
+        "goal": "Keep a pulsing source intelligible while a simple room/hall tail fills the amplitude gaps.",
+        "order": "Tinnerö Tremolo → TSAR-1R Reverb",
+        "setup": "Set Tinnerö Dynamics to preserve attacks, establish Speed/Depth in the groove, then add a short-to-medium TSAR-1R decay after it.",
+        "why_it_works": "The tremolo rhythm is imprinted on the reverb input while TSAR-1R supplies space without another complex modulation layer.",
+        "caution": "A long, loud tail can average out the pulse; shorten decay or lower wet level before increasing tremolo depth.",
+        "basis": "engineering-inference",
+        "source_url": null
+      }
+    ]
+  },
+  {
+    "name": "Doom Chvrch (Amp Room)",
+    "section": 9,
+    "comparative_edge": "Choose Doom Chvrch over Spring Reverb for a dark, synthetic space that can evolve into an effect, and over TSAR-1 when realism and detailed early/late control are less important than one dramatic Time gesture. It is particularly valuable before distortion, where most reverbs become too polite.",
+    "advanced_moves": [
+      {
+        "setup": "Place Doom Chvrch before a driven amp with Mix below 20% as a starting point.",
+        "action": "Shorten Time until individual chord attacks still register, reduce Bass on the reverb, then raise amp drive just enough to fuse reflections into the sustain.",
+        "listen_for": "A continuous wall behind the performance without kick-range wash or lost chord changes.",
+        "why_it_works": "Pre-amp placement distorts the reverb tail along with the dry signal; filtering prevents low-frequency decay from dominating the nonlinear stage."
+      },
+      {
+        "setup": "Place it after the amp for phrase-end throws.",
+        "action": "Keep Mix low during phrases, automate it upward only on final notes, and lengthen Time after the send rises; return both controls before the next attack.",
+        "listen_for": "A tail that blooms after the phrase without smearing the next line.",
+        "why_it_works": "Separating input amount from decay length creates a throw without leaving a permanently dense reverb bed."
+      }
+    ],
+    "insider_note": "The tank comes from the large hall developed for Parallels, while modulation and diffusion draw inspiration from early digital reverb. Softube explicitly says it was not designed to sound realistic—use that as permission to automate it as an instrument.",
+    "avoid_when": "Avoid it for believable rooms, transparent vocal space, or dense mixes needing predictable decay; TSAR-1/1R or Atlantis is easier to seat. Use Spring Reverb when the source needs a distinct physical splash rather than an evolving synthetic tail.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Amp Room ENGL Savage Mark II Suite user manual",
+          "url": "https://www.softube.com/eu/user-manuals/amp-room-engl-savage-mark-ii-suite"
+        }
+      ]
+    },
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Heavy guitar chord endings",
+        "source_or_bus": "Heavy guitar chord endings",
+        "application": "In Post-metal, automate post-amp Mix and Time only on final chords, with Bass reduced and the dry riff untouched.",
+        "why_this_plugin": "Its near-infinite, evolving tail creates an arrangement event rather than a realistic room."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Sparse guitar harmonics",
+        "source_or_bus": "Sparse guitar harmonics",
+        "application": "In Dark ambient, run the reverb before mild amp drive and print a long performance while slowly moving Time and tone.",
+        "why_this_plugin": "The algorithm's intentionally artificial modulation survives saturation as a shifting texture better than a natural hall."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "TUBE Overdrive",
+        "goal": "Create a distorted reverb wall whose dry transient still defines the phrase.",
+        "order": "Doom Chvrch at low Mix → TUBE Overdrive or driven amp",
+        "setup": "Shorten and darken Doom Chvrch first, then raise overdrive only until reflections fuse around the note; automate reverb input on phrase endings.",
+        "why_it_works": "Putting reverb before distortion makes the nonlinear stage compress and harmonically bind dry signal and tail into one texture.",
+        "caution": "Low-frequency decay can dominate the distortion detector; reduce reverb Bass and keep a separate dry path.",
+        "basis": "engineering-inference",
+        "source_url": null
+      }
+    ]
+  },
+  {
+    "name": "Blaze Works Amplification",
+    "section": 9,
+    "comparative_edge": "Choose Blaze Works over the larger Metal Suite when two focused modern voices are enough: Overvolt II for a simplified 5150-inspired workhorse and Arc Line IV for cleaner-to-high-gain British boutique flexibility. Choose ENGL when licensed multi-channel precision and a broader cabinet set matter.",
+    "advanced_moves": [
+      {
+        "setup": "Reamp the same DI through Overvolt II and Arc Line IV with the shared German Viper cabinet.",
+        "action": "Match distortion density and output, not knob positions. Use Overvolt Gain as the main sweep; on Arc Line select channel first, then set Gain and Depth.",
+        "listen_for": "Overvolt emphasizes immediate aggression; Arc Line leaves more channel-dependent clean-to-lead range and adjustable low fullness.",
+        "why_it_works": "The products use different architectures, while the fixed cabinet makes the amp comparison meaningful."
+      },
+      {
+        "setup": "Quad-track a tight rhythm part with Overvolt II.",
+        "action": "Reduce Gain until a single take sounds slightly under-saturated, vary pick position or cabinet mic across pairs, and high-pass only after all four tracks play.",
+        "listen_for": "The combined part sounds saturated but consonants and stops remain synchronized.",
+        "why_it_works": "Layering multiplies distortion and low-mid energy; lower per-take gain preserves timing cues."
+      }
+    ],
+    "insider_note": "The manual names the inspirations directly but the product is a Softube fictional brand. The practical advantage is simplified control: Overvolt deliberately reduces a 5150-style concept to one channel, which makes repeatable multi-track settings faster.",
+    "avoid_when": "Avoid Blaze Works when you need the original amp's full channel/voicing behavior or licensed reference cabinets; ENGL Savage is deeper. For loose American rectifier mass rather than 5150-inspired focus, use American Mainstayer.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Blaze Works Amplification user manual",
+          "url": "https://www.softube.com/user-manuals/blaze-works-amplification"
+        }
+      ]
+    },
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Quad-tracked rhythm guitars",
+        "source_or_bus": "Quad-tracked rhythm guitars",
+        "application": "In Djent, use lower-gain Overvolt tracks through two mic positions, keeping Depth out of the equation.",
+        "why_this_plugin": "Its single-channel Gain sweep is fast to standardize across many tightly edited takes."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Clean verse and saturated chorus guitar",
+        "source_or_bus": "Clean verse and saturated chorus guitar",
+        "application": "In Modern hard rock, use Arc Line's Clean, Normal, and Boost channels rather than switching whole amp rigs between sections.",
+        "why_this_plugin": "Channel continuity keeps the underlying voicing stable while the arrangement changes gain role."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Celestion Speaker Shaper",
+        "goal": "Separate modern high-gain amp choice from speaker breakup, age, and cabinet scale.",
+        "order": "Blaze Works amp with cabinet bypassed → Celestion Speaker Shaper",
+        "setup": "Choose Overvolt or Arc Line through one neutral Speaker Shaper setup, then alter cabinet back/diameter and speaker distortion after the amp is approved.",
+        "why_it_works": "The amp determines distortion envelope while Speaker Shaper changes the physical playback behavior without requiring a new amp performance.",
+        "caution": "Avoid heavy speaker distortion on an already saturated amp until the cleanest cabinet configuration is level matched.",
+        "basis": "engineering-inference",
+        "source_url": null
+      }
+    ]
+  },
+  {
+    "name": "Amp Room ENGL Savage Mark II Suite",
+    "section": 9,
+    "comparative_edge": "Choose ENGL over Mainstayer or the generic Metal Suite when extended-range articulation and channel-specific control are central. The 120W/6550 and 60W/EL34 heads are separate voicings, not a size switch; five matched ENGL cabinets make the suite unusually coherent for controlled comparisons.",
+    "advanced_moves": [
+      {
+        "setup": "Hold channel, gain, cabinet, and mic constant while comparing the 120W and 60W heads.",
+        "action": "Level-match, play the same DI, and choose by low-end authority versus midrange compression before adding a boost or post EQ.",
+        "listen_for": "The 120W version feels firmer and broader; the 60W EL34 version yields and speaks through the mids sooner.",
+        "why_it_works": "Different power tubes and power sections change feel and harmonic balance even after output is matched."
+      },
+      {
+        "setup": "Use the suite's Sleipner boost with amp Gain lower than the target preset.",
+        "action": "Choose boost character, raise Amount modestly, and sweep Tightness while palm muting; stop before the lows vanish, then restore only the needed amp gain.",
+        "listen_for": "Muted notes end cleanly but open chords retain lower-mid size.",
+        "why_it_works": "Tightness changes the spectrum entering distortion rather than correcting a flubby result afterward."
+      }
+    ],
+    "insider_note": "The suite's low-end compressor is designed specifically to tame or enhance palm-muted chugs. That is more targeted than full-band bus compression: use it to regulate the energy that triggers apparent 'flub' before broad dynamics control.",
+    "avoid_when": "Avoid ENGL when the song benefits from power-stage looseness, vintage sag, or coarse punk midrange; Mainstayer, Plexi, or JMP 2203 will feel less controlled. The suite is excessive when one fixed amp/cab is all the session needs.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Amp Room ENGL Savage Mark II Suite user manual",
+          "url": "https://www.softube.com/eu/user-manuals/amp-room-engl-savage-mark-ii-suite"
+        }
+      ]
+    },
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Seven- or eight-string rhythm guitar",
+        "source_or_bus": "Seven- or eight-string rhythm guitar",
+        "application": "In Progressive metal, use the 120W head, Lean/Bold mid voicing, and the most articulate matched cabinet before considering an external boost.",
+        "why_this_plugin": "The licensed channel and mid circuits preserve interval clarity under gain more predictably than Mainstayer."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Harmonized lead guitars",
+        "source_or_bus": "Harmonized lead guitars",
+        "application": "In Melodic death metal, use the 60W head in a smoother mode with less gain and Särimner delay after the amp, keeping rhythm guitars on the 120W voice.",
+        "why_this_plugin": "The two power sections create lead/rhythm contrast while remaining inside one matched ENGL cabinet ecosystem."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "TUBE Overdrive",
+        "goal": "Apply the familiar low-cut/mid-push tightening option when the suite’s own Sleipner boost is not the desired character.",
+        "order": "TUBE Overdrive → ENGL Savage Mark II",
+        "setup": "Start without the pedal, choose head/channel/cab, then add low Drive/high Level and reduce amp Gain until attack returns.",
+        "why_it_works": "The pedal changes the spectrum entering the licensed amp model, while the lower amp gain prevents compression from accumulating.",
+        "caution": "The suite already includes a purpose-built Tightness control in Sleipner; compare rather than stacking both boosts.",
+        "basis": "engineering-inference",
+        "source_url": null
+      }
+    ]
+  },
+  {
+    "name": "Amp Room Marshall Suite",
+    "section": 9,
+    "comparative_edge": "Choose the suite over individual Marshalls when an arrangement needs era changes inside one cabinet/mic ecosystem: Bluesbreaker softness, Plexi power-stage complexity, JMP/JCM focus, and Jubilee sustain. Choose Metal Suite if licensed Marshall history matters less than broad modern high-gain coverage.",
+    "advanced_moves": [
+      {
+        "setup": "Record one clean DI and copy a neutral cabinet/mic chain across multistates.",
+        "action": "Compare Bluesbreaker, Plexi, JMP, and Jubilee at matched loudness and similar distortion density; only after choosing the envelope, audition the historically matched cabinet.",
+        "listen_for": "The amp's attack/recovery suits the performance before cabinet flavor flatters it.",
+        "why_it_works": "Holding the recording chain constant separates gain architecture from familiar cabinet signatures."
+      },
+      {
+        "setup": "Build a layered rock arrangement from one Marshall family rather than increasing gain on every track.",
+        "action": "Use Bluesbreaker or low-gain Plexi for wide rhythms, JMP for the focused center, and Jubilee for sustained leads; keep room and mic distance consistent across layers.",
+        "listen_for": "Each layer has a distinct envelope and midrange role but still sounds recorded in one room.",
+        "why_it_works": "Different amp generations create separation while shared capture cues provide production cohesion."
+      }
+    ],
+    "insider_note": "A useful controlled shootout is to keep the same Amp Room cabinet and mic while swapping amps, then restore matched cabs afterward. This engineering-inference workflow prevents iconic cabinet signatures from deciding the amp comparison for you.",
+    "avoid_when": "Avoid the full suite when one known Marshall model is enough; the individual plug-in or Amplifiers companion is faster. For rectifier-style lows, ENGL precision, or modern metal boosts, Metal Suite covers more unrelated high-gain territory.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Amp Room Marshall Suite product page and manual",
+          "url": "https://www.softube.com/us/plug-ins/amp-room-marshall-suite"
+        }
+      ]
+    },
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Album-wide guitar palette",
+        "source_or_bus": "Album-wide guitar palette",
+        "application": "In Classic rock, standardize two cabinets and one room, then assign Bluesbreaker, Plexi, and JMP by song density rather than rebuilding rigs per track.",
+        "why_this_plugin": "The suite supplies historically related amps inside one recallable platform."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Wide rhythms plus center hook",
+        "source_or_bus": "Wide rhythms plus center hook",
+        "application": "In Pop punk, use lower-gain JMP/JCM wide and Jubilee for the sustained hook, keeping Guv'nor or TUBE only on the center part.",
+        "why_this_plugin": "Marshall midrange stays coherent while gain role changes, avoiding the scooped mismatch of unrelated modern amps."
+      }
+    ],
+    "pairings": []
+  },
+  {
+    "name": "Marshall Bluesbreaker 1962",
+    "section": 9,
+    "comparative_edge": "Choose Bluesbreaker over Plexi for softer attack, earlier compression, and open-back combo bloom; choose Pacific Black for more scooped clean headroom. It excels when guitar-volume cleanup and player dynamics should remain part of the mix decision.",
+    "advanced_moves": [
+      {
+        "setup": "Turn the amp up to the target lead breakup and leave the guitar volume below maximum.",
+        "action": "Record rhythm with the guitar rolled back, then open it for fills without changing the plug-in; level automation can correct section balance after the performance.",
+        "listen_for": "Rhythm cleans without losing harmonic continuity, and fills gain sustain rather than just output.",
+        "why_it_works": "The whole amp moves through clean and breakup as input falls, preserving a common rectified envelope."
+      },
+      {
+        "setup": "Blend a dynamic mic for bite with a ribbon or darker mic for body on the combo cabinet.",
+        "action": "Solo each, align phase, and bring the body mic up only until thin notes fill out; do not start with equal levels.",
+        "listen_for": "Pick definition stays forward while the lower mids bloom after it.",
+        "why_it_works": "Asymmetric mic roles preserve the combo's transient-to-body movement instead of averaging both perspectives."
+      }
+    ],
+    "insider_note": "The modeled reference amp uses a GZ34 tube rectifier. Practical inference: do not immediately 'fix' its yielding attack with fast compression; that envelope is the reason it separates from the firmer Marshall models.",
+    "avoid_when": "Avoid it for tight palm-muted rhythms, rigid low end, or heavy preamp saturation; JMP 2203, ENGL, or Mainstayer is more direct. Use Pacific when a cleaner, wider pedal platform is the actual requirement.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Amp Room Marshall Suite user manual",
+          "url": "https://www.softube.com/user-manuals/amp-room-marshall-suite"
+        }
+      ]
+    },
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Single performance covering rhythm and lead",
+        "source_or_bus": "Single performance covering rhythm and lead",
+        "application": "In Blues, set lead breakup at the amp and ride the guitar volume for cleaner verses, using automation only for final level.",
+        "why_this_plugin": "Its rectifier softness and early compression reward performance control more than JMP's preamp-focused gain."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Slide guitar",
+        "source_or_bus": "Slide guitar",
+        "application": "In Roots rock, use moderate breakup and a darker body mic so the slide sustains without abrasive upper mids.",
+        "why_this_plugin": "Bluesbreaker's softer attack supports vocal slide phrasing better than the firmer Plexi or Custom."
+      }
+    ],
+    "pairings": []
+  },
+  {
+    "name": "Marshall Plexi Super Lead 1959",
+    "section": 9,
+    "comparative_edge": "Choose Plexi over Bluesbreaker for firmer, louder power-stage authority and over JMP 2203 when non-master-volume complexity matters more than compact preamp focus. Its bright/normal channel blend is the primary tone control before any post EQ.",
+    "advanced_moves": [
+      {
+        "setup": "Patch both channels and start with the bright path carrying the part.",
+        "action": "Raise the normal channel only until low strings gain body, then reduce Bass as total volume rises; level-match before deciding the blend is bigger.",
+        "listen_for": "Single notes keep edge while chords gain chest without a late, woolly low-end bloom.",
+        "why_it_works": "The parallel channel blend changes the spectrum entering a driven non-master-volume circuit."
+      },
+      {
+        "setup": "Double-track a riff with identical amp settings but different channel balances.",
+        "action": "Favor bright on one take and normal on the other, use the same cabinet, and vary mic position slightly rather than adding more gain.",
+        "listen_for": "A wide stereo pair whose center remains solid when summed to mono.",
+        "why_it_works": "The tracks share compression and harmonic family while their spectral emphasis differs before distortion."
+      }
+    ],
+    "insider_note": "The source amp is Marshall's own 1967 museum reference. The producer's secret is still basic gain staging: adding low end after the nonlinear stage is usually clearer than feeding excessive normal-channel bass into it.",
+    "avoid_when": "Avoid Plexi when you need repeatable high gain at modest virtual master level or very tight stops; JMP 2203 or ENGL is easier. Choose Bluesbreaker for softer combo bloom and guitar-volume cleanup.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Amp Room Marshall Suite user manual",
+          "url": "https://www.softube.com/user-manuals/amp-room-marshall-suite"
+        }
+      ]
+    },
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Double-tracked rhythm guitar",
+        "source_or_bus": "Double-tracked rhythm guitar",
+        "application": "In Hard rock, use complementary bright/normal blends at moderate gain, reserving the densest setting for a center overdub.",
+        "why_this_plugin": "Plexi creates width through channel interaction without the preamp grain of JMP."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Downtuned single guitar",
+        "source_or_bus": "Downtuned single guitar",
+        "application": "In Stoner rock, use more normal channel but reduce Bass into the driven stage, then restore body with a darker cabinet edge position.",
+        "why_this_plugin": "The power-stage harmonics create mass while cabinet choice restores lows more cleanly than overdriving bass in the amp."
+      }
+    ],
+    "pairings": []
+  },
+  {
+    "name": "Marshall JMP 2203",
+    "section": 9,
+    "comparative_edge": "Choose JMP over Plexi when focused preamp gain, tighter attack, and a master-volume workflow fit the arrangement; choose Silver Jubilee for smoother, more saturated sustain. JMP is the most direct Marshall here for lean, percussive rhythm guitars.",
+    "advanced_moves": [
+      {
+        "setup": "Make two states with the same perceived distortion amount.",
+        "action": "Use high Pre-Amp/low Master for one and lower Pre-Amp/higher Master for the other, then level-match before touching EQ.",
+        "listen_for": "The first is tighter and more immediate; the second is looser with more vintage power-stage movement.",
+        "why_it_works": "The documented Pre-Amp/Master relationship shifts where distortion occurs, not merely its volume."
+      },
+      {
+        "setup": "Place TUBE Overdrive before JMP for a modernized version of the amp.",
+        "action": "Use low pedal Drive, raise Level, reduce JMP Pre-Amp until string separation returns, and revisit Presence after setting Master.",
+        "listen_for": "Extra urgency without the fizzy edge of simply maxing preamp gain.",
+        "why_it_works": "The pedal focuses the spectrum before clipping while the lower preamp setting reduces accumulated compression."
+      }
+    ],
+    "insider_note": "Softube notes that the tone stack behaves differently at different Master settings. Therefore EQ decisions made before selecting the Pre-Amp/Master balance are provisional; the gain architecture must come first.",
+    "avoid_when": "Avoid it for deep modern low-end mass or very smooth lead sustain; Mainstayer and Silver Jubilee are better fits. For non-master-volume bloom and channel blending, use Plexi.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Amp Room Marshall Suite user manual",
+          "url": "https://www.softube.com/user-manuals/amp-room-marshall-suite"
+        }
+      ]
+    },
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Fast downstroke rhythm guitar",
+        "source_or_bus": "Fast downstroke rhythm guitar",
+        "application": "In Punk rock, use medium Pre-Amp, enough Master for body, and let picking create aggression instead of saturating every transient.",
+        "why_this_plugin": "Its focused upper mids keep fast consonants readable better than Mainstayer's larger lows."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Angular single-note guitar",
+        "source_or_bus": "Angular single-note guitar",
+        "application": "In Post-punk, run cleaner with higher Master, reduce Bass, and use a short room rather than a large cabinet blend.",
+        "why_this_plugin": "JMP's lean master-volume voice gives notes a hard outline without Top Boost's chime compression."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "TUBE Overdrive",
+        "goal": "Modernize JMP attack while retaining its focused Marshall midrange.",
+        "order": "TUBE Overdrive → Marshall JMP 2203",
+        "setup": "Use low pedal Drive/high Level, then lower JMP Pre-Amp and set Master before revisiting Presence.",
+        "why_it_works": "Pre-emphasis tightens the signal before clipping while reduced preamp gain preserves more string separation.",
+        "caution": "The combination can become aggressively mid-forward; do not use it automatically on already thin guitars.",
+        "basis": "engineering-inference",
+        "source_url": null
+      }
+    ]
+  },
+  {
+    "name": "Marshall Silver Jubilee 2555",
+    "section": 9,
+    "comparative_edge": "Choose Jubilee over JMP for darker, smoother saturation, wider tone-control range, and singing sustain. Choose JMP when percussive preamp bite is the priority, or Mainstayer when the lead needs American low-frequency scale rather than British mid focus.",
+    "advanced_moves": [
+      {
+        "setup": "Level-match pentode and triode states in the same preamp mode.",
+        "action": "Keep gain and cabinet fixed, switch power operation, and compensate output externally rather than with amp controls.",
+        "listen_for": "Triode yields a silkier, less aggressive power-stage envelope; pentode keeps more punch and authority.",
+        "why_it_works": "The switch changes power-tube operation and modeled output behavior, not just level."
+      },
+      {
+        "setup": "Use Lead mode for sustain but keep gain below the solo target.",
+        "action": "Add a short stereo delay after the amp, then raise gain only until bends hold through the delay gap; use the wide EQ to remove masking rather than adding more saturation.",
+        "listen_for": "A lead that remains vocal and sustained without turning the pick attack into fizz.",
+        "why_it_works": "Delay supplies perceived length while the smoother preamp retains articulation at lower gain."
+      }
+    ],
+    "insider_note": "Triode mode halves the modeled power output and makes power-stage distortion silkier. Level-match it externally: otherwise quieter triode can be rejected for level before its smoother envelope is judged.",
+    "avoid_when": "Avoid Jubilee when hard, dry attack or vintage non-master-volume complexity is the main requirement; JMP or Plexi will speak more directly. For pristine clean headroom, use Pacific or Custom.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Amp Room Marshall Suite user manual",
+          "url": "https://www.softube.com/user-manuals/amp-room-marshall-suite"
+        }
+      ]
+    },
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Sustained lead guitar",
+        "source_or_bus": "Sustained lead guitar",
+        "application": "In Arena rock, use Lead mode, triode for smoother power feel, and a short post-amp stereo delay with restrained feedback.",
+        "why_this_plugin": "Jubilee supplies British mid sustain without Mainstayer's larger low-end footprint."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Dense rhythm/lead hybrid part",
+        "source_or_bus": "Dense rhythm/lead hybrid part",
+        "application": "In Alternative metal, use Rhythm mode in pentode, moderate gain, and the wider EQ to carve room around vocal and snare.",
+        "why_this_plugin": "Its mode and EQ range bridge rhythm focus and lead smoothness more flexibly than the single-channel JMP."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Stereo Delay",
+        "goal": "Extend lead sustain and width without obtaining all of the note length from extra amp gain.",
+        "order": "Marshall Silver Jubilee 2555 → Stereo Delay",
+        "setup": "Use Lead mode at moderate gain, add a short filtered stereo delay with restrained feedback, and raise gain only until bends bridge the delay gap.",
+        "why_it_works": "Jubilee supplies smooth mid sustain while delay adds perceived duration after the nonlinear amp stage.",
+        "caution": "Keep the delay center and feedback controlled so repeats do not turn the already smooth lead into an indistinct wash.",
+        "basis": "engineering-inference",
+        "source_url": null
+      }
+    ]
+  },
+  {
+    "name": "Marshall Murder One Lemmy Signature",
+    "section": 9,
+    "comparative_edge": "Choose Murder One over V8 or Supernova when distorted bass must occupy the rhythm-guitar register with unmistakable upper-mid authority. Its modified Super Bass/Lead hybrid and captured 4x12 plus oversized 4x15 rig are a complete production voice, not a generic bass amp.",
+    "advanced_moves": [
+      {
+        "setup": "Patch and blend the brighter Volume I and darker Volume II channels before the cabinets.",
+        "action": "Build enough Volume II for body, add Volume I until pick and growl clear the guitars, then reduce amp Bass before compensating at the cabinet mixer.",
+        "listen_for": "The bass reads as a musical riff without covering the kick's deepest octave.",
+        "why_it_works": "Channel blending shapes the spectrum before the amp's shared nonlinear stages."
+      },
+      {
+        "setup": "Use the 4x12 and 4x15 as different roles rather than an equal blend.",
+        "action": "Choose a mid-forward dynamic mic on the 4x12, a fuller mic on the 4x15, check phase, and bring the 4x15 up only until sustained notes stop thinning.",
+        "listen_for": "The 4x12 defines attack and growl while the 4x15 extends weight without smearing it.",
+        "why_it_works": "The two captured cabinets and independent mic/mixer controls let attack and body be balanced at the source."
+      }
+    ],
+    "insider_note": "Long-time Motörhead producer Cameron Webb chose only nearfield dynamic microphones for the capture. The practical lesson is that the signature sound is direct and mid-forward; adding distant room too early moves away from the documented rig.",
+    "avoid_when": "Avoid it for invisible clean sub support, modern slap detail, or soft vintage tube leveling; Eden, the Bass Suite DI, or V8 is more suitable. Do not expect it to leave much upper-mid room without deliberate arrangement carving.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Marshall Murder One Lemmy Signature user manual",
+          "url": "https://www.softube.com/us/user-manuals/marshall-murder-one-lemmy-signature"
+        }
+      ]
+    },
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Picked bass",
+        "source_or_bus": "Picked bass",
+        "application": "In Speed metal, favor Volume I and the 4x12, add just enough 4x15 for note length, and keep a clean sub DI below the amp lane.",
+        "why_this_plugin": "Its bright hybrid circuit makes bass function as a third rhythm guitar without losing Marshall identity."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Baritone guitar or bass drone",
+        "source_or_bus": "Baritone guitar or bass drone",
+        "application": "In Industrial rock, drive both channels, pan the two cabinets narrowly apart, and automate the 4x15 level into transitions.",
+        "why_this_plugin": "The personal dual-cab rig creates arrangement-scale weight that a single generic amp layer cannot."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Amp Room Bass Suite",
+        "goal": "Combine Murder One’s upper-mid grind with a controlled clean low-frequency anchor.",
+        "order": "Parallel: Amp Room Bass Suite DI || Murder One amp/cab path",
+        "setup": "Let the DI own the deepest octave, high-pass the Murder One lane, align phase, and balance its 4x12 for attack against the 4x15 for note length.",
+        "why_it_works": "The clean DI preserves kick-compatible fundamentals while the signature rig behaves like an additional rhythm-guitar layer.",
+        "caution": "Do not let the 4x15 and DI both dominate the same lows; assign one foundation and use the other for character.",
+        "basis": "engineering-inference",
+        "source_url": null
+      }
+    ]
+  },
+  {
+    "name": "Marshall Cabinet Collection",
+    "section": 9,
+    "comparative_edge": "Choose it over Celestion Speaker Shaper when real licensed Marshall cabinet identities and fast movable-mic decisions matter more than designing hypothetical speakers. Choose it over fixed IR browsing when you need continuous mic placement and controlled parallel combinations inside Amp Room.",
+    "advanced_moves": [
+      {
+        "setup": "Hold the amp and one microphone fixed while auditioning cabinets.",
+        "action": "Choose the cabinet on low-mid resonance first, then move the mic for attack; do not change cab, mic type, position, and EQ in the same pass.",
+        "listen_for": "The guitar occupies its arrangement octave before any finishing EQ.",
+        "why_it_works": "Cabinet construction sets the broad resonance while mic position shapes the recorded high-frequency perspective."
+      },
+      {
+        "setup": "Place two cabinets in parallel for complementary roles.",
+        "action": "Use a smaller/open or brighter cabinet for attack and a larger/closed cabinet for body, select dissimilar microphones, then phase-align and start the second cab 10-15 dB below the first.",
+        "listen_for": "The second path fills a missing region rather than merely making the rig louder.",
+        "why_it_works": "Asymmetric level and construction prevent two full-range cabinet paths from averaging into comb-filtered sameness."
+      }
+    ],
+    "insider_note": "Engineering inference from the documented seven-mic movable system: pick cabinet with one neutral mic before doing a 'mic shootout.' Otherwise the favored microphone can disguise a cabinet whose resonance is wrong for the song.",
+    "avoid_when": "Avoid it when you need to alter speaker age, magnet, impedance, diameter, or breakup continuously; Celestion Speaker Shaper is the experimental tool. The collection is Amp Room-exclusive, so use native cab sections or LoadIR outside that platform.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Marshall Cabinet Collection product page",
+          "url": "https://www.softube.com/uk/plug-ins/marshall-cabinet-collection"
+        }
+      ]
+    },
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Fuzz guitar",
+        "source_or_bus": "Fuzz guitar",
+        "application": "In Stoner rock, pair a dark 4x12 body cab with a quieter, brighter 2x12 or 1x12 for pick outline.",
+        "why_this_plugin": "Real Marshall cabinet contrasts preserve brand-coherent mids while separating fuzz density and attack."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Small clean guitar part",
+        "source_or_bus": "Small clean guitar part",
+        "application": "In Indie pop, use a 1x12 or 2x12 with an off-center mic rather than a 4x12, leaving bass and synth width untouched.",
+        "why_this_plugin": "The collection offers smaller physical perspectives that solve scale, not just tone."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Amp Room",
+        "goal": "Use the eight licensed Marshall cabinets as movable, parallel recording stages with any Amp Room amplifier.",
+        "order": "Amp Room amplifier → one or two Marshall Cabinet Collection modules",
+        "setup": "Choose one cabinet with a neutral mic first; add a second 10-15 dB lower for a missing attack or body role and phase-align before panning.",
+        "why_it_works": "Amp Room provides routing, phase, and mic placement while the collection supplies historically distinct physical resonances.",
+        "caution": "The collection is Amp Room-exclusive; two similar full-level cabinets often add phase problems more than useful contrast.",
+        "basis": "documented",
+        "source_url": "https://www.softube.com/uk/plug-ins/marshall-cabinet-collection"
+      }
+    ]
+  },
+  {
+    "name": "Amp Room Metal Suite",
+    "section": 9,
+    "comparative_edge": "Choose Metal Suite over ENGL when breadth matters more than one licensed ecosystem: it spans American Mainstayer mass, German-style articulation, wilder modern aggression, and Marshall JCM800 focus. Choose Blaze Works when only two streamlined modern voices are needed.",
+    "advanced_moves": [
+      {
+        "setup": "Use one cabinet and mic to compare all four suite amps from the same DI.",
+        "action": "Match distortion density and output, label each by envelope—loose, tight, mid-forward, or aggressive—then restore its best cabinet only after the role is chosen.",
+        "listen_for": "A clear reason for each amp to exist in the arrangement rather than four versions of 'more gain.'",
+        "why_it_works": "A controlled cabinet removes the largest downstream variable and reveals amp response."
+      },
+      {
+        "setup": "Build a two-amp composite from one performance only if a single amp lacks one trait.",
+        "action": "Band-limit or crossover the paths, use the tighter amp for lows and a Marshall-style amp for upper mids, then align phase and print the composite before further editing.",
+        "listen_for": "Low strings stop cleanly while the upper-mid consonant remains human and audible.",
+        "why_it_works": "Each amp is assigned a frequency/envelope job instead of full-range duplication."
+      }
+    ],
+    "insider_note": "Controlled amp comparison is the real expert move in a suite: hold cab and mic constant first. Presets often change every stage, so they demonstrate finished rigs but do not teach which amplifier solved the problem.",
+    "avoid_when": "Avoid the suite when the production needs only one historically exact amp family; ENGL or Marshall Suite provides deeper coherence. For vintage clean and edge-of-breakup work, Vintage Suite is a more efficient starting palette.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Amp Room Metal Suite user manual",
+          "url": "https://www.softube.com/user-manuals/amp-room-metal-suite"
+        }
+      ]
+    },
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Wide rhythms and center texture",
+        "source_or_bus": "Wide rhythms and center texture",
+        "application": "In Metalcore, use the articulated German-style amp wide and a lower-gain JCM800-family layer quietly in the center.",
+        "why_this_plugin": "The suite supplies controlled modern attack and familiar British mid texture without cross-product routing."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Single downtuned guitar wall",
+        "source_or_bus": "Single downtuned guitar wall",
+        "application": "In Sludge metal, favor Mainstayer channel one with less tightening, then use a brighter secondary cabinet instead of a second amp.",
+        "why_this_plugin": "Its American low-end scale can remain intentionally loose while the suite's cabinet options recover articulation."
+      }
+    ],
+    "pairings": []
+  },
+  {
+    "name": "Amp Room Vintage Suite",
+    "section": 9,
+    "comparative_edge": "Choose Vintage Suite when the production needs several clean-to-crunch identities that respond differently to performance and pedals: two Pacific generations, rigid Custom 100W, and three-channel Top Boost. It is more useful than Metal Suite for roots, pop, indie, and effects-heavy arrangements.",
+    "advanced_moves": [
+      {
+        "setup": "Reamp one DI through all four amps with the same neutral cabinet and no pedals.",
+        "action": "Match output and set each just at breakup; choose by how the attack yields, then pair the selected amp with its best cabinet.",
+        "listen_for": "Pacific stays broad, Custom remains rigid, and Top Boost compresses through the upper mids in distinct ways.",
+        "why_it_works": "The exercise compares dynamic architecture before familiar cabinet coloration."
+      },
+      {
+        "setup": "Use one amp as a clean anchor and another only as a parallel color lane.",
+        "action": "Keep Pacific clean and centered; high-pass a driven Top Boost or Custom lane, pan it modestly, and automate that lane into choruses.",
+        "listen_for": "The chorus gains midrange energy without the clean guitar losing width or low-end stability.",
+        "why_it_works": "Parallel roles separate foundation from harmonic emphasis while related room/mic cues keep them cohesive."
+      }
+    ],
+    "insider_note": "A suite is most educational when every amp is compared through one cabinet first. This engineering-inference method reveals that the biggest choice is often transient behavior, not the familiar frequency curve supplied by the matched cab.",
+    "avoid_when": "Avoid Vintage Suite for tight high gain or modern low-tuned rhythm work; Metal or ENGL is purpose-built. If the session always returns to one amp, use its separate product or Amplifiers to reduce choice overhead.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Amp Room Vintage Suite user manual",
+          "url": "https://www.softube.com/user-manuals/amp-room-vintage-suite"
+        }
+      ]
+    },
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Electric guitar supporting acoustic instruments",
+        "source_or_bus": "Electric guitar supporting acoustic instruments",
+        "application": "In Indie folk, use Pacific Black barely breaking up with an off-center mic and minimal room.",
+        "why_this_plugin": "Its broad scoop leaves vocal and acoustic midrange intact better than Top Boost."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Delay/reverb guitar layers",
+        "source_or_bus": "Delay/reverb guitar layers",
+        "application": "In Post-rock, use Custom 100W for the wet foundation and a quiet Top Boost lane for section lift.",
+        "why_this_plugin": "Custom preserves layered transients while Top Boost adds compressed upper-mid urgency."
+      }
+    ],
+    "pairings": []
+  },
+  {
+    "name": "Amp Room Bass Suite",
+    "section": 9,
+    "comparative_edge": "Choose Bass Suite over Eden when you need several historical and parallel personalities rather than one detailed hi-fi amp. V8 supplies tube bloom, Supernova supplies built-in clean/dirty parallelism, Cardinal supplies firm British PA-derived mids, and the suite DI anchors any of them.",
+    "advanced_moves": [
+      {
+        "setup": "Treat the suite DI as the low-frequency reference and choose an amp only for what the DI lacks.",
+        "action": "Set DI low/high cuts and Tone first, then high-pass the amp path and bring it up for sustain, growl, or pick definition; time-align before bus compression.",
+        "listen_for": "The combined bass remains stable when the amp lane is muted, but loses character rather than fundamental.",
+        "why_it_works": "Assigning the DI the foundation prevents multiple full-range paths from competing for the same low-frequency job."
+      },
+      {
+        "setup": "Compare V8, Supernova, and Cardinal on the same phrase through one cabinet.",
+        "action": "Match loudness and similar harmonic level; choose V8 for bloom, Supernova for controlled blend, or Cardinal for firm mid texture before changing cabs.",
+        "listen_for": "A production role, not just a preferred solo tone, becomes obvious.",
+        "why_it_works": "Holding the cabinet constant reveals each amp's envelope and distortion structure."
+      }
+    ],
+    "insider_note": "The suite's DI uses a Focusing Equalizer-inspired design. The manual's order—set low and high cuts, then Tone—is a useful secret: define the bandwidth before judging thickness, so the DI does not compete with kick or guitars by accident.",
+    "avoid_when": "Avoid the suite when one pristine, highly shaped bass path is all you need; Eden WT800 is deeper and faster. For a signature distorted-bass rig rather than a flexible toolkit, Murder One is more decisive.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Amp Room Bass Suite user manual",
+          "url": "https://www.softube.com/user-manuals/amp-room-bass-suite"
+        }
+      ]
+    },
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Bass guitar under wide distorted guitars",
+        "source_or_bus": "Bass guitar under wide distorted guitars",
+        "application": "In Modern rock, use the DI for lows and Supernova's distorted path for center mids, aligning before a slow bus compressor.",
+        "why_this_plugin": "The parallel architecture is native to Supernova and faster to balance than duplicating a conventional amp."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Bass character layer",
+        "source_or_bus": "Bass character layer",
+        "application": "In Psychedelic rock, keep DI/V8 fundamentals clean and automate a band-limited Cardinal path through transitions.",
+        "why_this_plugin": "Cardinal's firm unusual midrange creates contrast without replacing the classic tube foundation."
+      }
+    ],
+    "pairings": []
+  },
+  {
+    "name": "Supernova Parallel Channel 300W",
+    "section": 9,
+    "comparative_edge": "Choose Supernova over V8 when the mix needs clean fundamental and dirty audibility as separate controls inside one amp, and over Eden when creative parallel distortion matters more than detailed clean EQ/bi-amping. Its strength is role separation, not vintage authenticity.",
+    "advanced_moves": [
+      {
+        "setup": "Start with the clean DI lane alone at the intended mix level.",
+        "action": "Distort the parallel channel harder than sounds polite in solo, select an EQ mode that avoids the kick fundamental, then raise it from silence until notes become readable on small speakers.",
+        "listen_for": "Turning the dirty lane off makes the bass recede, but leaving it on does not make the sub louder.",
+        "why_it_works": "The clean lane restores rumble and clarity while the driven lane can be optimized only for harmonics."
+      },
+      {
+        "setup": "Automate the clean/dirty balance across an arrangement.",
+        "action": "Keep chorus fundamentals constant, lower dirty mids in verses, and raise them before choruses rather than boosting total bass level.",
+        "listen_for": "The bass advances in energy without pushing the limiter or masking the kick more deeply.",
+        "why_it_works": "Perceived loudness and audibility can rise through harmonics while low-frequency peak level stays stable."
+      }
+    ],
+    "insider_note": "The expert move is to judge the dirty path from silence upward, not soloed. A distortion lane that sounds thin or ugly alone may be exactly right once the clean DI already owns the full note.",
+    "avoid_when": "Avoid Supernova when you want one naturally compressing tube-amp performance with no parallel abstraction; V8 is more coherent. For surgical clean tone, crossover detail, and cabinet/direct mixing, use Eden WT800.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Amp Room Bass Suite user manual",
+          "url": "https://www.softube.com/user-manuals/amp-room-bass-suite"
+        }
+      ]
+    },
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Bass arrangement automation",
+        "source_or_bus": "Bass arrangement automation",
+        "application": "In Pop rock, hold the DI lane steady and ride the dirty channel into choruses for presence on guitars and phones.",
+        "why_this_plugin": "Its integrated parallel design changes energy without reconstructing a multi-track bass rig."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Live or synth bass resample",
+        "source_or_bus": "Live or synth bass resample",
+        "application": "In Drum and bass, use the clean lane below the kick/body crossover and aggressively distort a higher EQ mode for the drop.",
+        "why_this_plugin": "Supernova provides a musician-friendly version of the clean-sub/dirty-mid split common in electronic bass design."
+      }
+    ],
+    "pairings": []
+  },
+  {
+    "name": "Cardinal 100W",
+    "section": 9,
+    "comparative_edge": "Choose Cardinal over V8 for firmer mids, clearer treble, and a less familiar British PA-derived voice; choose Supernova when you need explicit clean/dirty blending. Cardinal is a character amp for sources that need assertive mid structure more than classic bass mythology.",
+    "advanced_moves": [
+      {
+        "setup": "Run Cardinal as a parallel mid lane beneath a clean DI.",
+        "action": "High-pass above the fundamental, drive until the note gains woody density, then low-pass before cymbal range and blend quietly.",
+        "listen_for": "The bass remains full but becomes audible through small speakers without obvious fuzz.",
+        "why_it_works": "Cardinal's documented firm mids and clear treble create a focused character band while the DI retains lows."
+      },
+      {
+        "setup": "Try guitar through Cardinal before defaulting to a conventional guitar amp.",
+        "action": "Use a guitar cabinet, keep input just below heavy breakup, and hit the amp with Kraft or TUBE for section changes.",
+        "listen_for": "A large, dry midrange that takes pedals without the scoop of Pacific or compression of Top Boost.",
+        "why_it_works": "Softube explicitly documents Cardinal as a sleeper guitar amp and notes its strong pedal response."
+      }
+    ],
+    "insider_note": "Softube identifies the donor only as an early-'70s UK valve PA amp and recommends it for guitar too. The useful secret is to treat it as an arrangement wildcard rather than another attempt at the standard bass-amp family.",
+    "avoid_when": "Avoid Cardinal for deep clean authority or immediately recognizable classic bass tone; Eden, V8, or Murder One communicates those roles faster. Its firm mids can crowd vocal and guitars unless the path is deliberately band-limited.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Amp Room Bass Suite user manual",
+          "url": "https://www.softube.com/user-manuals/amp-room-bass-suite"
+        }
+      ]
+    },
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Bass midrange layer",
+        "source_or_bus": "Bass midrange layer",
+        "application": "In Psychedelic rock, automate a band-limited Cardinal lane beneath a cleaner V8 or DI foundation.",
+        "why_this_plugin": "Its unusual firm British mids sound less canonical than the American tube-bass options."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Pedal-heavy guitar",
+        "source_or_bus": "Pedal-heavy guitar",
+        "application": "In Noise rock, use Cardinal as a relatively firm platform before fuzz, then choose a smaller cabinet to control low-end scale.",
+        "why_this_plugin": "It accepts pedals while retaining an unpolished PA-like midrange that conventional guitar amps smooth over."
+      }
+    ],
+    "pairings": []
+  },
+  {
+    "name": "Amp Room Eden WT800 Suite",
+    "section": 9,
+    "comparative_edge": "Choose Eden over the Bass Suite's tube amps when clean articulation, semi-parametric shaping, controlled compression, and true bi-amp roles matter. Choose Supernova for intentionally dirty parallel mids; Eden's direct, 1x15, and 4x10 paths are about detailed record-ready balance.",
+    "advanced_moves": [
+      {
+        "setup": "Set input Gain so the green indicator responds normally, then leave the parametric bands flat.",
+        "action": "Adjust Enhance, Bass/Treble, and Compressor first; only then use the three semi-parametric bands to solve a remaining arrangement conflict.",
+        "listen_for": "The source feels finished before narrow EQ, and the compressor sustains without dulling attack.",
+        "why_it_works": "Softube's recommended order separates broad amp voicing and input-dependent dynamics from surgical correction."
+      },
+      {
+        "setup": "Engage Bi-Amp mode with 1x15 low and 4x10 high paths plus the post-amp direct channel.",
+        "action": "Sweep Crossover while listening to upper-bass note definition, choose separate mics, and bring direct level up last; watch the master clip light rather than only individual meters.",
+        "listen_for": "The 1x15 supplies body, the 4x10 articulates notes, and direct signal restores immediacy without phase hollowness.",
+        "why_it_works": "The crossover assigns physical cabinet roles before their independent channel-strip blend."
+      }
+    ],
+    "insider_note": "Input Gain changes how much the one-knob compressor works. That means gain staging is part of the compression setting; changing input later requires rechecking sustain and attack even if the Compressor knob did not move.",
+    "avoid_when": "Avoid Eden when vintage tube bloom, obvious grit, or a one-control clean/dirty parallel concept is the point; V8 and Supernova are faster. Eden can be needless complexity for a bass part already correct at the DI.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Eden WT800 user manual",
+          "url": "https://www.softube.com/eu/user-manuals/eden-wt800"
+        }
+      ]
+    },
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Five-string electric bass",
+        "source_or_bus": "Five-string electric bass",
+        "application": "In Gospel, use moderate Enhance, light input-aware compression, and Bi-Amp crossover for clear low-B fundamentals and fast upper runs.",
+        "why_this_plugin": "Eden offers more deliberate clean articulation and cabinet division than the vintage tube choices."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Stereo synth-bass layer",
+        "source_or_bus": "Stereo synth-bass layer",
+        "application": "In Electronic pop, run the stereo instance, use the direct channel for center stability, and keep cabinet blend modest for physical midrange.",
+        "why_this_plugin": "The plug-in processes stereo channels independently and Softube explicitly recommends it beyond bass guitar."
+      }
+    ],
+    "pairings": []
+  },
+  {
+    "name": "Celestion Speaker Shaper",
+    "section": 9,
+    "comparative_edge": "Choose Speaker Shaper over Marshall Cabinet Collection or static IRs when the question is why a speaker works: age, breakup, diameter, magnet, impedance, cabinet back, and count can be varied continuously. Choose the licensed cabinets when believable fixed hardware identity and faster decisions matter more.",
+    "advanced_moves": [
+      {
+        "setup": "Start from a real Celestion speaker with default physical values and one microphone.",
+        "action": "Choose open/closed back and speaker count first, then diameter; next compare New/Run-in and add only enough Speaker Distortion to change touch. Leave magnet experiments until the physical cabinet scale works.",
+        "listen_for": "The low-mid resonance fits the arrangement before top-end mic or EQ decisions.",
+        "why_it_works": "Cabinet geometry and speaker scale make larger structural changes than fine material parameters."
+      },
+      {
+        "setup": "Use two microphones in Realistic phase mode.",
+        "action": "Make one the anchor, move the second from center toward edge and vary distance, then switch only the pair to Aligned for comparison at equal output.",
+        "listen_for": "Realistic phase may create useful contour; Aligned should sound more stable and direct rather than automatically better.",
+        "why_it_works": "The model preserves distance-related phase until automatic alignment is enabled."
+      }
+    ],
+    "insider_note": "The Amp Room module is not identical to the native plug-in: it exposes one speaker instead of two and removes the native room section. Add a parallel second module and RoomIR when those omissions matter.",
+    "avoid_when": "Avoid it when fast, historically recognizable cabinet choices are the priority; Marshall Cabinet Collection or a suite's matched cabs are more decisive. Extreme hypothetical settings should be framed as sound design, not as models of existing hardware.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Celestion Speaker Shaper user manual",
+          "url": "https://www.softube.com/user-manuals/celestion-speaker-shaper"
+        }
+      ]
+    },
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "One amp reused across verse and chorus",
+        "source_or_bus": "One amp reused across verse and chorus",
+        "application": "In Alternative rock, automate from smaller/run-in/open-back behavior in verses toward larger/closed/newer and slightly more breakup in choruses.",
+        "why_this_plugin": "Continuous speaker variables change perceived rig scale without switching the amplifier performance."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Distorted synth-bass mid layer",
+        "source_or_bus": "Distorted synth-bass mid layer",
+        "application": "In Experimental bass music, try physically impossible large diameters or magnet combinations on a high-passed lane, keeping sub dry.",
+        "why_this_plugin": "Its Celestion-verified 'what-if' model can create speaker behavior no fixed IR library contains."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Amp Room",
+        "goal": "Place algorithmic speaker design inside a complete pedal/amp/parallel-routing environment.",
+        "order": "Amp Room amp with cabinet bypassed → Celestion Speaker Shaper module → RoomIR/post effects",
+        "setup": "Set Amp Room gain first, build one realistic speaker/cab state, then use Speaker Shaper’s physical variables for the missing scale or breakup.",
+        "why_it_works": "The processors divide the rig at the same boundary as hardware: amplifier behavior first, speaker/capture behavior second.",
+        "caution": "The Amp Room module omits the native room and second speaker; add them explicitly rather than assuming preset parity.",
+        "basis": "documented",
+        "source_url": "https://www.softube.com/user-manuals/celestion-speaker-shaper"
+      }
+    ]
+  },
+  {
+    "name": "Acoustic Feedback",
+    "section": 9,
+    "comparative_edge": "Choose Acoustic Feedback over pitch shifting, distortion sustain, or a feedback sample when the harmonic must emerge from the played note and follow bends. It is a performance processor before the amp, not a generic post-amp special effect.",
+    "advanced_moves": [
+      {
+        "setup": "Use a high-impedance DI, healthy input peaks, Acoustic Feedback first, and the amp simulator after it.",
+        "action": "Start controls near noon, hold one note, and set Feedback for a natural buildup time; then raise Tolerance only enough that bends and vibrato retain the feedback.",
+        "listen_for": "The harmonic arrives after the dry note and remains connected to expressive movement rather than snapping on instantly.",
+        "why_it_works": "Feedback controls loop growth while Tolerance relaxes how strictly the model follows the source's changing conditions."
+      },
+      {
+        "setup": "Print a dedicated feedback performance rather than leaving the processor live on every phrase.",
+        "action": "Automate Feedback upward on selected held notes, perform bends into the harmonic, record several passes, and comp only the transitions that behave musically.",
+        "listen_for": "Feedback sounds like an intentional performance event, not a uniform sustain plug-in.",
+        "why_it_works": "The model depends on pitch, pickup, input level, and playing, so performance curation exploits rather than fights its variability."
+      }
+    ],
+    "insider_note": "Softube recommends placing the amp simulator after Acoustic Feedback. Reversing the order deprives the model of its intended instrument-to-amp loop behavior; the 'secret' is correct physical ordering and a well-leveled DI, not an extreme Feedback setting.",
+    "avoid_when": "Avoid it on already printed full mixes or sources where exact repeatability is required. Use a pitch shifter or resampled feedback effect when every trigger must be identical, and avoid Wild settings if naturalism is the goal.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Acoustic Feedback user manual",
+          "url": "https://www.softube.com/us/user-manuals/acoustic-feedback"
+        }
+      ]
+    },
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Held guitar notes between chord walls",
+        "source_or_bus": "Held guitar notes between chord walls",
+        "application": "In Shoegaze, print feedback swells before the main reverb and edit them into gaps, leaving rhythm chords untreated.",
+        "why_this_plugin": "The harmonic grows from the actual guitar pitch and survives bends more organically than a generated octave layer."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Sustained lead guitar",
+        "source_or_bus": "Sustained lead guitar",
+        "application": "In Art rock, use Natural Feedback with moderate Tolerance and perform slow position-like harmonic changes through bends and vibrato.",
+        "why_this_plugin": "Its modeled loop recreates the responsive studio-feedback gesture without loud monitor placement."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Amp Room",
+        "goal": "Generate note-following feedback from the clean guitar signal before it enters the modeled amplifier and cabinet.",
+        "order": "Acoustic Feedback → Amp Room",
+        "setup": "Use a high-impedance DI, set natural buildup and moderate Tolerance on held notes, then choose the Amp Room rig after feedback behavior is stable.",
+        "why_it_works": "Acoustic Feedback models the instrument-to-amplifier loop and expects the amp simulator after it, matching the physical signal relationship.",
+        "caution": "Input level, pickup, pitch, and playing change the result; print selected performances rather than expecting identical triggers.",
+        "basis": "documented",
+        "source_url": "https://www.softube.com/us/user-manuals/acoustic-feedback"
+      }
+    ]
+  }
+]

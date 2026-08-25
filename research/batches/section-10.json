@@ -1,0 +1,788 @@
+[
+  {
+    "name": "Softube Flow Complete Suite",
+    "section": 10,
+    "comparative_edge": "Choose Complete over Flow Mixing when Model Series instruments and the Mastering environment are recurring parts of the same workflow; choose Flow Mastering alone when finalization is the only gap. The value is not merely the 100+ roster—it is moving from guided macro chains into the exact underlying Softube processors without changing ecosystems.",
+    "advanced_moves": [
+      {
+        "setup": "Open a factory Flow that gets near the target, then reveal the underlying chain before committing.",
+        "action": "Bypass one module at a time, note which Flow Control moves which audible job, and remove any stage that contributes only level. Save the lean result as a User Signal Chain.",
+        "listen_for": "Each remaining stage has a named job and bypass no longer produces a hidden loudness penalty.",
+        "why_it_works": "Factory macros can move several processors at once; decomposing the chain turns a preset into a repeatable production method."
+      },
+      {
+        "setup": "Build a project palette before browsing the full subscription roster.",
+        "action": "Choose one corrective EQ, fast compressor, leveler, character EQ, space, saturator, amp, and two instruments; favorite them and finish a full production before adding alternates.",
+        "listen_for": "Faster decisions and consistent color across tracks without losing access to specialists when a real exception appears.",
+        "why_it_works": "A constrained default set prevents the growing catalog from turning every routine job into a shootout."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Songwriting-to-mix handoff",
+        "source_or_bus": "Model Series synth tracks and their mix chains",
+        "application": "Write with a Model synth, shape it in Flow Mixing, then save the instrument and Flow chain as separate presets so arrangement and processing remain independently editable.",
+        "why_this_plugin": "Complete is the only Flow tier here that connects the Model instruments, Mixing, and Mastering environments under one entitlement."
+      },
+      {
+        "context_type": "bus",
+        "context": "Self-produced release",
+        "source_or_bus": "Mix bus and final master",
+        "application": "Keep creative bus tone in Flow Mixing, export a level-safe premaster, and open a separate Flow Mastering session rather than stacking both environments on the active mix.",
+        "why_this_plugin": "The suite provides both workflows while the separate-session boundary preserves a clear mastering comparison."
+      }
+    ],
+    "insider_note": "The included plug-ins load separately as VST, AU, or AAX. The useful expert move is to begin with a Flow for orientation, then replace the macro with native instances when automation, routing, or recall needs to be explicit.",
+    "avoid_when": "Avoid Complete when you repeatedly use a small fixed set and do not need the Model instruments or both Flow environments; perpetual à-la-carte tools or a narrower Flow tier reduces roster and entitlement complexity.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Flow Complete Suite product page",
+          "url": "https://www.softube.com/flow-complete-suite"
+        }
+      ]
+    },
+    "pairings": []
+  },
+  {
+    "name": "Flow Mixing Suite",
+    "section": 10,
+    "comparative_edge": "Choose Flow Mixing over a conventional channel strip when the source needs a guided multi-effect chain, explanatory context, and a few performance-scale controls. Choose Console 1 Core Mixing Suite for repetitive channel work where direct section-by-section control is faster, or native plug-ins when complex automation must remain transparent.",
+    "advanced_moves": [
+      {
+        "setup": "Load a source-specific Flow with input and output level matched.",
+        "action": "Turn each macro through its full range while watching which modules move, return to neutral, then set only the two controls that solve the largest problems; customize the chain afterward.",
+        "listen_for": "A clear before/after cause rather than a generally more processed, louder result.",
+        "why_it_works": "Macro ranges reveal the designer's intended division of labor before small settings conceal it."
+      },
+      {
+        "setup": "Create a User Signal Chain for a repeat source such as lead vocal or drum bus.",
+        "action": "Map one-to-one controls for the parameters that change per song—threshold, de-ess amount, ambience level—not fixed setup choices such as filter topology. Name each control by audible result.",
+        "listen_for": "Session-to-session adjustment happens from a short surface while the stable engineering remains protected underneath.",
+        "why_it_works": "Current user mapping is one parameter per control, so choosing variable decisions deliberately is more useful than imitating factory multi-parameter macros."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Lead vocal production",
+        "source_or_bus": "Lead vocal insert",
+        "application": "Build a chain with peak control, slower leveling, dynamic harshness, and ambience; expose only peak threshold, leveler amount, harshness range, and reverb send as User Controls.",
+        "why_this_plugin": "Flow keeps a multi-stage vocal method approachable while still allowing the processors to be opened and edited."
+      },
+      {
+        "context_type": "bus",
+        "context": "Drum-bus contrast",
+        "source_or_bus": "Parallel drum bus",
+        "application": "Use a Flow for compression, saturation, and width on a return, then automate one output or wet control rather than moving three native processors independently.",
+        "why_this_plugin": "A controlled macro surface is especially useful when the chain is an arrangement effect rather than transparent bus maintenance."
+      }
+    ],
+    "insider_note": "User Signal Chains can currently make simplified one-to-one mappings, not the full multi-parameter macros found in factory Flows. Design user controls around the decisions that truly vary, rather than trying to recreate a factory Flow authoring system.",
+    "avoid_when": "Avoid Flow Mixing for a single obvious EQ or compressor move; load the native processor directly. Avoid hiding a chain behind macros when another mixer must audit every automated parameter quickly.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Flow Mixing Suite product page and FAQ",
+          "url": "https://www.softube.com/flow-mixing-suite"
+        }
+      ]
+    },
+    "pairings": []
+  },
+  {
+    "name": "Flow Mastering Suite",
+    "section": 10,
+    "comparative_edge": "Choose Flow Mastering over individual Weiss and Chandler tools when a producer needs guided chain architecture, loudness/true-peak context, references, and macro control in one place. Choose the native Weiss tools when mastering is already a deliberate step-by-step practice and every detector, release, and delivery choice must remain exposed.",
+    "advanced_moves": [
+      {
+        "setup": "Load the loudest passage, set input target, and import a level-matched reference before choosing a Flow.",
+        "action": "Audition three Flows at matched output, select by the smallest structural correction, then reduce the main macro moves by half and rebuild only what the track proves it needs.",
+        "listen_for": "The master moves toward the reference's balance and density without losing the mix's own transient and depth hierarchy.",
+        "why_it_works": "Starting from restrained, gain-compensated differences reduces the tendency to choose the loudest or most transformed chain."
+      },
+      {
+        "setup": "Separate tone approval from delivery approval.",
+        "action": "First work with low-latency/oversampling choices held constant; after tone is approved, compare True Peak, oversampling, and dither settings on the final delivery format and save them as an export-state note.",
+        "listen_for": "Delivery changes do not alter the approved tonal balance or introduce intersample clipping.",
+        "why_it_works": "Limiter mode, oversampling, and dithering answer format and reconstruction problems, not the same aesthetic question as EQ or compression."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Mix evaluation",
+        "source_or_bus": "Stereo premaster",
+        "application": "Use the gain-difference meter and bypass individual modules to determine whether a perceived improvement is tonal, dynamic, or simply louder before revising the mix.",
+        "why_this_plugin": "Flow's integrated views make the chain a diagnostic surface rather than only a finishing preset."
+      },
+      {
+        "context_type": "bus",
+        "context": "Streaming master delivery",
+        "source_or_bus": "Final limiter and output stage",
+        "application": "Approve the chain without dither first, then set True Peak, oversampling, and dither once for the target file format and document that export state.",
+        "why_this_plugin": "The delivery controls live alongside loudness history and reference auditioning, reducing handoff errors."
+      }
+    ],
+    "insider_note": "The built-in gain-difference view is the real power feature for producer mastering: it helps expose when a macro's appeal comes from level. Use it continuously, not only at the final bypass check.",
+    "avoid_when": "Avoid it as a substitute for fixing an unstable mix; if every Flow needs large corrective moves, return to stems. Choose DS1-MK3/EQ1 directly when an experienced mastering engineer needs full, explicit control rather than a macro layer.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Flow Mastering Suite user manual",
+          "url": "https://www.softube.com/user-manuals/flow-mastering-suite"
+        }
+      ]
+    },
+    "pairings": []
+  },
+  {
+    "name": "Volume 6",
+    "section": 10,
+    "comparative_edge": "Choose Volume 6 over Flow Complete when perpetual ownership of a large fixed snapshot matters more than a growing guided subscription. Choose a focused collection when only one family—Weiss, Tube-Tech, Empirical Labs, or compressors—will enter daily work; Volume's breadth is useful only if it is organized by job.",
+    "advanced_moves": [
+      {
+        "setup": "Before installing templates, inventory the collection by production role rather than brand.",
+        "action": "Select one default for corrective EQ, fast dynamics, leveling, bus tone, room, delay, saturation, synth, and amp; put all alternates in a secondary folder and require a stated reason to open them.",
+        "listen_for": "Projects develop a consistent vocabulary and specialty tools appear only when the source proves a need.",
+        "why_it_works": "Role-based constraints convert a broad anthology into a working system instead of repeated choice paralysis."
+      },
+      {
+        "setup": "Create a recall policy for the three included legacy products.",
+        "action": "Tag FET Compressor Mk I, Bass Amp Room, and Vintage Amp Room as recall-only, keep them out of new-session favorites, and print references before replacing them in old projects.",
+        "listen_for": "New work never depends on unsupported products while archived sessions remain reproducible.",
+        "why_it_works": "Softube includes those products for compatibility, not as evidence that they are preferred current tools."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Studio template standardization",
+        "source_or_bus": "Track, subgroup, and mix-bus defaults",
+        "application": "Assign a small default set across templates, then create named specialty lanes such as Weiss-clean, Summit-tube, and dirty parallel instead of browsing the collection per insert.",
+        "why_this_plugin": "Volume supplies enough cross-category depth to build several coherent palettes from one perpetual snapshot."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Production workstation",
+        "source_or_bus": "Model 84, Modular, Heartbeat, Parallels, and amp instruments",
+        "application": "Keep one instrument per synthesis role in favorites and bounce older project-critical presets before major host/OS changes.",
+        "why_this_plugin": "The collection spans instruments and effects, but its fixed nature makes deliberate long-term recall more realistic than a changing subscription roster."
+      }
+    ],
+    "insider_note": "Volume 6's three legacy products are explicitly present to keep existing projects safe and may be unsupported. The expert habit is to separate 'licensed for recall' from 'approved for new work' in plug-in folders and templates.",
+    "avoid_when": "Avoid Volume 6 if you already own most key products or need only one specialist family; a focused collection reduces duplicates. Choose Flow if guided chains, macros, and ongoing roster additions are the primary value.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Volume 6 product page",
+          "url": "https://www.softube.com/eu/plug-ins/volume-6"
+        }
+      ]
+    },
+    "pairings": []
+  },
+  {
+    "name": "Softube Essentials",
+    "section": 10,
+    "comparative_edge": "Choose Essentials over Volume or Flow when a deliberate five-tool constraint is an advantage: Tape, British Class A, FET Compressor Mk II, Model 84, and Wasted Space. It is a production palette, not a complete mix suite; its character is stronger than its repair or delivery coverage.",
+    "advanced_moves": [
+      {
+        "setup": "Build a song template that assigns each included product one non-overlapping job.",
+        "action": "Use British Class A for channel shaping, FET for peak envelope, Tape for shared cohesion, Wasted Space only as an effect return, and Model 84 as the instrument source; do not stack them by default.",
+        "listen_for": "Each processor remains identifiable and the mix avoids accumulated analog color on every path.",
+        "why_it_works": "Distinct job assignment prevents a small collection from becoming one repeated 'vintage' chain."
+      },
+      {
+        "setup": "Run a five-tool finish challenge on one production, allowing stock utility processors for missing repair tasks.",
+        "action": "Complete the mix before adding any specialist Softube product, document what the five tools genuinely could not solve, and expand only for those proven gaps.",
+        "listen_for": "New purchases or additions correspond to recurring production problems rather than curiosity.",
+        "why_it_works": "A constrained palette reveals whether the missing need is corrective, spatial, dynamic, or delivery-specific."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Synth-led production",
+        "source_or_bus": "Model 84 pads and basses",
+        "application": "Keep Model 84 mostly unprocessed at first, use FET only for envelope emphasis, then send selected parts to Wasted Space rather than inserting it everywhere.",
+        "why_this_plugin": "The five-product set creates a coherent '80s-to-modern character path without requiring the full catalog."
+      },
+      {
+        "context_type": "bus",
+        "context": "Band mix cohesion",
+        "source_or_bus": "Instrument subgroups",
+        "application": "Use British Class A on individual problem groups and one restrained Tape instance on a shared bus, keeping FET for tracks that need actual peak control.",
+        "why_this_plugin": "The collection's three mix processors cover complementary color/envelope roles when they are not reflexively stacked."
+      }
+    ],
+    "insider_note": "The collection omits a modern corrective EQ, transparent limiter, and general-purpose clean reverb. Treating those omissions as intentional boundaries—and using stock utilities where needed—is more productive than forcing character tools into unsuitable roles.",
+    "avoid_when": "Avoid Essentials if the goal is a self-contained mastering, surgical mixing, or broad guitar toolkit. Use a focused specialist collection or Flow tier rather than assuming 'Essentials' means every necessary production category.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Essentials Collection product page",
+          "url": "https://www.softube.com/us/plug-ins/softube-essentials-collection"
+        }
+      ]
+    },
+    "pairings": [
+      {
+        "partner": "Tape",
+        "goal": "Use British Class A for local channel tone and Tape for shared bus cohesion without stacking both heavily on every track.",
+        "order": "British Class A on selected channels/subgroups → one restrained Tape stage on the shared bus",
+        "setup": "Commit channel EQ/dynamics first, drive Tape at matched output on the group or mix bus, and bypass individual tape stages unless they solve a distinct source problem.",
+        "why_it_works": "The console strip shapes local sources while the shared tape stage applies common nonlinear compression and spectral glue.",
+        "caution": "Repeated high-drive console and tape stages can darken transients and accumulate low-mid density.",
+        "basis": "engineering-inference",
+        "source_url": null
+      }
+    ]
+  },
+  {
+    "name": "Icons Compressor Collection",
+    "section": 10,
+    "comparative_edge": "Choose Icons when the recurring decision is envelope family rather than brand mythology: fast FET, slow opto, or hard-knee VCA. Choose Bus Processor, 670, or CL 1B when bus architecture, vari-mu bloom, or adjustable Tube-Tech leveling is the actual requirement.",
+    "advanced_moves": [
+      {
+        "setup": "Insert all three on the same source with Drive off, Dry/Wet at 100%, and matched output.",
+        "action": "Aim for similar peak reduction, then adjust attack/release only enough to expose each design's natural behavior; compare in context before adding Drive or parallel blend.",
+        "listen_for": "FET controls the front edge, OPTO reshapes level over time, and VCA adds a compact hard-knee event.",
+        "why_it_works": "Removing modern extras reveals the detector and gain-reduction envelope that should decide the choice."
+      },
+      {
+        "setup": "Build a two-stage vocal chain with FET before OPTO.",
+        "action": "Let FET catch only the quickest peaks, then set OPTO for 1-3 dB of slower leveling; level-match each stage and use sidechain filtering before increasing compression.",
+        "listen_for": "The vocal stays forward without either compressor audibly working hard.",
+        "why_it_works": "Peak containment gives the slower opto a narrower input range, allowing it to level rather than chase transients."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Lead vocal serial control",
+        "source_or_bus": "Lead vocal insert",
+        "application": "Use FET for fast peaks and OPTO for slow body, keeping each stage modest and using HF make-up only after compression is approved.",
+        "why_this_plugin": "The collection supplies complementary envelopes in matched modern interfaces, making serial division of labor easy to hear."
+      },
+      {
+        "context_type": "bus",
+        "context": "Drum parallel impact",
+        "source_or_bus": "Parallel close-drum bus",
+        "application": "Drive VCA or FET harder on a return, compare hard-knee snap against all-buttons-style density, then blend below the dry bus.",
+        "why_this_plugin": "The VCA/FET contrast offers two distinct kinds of aggression without moving to unrelated processing families."
+      }
+    ],
+    "insider_note": "The modern panels are deliberately similar, so hide or neutralize Drive, HF make-up, sidechain, and Dry/Wet during the first comparison. Otherwise shared extras can disguise the one thing worth learning: how each gain-reduction element shapes time.",
+    "avoid_when": "Avoid the set for transparent mastering dynamics or full mix-bus architecture; Weiss and Bus Processor are more appropriate. Do not choose OPTO for truly instant peak containment or FET when slow, invisible leveling is the goal.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Icons: The Compressor Collection product page",
+          "url": "https://www.softube.com/plug-ins/icons-the-compressor-collection"
+        }
+      ]
+    },
+    "pairings": [
+      {
+        "partner": "FET Compressor Mk II + OPTO Compressor",
+        "goal": "Use fast peak control before slower musical leveling on a vocal.",
+        "order": "FET Compressor Mk II → OPTO Compressor",
+        "setup": "Let FET catch only the quickest peaks, then ask OPTO for a few dB of slower level control; match gain after each stage.",
+        "why_it_works": "The first stage narrows the vocal’s peak range so the slower opto can control body without chasing every consonant.",
+        "caution": "Two compressors can hide over-processing; bypass each independently and do not let both produce large continuous reduction.",
+        "basis": "documented",
+        "source_url": "https://www.softube.com/plug-ins/icons-the-compressor-collection"
+      }
+    ]
+  },
+  {
+    "name": "Weiss Complete Collection 3",
+    "section": 10,
+    "comparative_edge": "Choose the Weiss collection when transparent digital mastering and post work recur often enough to justify both deep code ports and faster derivatives. Use DS1-MK3, DS5, or EQ1 for unusual or high-stakes problems; use MM-1, Deess, EQ MP, and Compressor/Limiter when the job is narrow and speed matters.",
+    "advanced_moves": [
+      {
+        "setup": "For every task, begin with the narrowest Weiss derivative that plausibly solves it.",
+        "action": "Move to the parent processor only when a missing detector, filter, timing, or channel mode blocks the result; save the reason in the preset name.",
+        "listen_for": "Faster recall and fewer irrelevant controls without giving up access to deep architecture when evidence demands it.",
+        "why_it_works": "Several focused plug-ins derive algorithms from the larger Weiss processors, so depth can be chosen by task rather than sonic prestige."
+      },
+      {
+        "setup": "Create a clean-master shootout between DS1-MK3 and the focused Compressor/Limiter or MM-1.",
+        "action": "Match output and short-term loudness, use the same target reduction, and compare transient shape and release movement before deciding which interface to keep in the session.",
+        "listen_for": "The simpler tool is retained unless deeper control yields an audible, repeatable benefit.",
+        "why_it_works": "Level-matched common-algorithm comparisons prevent complexity from being mistaken for quality."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Transparent stereo mastering",
+        "source_or_bus": "Premaster",
+        "application": "Use EQ1 for narrow balance correction, DS1-MK3 for conditional dynamics, and MM-1 only after the dynamic architecture is stable; bypass each stage with matched loudness.",
+        "why_this_plugin": "The collection spans full code-ported control and focused loudness tools without introducing analog color."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Vocal harshness repair",
+        "source_or_bus": "Lead vocal or vocal bus",
+        "application": "Start with Deess for two-band focused control; move to DS1-MK3 only when detector filtering or broader dynamic behavior is required.",
+        "why_this_plugin": "The focused derivative solves ordinary sibilance quickly while the parent architecture remains available for exceptional material."
+      }
+    ],
+    "insider_note": "The collection contains algorithmic overlap by design. The expert choice is often the smallest interface that exposes the necessary control, not automatically the flagship. This reduces setup error and makes automation more legible.",
+    "avoid_when": "Avoid buying or loading the whole family merely for one maximizer or de-esser role. For audible transformer, tube, or diode character, Weiss is intentionally the wrong palette; choose Tube-Tech, Chandler, tape, or saturation instead.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Weiss Complete Collection 3 product page",
+          "url": "https://www.softube.com/plug-ins/weiss-complete-collection-3"
+        }
+      ]
+    },
+    "pairings": [
+      {
+        "partner": "Weiss EQ1 + Weiss DS1-MK3",
+        "goal": "Correct spectral balance before program-dependent dynamics in a transparent mastering chain.",
+        "order": "Weiss EQ1 → Weiss DS1-MK3",
+        "setup": "Use EQ1 for the smallest static corrections, then set DS1 detector and timing on the corrected spectrum; compare the whole chain at matched loudness.",
+        "why_it_works": "Removing stable tonal imbalances first prevents them from repeatedly driving the dynamics detector.",
+        "caution": "If the problem is intermittent, use dynamic processing rather than carving the static EQ around rare events.",
+        "basis": "engineering-inference",
+        "source_url": null
+      }
+    ]
+  },
+  {
+    "name": "Empirical Labs Complete Collection 2",
+    "section": 10,
+    "comparative_edge": "Choose Empirical Labs over Icons when modern analog problem-solving and controlled aggression are more important than learning three vintage compressor families. Lil FrEQ, Mike-E, and Punch-Knuckles form a source-shaping system; Trak Pak is the Console 1 workflow version, not a separate fourth sonic universe.",
+    "advanced_moves": [
+      {
+        "setup": "Place Lil FrEQ before Mike-E on a vocal or drum track.",
+        "action": "Use filtering and de-essing to stop unwanted frequencies from driving compression, then set Mike-E for envelope; add Punch-Knuckles afterward only if a separate saturation color remains necessary.",
+        "listen_for": "Compression responds to the musical body instead of sibilance, rumble, or cymbal spill.",
+        "why_it_works": "Pre-dynamics spectral control changes what triggers the compressor, while post-dynamics saturation colors a stabilized envelope."
+      },
+      {
+        "setup": "Use Punch-Knuckles on a parallel return rather than as an automatic insert.",
+        "action": "Choose Toasty, Crunchy, or Distress by the missing texture, drive the return until character is obvious, band-limit it, and blend from silence under the clean source.",
+        "listen_for": "The source gains density or explosion without losing its original transient hierarchy.",
+        "why_it_works": "Parallel routing lets the three modeled distortion modes contribute character independently of the dry envelope."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Lead vocal tracking-style chain",
+        "source_or_bus": "Lead vocal insert",
+        "application": "Filter/de-ess with Lil FrEQ, use Mike-E for peak and decay shape, and add only a low Punch-Knuckles parallel return for density.",
+        "why_this_plugin": "The collection covers spectral preparation, dynamics, and color with one consistent modern-analog design philosophy."
+      },
+      {
+        "context_type": "bus",
+        "context": "Explosive drum parallel",
+        "source_or_bus": "Drum-room or close-mic return",
+        "application": "Use Punch-Knuckles Distress or Crunchy mode into Mike-E envelope shaping, then high-pass the return and blend below the clean kit.",
+        "why_this_plugin": "The Empirical tools are designed to move from controlled weight to deliberate overstatement without brittle extremes."
+      }
+    ],
+    "insider_note": "Trak Pak overlaps the native processors but changes access through Console 1. Treat it as a speed/ergonomics decision: use the native plug-ins for detailed automation and Trak Pak for repeatable hands-on channel work.",
+    "avoid_when": "Avoid the family when pristine mastering transparency or gentle vintage leveling is the main brief; Weiss or Tube-Tech is more natural. Do not stack every Empirical stage simply because the collection makes a complete chain possible.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Empirical Labs Complete Collection 2 product page",
+          "url": "https://www.softube.com/eu/plug-ins/empirical-labs-complete-collection-2"
+        }
+      ]
+    },
+    "pairings": [
+      {
+        "partner": "Empirical Labs Lil FrEQ + Empirical Labs Mike-E Comp",
+        "goal": "Stop rumble, resonances, or sibilance from misdirecting compression before shaping vocal or drum envelope.",
+        "order": "Empirical Labs Lil FrEQ → Empirical Labs Mike-E Comp",
+        "setup": "Filter and de-ess only what should not trigger gain reduction, then set Mike-E for peak/decay behavior; add post color only after the envelope is stable.",
+        "why_it_works": "Pre-dynamics spectral control changes the detector input, allowing Mike-E to respond to the musical body rather than unwanted extremes.",
+        "caution": "Do not over-EQ into a compressor and then compensate with more saturation; compare each stage at matched output.",
+        "basis": "engineering-inference",
+        "source_url": null
+      }
+    ]
+  },
+  {
+    "name": "Tube-Tech Complete Collection 2",
+    "section": 10,
+    "comparative_edge": "Choose Tube-Tech over Weiss when polished tube color and opto movement should be part of the result, and over the Reference EQ bundle when compression plus midrange shaping recur with the passive curves. Blue Tone is the fast macro, individual processors are the precision path, and Classic Channel is the integrated M/S option.",
+    "advanced_moves": [
+      {
+        "setup": "Compare Blue Tone against the individual SMC 2B and Equalizers on the same bus.",
+        "action": "Use Blue Tone to find the direction quickly, then rebuild with individual processors only if crossover, detector, or exact EQ-band control changes the result materially.",
+        "listen_for": "The native rebuild earns its complexity through cleaner low-end movement or more exact tonal placement.",
+        "why_it_works": "Blue Tone derives its macro behavior from the same Tube-Tech families, making it a direction finder rather than an unrelated effect."
+      },
+      {
+        "setup": "Use Classic Channel Mk II in M/S on a drum or mix bus.",
+        "action": "Apply small Mid compression with detector low-cut, shape Side air with the passive EQ, and level-match before widening further.",
+        "listen_for": "The center becomes steadier while cymbal/room width opens without pulling kick and bass outward.",
+        "why_it_works": "M/S routing lets the opto detector and passive curves address center and sides as different production roles."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Lead vocal leveling",
+        "source_or_bus": "Lead vocal insert",
+        "application": "Use CL 1B Mk II for 2-5 dB of level control, sidechain low-cut to reduce plosive influence, then ME 1B/PE 1C shaping only after the envelope is stable.",
+        "why_this_plugin": "The adjustable opto can stay smooth while being fast enough for modern vocal phrasing, unlike a generic slow leveler."
+      },
+      {
+        "context_type": "bus",
+        "context": "Program-dependent mix-bus polish",
+        "source_or_bus": "Mix bus",
+        "application": "Use SMC 2B only on the band whose movement is unstable, then make sub-1 dB passive EQ gestures rather than driving every Tube-Tech stage.",
+        "why_this_plugin": "The collection can isolate spectral dynamics while retaining a consistent tube/passive color family."
+      }
+    ],
+    "insider_note": "Classic Channel and CL 1B Mk II include a Generation switch for old and remodeled behavior. Use it as an audible A/B at matched level—not as proof that the current wrapper automatically substitutes safely for a legacy plug-in instance.",
+    "avoid_when": "Avoid stacking Blue Tone, Classic Channel, CL 1B, and Equalizers by default; they overlap circuits and color. Use Weiss for invisible control or Reference 1998 when a more extreme broad EQ color is the only job.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Tube-Tech Complete Collection 2 product page",
+          "url": "https://www.softube.com/plug-ins/tube-tech-complete-collection-2"
+        }
+      ]
+    },
+    "pairings": [
+      {
+        "partner": "Tube-Tech CL 1B Mk II + Tube-Tech Equalizers Mk II",
+        "goal": "Level a vocal or bass before broad passive tone shaping with one coherent Tube-Tech color family.",
+        "order": "Tube-Tech CL 1B Mk II → Tube-Tech Equalizers Mk II",
+        "setup": "Stabilize peaks and body with modest CL 1B reduction, then make broad PE/ME moves at matched output; reverse only if EQ must deliberately change detector behavior.",
+        "why_it_works": "A steadier envelope makes passive boosts more predictable, while the integrated Classic Channel documents the same compressor-plus-EQ family as a deliberate workflow.",
+        "caution": "Both stages add tube character; keep drive conservative and do not stack Classic Channel with the same separate processors by default.",
+        "basis": "engineering-inference",
+        "source_url": "https://www.softube.com/plug-ins/tube-tech-complete-collection-2"
+      }
+    ]
+  },
+  {
+    "name": "Reference Equalizers Bundle",
+    "section": 10,
+    "comparative_edge": "Choose Reference 1956 for focused low/air boost-attenuation gestures, M/S control, and deliberately aged transformer/tube character. Choose Reference 1998 for four interacting parallel bands and a broad full-mix contour. Choose Tube-Tech PE 1C when the same passive family should sound cleaner and closer to a newly calibrated unit.",
+    "advanced_moves": [
+      {
+        "setup": "On kick, bass, or a drum bus, use Reference 1956 with output level matched.",
+        "action": "Boost the target low band until body appears, add attenuation at the paired frequency until bloom tightens, then lower Headroom only if more transformer character is still useful.",
+        "listen_for": "The fundamental feels larger but decays faster into the surrounding bass range.",
+        "why_it_works": "The passive boost and attenuation curves are not inverse, so their overlap creates a shaped rise-and-dip rather than cancellation."
+      },
+      {
+        "setup": "On a mix or music bus, start Reference 1998 with all four bands flat and matched output.",
+        "action": "Set shelf shape/bandwidth before gain, build the broadest low and high gestures first, then use one mid band to restore focus; keep individual moves small.",
+        "listen_for": "The entire mix leans toward a new tonal perspective without any one element sounding explicitly EQ'd.",
+        "why_it_works": "Four parallel passive bands overlap and feed a colored tube stage, so shape and interaction matter before nominal gain."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Kick and bass separation",
+        "source_or_bus": "Kick or bass insert",
+        "application": "Use 1956's paired low boost/attenuation to enlarge the chosen fundamental while carving immediately above it, keeping the complementary instrument untreated at first.",
+        "why_this_plugin": "The non-inverse passive curves create weight plus a neighboring pocket in one gesture."
+      },
+      {
+        "context_type": "bus",
+        "context": "Broad music-bus contour",
+        "source_or_bus": "Instrumental or mix bus",
+        "application": "Use 1998 for overlapping low, presence, and air moves at 0.5-1.5 dB, selecting bandwidth/shelf behavior before level.",
+        "why_this_plugin": "Its four parallel bands shape a whole arrangement more fluently than 1956's focused paired curves."
+      }
+    ],
+    "insider_note": "Softube explicitly contrasts 1956 with Tube-Tech PE 1C: 1956 deliberately exaggerates aged distortion while PE 1C represents a cleaner, newly tuned unit. That makes Headroom and product choice part of the tone decision, not just EQ curve selection.",
+    "avoid_when": "Avoid both for moving resonances, narrow repair, or transparent mastering correction; use Equalizers or Weiss EQ1. Avoid 1998 when only one decisive low/air gesture is needed; 1956 is faster and easier to audit.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Reference 1956 Equalizer product page",
+          "url": "https://cdn.softube.com/us/plug-ins/reference-1956-equalizer"
+        },
+        {
+          "title": "Softube Reference 1998 Equalizer product page",
+          "url": "https://cdn.softube.com/us/plug-ins/reference-1998-equalizer"
+        }
+      ]
+    },
+    "pairings": [
+      {
+        "partner": "Equalizers",
+        "goal": "Perform dynamic or surgical repair before committing to broad passive color in one combined EQ environment.",
+        "order": "Equalizers modern bands → Reference 1956 or Reference 1998 in the vintage slot",
+        "setup": "Stabilize resonances and moving harshness first, then load one Reference model and make only broad level-matched gestures.",
+        "why_it_works": "Corrective bands prevent intermittent problems from being magnified by the passive EQ and colored output stage.",
+        "caution": "Do not duplicate broad boosts in both slots; keep repair and flavor as separate named jobs.",
+        "basis": "engineering-inference",
+        "source_url": "https://cdn.softube.com/us/plug-ins/reference-1956-equalizer"
+      }
+    ]
+  },
+  {
+    "name": "The Dirty, Bad, and Wasted Collection",
+    "section": 10,
+    "comparative_edge": "Choose the member by the dimension of degradation: Dirty Tape for instability and continuous saturation, Bad Speaker for bandwidth/perspective and speaker breakup, Wasted Space for aliased early-digital reverb. The collection is most useful when those roles are kept distinct rather than stacked as a generic lo-fi preset.",
+    "advanced_moves": [
+      {
+        "setup": "Build three parallel returns, one for each effect, and keep the dry source untouched.",
+        "action": "Band-limit each return to a separate role, exaggerate the effect until identifiable, then blend one at a time from silence; automate only the return that supports the current section.",
+        "listen_for": "Each degradation reads as perspective, motion, or space rather than one indistinct loss of fidelity.",
+        "why_it_works": "Parallel role separation prevents three nonlinear, bandwidth-reducing processes from compounding on the dry transient."
+      },
+      {
+        "setup": "Use one effect as a foreground transition printer.",
+        "action": "Send only a phrase ending, print several passes with automation, then edit the best tail or dropout back into the arrangement instead of leaving the plug-in active.",
+        "listen_for": "Lo-fi becomes an event with contrast before and after it.",
+        "why_it_works": "Degradation is more legible against a clean baseline than as a permanent full-track condition."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Vocal perspective shift",
+        "source_or_bus": "Verse vocal parallel",
+        "application": "Use Bad Speaker on a band-limited parallel for distance/telephone perspective, preserving the full dry vocal for intelligibility.",
+        "why_this_plugin": "Speaker breakup and restricted bandwidth communicate a physical playback perspective more specifically than tape wobble."
+      },
+      {
+        "context_type": "bus",
+        "context": "Sample and keys movement",
+        "source_or_bus": "Instrument subgroup",
+        "application": "Use Dirty Tape lightly for continuous motion, then automate Wasted Space only on transitions rather than inserting both at full strength.",
+        "why_this_plugin": "Tape can unify the ongoing source while the aliased reverb remains a contrasting arrangement effect."
+      }
+    ],
+    "insider_note": "The useful 'secret' is to treat lo-fi as three separate axes—time/pitch, playback bandwidth, and spatial quantization. Once named, each can be automated or parallelized without destroying every aspect of fidelity at once.",
+    "avoid_when": "Avoid the collection for transparent warmth, natural rooms, or subtle mastering patina; Tape, TSAR/Atlantis, or a cleaner saturator is more suitable. Do not assume stacking all three demonstrates their value.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube The Dirty, the Bad, and the Wasted Collection product page",
+          "url": "https://www.softube.com/plug-ins/the-dirty-the-bad-and-the-wasted-collection"
+        }
+      ]
+    },
+    "pairings": [
+      {
+        "partner": "Dirty Tape + Wasted Space",
+        "goal": "Give an ongoing source unstable tape motion while reserving aliased reverb for arrangement transitions.",
+        "order": "Dirty Tape lightly on source/bus → Wasted Space on a separate automated send",
+        "setup": "Set Dirty Tape for continuous low-level motion, then send only phrase endings to a more exaggerated Wasted Space return.",
+        "why_it_works": "The two processors occupy different degradation axes—time/pitch versus spatial quantization—so contrast remains legible.",
+        "caution": "Do not run both at full insert strength if the dry transient and intelligibility still matter.",
+        "basis": "engineering-inference",
+        "source_url": null
+      }
+    ]
+  },
+  {
+    "name": "Passive-Active Pack",
+    "section": 10,
+    "comparative_edge": "Choose Passive for broad interactive tone, Active for firmer and more selective moves, and Focusing when bandwidth restriction, passive/active character, and saturation should become one finishing gesture. Choose Equalizers or Weiss when visual, dynamic, or transparent correction is the actual job.",
+    "advanced_moves": [
+      {
+        "setup": "Put Passive and Active on the same source, flat and level matched.",
+        "action": "Make the same nominal low-mid and presence move on both, then halve the gain and choose by phase/shape in the mix rather than by solo excitement.",
+        "listen_for": "Passive spreads the gesture; Active feels more pointed and forward.",
+        "why_it_works": "The modeled analog topologies produce different curve interaction even when center frequency and gain look comparable."
+      },
+      {
+        "setup": "Use Focusing Equalizer late in a chain with the source already corrected.",
+        "action": "Set high/low focus filters first, choose passive or active character, then add saturation only until the narrowed source advances in the mix.",
+        "listen_for": "The source gains a clear focal band without broad extra brightness or low-end spill.",
+        "why_it_works": "Bandwidth restriction determines what reaches the saturating/character stage, so harmonics reinforce the chosen focus."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Acoustic instrument shaping",
+        "source_or_bus": "Acoustic guitar, piano, or strings",
+        "application": "Use Passive for one or two broad moves, sweeping while boosted and then reducing gain after the musical region is found.",
+        "why_this_plugin": "Its broad interacting curves preserve a natural source perspective better than an assertive active band."
+      },
+      {
+        "context_type": "bus",
+        "context": "Drum or guitar subgroup focus",
+        "source_or_bus": "Drum bus or layered guitar bus",
+        "application": "Use Focusing to trim unneeded extremes, select Active character for presence, and add restrained saturation after the filters are stable.",
+        "why_this_plugin": "The combined focus-and-color workflow can make a whole subgroup occupy a deliberate band without another saturator."
+      }
+    ],
+    "insider_note": "With Focusing Equalizer, set the boundary filters before saturation. Engineering inference: changing the passband changes which frequencies generate harmonics, so drive judgments made before focus settings are not transferable.",
+    "avoid_when": "Avoid the pack for moving resonances, dynamic harshness, or analyzer-led repair; use Equalizers. Avoid Focusing on a full mix when its bandwidth and saturation would narrow a balance that already works.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Passive-Active Pack product page",
+          "url": "https://www.softube.com/plug-ins/passive-active-pack"
+        }
+      ]
+    },
+    "pairings": []
+  },
+  {
+    "name": "Tube-Tech CL 1B Mk I",
+    "section": 10,
+    "comparative_edge": "Choose the Mk I standalone only when an existing session depends on its exact plug-in identity, automation, and model. For new work use CL 1B Mk II, whose Generation switch provides the older sonic option plus current workflow features—but does not guarantee drop-in legacy session substitution.",
+    "advanced_moves": [
+      {
+        "setup": "Open the old session on a system where Mk I still recalls correctly.",
+        "action": "Render the full mix, affected stems, and a short exposed reference; capture screenshots or parameter exports and note host/plugin versions before inserting Mk II anywhere.",
+        "listen_for": "A durable approved reference exists before migration introduces uncertainty.",
+        "why_it_works": "Audio references preserve the actual result even if future plug-in identity, automation, or support changes."
+      },
+      {
+        "setup": "Test Mk II's legacy Generation mode on a duplicate track, never over the original.",
+        "action": "Match static settings and output, compare exposed transients and release tails, then verify every automation lane across the whole song before accepting a replacement.",
+        "listen_for": "No audible envelope, gain, or automation discontinuity at matched level.",
+        "why_it_works": "Similar model behavior does not prove identical host state or parameter mapping."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Catalog remix vocal recall",
+        "source_or_bus": "Legacy lead vocal insert",
+        "application": "Keep Mk I active for the approved bounce, print wet and dry stems, and test Mk II only after the archival deliverable is safe.",
+        "why_this_plugin": "The standalone's value is exact historical identity, not superiority over Mk II."
+      },
+      {
+        "context_type": "bus",
+        "context": "Long-running project archive",
+        "source_or_bus": "Legacy subgroup or mix session",
+        "application": "Freeze or commit the Mk I result before OS/host migration and store the version note beside the project.",
+        "why_this_plugin": "Softube includes it for compatibility and warns legacy products may be unsupported."
+      }
+    ],
+    "insider_note": "A Generation switch reproducing an older sonic model is not the same as the DAW finding the original plug-in ID with identical automation mapping. Archive audio first; migration is a separate qualification task.",
+    "avoid_when": "Do not instantiate Mk I in new sessions. Use CL 1B Mk II unless exact old-session recall is required, and never replace an approved legacy instance in place without a duplicate and rendered reference.",
+    "evidence": {
+      "basis": "compatibility-note",
+      "sources": [
+        {
+          "title": "Softube Tube-Tech Complete Collection 2 product page",
+          "url": "https://www.softube.com/plug-ins/tube-tech-complete-collection-2"
+        }
+      ]
+    },
+    "pairings": []
+  },
+  {
+    "name": "Tube-Tech Classic Channel Mk I",
+    "section": 10,
+    "comparative_edge": "Choose Classic Channel Mk I only to recall projects created with that exact combined CL 1B/PE 1C/ME 1B wrapper. Classic Channel Mk II is the new-work choice and adds Generation switching plus modern stereo/M/S workflow, but migration still requires audio and automation proof.",
+    "advanced_moves": [
+      {
+        "setup": "Before changing the session, print the channel in context and solo, plus a dry stem if available.",
+        "action": "Document compressor mode, meter behavior, EQ settings, gain staging, automation, and plug-in version; archive these with the session before testing Mk II on a duplicate.",
+        "listen_for": "The approved channel's envelope and passive-EQ interaction remain recoverable independent of the plug-in.",
+        "why_it_works": "A combined strip can hide several interacting causes, so one final mix bounce is not enough to diagnose migration differences."
+      },
+      {
+        "setup": "Rebuild the chain in Mk II with legacy Generation selected.",
+        "action": "Match compressor first at flat EQ, then match PE/ME curves, then restore automation and compare at equal output across the full arrangement.",
+        "listen_for": "Compression and EQ match separately before their combined interaction is judged.",
+        "why_it_works": "Staged matching avoids chasing an EQ difference with compression or vice versa."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Legacy vocal or bass strip",
+        "source_or_bus": "Archived channel insert",
+        "application": "Preserve the Mk I instance for the recall bounce, then compare Mk II in stages on a duplicate using the same raw audio.",
+        "why_this_plugin": "Its purpose is exact project continuity for the original integrated strip."
+      },
+      {
+        "context_type": "bus",
+        "context": "Album remaster preparation",
+        "source_or_bus": "Legacy subgroup processing",
+        "application": "Print processed subgroup stems before modernizing the chain so the approved mix can always be reconstructed.",
+        "why_this_plugin": "A compatibility render protects the historical balance while allowing a separate modernization experiment."
+      }
+    ],
+    "insider_note": "Match the compressor and EQ stages separately before judging the combined replacement. That staged engineering method is more diagnostic than copying every knob and wondering why the full strip feels different.",
+    "avoid_when": "Do not use Mk I for new production or assume Mk II settings translate one-to-one. Keep the old instance untouched until duplicate-track comparison and full-song automation verification pass.",
+    "evidence": {
+      "basis": "compatibility-note",
+      "sources": [
+        {
+          "title": "Softube Tube-Tech Complete Collection 2 product page",
+          "url": "https://www.softube.com/plug-ins/tube-tech-complete-collection-2"
+        }
+      ]
+    },
+    "pairings": []
+  },
+  {
+    "name": "Tube-Tech PE 1C / ME 1B legacy standalones",
+    "section": 10,
+    "comparative_edge": "Choose these standalones only when old sessions reference their original plug-in identities. Equalizers Mk II is the supported new-work path and combines current plus legacy access; Reference 1956 is the more deliberately aged/colorful alternative, not a compatibility substitute.",
+    "advanced_moves": [
+      {
+        "setup": "Open the legacy project before any host or OS upgrade.",
+        "action": "Render each affected track or bus with automation, capture a dry counterpart, and note whether PE 1C and ME 1B are serial, parallel, or separately automated.",
+        "listen_for": "The exact passive-curve interaction survives even if the legacy plug-ins later fail to load.",
+        "why_it_works": "Separate legacy instances may have routing and automation relationships that a combined modern interface does not reconstruct automatically."
+      },
+      {
+        "setup": "Test Equalizers Mk II on duplicate audio with output matched.",
+        "action": "Rebuild one legacy processor at a time, compare broad low and mid gestures, then verify automation timing and parameter scaling before consolidating.",
+        "listen_for": "The curve and color match in motion, not only at one static passage.",
+        "why_it_works": "Passive EQ differences are broad and level-sensitive; full-song automated comparison is the relevant proof."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Legacy bass or vocal EQ recall",
+        "source_or_bus": "Archived PE 1C/ME 1B insert",
+        "application": "Print automated wet and dry stems before substituting Equalizers Mk II on a duplicate track.",
+        "why_this_plugin": "The old standalone ID is what allows the DAW to recall the approved processing automatically."
+      },
+      {
+        "context_type": "bus",
+        "context": "Film or catalog project continuity",
+        "source_or_bus": "Long-lived music or stem bus",
+        "application": "Commit legacy EQ stages before platform upgrades and store the plug-in version plus rendered reference with the deliverables.",
+        "why_this_plugin": "Compatibility matters more than interface consolidation in projects expected to reopen years later."
+      }
+    ],
+    "insider_note": "Do not confuse sonic lineage with session compatibility: Reference 1956, current Tube-Tech Equalizers, and legacy PE/ME may all evoke passive tube EQ, but only the original plug-in IDs recall old host state automatically.",
+    "avoid_when": "Do not start new sessions with the legacy standalones. Use Equalizers Mk II for current Tube-Tech work, and never delete or replace old instances until rendered references and automation comparison are complete.",
+    "evidence": {
+      "basis": "compatibility-note",
+      "sources": [
+        {
+          "title": "Softube Tube-Tech Complete Collection 2 product page",
+          "url": "https://www.softube.com/plug-ins/tube-tech-complete-collection-2"
+        }
+      ]
+    },
+    "pairings": []
+  }
+]

@@ -1,0 +1,1570 @@
+[
+  {
+    "name": "FET Compressor Mk II",
+    "section": 2,
+    "comparative_edge": "Choose it over OPTO when the front edge must be actively redesigned, and over VCA Compressor when amplifier/transformer attitude belongs in the result. Unlike British Class A Compressor, separate FET and transformer drives let you decide where the urgency comes from instead of accepting one fixed color.",
+    "advanced_moves": [
+      {
+        "setup": "A vocal is level-stable overall but still throws sharp consonants.",
+        "action": "Use fast release, back attack away from fastest, filter lows from the detector, then compare FET Drive alone with Transformer Drive at matched output.",
+        "listen_for": "Consonants stop jumping forward while vowel beginnings retain shape; FET Drive adds edge without the transformer's lower-mid weight.",
+        "why_it_works": "Detector filtering keeps chest energy from stealing reduction, while independent nonlinear stages separate envelope control from two color sources."
+      },
+      {
+        "setup": "A stereo drum room feels exciting but unstable at the sides.",
+        "action": "Build the envelope linked, then audition unlinked dual mono at lower gain reduction and restore attacks with Dry/Wet.",
+        "listen_for": "Linked mode anchors the room; unlinked may add depth but must not make ambience lurch toward cymbal hits.",
+        "why_it_works": "Linked detectors impose one envelope on both sides; dual mono preserves independent motion and parallel blend restores untreated attacks."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Breakbeat parallel bus",
+        "source_or_bus": "Drum break subgroup",
+        "application": "Create a fast-recovering layer, filtering kick fundamentals out of the detector before blending under the dry break.",
+        "why_this_plugin": "Its release speed, detector filter, and split drives add density without forcing the kick to dictate every reduction cycle."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Fingerpicked acoustic guitar",
+        "source_or_bus": "Acoustic guitar track",
+        "application": "Catch isolated nail attacks while retaining the changing body of the performance.",
+        "why_this_plugin": "Attack and parallel control are more transient-specific than OPTO without requiring a clean, less characterful Weiss stage."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "OPTO Compressor",
+        "goal": "Use fast FET peak control before smoother optical average-level control on a vocal.",
+        "order": "FET Compressor Mk II → OPTO Compressor",
+        "setup": "Let FET catch exceptional consonants and peaks, level-match its output, then set OPTO for slower phrase leveling with less gain reduction per stage.",
+        "why_it_works": "The serial stages divide peak and average control, so the optical detector receives a less erratic vocal envelope.",
+        "caution": "Do not make both stages chase the same peaks; excessive combined drive and reduction can flatten articulation.",
+        "basis": "documented",
+        "source_url": "https://www.softube.com/plug-ins/opto-compressor"
+      }
+    ],
+    "insider_note": "Documented: Input acts as gain and reverse threshold, so increasing compression also drives the modeled path. Input VU red is allowed, but the output can still digitally clip.",
+    "avoid_when": "Avoid it when reduction must remain harmonically invisible; Weiss Compressor/Limiter is the clearer Softube direction.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [{"title": "Softube FET Compressor Mk II user manual", "url": "https://www.softube.com/user-manuals/fet-compressor-mk-ii"}]
+    }
+  },
+  {
+    "name": "OPTO Compressor",
+    "section": 2,
+    "comparative_edge": "Choose it over FET Compressor Mk II for program-following movement and over CL 1B Mk II when one Time control is preferable to explicit timing. Sidechain Emphasis and frequency-dependent HF Make-Up make it more adaptable than a bare two-knob optical model.",
+    "advanced_moves": [
+      {
+        "setup": "Use it after a fast peak catcher on vocal or bass.",
+        "action": "Set Compress, raise Time until phrases settle rather than pump, then lower bass sensitivity with Sidechain Emphasis before adding reduction.",
+        "listen_for": "The source holds position across phrases without bass notes or chest resonances pulling the whole envelope down.",
+        "why_it_works": "The first stage removes outliers; optical control then manages average level while detector emphasis prevents low-frequency dominance."
+      },
+      {
+        "setup": "A bright guitar bus loses presence under heavier optical reduction.",
+        "action": "Engage HF Make-Up, compare Compress and Limit at matched loudness, then restore articulation with Dry/Wet rather than reducing drive.",
+        "listen_for": "Pick definition returns without a static treble lift, and the dry blend does not detach attacks from sustained tone.",
+        "why_it_works": "HF Make-Up dynamically lowers the effective ratio at high frequencies; parallel blend restores the original transient structure."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Electric piano",
+        "source_or_bus": "Stereo keys track",
+        "application": "Lift quiet chord detail and steady long releases without emphasizing every key strike.",
+        "why_this_plugin": "Optical timing follows sustained material more naturally than FET, while Time keeps the groove from smearing."
+      },
+      {
+        "context_type": "bus",
+        "context": "Layered clean-guitar bus",
+        "source_or_bus": "Modulated guitar subgroup",
+        "application": "Hold modulation and reverb textures forward while occasional strums survive through parallel blend.",
+        "why_this_plugin": "Slowable optical behavior, detector emphasis, and Dry/Wet manage sustain without VCA Compressor's firmer grab."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented: Sidechain Emphasis is not a treble control; counterclockwise movement removes lows from the detector until highs trigger most compression.",
+    "avoid_when": "Avoid it when attacks need millisecond placement; CL 1B Mk II or FET Compressor Mk II exposes more direct envelope control.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [{"title": "Softube OPTO Compressor user manual", "url": "https://www.softube.com/user-manuals/opto-compressor"}]
+    }
+  },
+  {
+    "name": "VCA Compressor",
+    "section": 2,
+    "comparative_edge": "Choose it over FET Compressor Mk II when true-RMS/feed-forward control should sound firmer and less ragged, and over Bus Processor when one compact track compressor is enough. Sidechain Punch and HF Make-Up correct frequency-biased pumping without a multiband workflow.",
+    "advanced_moves": [
+      {
+        "setup": "Bass fundamentals are consistent but upper articulation disappears under compression.",
+        "action": "Engage Sidechain Punch, use moderate ratio, time Attack/Release so the meter nearly resets between notes, then audition HF Make-Up.",
+        "listen_for": "Low notes remain contained while finger or pick information stops dulling during reduction.",
+        "why_it_works": "Sidechain Punch reduces low-frequency dominance and raises upper detector sensitivity; HF Make-Up dynamically reduces the high-frequency ratio."
+      },
+      {
+        "setup": "A stereo percussion bus contains asymmetrical hits.",
+        "action": "Build the envelope linked, disable Stereo Link at modest reduction, and compare depth at equal output level.",
+        "listen_for": "Unlinked may preserve ambience, but any left-right tug on loud hits means linked is safer.",
+        "why_it_works": "Linked mode applies one envelope to both channels; independent reduction stops one side from unnecessarily turning down the other."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Rhythm-instrument subgroup",
+        "source_or_bus": "Clavinet and rhythm-guitar bus",
+        "application": "Make repeated accents land at consistent density without turning them into an aggressive parallel effect.",
+        "why_this_plugin": "RMS detection follows energy and feed-forward action is more contained than FET or Dyna-mite Slam."
+      },
+      {
+        "context_type": "bus",
+        "context": "Percussion loop",
+        "source_or_bus": "Electronic percussion bus",
+        "application": "Shorten excursions while stopping low-frequency hits from collapsing top-end motion.",
+        "why_this_plugin": "Sidechain Punch, detector low-cut, and HF Make-Up address the imbalance inside one straightforward compressor."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented: the circuit tracks input to help determine attack and release, so timing is not entirely described by knob positions; Compression also adds distortion when driven.",
+    "avoid_when": "Avoid it when tempo-synced release or integrated width control matters; Bus Processor is purpose-built for that context.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [{"title": "Softube VCA Compressor user manual", "url": "https://www.softube.com/user-manuals/vca-compressor"}]
+    }
+  },
+  {
+    "name": "Bus Processor",
+    "section": 2,
+    "comparative_edge": "Choose it over VCA Compressor when compression, saturation placement, and stereo management must be judged together. Choose Bus Processor 670 when variable-mu movement and separable tube/transformer color are the focus; this one is tighter, console-derived, and adds tempo sync plus knee/range control.",
+    "advanced_moves": [
+      {
+        "setup": "A drum bus room tone blooms unpredictably after snare hits.",
+        "action": "Cap reduction with Range, tempo-sync Release, then compare saturation before and after compression at matched output.",
+        "listen_for": "The bus recovers on the subdivision without ambience disappearing; pre saturation changes detector behavior, not just loudness.",
+        "why_it_works": "Range limits exceptional dips, sync stabilizes recovery, and saturation routing decides whether added harmonics enter the detector."
+      },
+      {
+        "setup": "A synth bus is wide but has unstable low-end translation.",
+        "action": "Set Mono Bass first, adjust Width around that foundation, then add Air with compressor and saturator bypassed.",
+        "listen_for": "Sub stays centered while upper layers widen; added side level is not mistaken for clarity.",
+        "why_it_works": "Mono Bass narrows a selected low range, Width changes side gain, and Air adds separate M/S high-frequency emphasis."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Dense guitar wall",
+        "source_or_bus": "Electric-guitar subgroup",
+        "application": "Limit how far palm-muted sections pull the bus down, then add post-compressor density.",
+        "why_this_plugin": "Range and saturation position solve level swings and color without involving the mix bus."
+      },
+      {
+        "context_type": "bus",
+        "context": "Low-end-heavy mix bus",
+        "source_or_bus": "Stereo mix",
+        "application": "Synchronize recovery, keep subs mono, and add restrained side energy above them.",
+        "why_this_plugin": "Tempo-aware release and integrated spatial control are more direct than stacking VCA Compressor with an imager."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented: Saturator Pre is described as more vintage and Post as more modern, but the causal distinction is routing—the compressor either receives the saturated signal or does not.",
+    "avoid_when": "Avoid it for only transparent peak containment; its three sections invite changes that Weiss limiting exposes more explicitly.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [{"title": "Softube Bus Processor user manual", "url": "https://www.softube.com/user-manuals/bus-processor"}]
+    }
+  },
+  {
+    "name": "Bus Processor 670",
+    "section": 2,
+    "comparative_edge": "Choose it over Bus Processor when variable-mu-style movement and adjustable transformer, tube, and compression-dependent distortion are the palette. Choose Zener Limiter for harder diode/Zener action. Modern mode is the escape hatch when you want the architecture without classic feedback coloration.",
+    "advanced_moves": [
+      {
+        "setup": "A mix needs density but already has the right transient contour.",
+        "action": "Switch to Modern, set low reduction, raise Transformer separately from Tube Stages, then compare Calibration Clean and Nominal.",
+        "listen_for": "Bass density changes with Transformer and broader texture with Tube Stages, without compression-dependent grit clouding the test.",
+        "why_it_works": "Modern feed-forward removes the variable-mu crossover distortion controlled by Calibration, isolating the other nonlinear stages."
+      },
+      {
+        "setup": "A wide orchestral or ambient bus has stable center but overactive sides.",
+        "action": "Use M/S, unlink, compress Side gently with longer recovery, keep Mid near unity, then reduce Width instead of raising Mid.",
+        "listen_for": "Ambience settles without narrowing entrances; central attacks and bass retain scale.",
+        "why_it_works": "Independent M/S dynamics treat ambience separately, while Width adjusts Side level after the dynamics."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Cinematic atmosphere stem",
+        "source_or_bus": "Synth-and-strings bus",
+        "application": "Stabilize side ambience while adding low-frequency transformer texture and leaving center transients clean.",
+        "why_this_plugin": "Separate M/S compression and transformer control offer a more decomposed workflow than a fixed 670 model."
+      },
+      {
+        "context_type": "bus",
+        "context": "Bass-dominant instrumental bus",
+        "source_or_bus": "Rhythm-section subgroup",
+        "application": "Use detector low-cut to spare bass, then add restrained tube saturation around midrange instruments.",
+        "why_this_plugin": "Detector tilt and split saturation preserve the foundation while gluing the midrange."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented: this is an amalgamation, not one-unit emulation. Calibration specifically changes compression-dependent push-pull crossover distortion; it is not a generic age control.",
+    "avoid_when": "Avoid it when fast, repeatable console-bus punch is the only requirement; Bus Processor is easier to audit.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [{"title": "Softube Bus Processor 670 user manual", "url": "https://www.softube.com/user-manuals/bus-processor-670"}]
+    }
+  },
+  {
+    "name": "British Class A Compressor",
+    "section": 2,
+    "comparative_edge": "Choose it over American Class A Compressor when slower diode-bridge density matters more than VCA snap, and over Bus Processor 670 when discrete timing choices beat variable-mu bloom. Original 3 ms attack and modification-derived slower values make authenticity versus transient preservation explicit.",
+    "advanced_moves": [
+      {
+        "setup": "A drum subgroup needs weight but loses stick definition at original timing.",
+        "action": "Establish reduction at 3 ms, step through 6–30 ms without changing threshold, then retime Release only after choosing attack shape.",
+        "listen_for": "Find the first setting that restores stick and kick edge without separating transient from compressed body.",
+        "why_it_works": "The documented modification-derived attacks progressively let more leading edge pass the diode-bridge reduction."
+      },
+      {
+        "setup": "A complex instrument bus makes fixed recovery chatter or hang.",
+        "action": "Compare Auto with 400, 800, and 1500 ms at equal reduction; use added 100/200 ms only for faster rhythms.",
+        "listen_for": "Auto follows mixed event lengths without pumping; fixed is better if it creates a repeatable musical rebound.",
+        "why_it_works": "Auto adapts timing from program content, while fixed choices impose one recovery regardless of event duration."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Heavy guitar-and-bass subgroup",
+        "source_or_bus": "Distorted rhythm bus",
+        "application": "Use slower modified attack to keep pick impact ahead of dense sustain.",
+        "why_this_plugin": "Diode-bridge weight differs from American Class A's firmer VCA response."
+      },
+      {
+        "context_type": "bus",
+        "context": "Mixed brass articulations",
+        "source_or_bus": "Brass bus",
+        "application": "Use Auto recovery for stabs and held notes while retaining modest transient clearance.",
+        "why_this_plugin": "Expanded timing moves between stock density and program-adaptive control without multiband complexity."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented: 3 ms is the source unit's fixed attack; 6–30 ms attacks and 100/200 ms releases model a common modification.",
+    "avoid_when": "Avoid it for very fast consonant catching or surgical transparency; FET Compressor Mk II and Weiss Compressor/Limiter fit those tasks.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [{"title": "Softube British Class A user manual", "url": "https://www.softube.com/user-manuals/british-class-a"}]
+    }
+  },
+  {
+    "name": "American Class A Compressor",
+    "section": 2,
+    "comparative_edge": "Choose it over VCA Compressor when feedback/feed-forward and knee choices should define the punch, not just timing. Choose British Class A Compressor for slower density. Smooth/Punchy variants turn topology into the main transient decision.",
+    "advanced_moves": [
+      {
+        "setup": "A close-drum bus needs front-edge mass without a transient shaper.",
+        "action": "Build conservatively in Smooth, switch to Punchy while retaining values, then lengthen Attack only enough to control feedback overshoot.",
+        "listen_for": "Punchy creates a thicker leading edge; stop if the peak detaches from the body or overloads the next stage.",
+        "why_it_works": "Punchy combines feedback and hard knee; Smooth uses feed-forward and soft knee."
+      },
+      {
+        "setup": "A bass-and-kick subgroup needs control without losing pulse.",
+        "action": "Use Smooth, engage Parallel, compare knee shapes at equal reduction, then set release around the groove.",
+        "listen_for": "Low end stays bounded without leading edges hardening or the parallel return sounding separate.",
+        "why_it_works": "Feed-forward soft-knee reduction starts predictably; dry signal restores movement while wet stabilizes level."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Layered hand percussion",
+        "source_or_bus": "Percussion subgroup",
+        "application": "Use Punchy to articulate overlapping attacks while retaining a parallel uncompressed bed.",
+        "why_this_plugin": "Feedback overshoot creates transient mass rather than FET Compressor's brighter edge."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Filter-envelope bass synth",
+        "source_or_bus": "Bass instrument track",
+        "application": "Use Smooth to control note energy without exaggerating filter attacks.",
+        "why_this_plugin": "Feed-forward soft knee is more predictable than Punchy while retaining console-derived VCA character."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented: effective ratio is often below the panel label. Smooth is feed-forward/soft-knee; Punchy is feedback/hard-knee, not a cosmetic preset swap.",
+    "avoid_when": "Avoid it for long program-dependent leveling; OPTO Compressor or CL 1B Mk II will move less like a console VCA.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [{"title": "Softube American Class A user manual", "url": "https://www.softube.com/user-manuals/american-class-a"}]
+    }
+  },
+  {
+    "name": "Tube-Tech CL 1B Mk II",
+    "section": 2,
+    "comparative_edge": "Choose it over OPTO Compressor when explicit timing architecture and a two-generation comparison matter; choose TLA-100A when headroom-driven tube saturation should be first-class. CL 1B is the optical option for tailoring the envelope while retaining stable linked stereo behavior.",
+    "advanced_moves": [
+      {
+        "setup": "A lead vocal levels well in Fixed mode but runs lose articulation.",
+        "action": "Switch to Fixed/Manual, lengthen manual Attack, then tune manual Release while the fixed circuit still contributes.",
+        "listen_for": "Run beginnings reappear without the compressor fully releasing between syllables.",
+        "why_it_works": "Fixed/Manual combines the hardware fixed behavior with user timing rather than selecting only one system."
+      },
+      {
+        "setup": "Bass-heavy chords make a stereo keys bus over-compress.",
+        "action": "Raise Sidechain Low Cut until fundamentals stop pulling the meter, then compare Mk I and Mk II at matched reduction and blend.",
+        "listen_for": "Upper voicings hold position while stereo stays anchored; judge generation on movement, not loudness.",
+        "why_it_works": "Detector filtering spares audible lows, and stereo mode derives one linked reduction value from both channels."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Ornamented lead vocal",
+        "source_or_bus": "Lead vocal track",
+        "application": "Use Fixed/Manual timing to steady long notes while preserving fast runs.",
+        "why_this_plugin": "It offers more envelope authorship than OPTO while remaining smoother than FET Compressor."
+      },
+      {
+        "context_type": "bus",
+        "context": "Stereo piano bus",
+        "source_or_bus": "Layered piano subgroup",
+        "application": "Filter lows from the detector and apply parallel optical control to dense chords.",
+        "why_this_plugin": "Linked stereo protects the image while Mk II sidechain and blend controls solve pumping internally."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented: stereo gain reduction is always linked and calculated from both channels, like hardware units sharing a sidechain; true dual mono is unavailable.",
+    "avoid_when": "Avoid it when independent L/R or M/S dynamics are central; Germanium Compressor or Weiss DS1-MK3 provides that routing.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [{"title": "Softube Tube-Tech CL 1B and CL 1B Mk II user manual", "url": "https://www.softube.com/user-manuals/tube-tech-cl-1b-and-cl-1b-mk-ii-compressors"}]
+    }
+  },
+  {
+    "name": "Tube-Tech SMC 2B",
+    "section": 2,
+    "comparative_edge": "Choose it over Weiss DS5 when optical-band interaction and broad 6 dB/octave crossovers matter more than five-band surgical control. Choose Drawmer 1973 when FET timing and Big/Air shortcuts suit the source. SMC 2B is the characterful three-band level balancer.",
+    "advanced_moves": [
+      {
+        "setup": "Kick impacts briefly bury low mids in a bass-heavy mix.",
+        "action": "Mute bands only to locate the low/mid crossover, restore all bands, slow low-band release relative to Mid, then balance gains at matched output.",
+        "listen_for": "Kick and bass settle without guitar or vocal body breathing; no tonal seam appears at the crossover.",
+        "why_it_works": "Independent optical compressors prevent low events from reducing the mid band, while separate recoveries preserve each region's rhythm."
+      },
+      {
+        "setup": "Side cymbals surge in a wide live recording while the center is balanced.",
+        "action": "Enable M/S, unlink, copy initial settings, then lower only Side high-band threshold while keeping crossovers aligned.",
+        "listen_for": "Side cymbals settle without changing central snare or vocal brightness.",
+        "why_it_works": "Unlinked M/S permits independent band compression and crossovers; copying first isolates the intended difference."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Live ensemble bus",
+        "source_or_bus": "Stereo band mix",
+        "application": "Control low percussion, midrange ensemble energy, and cymbals with different recoveries.",
+        "why_this_plugin": "Three broad optical bands map to ensemble roles without DS5's five-engine complexity."
+      },
+      {
+        "context_type": "bus",
+        "context": "Sampled full-mix stem",
+        "source_or_bus": "Stereo sample bus",
+        "application": "Stabilize sub bloom separately from dusty mids and high-frequency artifacts before coloration.",
+        "why_this_plugin": "Shallow crossovers rebalance broad regions more cohesively than a narrowly corrective multiband processor."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented: Mid and Side can have separate crossovers. That flexibility can create a spatially different frequency split, so identical values are the safer start.",
+    "avoid_when": "Avoid it for one narrow resonance or transparent five-band repair; Weiss DS5 exposes finer band and detector control.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [{"title": "Softube Tube-Tech SMC 2B Multiband Compressor user manual", "url": "https://www.softube.com/user-manuals/tube-tech-smc-2b"}]
+    }
+  },
+  {
+    "name": "Summit Audio TLA-100A",
+    "section": 2,
+    "comparative_edge": "Choose it over CL 1B Mk II when tube-output headroom should shape transients alongside optical leveling; choose OPTO for a simpler modern surface. TLA-100A uniquely lets one low-cut become either audible prefiltering or detector-only filtering.",
+    "advanced_moves": [
+      {
+        "setup": "A bass recording has rumble that triggers compression and consumes headroom.",
+        "action": "Compare one Low Cut frequency in Input and Detector positions before setting reduction; choose Input only if rumble should leave the audio.",
+        "listen_for": "Detector mode reduces pumping while retaining sub; Input mode tightens the source tonally and dynamically.",
+        "why_it_works": "The selector routes one filter into either the main signal or only the detector."
+      },
+      {
+        "setup": "A drum bus needs heavy reduction but original attack.",
+        "action": "Raise Saturation until only occasional transients light its indicator, compress for sustain, then add dry signal with Parallel Inject.",
+        "listen_for": "Wet tone thickens and contains peaks while the blend restores front edge; constant saturation indicates excessive drive.",
+        "why_it_works": "Saturation lowers modeled tube-stage headroom; Parallel Inject adds unaffected source after compression."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Upright bass",
+        "source_or_bus": "Bass track",
+        "application": "Filter rumble from the detector, retain fundamentals, and add sparse tube saturation to hard plucks.",
+        "why_this_plugin": "The dual-purpose low-cut and headroom control solve detector and transient problems without separate processors."
+      },
+      {
+        "context_type": "bus",
+        "context": "Aggressive percussion subgroup",
+        "source_or_bus": "Drum and percussion bus",
+        "application": "Use saturation to flatten outliers before optical reduction, then restore selected attacks in parallel.",
+        "why_this_plugin": "Tube headroom and dry injection create different density from the faster FET approach."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented: Saturation changes modeled headroom, not merely harmonics. It can limit transients before the slower optical envelope reacts.",
+    "avoid_when": "Avoid it when stereo channels must compress independently; stereo mode deliberately applies equal reduction to both.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [{"title": "Softube Summit Audio TLA-100A user manual", "url": "https://www.softube.com/user-manuals/summit-audio-tla-100a"}]
+    }
+  },
+  {
+    "name": "Chandler Limited Zener Limiter",
+    "section": 2,
+    "comparative_edge": "Choose it over British Class A Compressor for configurable Comp 1, Comp 2, Limit, THD, impedance, and M/S control. Choose Bus Processor 670 for softer variable-mu movement. Zener is the choice when compression and deliberate high-THD transistor drive must share one circuit.",
+    "advanced_moves": [
+      {
+        "setup": "A drum room needs tone but not more envelope movement.",
+        "action": "Select THD, raise Input while shift-compensating Output, and compare impedance positions before adding any compressor mode.",
+        "listen_for": "Room density and bite change while the envelope remains intact; judge at matched level.",
+        "why_it_works": "THD uses the Zener path as saturator, and linked input/output adjustment isolates drive from loudness."
+      },
+      {
+        "setup": "Center transients need containment while stereo sides should remain open.",
+        "action": "Enable M/S, unlink, set Mid to Comp 1 or Limit, and leave Side in THD or lighter compression.",
+        "listen_for": "Center peaks settle without ambience narrowing or swaying.",
+        "why_it_works": "Unlinked M/S gives separate engines to sum and difference channels; linked mode defeats that independence."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Mono drum room",
+        "source_or_bus": "Room-microphone bus",
+        "application": "Drive THD first, then compare Comp 2 and Limit for tail intensity.",
+        "why_this_plugin": "It moves from circuit drive to hard EMI-style control without changing processors."
+      },
+      {
+        "context_type": "bus",
+        "context": "Cinematic percussion stem",
+        "source_or_bus": "Stereo percussion bus",
+        "application": "Limit center impacts while leaving side reverberation under gentler compression.",
+        "why_this_plugin": "Independent M/S and stepped timing provide more spatial control than linked optical models."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented: unity input at full Input is about 2% THD; another 4–5 dB approaches 5%. THD mode is structural tone, not subtle trim.",
+    "avoid_when": "Avoid it for invisible true-peak delivery; Weiss DS1-MK3 provides explicit metering and Type 2 limiting.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [{"title": "Softube Chandler Limited Zener Limiter user manual", "url": "https://www.softube.com/user-manuals/chandler-limited-zener-limiter"}]
+    }
+  },
+  {
+    "name": "Chandler Limited Germanium Compressor",
+    "section": 2,
+    "comparative_edge": "Choose it over Zener Limiter when diode-selected knee, FET cleanliness, and germanium output feedback should be independently voiced. Choose FET Compressor Mk II for conventional ratio/timing. Germanium makes curve, detector, blend, and output circuit distinct tone decisions.",
+    "advanced_moves": [
+      {
+        "setup": "A bass or drum bus needs tone before obvious level control.",
+        "action": "Set Mix fully Dry, vary Germanium Drive and Feedback at matched output, then move toward Wet and choose a Comp Curve.",
+        "listen_for": "Tone changes even at Dry; adding Wet introduces envelope control without obscuring output-stage color.",
+        "why_it_works": "Dry still traverses Germanium Drive, while Feedback changes output gain, distortion, and spectrum independently of reduction."
+      },
+      {
+        "setup": "A drum subgroup must retain attack under substantial reduction.",
+        "action": "Start GERM SOFT or MED, choose medium-slow Attack, move Ratio after Curve, then compare Dirty Comp last.",
+        "listen_for": "The front stays connected to a denser body; Dirty adds FET artifacts rather than merely more reduction.",
+        "why_it_works": "Curve selects diode topology and knee, Ratio fine-tunes slope, and Dirty bypasses FET compensation."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Post-punk bass",
+        "source_or_bus": "Bass guitar track",
+        "application": "Use dry-path germanium tone, then blend harder silicon- or Zener-knee compression underneath.",
+        "why_this_plugin": "No peer exposes a colored dry path and six diode-knee choices together."
+      },
+      {
+        "context_type": "bus",
+        "context": "Stereo drum bus",
+        "source_or_bus": "Drum subgroup",
+        "application": "Compress Mid for punch and crush Side in parallel, balancing each with Germanium Drive.",
+        "why_this_plugin": "Independent M/S engines, per-channel mix, and output tone exceed linked optical models."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented: fully Dry is still colored by Germanium Drive. Curve and Ratio are intentionally interdependent; choose Curve first.",
+    "avoid_when": "Avoid it when settings must be numerically predictable across sources; its listening-designed controls are deliberately interactive.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [{"title": "Softube Chandler Limited Germanium Compressor user manual", "url": "https://www.softube.com/user-manuals/chandler-limited-germanium-comp"}]
+    }
+  },
+  {
+    "name": "Valley People Dyna-mite",
+    "section": 2,
+    "comparative_edge": "Choose the original over Slam or Gate when detector source, detector type, Range, and Limit/Expand combinations are the point. Choose Weiss for controlled correction. Dyna-mite offers Softube's broadest range of intentionally odd envelope behavior in one processor.",
+    "advanced_moves": [
+      {
+        "setup": "A snare or room track already sounds conventional under compression.",
+        "action": "Start Limit/internal, compare Peak and Average, then try DS-FM without changing Threshold or Release; cap extremes with Range.",
+        "listen_for": "Peak reacts to short events, Average moves smoother, and DS-FM changes which spectrum drives the same envelope.",
+        "why_it_works": "Mode, detector type, and source are independent; Range caps their resulting reduction."
+      },
+      {
+        "setup": "A sustained pad or noise source needs a keyed rhythmic envelope.",
+        "action": "Select Expand, external detector, and Gate or Peak; send clean percussion, tune closure with Release, and preserve a floor with Range.",
+        "listen_for": "Texture follows the key while Range prevents unwanted absolute silence.",
+        "why_it_works": "External detection supplies the trigger; expansion attenuates below-threshold audio according to that key."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Machine-percussion texture",
+        "source_or_bus": "Noise and percussion bus",
+        "application": "Explore detector combinations for irregular but repeatable pumping, capped with Range.",
+        "why_this_plugin": "The original exposes combinations omitted from focused Slam and Gate."
+      },
+      {
+        "context_type": "bus",
+        "context": "Keyed effects return",
+        "source_or_bus": "Delay or spring-reverb return",
+        "application": "Key expansion from sparse percussion so tails appear only around selected hits.",
+        "why_this_plugin": "External detector, expander mode, and Range make it an envelope router rather than another compressor."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented: DS-FM modifies the detector, not audible audio. The mode display matters because switch combinations include non-obvious negative limiting.",
+    "avoid_when": "Avoid it when predictable setup matters more than unusual behavior; use Dyna-mite Slam or Gate.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [{"title": "Softube Valley People Dyna-mite user manual", "url": "https://www.softube.com/user-manuals/Valley-People-Dyna-mite"}]
+    }
+  },
+  {
+    "name": "Dyna-mite Gate",
+    "section": 2,
+    "comparative_edge": "Choose it over original Dyna-mite for fast access to its expander/gate core, and over transparent editing when closing envelope and modeled output clipping should be audible. Fast Exp is the practical middle ground between 1:20 Fast Gate and Slow Exp.",
+    "advanced_moves": [
+      {
+        "setup": "Close toms have cymbal bleed that makes hard gating chatter.",
+        "action": "Use Fast Exp, set Range below full attenuation, shorten Release until bleed retreats, then lengthen enough to preserve shell decay.",
+        "listen_for": "Bleed recedes without vacuum or stepped tail; use Fast Gate only if residual noise is unacceptable.",
+        "why_it_works": "Expansion reduces proportionally, Range sets a floor, and auto release avoids abrupt closure."
+      },
+      {
+        "setup": "A sustained sub or pad should follow kick hits.",
+        "action": "Feed kick to external sidechain, use Fast Exp or Gate, set Release as note length, and leave HF Boost off.",
+        "listen_for": "Each kick opens one coherent note without bright clicks causing double triggers.",
+        "why_it_works": "The external detector supplies rhythm, and gate release becomes audible decay."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Tight tom decay",
+        "source_or_bus": "Tom close microphones",
+        "application": "Use Fast Exp with finite Range to reduce spill without hard silence.",
+        "why_this_plugin": "Auto release adds smoother Valley People motion while staying simpler than original Dyna-mite."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Percussion-keyed layer",
+        "source_or_bus": "Sustained noise or synth track",
+        "application": "External-key the layer and tune Release as rhythmic decay.",
+        "why_this_plugin": "Gate, expander, detector weighting, and output clipping make utility gating playable."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented: HF Boost affects only the detector. It helps bright snare separation but can make a low-frequency kick key less reliable.",
+    "avoid_when": "Avoid it for invisible dialogue cleanup or spectral repair; it has no lookahead editor or frequency-selective audio attenuation.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [{"title": "Softube Valley People Dyna-mite user manual: Dyna-mite Gate", "url": "https://www.softube.com/user-manuals/Valley-People-Dyna-mite"}]
+    }
+  },
+  {
+    "name": "Dyna-mite Slam",
+    "section": 2,
+    "comparative_edge": "Choose it over original Dyna-mite when its limiter personality is wanted without mode-switch decoding, and over FET Compressor when excessive pumping and modeled output clipping matter more than ratio choices. It is the shortest route to Dyna-mite's destructive side.",
+    "advanced_moves": [
+      {
+        "setup": "Build a drum-smash layer that still needs clear kick and snare attacks.",
+        "action": "Select Slow attack, drive strong reduction, set Release for room rhythm, then pull Dry/Wet back.",
+        "listen_for": "Wet tone lengthens body; if clicks shrink instead of growing, attack mode or blend is wrong.",
+        "why_it_works": "Slow passes the transient before limiting, while parallel blend restores untreated attacks."
+      },
+      {
+        "setup": "Use the modeled output stage as a distortion texture.",
+        "action": "Engage external sidechain without an active key, raise Output until Clip responds, and control final level afterward.",
+        "listen_for": "Thick output distortion appears without automatic make-up changing the drive relationship.",
+        "why_it_works": "External-sidechain mode disables automatic make-up, exposing output clipping more directly."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Mono drum-room smash",
+        "source_or_bus": "Room microphone bus",
+        "application": "Use Slow and strong reduction to exaggerate shell body, then blend.",
+        "why_this_plugin": "It reaches Valley People smash behavior faster than original Dyna-mite."
+      },
+      {
+        "context_type": "bus",
+        "context": "Resampled percussion distortion",
+        "source_or_bus": "Percussion print bus",
+        "application": "Disable auto make-up via sidechain mode and drive the modeled output clipper.",
+        "why_this_plugin": "The output stage is intentionally modeled, unlike a clean compressor overload."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented: external-sidechain engagement disables automatic make-up gain, useful even when keying is not the goal.",
+    "avoid_when": "Avoid it when reduction must stay subtle, repeatable, and mastering-safe; its controls prioritize character.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [{"title": "Softube Valley People Dyna-mite user manual: Dyna-mite Slam", "url": "https://www.softube.com/user-manuals/Valley-People-Dyna-mite"}]
+    }
+  },
+  {
+    "name": "Drawmer 1973 Multi-Band Compressor",
+    "section": 2,
+    "comparative_edge": "Choose it over SMC 2B for FET timing and Big/Air shortcuts; choose Weiss DS5 when five bands, phase modes, or independent detector ranges are required. Drawmer 1973 sits between character multiband and hands-on corrective control.",
+    "advanced_moves": [
+      {
+        "setup": "A guitar or piano resonance appears only on certain notes.",
+        "action": "Place a crossover above it, bypass other bands, compress Low, then restore all bands and match Low output gain.",
+        "listen_for": "Problem notes stop surging while higher harmonics remain unchanged; the source does not become permanently thin.",
+        "why_it_works": "Independent low-band reduction acts only when that region crosses threshold, unlike static EQ."
+      },
+      {
+        "setup": "Low end gets small when a stereo bus is compressed.",
+        "action": "Set low reduction, engage Big, retune threshold, then audition Air separately on High.",
+        "listen_for": "Bass remains present while excursions reduce; Air restores detail without hiding over-compressed cymbals.",
+        "why_it_works": "Big lowers low-band detector sensitivity; Air compensates high-frequency loss in another band."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Palm-muted rhythm guitars",
+        "source_or_bus": "Guitar subgroup",
+        "application": "Compress low buildup independently while leaving pick attack and upper distortion intact.",
+        "why_this_plugin": "Three FET bands provide more local control than full-band VCA without DS5 overhead."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Articulated bass guitar",
+        "source_or_bus": "Bass track",
+        "application": "Control fundamentals, retain string attack above crossover, and use parallel blend for continuity.",
+        "why_this_plugin": "The low band isolates fundamentals while upper articulation avoids that envelope."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented: Big does not boost bass; it reduces the low sidechain's bass sensitivity. Fullness comes from less reduction.",
+    "avoid_when": "Avoid it when one narrow offender is the problem; band-selective Weiss compression or dynamic EQ is safer.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [{"title": "Softube Drawmer 1973 Multi-Band Compressor user manual", "url": "https://www.softube.com/user-manuals/drawmer-1973-multi-band-compressor"}]
+    }
+  },
+  {
+    "name": "Drawmer S73 Intelligent Master Processor",
+    "section": 2,
+    "comparative_edge": "Choose it over Drawmer 1973 when curated outcomes matter more than crossovers and timing. Choose Weiss MM-1 for loudness-oriented Styles plus limiting. S73's edge is serially composable Clean, Bass Control, and Spatial programs built on the Drawmer multiband model.",
+    "advanced_moves": [
+      {
+        "setup": "A rough mix has low rumble and obscured midrange.",
+        "action": "Run De-Rumble first at low Amount, follow with Clarity 1 in another instance, and level-match each before choosing order.",
+        "listen_for": "The first creates low space; the second reveals separation without merely making the master brighter and louder.",
+        "why_it_works": "Styles are fixed multiband designs for different problems, and serial instances keep their Amount/Mix decisions reversible."
+      },
+      {
+        "setup": "A mix needs width but the center vocal is already diffuse.",
+        "action": "Compare Wide Mix and Vocals Enhance in separate instances, use Mix for final dose, and verify mono before Air.",
+        "listen_for": "Edges open while the lead remains located; mono does not reveal sudden vocal or ambience loss.",
+        "why_it_works": "Spatial Styles make different hidden M/S decisions, while Mix scales the total return."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Production reference master",
+        "source_or_bus": "Premaster bus",
+        "application": "Chain gentle De-Rumble and Clarity for a fast, reversible monitoring master.",
+        "why_this_plugin": "Curated programs solve common balance issues faster than configuring Drawmer 1973 during writing."
+      },
+      {
+        "context_type": "bus",
+        "context": "Atmosphere stem",
+        "source_or_bus": "Stereo ambience bus",
+        "application": "Use Ambience or Wide Mix in parallel to reveal existing space without reverb.",
+        "why_this_plugin": "The Spatial family manipulates existing stereo information with the same simple Amount/Mix workflow."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented: Spatial Styles are unavailable in mono and multi-mono. The manual explicitly supports serial instances such as De-Rumble then Clarity 1.",
+    "avoid_when": "Avoid it when exact band, crossover, threshold, or timing must be automated; use Drawmer 1973 or Weiss DS5.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [{"title": "Softube Drawmer S73 Intelligent Master Processor user manual", "url": "https://www.softube.com/user-manuals/drawmer-s73-intelligent-master-processor"}]
+    }
+  },
+  {
+    "name": "Weiss DS1-MK3",
+    "section": 2,
+    "comparative_edge": "Choose it over Weiss Compressor/Limiter when high-pass band selection, upward expansion, dual-release detail, or hardware-faithful depth is required. Choose DS5 when several regions need independent engines. DS1-MK3 is Softube's most inspectable single-band dynamics system.",
+    "advanced_moves": [
+      {
+        "setup": "Bass-heavy material has isolated peaks but must retain leading edge.",
+        "action": "Use longer Attack, add Preview until peaks are caught, then lengthen Release Delay before tuning fast/slow Release and Average.",
+        "listen_for": "Peaks stop overshooting while fundamentals remain clean; recovery begins smoothly rather than pumping immediately.",
+        "why_it_works": "Preview acts ahead of audio, avoiding the low-frequency distortion risk of extreme attack; Release Delay postpones recovery."
+      },
+      {
+        "setup": "An over-limited stereo stem needs movement restored.",
+        "action": "Set a ratio between 1:1 and 1:5, use a high threshold, engage the safety limiter, and compare full-band with selected-band expansion.",
+        "listen_for": "Loud passages pull away without gating; the limiter catches new overs rather than working continuously.",
+        "why_it_works": "The curve supports above-threshold expansion, and band selection can restore dynamics only where prior damage occurred."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Peak-sensitive acoustic master",
+        "source_or_bus": "Stereo mix bus",
+        "application": "Use Preview with longer Attack and restrained compression to control outliers without reshaping entrances.",
+        "why_this_plugin": "Lookahead and dual release offer finer control than streamlined Weiss Compressor/Limiter."
+      },
+      {
+        "context_type": "bus",
+        "context": "Over-compressed legacy stem",
+        "source_or_bus": "Stereo restoration bus",
+        "application": "Apply cautious band-selective upward expansion and protect new peaks with the safety limiter.",
+        "why_this_plugin": "The expansion range and linear-phase selected-band path address damage downward compressors cannot reverse."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented: a 20 microsecond attack can distort lows; Preview is specifically the route to catching fast transients while retaining longer attack.",
+    "avoid_when": "Avoid it when a simple track compressor is enough; parameter depth and latency choices add unnecessary load.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [{"title": "Softube Weiss DS1-MK3 user manual", "url": "https://www.softube.com/user-manuals/weiss-ds1-mk3"}]
+    }
+  },
+  {
+    "name": "Weiss DS5 Multiband Compressor",
+    "section": 2,
+    "comparative_edge": "Choose it over DS1-MK3 when one selected band is insufficient and over SMC 2B when filter phase, detector range, and five independent DS1 engines must be explicit. Macro tilt enables broad shaping without losing per-band depth.",
+    "advanced_moves": [
+      {
+        "setup": "A master grows progressively harsher toward its high bands.",
+        "action": "Select all bands, set one conservative macro envelope, then Shift-drag Threshold or Ratio to tilt stronger control upward.",
+        "listen_for": "Tonal center stays stable while upper density reduces gradually; crossovers do not sound like separate zones.",
+        "why_it_works": "Macro tilt offsets one parameter progressively instead of forcing five discontinuous settings."
+      },
+      {
+        "setup": "High splash should reduce only when low-mid snare body becomes excessive.",
+        "action": "Select High, switch detector from Band to Free, and set detector bounds around the low-mid trigger.",
+        "listen_for": "Splash reduces on offending snares, not every bright passage.",
+        "why_it_works": "Free mode decouples detector frequencies from the audio band receiving reduction."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Orchestral master",
+        "source_or_bus": "Stereo mix bus",
+        "application": "Use Linear Phase and tilted macros to restrain upper density while leaving lows spacious.",
+        "why_this_plugin": "Five DS1 engines and phase choice provide finer gradation than three analog-modeled bands."
+      },
+      {
+        "context_type": "bus",
+        "context": "Cross-spectral bass motion",
+        "source_or_bus": "Bass resample bus",
+        "application": "Use Free detectors so one spectral gesture controls reduction in another band.",
+        "why_this_plugin": "Independent detector limits permit interactions unavailable in SMC 2B or Drawmer 1973."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented: each band can use Free detector bounds unrelated to its audio crossover. Engineering inference: the main band display then incompletely explains triggering.",
+    "avoid_when": "Avoid it when only one or two broad regions need control; five engines and phase choices increase CPU and error surface.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [{"title": "Softube Weiss DS5 Multiband Compressor user manual", "url": "https://www.softube.com/user-manuals/weiss-ds5-multiband-compressor"}]
+    }
+  },
+  {
+    "name": "Weiss Compressor/Limiter",
+    "section": 2,
+    "comparative_edge": "Choose it over DS1-MK3 when the Weiss algorithms are wanted behind a faster waveform/FFT surface, and over MM-1 when threshold, knee, timing, band selection, and limiter type must remain authored. It is the middle ground between macro mastering and full DS1 depth.",
+    "advanced_moves": [
+      {
+        "setup": "A full mix needs inner midrange detail without flattened attacks.",
+        "action": "Enable Band Pass selective mode, monitor the target, compress strongly, then use Parallel Mix to add the dense band under the full signal.",
+        "listen_for": "Low-level instruments become legible while kick and cymbal attacks remain unchanged.",
+        "why_it_works": "Only the selected band is compressed and time-aligned; parallel adds it to unaffected full-range audio."
+      },
+      {
+        "setup": "A loud master needs explicit inter-sample protection.",
+        "action": "Choose Type 2, enable true-peak metering, set compression first, then compare Type 1 at equal loudness.",
+        "listen_for": "Type 2 contains inter-sample peaks; Type 1 may sound different but does not serve the same compliance remit.",
+        "why_it_works": "Type 2 is the documented True Peak algorithm; Type 1 targets high RMS."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Acoustic mix detail",
+        "source_or_bus": "Mix bus",
+        "application": "Use band-selective parallel compression to reveal vocal and guitar interior without flattening strums.",
+        "why_this_plugin": "Frequency monitor and waveform view make the detail return easier to audit than fixed parallel compression."
+      },
+      {
+        "context_type": "bus",
+        "context": "Final loudness stage",
+        "source_or_bus": "Master bus",
+        "application": "Coordinate clean compression with selectable brick-wall and True Peak limiting.",
+        "why_this_plugin": "It gives more delivery control than MM-1 without all DS1-MK3 parameters."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented: moving Parallel Mix automatically enables parallel processing. Band-selective mode is transparent without reduction because other bands receive matching delay.",
+    "avoid_when": "Avoid it when upward expansion, high-pass selective dynamics, or full dual-release behavior is required; use DS1-MK3.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [{"title": "Softube Weiss Compressor/Limiter user manual", "url": "https://www.softube.com/user-manuals/weiss-compressor-limiter"}]
+    }
+  },
+  {
+    "name": "Weiss Deess",
+    "section": 2,
+    "comparative_edge": "Choose it over Deesser when two independent resonances, M/S targeting, notch behavior, or full timing/ratio control justify setup. Choose DS1-MK3 when de-essing is one phase of broader dynamics work. Weiss Deess specializes in simultaneous midrange and sibilant problems.",
+    "advanced_moves": [
+      {
+        "setup": "A close vocal has 3–4 kHz hardness and a separate 7 kHz whistle.",
+        "action": "Solo Low for the lower resonance and High for the whistle, set independent Range limits, then tune thresholds from the performance.",
+        "listen_for": "Both offenders recede independently while vowels and breath remain continuous.",
+        "why_it_works": "Two DS1-derived bands avoid forcing one detector range to compromise."
+      },
+      {
+        "setup": "Stereo overheads have side-only cymbal glare.",
+        "action": "Enter M/S, ungange, target Side High, leave Mid reduction at zero, then verify side solo and mono.",
+        "listen_for": "Wide glare settles without darkening central snare; mono remains consistent.",
+        "why_it_works": "Independent M/S sets let the band act only on the difference channel."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Stacked choir consonants",
+        "source_or_bus": "Choir bus",
+        "application": "Use separate bands for lower consonant buildup and upper collective sibilance.",
+        "why_this_plugin": "Two bands handle distinct resonances that simple Deesser would over-broaden."
+      },
+      {
+        "context_type": "bus",
+        "context": "Side-channel cymbal glare",
+        "source_or_bus": "Stereo overhead bus",
+        "application": "Target Side highs without reducing central snare presence.",
+        "why_this_plugin": "M/S and unganged operation are unavailable in the simpler Deesser."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented: two bands can address lower ch/sh resonances and higher s resonances simultaneously; a near-zero-latency mode supports tracking.",
+    "avoid_when": "Avoid it for routine single-band tracking cleanup where speed and low CPU matter; Deesser is more economical.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [{"title": "Softube Weiss Deess user manual", "url": "https://www.softube.com/user-manuals/weiss-deess"}]
+    }
+  },
+  {
+    "name": "Weiss MM-1",
+    "section": 2,
+    "comparative_edge": "Choose it over Weiss Compressor/Limiter when Style-and-Amount speed is worth giving up direct envelope control, and over Drawmer S73 when final limiting belongs inside the macro processor. MM-1 is for rapid loudness direction-setting, not forensic mastering.",
+    "advanced_moves": [
+      {
+        "setup": "A production reference must get louder without locking every mastering choice.",
+        "action": "Choose Transparent or Punch, set Amount, blend with Parallel Mix, then raise Limiter Gain separately.",
+        "listen_for": "Dynamics character changes before loudness; the limiter catches peaks rather than hiding excessive Amount.",
+        "why_it_works": "Parallel Mix affects Style processing only; the brick-wall limiter remains downstream."
+      },
+      {
+        "setup": "A wide master has good tone but needs containment and loudness.",
+        "action": "Select Wide, keep Amount low, inspect M/S reduction, then reduce Parallel Mix before limiter drive.",
+        "listen_for": "Width increases without Side reduction dominating or the limiter reacting mainly to restored dry peaks.",
+        "why_it_works": "Wide uses M/S-aware processing, but dry blending still feeds the final limiter."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Production reference master",
+        "source_or_bus": "Stereo premaster",
+        "application": "Use Punch moderately and separate Limiter Gain to test arrangement at loudness.",
+        "why_this_plugin": "It reaches a DS1-derived direction faster than manual Compressor/Limiter setup."
+      },
+      {
+        "context_type": "bus",
+        "context": "Brittle sampled mix",
+        "source_or_bus": "Stereo sample bus",
+        "application": "Use Deess or Wide conservatively before limiting to manage brittle top or cramped image.",
+        "why_this_plugin": "Styles provide fast repeatable macro treatment when forensic repair is unnecessary."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented: Parallel Mix does not affect the final limiter. MM-1 also lacks the selectable True Peak Type 2 available in DS1-MK3 and Compressor/Limiter.",
+    "avoid_when": "Avoid it for compliance-critical delivery without downstream true-peak verification, or when Style decisions must be justified individually.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {"title": "Softube Weiss MM-1 user manual", "url": "https://www.softube.com/user-manuals/weiss-mm-1-mastering-maximizer"},
+        {"title": "Softube Flow Mastering Suite user manual", "url": "https://www.softube.com/user-manuals/flow-mastering-suite"}
+      ]
+    }
+  },
+  {
+    "name": "Clipper",
+    "section": 2,
+    "comparative_edge": "Choose it over Weiss limiting when peak removal and crest factor should be designed audibly, and over saturation when a hard peak ceiling belongs in the workflow. Its RMS stage creates density before Peak performs the final shave.",
+    "advanced_moves": [
+      {
+        "setup": "A drum bus makes a downstream limiter react badly to isolated peaks.",
+        "action": "Use modest RMS Headroom drive, disable Peak filters, set hard knee and Ceiling, then level-match before judging.",
+        "listen_for": "Density rises while the downstream limiter works less; no peak crosses Ceiling fully wet.",
+        "why_it_works": "RMS lowers crest factor before full-band hard Peak clipping removes remnants."
+      },
+      {
+        "setup": "One region of an 808 or percussion loop needs new tone.",
+        "action": "Bound RMS with Low/High Frequency, raise Analog Color, bypass Peak initially, then use Peak Audition for residual spikes.",
+        "listen_for": "The band thickens while sub and click outside it stay intact; Audition contains disposable peaks only.",
+        "why_it_works": "Stages have independent bounds, and Analog Color adds even-order asymmetry only in RMS."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Limiter-prep drum bus",
+        "source_or_bus": "Drum subgroup",
+        "application": "Use RMS density then hard Peak clipping to reduce final-limiter burden.",
+        "why_this_plugin": "Two stages separate crest-factor change from transient removal better than one saturator or limiter."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Harmonic 808 shaping",
+        "source_or_bus": "808 bass track",
+        "application": "Frequency-bound RMS saturation to add upper-bass harmonics while protecting sub.",
+        "why_this_plugin": "Its bounded saturation is more targeted than full-band drive, and Peak Audition reveals removal."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented: Ceiling contains all peaks only with Peak filters off, Dry/Wet fully wet, and hard knee; soft knee can overshoot.",
+    "avoid_when": "Avoid it when new distortion is unacceptable or true-peak-compliant delivery is the sole goal; use Weiss Type 2.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [{"title": "Softube Clipper user manual", "url": "https://www.softube.com/user-manuals/clipper"}]
+    }
+  },
+  {
+    "name": "Transient Shaper",
+    "section": 2,
+    "comparative_edge": "Choose it over compression when attack or sustain—not level above threshold—is the variable. Compared with Console 1's simpler shaper, standalone can assign Punch and Sustain independently to low, high, or full band and select Fast or Slow detection.",
+    "advanced_moves": [
+      {
+        "setup": "A kick needs more click but less low ring.",
+        "action": "Assign Punch High/Fast, Sustain Low/negative, and place crossover between body and click; leave Clip off initially.",
+        "listen_for": "Click advances without lengthening while low tail shortens without thinning thump.",
+        "why_it_works": "Punch and Sustain use separate level-independent detectors on opposite crossover sides."
+      },
+      {
+        "setup": "A plosive or slow percussion onset needs softening without dulling the source.",
+        "action": "Reduce full-band Punch in Slow, compare Fast at equal amount, and watch both gain-change meters.",
+        "listen_for": "Slow catches the broader onset; Fast may affect only a short click.",
+        "why_it_works": "Fast shapes shorter transients; Slow recognizes slower buildup and applies a longer envelope."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Layered kick",
+        "source_or_bus": "Kick track",
+        "application": "Add high-band click while removing low sustain so it clears a bass instrument.",
+        "why_this_plugin": "Independent band assignments solve two envelope problems at once."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Timpani close microphone",
+        "source_or_bus": "Orchestral percussion track",
+        "application": "Use Slow negative Punch to soften mallet onset while leaving resonance intact.",
+        "why_this_plugin": "Slow detection handles broad transients without continuous compressor movement."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented: stereo Sustain detection uses combined L+R, while Punch is true stereo; their image behavior can differ on asymmetrical material.",
+    "avoid_when": "Avoid it when inconsistent notes need threshold leveling or noise-floor control; it is level-independent.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [{"title": "Softube Transient Shaper user manual", "url": "https://www.softube.com/user-manuals/transient-shaper"}]
+    }
+  },
+  {
+    "name": "Deesser",
+    "section": 2,
+    "comparative_edge": "Choose it over Weiss Deess for tracking and routine cleanup where one detector range, relative threshold, and low CPU matter more than dual bands or M/S. Wide/Split is the shortcut: whole-signal movement for vocals or high-band-only reduction for a mix.",
+    "advanced_moves": [
+      {
+        "setup": "A vocalist changes distance and level between takes.",
+        "action": "Disable Lookahead, audition and narrow the detector range, then set Deess by removed-signal monitoring.",
+        "listen_for": "Sibilants remain intelligible across levels without monitoring delay.",
+        "why_it_works": "Relative threshold is level-independent, so upstream gain changes do not shift response."
+      },
+      {
+        "setup": "A full mix has intermittent cymbal glare without midrange problems.",
+        "action": "Use Split, exclude vocal presence from detection, enable Lookahead offline, and limit severity with Dry/Wet.",
+        "listen_for": "Crashes soften while vocal body and ambience below split remain stable.",
+        "why_it_works": "Split reduces only above the high-pass point; Lookahead anticipates fast peaks."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Tracking vocal",
+        "source_or_bus": "Lead vocal track",
+        "application": "Track with Lookahead off and use relative detection to tolerate upstream rides.",
+        "why_this_plugin": "Low CPU, low latency, and level independence matter more than Weiss depth here."
+      },
+      {
+        "context_type": "bus",
+        "context": "Mix-bus cymbal cleanup",
+        "source_or_bus": "Stereo mix",
+        "application": "Use Split and Lookahead for occasional harsh crashes without full-band ducking.",
+        "why_this_plugin": "One-screen detector, waveform, and removal audition are faster than multiband setup."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented: Lookahead is fixed at 15 ms and adds latency. Wide compresses full spectrum; Split processes only above the chosen high-pass.",
+    "avoid_when": "Avoid it when two resonances or side-only sibilance need independent control; Weiss Deess is built for that.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [{"title": "Softube Deesser user manual", "url": "https://www.softube.com/user-manuals/deesser"}]
+    }
+  },
+  {
+    "name": "Console 1 Core Mixing Suite",
+    "section": 3,
+    "comparative_edge": "Choose it over a named console when one control surface must support different processors by source. It reaches beyond SSL, British, or American Class A: tape/preamp choices, three shapers, vintage/modern/dynamic EQ, and FET/opto/bus compression can be swapped without leaving Console 1.",
+    "advanced_moves": [
+      {
+        "setup": "Build a vocal channel needing fast peak control and average leveling.",
+        "action": "On Channel Mk III, load Core FET then Core Opto in dual slots; filter lows into both sidechains and give FET most peak work before setting Opto Time.",
+        "listen_for": "Consonants stop leaping before optical leveling steadies phrases; neither stage does all the work.",
+        "why_it_works": "Dual slots allow serial architectures, and sidechain filtering prevents chest energy dominating either detector."
+      },
+      {
+        "setup": "A stereo percussion track needs repositioning without mono loss.",
+        "action": "Load Core Panner, establish placement, check mono, then use Core Dual Dynamics to shorten only low-band activity.",
+        "listen_for": "Placement survives mono while low tails tighten without narrowing upper ambience.",
+        "why_it_works": "Core Panner is mono-compatible; Dual Dynamics divides envelope control into low and high regions."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Large vocal stack",
+        "source_or_bus": "Lead and backing-vocal channels",
+        "application": "Standardize filters and EQ, then reserve serial FET/opto for leads while backs keep lighter modules.",
+        "why_this_plugin": "One surface preserves consistency while swapping sections avoids one console color on every channel."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Layered percussion placement",
+        "source_or_bus": "Percussion tracks",
+        "application": "Use Core Panner for mono-safe placement and Dual Dynamics to separate low sustain from upper attack.",
+        "why_this_plugin": "Its spatial and dual-band Shape options exceed fixed gate/transient console strips."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented: two extra Modern EQ mid bands require the plug-in UI or Mk III hardware, and dual compressor slots depend on Channel Mk III.",
+    "avoid_when": "Avoid it when a single historically coherent circuit is the value; British, American, or SSL strips make that commitment explicit.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [{"title": "Softube Core Mixing Suite user manual", "url": "https://www.softube.com/user-manuals/core-mixing-suite"}]
+    }
+  },
+  {
+    "name": "SSL SL 4000 E-Series",
+    "section": 3,
+    "comparative_edge": "Choose it over XL 9000 K when channel compressor, gate, and overdrive should contribute obvious forwardness; choose British Class A for slower transformer/diode weight. E-Series excels at close-mic shaping because E242 EQ, VCA dynamics, gate, transient shaper, and drive reinforce one workflow.",
+    "advanced_moves": [
+      {
+        "setup": "A snare close mic has spill, weak front edge, and excessive ring.",
+        "action": "Use soft gate and Release for spill, add Punch before EQ, shorten Sustain, then compress only after envelope reads correctly.",
+        "listen_for": "Snare becomes intentional without clipped gate opening or EQ exaggerating cymbal bleed.",
+        "why_it_works": "Gate and added transient shaper solve floor and envelope separately before VCA level control."
+      },
+      {
+        "setup": "Create console cohesion without driving every drum channel equally.",
+        "action": "Set one conservative Drive baseline, vary Character by source family, and level-match outputs before judging the bus.",
+        "listen_for": "The kit gains common density while kick, snare, and cymbals keep distinct emphasis.",
+        "why_it_works": "Drive models channel nonlinearity; Character changes which regions contribute most to distortion."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Spill-heavy close drum",
+        "source_or_bus": "Snare or tom microphone",
+        "application": "Use gate and transient shaping before VCA compression to control spill while preserving shell attack.",
+        "why_this_plugin": "Integrated Shape and fast channel dynamics are more direct than slower British Class A."
+      },
+      {
+        "context_type": "bus",
+        "context": "Multi-channel console glue",
+        "source_or_bus": "Synth and drum channels feeding a subgroup",
+        "application": "Use small E242 moves and source-dependent Drive Character across tracks.",
+        "why_this_plugin": "Cumulative channel nonlinearity makes a stronger shared frame than cleaner XL 9000 K."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented: the transient shaper is a Softube addition, not modeled SSL hardware—important when reproducing a hardware-only path.",
+    "avoid_when": "Avoid it when stacked tracks must remain very low-distortion or low-end bandwidth is primary; choose XL 9000 K.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [{"title": "Softube Solid State Logic SL 4000 E user manual", "url": "https://www.softube.com/user-manuals/ssl-sl-4000-e"}]
+    }
+  },
+  {
+    "name": "SSL XL 9000 K-Series",
+    "section": 3,
+    "comparative_edge": "Choose it over SL 4000 E when bandwidth, low phase shift, and low native distortion must survive many channels. Color is optional through separately modeled VHD. Peak and RMS compressor variants provide a topology-level choice rather than one aggressively voiced channel compressor.",
+    "advanced_moves": [
+      {
+        "setup": "A vocal stack becomes hard under cumulative compression.",
+        "action": "Use RMS Compressor on backing groups, reserve Peak for isolated lead peaks, and leave VHD off until the stack balances.",
+        "listen_for": "Backings settle as a bed while lead stays precise; brightness does not rise merely because every channel is active.",
+        "why_it_works": "RMS follows energy with softer knee, Peak reacts to excursions, and the channel does not require drive."
+      },
+      {
+        "setup": "A clean synth or bass needs optional harmonic density.",
+        "action": "Raise VHD Drive at matched output, sweep Character from second- toward third-order emphasis, and stop before EQ compensation becomes necessary.",
+        "listen_for": "Second-order feels rounder, third-order firmer; repair EQ indicates too much VHD.",
+        "why_it_works": "VHD morphs added distortion independently of the low-distortion 9000 K path."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Backing-vocal stack",
+        "source_or_bus": "Vocal subgroup",
+        "application": "Use RMS compression and clean EQ across layers, reserving VHD for selected parts.",
+        "why_this_plugin": "Low native distortion avoids cumulative grit associated with E-Series."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Acoustic spot microphone",
+        "source_or_bus": "Orchestral instrument track",
+        "application": "Apply high-bandwidth filtering and restrained RMS control without VHD.",
+        "why_this_plugin": "SuperAnalogue-derived behavior suits phase integrity and extension over console attitude."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented: VHD comes from SSL Duality/Alpha hardware, not the 9000 K channel; clean strip and optional distortion represent two lineages.",
+    "avoid_when": "Avoid it when aggressive gate/compressor behavior and built-in grit should shape close mics quickly; choose SL 4000 E.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [{"title": "Softube Solid State Logic XL 9000 K user manual", "url": "https://www.softube.com/user-manuals/solid-state-logic-xl-9000-k"}]
+    }
+  },
+  {
+    "name": "British Class A",
+    "section": 3,
+    "comparative_edge": "Choose it over American Class A for slower diode-bridge authority and transformer density, and over SSL E when stage order and detector routing matter more than fast cleanup. EQ can move before, inside, or after dynamics, and resonant filters can feed the detector.",
+    "advanced_moves": [
+      {
+        "setup": "A drum bus needs low weight, but EQ boosts make compression pump.",
+        "action": "Route HP/LP to detector, use Low Cut to reduce kick dominance, then shape audible lows in EQ and compare EQ First versus Last.",
+        "listen_for": "Low tone changes without proportional gain-reduction increase; EQ First drives dynamics more than Last.",
+        "why_it_works": "Detector routing removes filters from audio, while EQ Position decides whether boosts enter dynamics."
+      },
+      {
+        "setup": "Vocal or bass has routine movement plus occasional spikes.",
+        "action": "Set compressor for phrases, meter it alone, then add limiter only for outliers while checking Comp, Lim, and All meters.",
+        "listen_for": "Compressor moves routinely; limiter acts sparsely.",
+        "why_it_works": "Softube implemented compressor then limiter as separate serial processors."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Low-heavy rhythm subgroup",
+        "source_or_bus": "Drum and bass bus",
+        "application": "Use detector-filter routing and transformer drive to retain weight without low-end-triggered pumping.",
+        "why_this_plugin": "Sidechainable resonant filters and diode dynamics address tone and movement together."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Dynamic lead vocal",
+        "source_or_bus": "Vocal track",
+        "application": "Compress phrases, limit only outliers, then place broad EQ after dynamics.",
+        "why_this_plugin": "Serial compressor/limiter and selectable EQ order integrate gain staging better than separate generic tools."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented: EQ bands can color at 0 dB unless Frequency is Off; centered gains are not equivalent to full EQ bypass.",
+    "avoid_when": "Avoid it for a low-distortion extended channel across many tracks; XL 9000 K better preserves that brief.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [{"title": "Softube British Class A user manual", "url": "https://www.softube.com/user-manuals/british-class-a"}]
+    }
+  },
+  {
+    "name": "British Class A Drive",
+    "section": 3,
+    "comparative_edge": "Choose it when British transformer density is wanted without EQ or dynamics. Compared with American Class A behavior, Character here moves from reduced mid emphasis toward aggressive mids rather than specifically varying high-frequency distortion. It is a focused console-color layer.",
+    "advanced_moves": [
+      {
+        "setup": "Unrelated tracks need a shared console foundation without replacing corrective chains.",
+        "action": "Insert Drive at one common stage, use a low baseline, then move Character darker on bright sources and forward on buried sources.",
+        "listen_for": "Tracks feel related without all acquiring the same glare; bypass the group together.",
+        "why_it_works": "A common transformer model creates shared nonlinear behavior while Character varies mid emphasis."
+      },
+      {
+        "setup": "A synth needs mass before clean sidechain compression.",
+        "action": "Set Character counterclockwise, raise Drive while trimming the next input, then compare before and after compressor placement.",
+        "listen_for": "Pre placement makes harmonics participate in ducking; post preserves the clean envelope.",
+        "why_it_works": "Nonlinear content before the detector changes what it measures; post-dynamics drive does not."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Pad density before ducking",
+        "source_or_bus": "Synth pad track",
+        "application": "Use darker Character before clean sidechain compression to add mass.",
+        "why_this_plugin": "It isolates transformer color while preserving a modern EQ/dynamics chain."
+      },
+      {
+        "context_type": "bus",
+        "context": "Multi-channel guitar cohesion",
+        "source_or_bus": "Guitar subgroup",
+        "application": "Apply conservative shared Drive with per-track Character offsets.",
+        "why_this_plugin": "One nonlinear model across channels creates common texture more directly than unrelated saturators."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Engineering inference from documented behavior: judge this across the sum, because small nonlinearities on many channels can outweigh one instance in solo.",
+    "avoid_when": "Avoid it when neutral gain, exact peak control, or complete British routing is needed; this module supplies color only.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [{"title": "Softube British Class A user manual", "url": "https://www.softube.com/user-manuals/british-class-a"}]
+    }
+  },
+  {
+    "name": "American Class A",
+    "section": 3,
+    "comparative_edge": "Choose it over British Class A for feedback-VCA punch, stepped four-band EQ, and drive that can spare highs while distorting lows. Choose SSL E for familiar gate/channel aggression. Smooth/Punchy and Original/Extended pairs change precision without abandoning the console voice.",
+    "advanced_moves": [
+      {
+        "setup": "Percussion needs punch, but the original EQ step is too large.",
+        "action": "Build tone in Original, switch to Extended retaining values, refine scale/Q, then compare Punchy and Smooth after EQ.",
+        "listen_for": "Extended refines rather than reinvents; Punchy adds overshoot while Smooth stabilizes.",
+        "why_it_works": "EQ variants change resolution/Q; compressor variants change topology and knee."
+      },
+      {
+        "setup": "Bass density is needed without vocal or synth fizz.",
+        "action": "Start Drive Character near minimum, raise Drive until lows thicken, then increase Character only until highs participate.",
+        "listen_for": "Body saturates before sibilance or bright transients.",
+        "why_it_works": "Counterclockwise Character reduces high-frequency distortion while lows keep driving."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Percussion and rhythm-guitar subgroup",
+        "source_or_bus": "Rhythm bus",
+        "application": "Use Extended EQ for fine steps and Punchy compression for transient mass.",
+        "why_this_plugin": "Feedback overshoot reinforces rhythm more directly than British Class A."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Body-forward lead vocal",
+        "source_or_bus": "Vocal track",
+        "application": "Use Smooth compression and low-biased Drive Character to add body without driving sibilance.",
+        "why_this_plugin": "Lower Character values explicitly reduce high-frequency distortion while low-frequency drive remains available."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented: +10 Character is closest to original full-band distortion. Lower values are Softube's extension, progressively sparing highs.",
+    "avoid_when": "Avoid it for clean continuous correction; Core Modern EQ or XL 9000 K is a better start.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [{"title": "Softube American Class A user manual", "url": "https://www.softube.com/user-manuals/american-class-a"}]
+    }
+  },
+  {
+    "name": "Summit Audio Grand Channel",
+    "section": 3,
+    "comparative_edge": "Choose it over Tube-Tech Classic Channel when fully parametric EQ and independently controllable EQ/compressor distortion beat broad Pultec-style curves. TLA headroom can tame transients while EQF contributes strong second-order warmth, making order and interstage gain unusually consequential.",
+    "advanced_moves": [
+      {
+        "setup": "A vocal needs EQ warmth but compression should ignore those boosts.",
+        "action": "Place Compressor before EQ, set leveling, then drive EQF Output for color while trimming final gain; compare reverse order matched.",
+        "listen_for": "Compressor-first keeps phrase movement stable; EQ-first makes boosts provoke more reduction.",
+        "why_it_works": "Routing decides whether EQ gain and harmonics enter the TLA detector."
+      },
+      {
+        "setup": "A drum bus needs peak softening plus original attack.",
+        "action": "Use TLA Saturation for occasional peaks, compress for body, then add Parallel Inject; keep EQF clean initially.",
+        "listen_for": "Spikes round before optical action and dry signal restores attack.",
+        "why_it_works": "TLA Saturation lowers headroom; Parallel Inject adds unaffected audio after compression."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Warm but stable lead vocal",
+        "source_or_bus": "Vocal track",
+        "application": "Level first, then use EQF boosts and output drive without changing compressor action.",
+        "why_this_plugin": "Separate routing and nonlinear stages make warmth more deliberate than a fixed console path."
+      },
+      {
+        "context_type": "bus",
+        "context": "Transient-heavy drum bus",
+        "source_or_bus": "Drum subgroup",
+        "application": "Use TLA headroom to round peaks, Parallel Inject for attack, and EQF for boxiness.",
+        "why_this_plugin": "Compressor handles color and peaks while EQF offers narrower correction than Tube-Tech curves."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented: EQF and TLA produce different distortion spectra, and EQ does not affect external sidechain even when audibly before compressor.",
+    "avoid_when": "Avoid it for clean digital correction or true-peak control; both stages deliberately contribute analog-modeled behavior.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [{"title": "Softube Summit Audio Grand Channel user manual", "url": "https://www.softube.com/user-manuals/summit-audio-grand-channel"}]
+    }
+  },
+  {
+    "name": "Tube-Tech Classic Channel Mk II",
+    "section": 3,
+    "comparative_edge": "Choose it over Summit Grand Channel when PE 1C/ME 1B broad contour and midrange shaping beat full parametric EQ. CL 1B offers more timing authorship than TLA, while Mk II adds M/S and compressor-only parallel operation.",
+    "advanced_moves": [
+      {
+        "setup": "A vocal needs consistent control and broad finishing tone.",
+        "action": "Place CL 1B before the EQ pair, use ME 1B for placement and PE 1C for outer contour, then compare Mk I/Mk II at equal reduction.",
+        "listen_for": "Compression stays stable while EQ reshapes the result; judge generation on movement, not gain.",
+        "why_it_works": "Compressor-first keeps both EQs out of its main detector decision."
+      },
+      {
+        "setup": "A stereo master has center congestion but attractive side air.",
+        "action": "Enable M/S, unlink, reduce Mid with ME 1B and light CL 1B, leave Side air, then adjust Parallel Compression.",
+        "listen_for": "Center clears without narrowing; parallel changes compression only.",
+        "why_it_works": "Mk II gives independent M/S sets, and Dry/Wet blends only CL 1B."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Polished lead vocal",
+        "source_or_bus": "Vocal track",
+        "application": "Control first, place mids with ME 1B, add broad PE 1C contour afterward.",
+        "why_this_plugin": "Three licensed stages divide vocal tasks more explicitly than one console strip."
+      },
+      {
+        "context_type": "bus",
+        "context": "Acoustic stereo mix",
+        "source_or_bus": "Mix bus",
+        "application": "Use restrained independent M/S EQ and optical compression while preserving side ambience.",
+        "why_this_plugin": "M/S routing and broad tube curves offer inspectable character without a digital multiband chain."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented: Parallel Compression affects CL 1B only; both EQs remain fully applied, and neither affects external sidechain.",
+    "avoid_when": "Avoid it for narrow surgical cuts, dynamic EQ, or true-peak delivery; its strength is broad contour and optical control.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [{"title": "Softube Tube-Tech Classic Channel and Classic Channel Mk II user manual", "url": "https://www.softube.com/user-manuals/tube-tech-classic-channel-and-classic-channel-mk-ii"}]
+    }
+  },
+  {
+    "name": "Chandler Zener-Bender",
+    "section": 3,
+    "comparative_edge": "Choose it over Zener-Bender for Console 1 when native dual-channel panels, order reversal, channel linking, and full M/S matter. Choose Tube-Tech Classic Channel for optical smoothness. Chandler's edge is broad Curve Bender tone interacting with Zener modes and THD in either order.",
+    "advanced_moves": [
+      {
+        "setup": "A broad top lift makes limiting too aggressive.",
+        "action": "Start Zener before Curve Bender, establish dynamics, reverse order with same EQ, then lower Zener input to match reduction.",
+        "listen_for": "Limiter-first keeps movement steadier; EQ-first makes top boost join detection and drive.",
+        "why_it_works": "The switch physically reverses order, changing spectrum and level entering Zener."
+      },
+      {
+        "setup": "A wide drum or guitar bus needs side color but center compression.",
+        "action": "Enable M/S, unlink Zener, compress Mid in Comp 1, use Side THD or lighter reduction, then balance EQ.",
+        "listen_for": "Center tightens while sides grow without image drift or hollow mono.",
+        "why_it_works": "Both units support M/S, and unlinking gives independent dynamics."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Broad mix-bus finishing",
+        "source_or_bus": "Stereo mix bus",
+        "application": "Compare order so Curve Bender boosts either provoke or follow Zener compression.",
+        "why_this_plugin": "The routable pairing makes tone-to-dynamics interaction a deliberate choice."
+      },
+      {
+        "context_type": "bus",
+        "context": "Wide drums-and-guitars stem",
+        "source_or_bus": "Stereo subgroup",
+        "application": "Use independent M/S Zener modes and broad EQ to anchor center while enlarging sides.",
+        "why_this_plugin": "Native M/S panels offer more spatial authorship than Console 1 adaptation."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented: linked compression shares gain reduction, not just knobs. Link heavier stereo reduction; unlink for true M/S.",
+    "avoid_when": "Avoid it when rapid per-channel strip work matters more than routing depth; use the Console 1 version.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [{"title": "Softube Chandler Limited Zener-Bender user manual", "url": "https://www.softube.com/user-manuals/chandler-limited-zener-bender"}]
+    }
+  },
+  {
+    "name": "Chandler Zener-Bender for Console 1",
+    "section": 3,
+    "comparative_edge": "Choose it over native Zener-Bender when fast channel-strip mapping matters more than dual-panel routing. It condenses Curve Bender and Zener into EQ, Compressor, and Drive, with low-gain 0.5 dB precision expanding to ±15 dB. Native remains better for order reversal and detailed M/S.",
+    "advanced_moves": [
+      {
+        "setup": "Move from mastering-scale EQ into one assertive channel move.",
+        "action": "Keep most bands in sub-5 dB fine steps, then push only the needed band into the wider mixing range.",
+        "listen_for": "One band becomes the effect while others retain finishing precision.",
+        "why_it_works": "Softube merged ±5 and ±15 dB gain laws with amount-dependent resolution."
+      },
+      {
+        "setup": "Add Zener color to a vocal without reduction.",
+        "action": "Bypass Compressor, set Drive around noon, sweep Character around neutral, level-match, then add EQ.",
+        "listen_for": "Upper-mid distortion rises clockwise and cleans counterclockwise without EQ hiding excess.",
+        "why_it_works": "Drive is separate Zener THD; Character changes upper-mid emphasis."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Color-forward lead vocal",
+        "source_or_bus": "Vocal track",
+        "application": "Use THD Drive for presence, then make low-gain Curve Bender moves without compression.",
+        "why_this_plugin": "Separate Drive and adaptive EQ gain law deploy Chandler color faster than native panels."
+      },
+      {
+        "context_type": "bus",
+        "context": "Tactile band subgroup",
+        "source_or_bus": "Live-band bus",
+        "application": "Use Comp 1 with low-gain EQ moves from Console 1 hardware.",
+        "why_this_plugin": "Mapping prioritizes tactile recall over native routing depth."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented: Zener input/output becomes one Threshold without changing modeled operation. Shape is empty and falls back to Core, not Chandler circuitry.",
+    "avoid_when": "Avoid it when order switching or full dual-channel M/S controls are required; use native Zener-Bender.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [{"title": "Softube Chandler Limited Zener-Bender for Console 1 user manual", "url": "https://www.softube.com/user-manuals/console-1-chandler-limited-zener-bender"}]
+    }
+  },
+  {
+    "name": "Empirical Labs Trak Pak for Console 1",
+    "section": 3,
+    "comparative_edge": "Choose it over American Class A when high-frequency limiting/de-essing and Mike-E compression/saturation matter more than a gate and stepped-console workflow. Choose Weiss Gambit for cleaner digital control. Trak Pak separates harshness control, compression, and CompSat-style color into tactile sections.",
+    "advanced_moves": [
+      {
+        "setup": "A bright bus turns harsh only in dense passages.",
+        "action": "Set Shape to HF Limiter, place its crossover near the harshness, adjust for pileups only, then add Drive separately after confirming the high-frequency control.",
+        "listen_for": "Highs integrate on dense moments without permanent shelf dulling.",
+        "why_it_works": "HF Limiter dynamically controls above crossover while Mike-E saturation remains separate."
+      },
+      {
+        "setup": "A bus compressor should keep transients but gain density.",
+        "action": "Use low ratio, slowest attack, fast release, 1–3 dB reduction, then add Drive separately and sweep Character.",
+        "listen_for": "Attacks pass while body controls; extra density comes from Drive, not deeper reduction.",
+        "why_it_works": "The strip separates Mike-E compression from Warm/Toasty distortion."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Harsh rhythm-guitar subgroup",
+        "source_or_bus": "Electric-guitar bus",
+        "application": "Use HF Limiter for dense fizz, Lil FrEQ mids for placement, and Mike-E Drive for weight.",
+        "why_this_plugin": "It handles dynamic harshness and saturation separately, avoiding static high cuts."
+      },
+      {
+        "context_type": "bus",
+        "context": "Transient-preserving drum bus",
+        "source_or_bus": "Drum subgroup",
+        "application": "Use slow-attack Mike-E compression and Warm/Toasty Drive for density.",
+        "why_this_plugin": "Compression/saturation split is more controllable than American Class A Punchy alone."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented: Shape is Lil FrEQ de-esser/HF limiter, not a gate. HF Limiter affects every frequency above crossover.",
+    "avoid_when": "Avoid it for below-threshold cleanup, M/S, or transparent limiter output; Weiss Gambit is better aligned.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [{"title": "Softube Empirical Labs Trak Pak user manual", "url": "https://www.softube.com/user-manuals/empirical-labs-trak-pak"}]
+    }
+  },
+  {
+    "name": "Weiss Gambit Series for Console 1",
+    "section": 3,
+    "comparative_edge": "Choose it over colored strips when below-threshold control, surgical EQ1 bands, and DS1-derived limiting should stay clean. Choose Weiss Compressor/Limiter outside Console 1 for deeper above-threshold work. Gambit's edge is below-threshold compression that raises quiet detail without pushing down attacks.",
+    "advanced_moves": [
+      {
+        "setup": "A drum room or reverb tail needs detail without flattened direct hits.",
+        "action": "Choose 1:x below-threshold compression, set Threshold below hits, and constrain Range until ambience rises without noise.",
+        "listen_for": "Tails become continuous while direct transients remain; rising hiss means Range is too broad.",
+        "why_it_works": "Below-threshold compression raises quiet material, and Range caps the change."
+      },
+      {
+        "setup": "Use Gambit EQ/compressor during tracking without limiter latency.",
+        "action": "Load Gambit EQ or Compressor into another strip, replace Drive with low-latency output, and reserve full Gambit for playback.",
+        "listen_for": "Monitoring improves without EQ/compressor tone changing.",
+        "why_it_works": "The limiter is the main latency source and sections are independently loadable."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Quiet ambience recovery",
+        "source_or_bus": "Reverb or room bus",
+        "application": "Use range-limited below-threshold compression to reveal decays without touching hits.",
+        "why_this_plugin": "No other Softube strip exposes this DS1-derived behavior directly in Shape."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Low-latency clean channel",
+        "source_or_bus": "Acoustic instrument track",
+        "application": "Use EQ1-derived cuts and DS1 compression while replacing the limiter during monitoring.",
+        "why_this_plugin": "Clean sections avoid console color and can be separated from latency-heavy output."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented: Drive is a DS1/MM-1 limiter. Below noon lowers ceiling; above noon adds gain into a 0 dB ceiling. Character selects limiter type.",
+    "avoid_when": "Avoid the full strip during latency-sensitive tracking unless limiter is replaced; avoid quiet-detail lifting on noisy sources without tight Range.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [{"title": "Softube Weiss Gambit Series user manual", "url": "https://www.softube.com/user-manuals/weiss-gambit-series"}]
+    }
+  }
+]

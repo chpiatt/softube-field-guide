@@ -1,0 +1,2133 @@
+[
+  {
+    "name": "Reference 1956",
+    "section": 1,
+    "comparative_edge": "Choose it over Tube-Tech PE 1C when you want the more colored Manley Enhanced Pultec-style branch of the EQP-1A family: expanded frequency choices, independent dual-channel or M/S shaping, and adjustable transformer/headroom contribution. Choose Reference 1998 for four overlapping bands; choose Equalizers for precise removal.",
+    "advanced_moves": [
+      {
+        "setup": "On a bass or kick whose fundamental is strong but the note reads cloudy, start linked in L/R with the mid bell and high attenuation neutral.",
+        "action": "Select the low frequency nearest the weight you want, raise Boost, then add Cut until the upper-bass shoulder recedes without losing the fundamental. Level-match with the center Gain control.",
+        "listen_for": "The hit should feel larger at its base but shorter and less congested immediately above it; stop if the next bass note loses pitch definition.",
+        "why_it_works": "The boost and cut shelves have offset corners, so simultaneous use forms a low lift followed by a dip instead of cancelling."
+      },
+      {
+        "setup": "On a stereo source, flatten the EQ, unlink channels, select M/S, and expose the Extended Features Headroom control.",
+        "action": "Lower Headroom while compensating output, then compare Mid and Side separately before adding any EQ. Keep the more nonlinear setting only on the component that benefits.",
+        "listen_for": "Mid processing should add density without shrinking the Side image; Side processing should add texture without making low ambience unstable.",
+        "why_it_works": "The modeled transformer and tube stage are active apart from the curves, and M/S routing lets their level-dependent color be applied selectively."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Dub techno — Chord-delay return",
+        "source_or_bus": "Chord-delay return",
+        "application": "Use gentle high attenuation to push repeats behind the dry chord, then lower Headroom until the return gains density at a matched level.",
+        "why_this_plugin": "It combines passive bandwidth shaping and nonlinear depth in one stage, with M/S available if the delay's center must stay clearer than its sides."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Modern country — Bass guitar",
+        "source_or_bus": "Bass guitar",
+        "application": "Build a low boost/cut contour around the instrument's weight, then use the boost-only mid bell for restrained note articulation.",
+        "why_this_plugin": "The broad offset shelves can separate body from low-mid hangover without the narrowly filtered sound of a surgical EQ."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Equalizers",
+        "goal": "Precise cleanup plus Reference 1956's broad character in one reorderable EQ environment.",
+        "order": "Equalizers Modern → Reference 1956 in the Vintage slot",
+        "setup": "Create only the necessary modern cuts or dynamic bands, load Reference 1956, then compare M→V with V→M at matched output.",
+        "why_it_works": "Modern bands add narrow or dynamic control around the constrained model. Order becomes audible when dynamics or level-dependent model behavior makes the stages non-commutative.",
+        "caution": "With static linear stages, reversing order may make no audible difference; do not invent one. Re-check level whenever dynamics or modeled saturation is active.",
+        "basis": "documented",
+        "source_url": "https://www.softube.com/plug-ins/reference-1956-equalizer"
+      }
+    ],
+    "insider_note": "Documented behavior: the mid band's available boost changes with Bandwidth—about 18 dB at the narrowest setting versus roughly 10 dB at the widest—so Bandwidth is also a gain-structure decision.",
+    "avoid_when": "Avoid it for narrow resonance cuts, dynamic de-essing, or linear-phase mastering moves; its mid band only boosts and its high section only attenuates.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Reference 1956 Equalizer user manual",
+          "url": "https://cdn.softube.com/user-manuals/reference-1956-equalizer"
+        },
+        {
+          "title": "Manley Mini Massive manual — Enhanced Pultec design notes",
+          "url": "https://www.manley.com/s/MiniMassive-03-29-09cd.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Reference 1998",
+    "section": 1,
+    "comparative_edge": "Choose it over Reference 1956 when you need four bands per channel and overlapping low/high shelves rather than the low-end trick. Choose it over Curve Bender when continuous bandwidth and up to roughly ±20 dB at narrow settings matter; choose Curve Bender when stepped restraint and faster recall are the point.",
+    "advanced_moves": [
+      {
+        "setup": "On a mix bus, link channels, engage only one band, and begin with Bandwidth fully broad before touching Cut/Boost.",
+        "action": "Find the useful frequency with a modest broad move, then narrow Bandwidth only until the target separates from neighboring material. Re-trim gain after every bandwidth change.",
+        "listen_for": "The correction should become more local without the center suddenly jumping forward; stop narrowing when the move sounds like an isolated resonant spot.",
+        "why_it_works": "Bandwidth changes both Q and gain range: broad curves are limited to about ±6 dB, while sharp settings approach ±20 dB."
+      },
+      {
+        "setup": "For a wide arrangement with a solid mono anchor, switch to M/S, unlink, and keep the resonant outer cut filters bypassed initially.",
+        "action": "Use a low shelf only on Mid and an upper shelf only on Side, then engage the Side high-pass just enough to remove low-frequency width introduced by the source.",
+        "listen_for": "The center should gain weight while reverbs and guitars open above it; mono collapse should not reveal a hollow low end.",
+        "why_it_works": "The dual control sets can treat sum and difference independently, while the separate resonant cuts constrain the spectrum outside the four parallel bands."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Cinematic ambient — Orchestral and synth stem bus",
+        "source_or_bus": "Orchestral and synth stem bus",
+        "application": "Use two broad overlapping upper bands at low gain to lift texture at different depths, then contain extreme air with the low-pass filter.",
+        "why_this_plugin": "Its passive parallel bands overlap without behaving like ordinary additive parametrics, producing a layered contour rather than one obvious shelf."
+      },
+      {
+        "context_type": "bus",
+        "context": "Afrobeat — Percussion bus",
+        "source_or_bus": "Percussion bus",
+        "application": "Shape low-mid body with a bell and upper motion with a shelf, then unlink only if left/right percussion needs rebalancing.",
+        "why_this_plugin": "Four bands per channel provide broad color while independent channels can correct an intentionally asymmetric percussion field without collapsing it."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Equalizers",
+        "goal": "Precise cleanup plus Reference 1998's broad character in one reorderable EQ environment.",
+        "order": "Equalizers Modern → Reference 1998 in the Vintage slot",
+        "setup": "Create only the necessary modern cuts or dynamic bands, load Reference 1998, then compare M→V with V→M at matched output.",
+        "why_it_works": "Modern bands add narrow or dynamic control around the constrained model. Order becomes audible when dynamics or level-dependent model behavior makes the stages non-commutative.",
+        "caution": "With static linear stages, reversing order may make no audible difference; do not invent one. Re-check level whenever dynamics or modeled saturation is active.",
+        "basis": "documented",
+        "source_url": "https://www.softube.com/plug-ins/reference-1998-equalizer"
+      }
+    ],
+    "insider_note": "Documented behavior: the subtle saturation comes from modeled inductors rather than transformers, before the tube-stage contribution. This matters when comparing it with transformer-forward passive EQ emulations.",
+    "avoid_when": "Avoid it when gain must correspond predictably to a numeric setting or when overlapping bands must sum conventionally; Bandwidth and the parallel network both change that relationship.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Reference 1998 Equalizer user manual",
+          "url": "https://cdn.softube.com/user-manuals/reference-1998-equalizer"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Chandler Limited Curve Bender",
+    "section": 1,
+    "comparative_edge": "Choose it over Reference 1998 when fixed EMI-derived points, repeatable stepped moves, and X1 mastering range help you commit. Choose Reference 1998 for continuous four-band overlap and stronger narrow moves; choose Equalizers for notches, per-band dynamics, or external sidechain work.",
+    "advanced_moves": [
+      {
+        "setup": "On a stereo master, select X1, link channels, and bypass all four bands before setting the low- and high-pass filters around clearly non-musical extremes.",
+        "action": "Add one Bass or Treble step, then use Presence 1 or 2 in the opposite direction to restore perspective rather than adding a second outer-band boost.",
+        "listen_for": "The mix should gain scale without the vocal changing apparent level; if the center seems louder, the presence compensation is not balanced.",
+        "why_it_works": "X1 limits the four bands to the finer mastering range, and the two presence bands let broad outer changes be counter-shaped inside the spectrum."
+      },
+      {
+        "setup": "On a stem with wide room energy and a centered lead, switch to M/S and unlink after establishing a linked baseline.",
+        "action": "Make the primary tonal move on Mid, then use a smaller, different Presence setting on Side. Toggle Link to compare against identical treatment without losing the chosen values.",
+        "listen_for": "The lead should retain focus while the room changes color; reject settings that make the stereo field tilt during sustained notes.",
+        "why_it_works": "The plug-in adds independent M/S processing and channel linking beyond the hardware-style four-band circuit."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Psychedelic rock — Full mix",
+        "source_or_bus": "Full mix",
+        "application": "Use X1 for a restrained low lift and a complementary presence move that keeps fuzz guitars from masking the vocal.",
+        "why_this_plugin": "The fixed, broad EMI-derived bands can reshape a dense mix without inviting the endless micro-adjustment of a modern graph EQ."
+      },
+      {
+        "context_type": "bus",
+        "context": "Contemporary classical — String ensemble bus",
+        "source_or_bus": "String ensemble bus",
+        "application": "Use linked Treble and Presence moves for global contour, then unlinked M/S only if room brightness dominates the direct center image.",
+        "why_this_plugin": "Its fine X1 steps and channel linking support repeatable, small ensemble-wide changes while preserving an option for selective ambience control."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Equalizers",
+        "goal": "Precise cleanup plus Chandler Limited Curve Bender's broad character in one reorderable EQ environment.",
+        "order": "Equalizers Modern → Chandler Limited Curve Bender in the Vintage slot",
+        "setup": "Create only the necessary modern cuts or dynamic bands, load Chandler Limited Curve Bender, then compare M→V with V→M at matched output.",
+        "why_it_works": "Modern bands add narrow or dynamic control around the constrained model. Order becomes audible when dynamics or level-dependent model behavior makes the stages non-commutative.",
+        "caution": "With static linear stages, reversing order may make no audible difference; do not invent one. Re-check level whenever dynamics or modeled saturation is active.",
+        "basis": "documented",
+        "source_url": "https://www.softube.com/user-manuals/equalizers"
+      },
+      {
+        "partner": "Chandler Limited Zener Limiter",
+        "goal": "Combine broad EMI-derived contour with linked or M/S dynamics while choosing whether EQ drives the limiter.",
+        "order": "Compare Curve Bender → Zener Limiter against Zener Limiter → Curve Bender",
+        "setup": "Establish a restrained Curve Bender shape and 1–3 dB of limiting, then flip the documented EQ Before Limiter routing at matched output.",
+        "why_it_works": "EQ before dynamics changes which frequencies drive gain reduction; EQ after dynamics changes tone without altering the limiter detector response.",
+        "caution": "Large pre-limiter boosts can create frequency-led pumping. Heavy unlinked stereo compression can shift the image.",
+        "basis": "documented",
+        "source_url": "https://www.softube.com/user-manuals/chandler-limited-zener-bender"
+      }
+    ],
+    "insider_note": "Documented behavior: X1 is a ±5 dB range, while X1.5 extends the bands to ±15 dB. The multiplier changes available range substantially; it is not merely a fine-adjust switch.",
+    "avoid_when": "Avoid it for moving resonances, frequency-dependent ducking, or any task that needs freely chosen centers; the fixed-point architecture is the constraint that gives it speed.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Chandler Limited Curve Bender product page",
+          "url": "https://www.softube.com/plug-ins/chandler-limited-curve-bender"
+        },
+        {
+          "title": "Softube Chandler Limited Curve Bender user manual",
+          "url": "https://www.softube.com/user-manuals/chandler-limited-curve-bender"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Equalizers",
+    "section": 1,
+    "comparative_edge": "Choose it over every fixed hardware model when the problem moves, differs by channel, or must react to another track. Its distinctive advantage over Weiss EQ1 is the optional in-line vintage Softube EQ stage; choose Weiss EQ1 when linear phase, mastering metering, or its specific dynamic architecture matters more.",
+    "advanced_moves": [
+      {
+        "setup": "Route the kick to the plug-in sidechain on a bass track, create a bell at the collision area, set negative Gain, and select external dynamics.",
+        "action": "Start with a positive Ratio so the band moves from flat toward the cut only above threshold. Set Release to recover between kick events, then cap the maximum change with the band's Gain.",
+        "listen_for": "Bass note tone should remain intact between kicks while the attack gains separation; back off if the bass appears to change pitch on every trigger.",
+        "why_it_works": "External detection triggers only the selected spectral range, and the static Gain value doubles as the dynamic range limit."
+      },
+      {
+        "setup": "Load a supported model with documented level-dependent color, such as Trident A-Range, and create one modern corrective band before making tonal changes.",
+        "action": "A/B M→V against V→M at equal output. If the model exaggerates the defect, correct first; if it creates a useful excess that still needs restraint, put Modern second and reduce the cut.",
+        "listen_for": "Compare transient texture and the defect's recurrence, not just curve appearance; the better order solves the problem with less total gain change.",
+        "why_it_works": "The global order switch changes whether corrected audio drives the nonlinear model or the modern band processes its colored output; two static linear stages would not gain this benefit."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Hyperpop — Lead-vocal stack",
+        "source_or_bus": "Lead-vocal stack",
+        "application": "Use separate Side-only dynamic bands for splashy doubled consonants while leaving the centered lead untouched, then add a vintage stage after correction if color is needed.",
+        "why_this_plugin": "Per-band M/S targeting and dynamics solve an arrangement-dependent problem that a linked de-esser or fixed analog EQ cannot isolate."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Minimal techno — Kick and bass relationship",
+        "source_or_bus": "Kick and bass relationship",
+        "application": "Trigger a narrow external dynamic cut in the bass from the kick, using the band's gain as a strict maximum range.",
+        "why_this_plugin": "Its host sidechain, frequency solo, and range-limited band make space without full-band pumping or permanent bass thinning."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Core Vintage Equalizers — Dual",
+        "goal": "Combine moving corrective bands with independent L/R or M/S passive-parallel tone.",
+        "order": "Equalizers Modern → Core Vintage Equalizers — Dual in the Vintage slot",
+        "setup": "Stabilize defects with the fewest modern bands, load Dual, unlink only for a clear stereo imbalance, and compare both processing orders.",
+        "why_it_works": "Modern bands supply dynamics and narrow targeting while Dual adds separate broad passive contours for the two stereo components.",
+        "caution": "Unlinked modern and vintage M/S moves can compound quickly; verify mono and the phantom center.",
+        "basis": "documented",
+        "source_url": "https://www.softube.com/user-manuals/equalizers"
+      },
+      {
+        "partner": "Trident A-Range",
+        "goal": "Use surgical correction and frequency analysis around an interacting, saturating console EQ.",
+        "order": "Equalizers Modern → Trident A-Range in the Vintage slot",
+        "setup": "Remove only resonances that would overdrive Trident, then shape and saturate with A-Range; compare V→M if its color creates a new excess.",
+        "why_it_works": "The modern stage can either condition audio before Trident's coupled bands and saturation or clean the colored result afterward.",
+        "caution": "Changing order changes saturation drive. Avoid correcting away the band interaction that motivated using Trident.",
+        "basis": "documented",
+        "source_url": "https://www.softube.com/user-manuals/equalizers"
+      }
+    ],
+    "insider_note": "Documented behavior: negative Ratio values reverse the band's static/triggered relationship—the band starts at its set Gain and moves toward 0 dB as level rises. That enables dynamic release of a static EQ move, not only conventional triggered cuts.",
+    "avoid_when": "Avoid it when a simple fixed curve would make the decision faster, or when host sidechain routing is unavailable for the interaction you intend to build.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Equalizers user manual",
+          "url": "https://www.softube.com/user-manuals/equalizers"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Core Vintage Equalizers — Single",
+    "section": 1,
+    "comparative_edge": "Choose Single over Dual when one linked stereo contour is enough and speed matters. Choose it over Passive Equalizer when explicit Q, bell/shelf/cut choices, and four parallel bands are more useful than a strongly coupled tone stack. Add Equalizers for defects: Single is deliberately broad, not surgical.",
+    "advanced_moves": [
+      {
+        "setup": "On a channel that needs weight but has low-mid buildup, set the Bass band to Big Shelf and leave the other three bands at unity.",
+        "action": "Raise Bass Gain first, then move Q until the shelf's built-in dip lands on the buildup. Adjust Frequency only after the boost-to-dip relationship is useful.",
+        "listen_for": "The fundamental should become more present while the note's cloudy shoulder recedes; reject a setting that sounds like a simple full low-shelf lift.",
+        "why_it_works": "The parallel Big Shelf contains an inherent dip above its boost corner, and Q changes that two-part contour."
+      },
+      {
+        "setup": "For a source that is nearly balanced, return Frequency and Q to their broad defaults and ignore the graph initially.",
+        "action": "Mix with the four Gain controls alone, making one pass for Bass/Air and one for the two mids. Touch Frequency only when a gain move affects the wrong musical role.",
+        "listen_for": "The source should settle into the arrangement without any one center sounding spotlighted.",
+        "why_it_works": "All four bands span intentionally wide ranges and were designed so broad balancing can be done primarily from Gain."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Indie folk — Acoustic-instrument bus",
+        "source_or_bus": "Acoustic-instrument bus",
+        "application": "Use broad mid gains to balance wood, string, and pick energy, then a small Air move across the whole bus.",
+        "why_this_plugin": "The parallel bands resist the stacked, over-pointed response that can result from applying several conventional bells across related instruments."
+      },
+      {
+        "context_type": "bus",
+        "context": "Deep house — Chord and pad bus",
+        "source_or_bus": "Chord and pad bus",
+        "application": "Use the Big Shelf's boost-plus-dip contour to add foundation without crowding the bass, then shape the upper mids with one broad bell.",
+        "why_this_plugin": "Its wide bands and single linked control set make repeatable bus-level contouring faster, while the Big Shelf's built-in dip avoids a simple full low-shelf lift."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Equalizers",
+        "goal": "Precise cleanup plus Core Vintage Equalizers — Single's broad character in one reorderable EQ environment.",
+        "order": "Equalizers Modern → Core Vintage Equalizers — Single in the Vintage slot",
+        "setup": "Create only the necessary modern cuts or dynamic bands, load Core Vintage Equalizers — Single, then compare M→V with V→M at matched output.",
+        "why_it_works": "Modern bands add narrow or dynamic control around the constrained model. Order becomes audible when dynamics or level-dependent model behavior makes the stages non-commutative.",
+        "caution": "With static linear stages, reversing order may make no audible difference; do not invent one. Re-check level whenever dynamics or modeled saturation is active.",
+        "basis": "documented",
+        "source_url": "https://www.softube.com/user-manuals/equalizers"
+      }
+    ],
+    "insider_note": "Documented behavior: only the four tonal bands are parallel. Bass Cut and Air Cut switch to 12 dB/octave filters processed in series with the rest of the EQ.",
+    "avoid_when": "Avoid it for independent left/right or M/S correction—use Dual—or when exact additive gains and narrow notches are required.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Core Vintage Equalizers user manual",
+          "url": "https://www.softube.com/user-manuals/core-vintage-equalizers"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Core Vintage Equalizers — Dual",
+    "section": 1,
+    "comparative_edge": "Choose Dual over Single for channel mismatch, deliberate stereo asymmetry, or M/S contouring; the tone is otherwise the same. Choose Reference 1998 when four bands per side need stronger color and continuous shelf/bell selection. Choose Equalizers for dynamic or narrow stereo repair.",
+    "advanced_moves": [
+      {
+        "setup": "On a stereo overhead or room pair, begin linked in L/R and build a broad tonal balance that works for the stronger channel.",
+        "action": "Unlink, bypass one side at a time, and adjust only the band responsible for the mismatch. Relink for later global changes after confirming the image at equal output.",
+        "listen_for": "The phantom center should stop leaning without cymbal position or room decay drifting when the kit gets louder.",
+        "why_it_works": "The Dual model provides independent full control sets and per-channel bypass while retaining the same passive-parallel curves."
+      },
+      {
+        "setup": "For a wide synth bus, switch to M/S and leave channels unlinked; check the central bass in mono before processing.",
+        "action": "Use Side Air for width perception and Side Bass Cut to prevent low difference energy, then compensate Mid with a smaller broad gain move if the center feels recessed.",
+        "listen_for": "Width should increase above the bass while mono retains the source's weight and the stereo image remains stable across notes.",
+        "why_it_works": "M/S separates sum and difference, and the serial Bass Cut can constrain Side lows independently of the parallel tonal bands."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Jazz — Stereo piano",
+        "source_or_bus": "Stereo piano",
+        "application": "Correct a bright microphone side with one unlinked Air or mid move, then relink for broad whole-instrument balance.",
+        "why_this_plugin": "It resolves capture asymmetry without imposing a narrow digital notch or requiring two separate plugin instances."
+      },
+      {
+        "context_type": "bus",
+        "context": "Shoegaze — Layered guitar bus",
+        "source_or_bus": "Layered guitar bus",
+        "application": "Use M/S to reduce low-mid Side accumulation while preserving a dense Mid core, then add a broad Side Air lift.",
+        "why_this_plugin": "Independent passive curves can simplify a crowded stereo wall while sounding less clinical than per-band surgical editing."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Equalizers",
+        "goal": "Precise cleanup plus Core Vintage Equalizers — Dual's broad character in one reorderable EQ environment.",
+        "order": "Equalizers Modern → Core Vintage Equalizers — Dual in the Vintage slot",
+        "setup": "Create only the necessary modern cuts or dynamic bands, load Core Vintage Equalizers — Dual, then compare M→V with V→M at matched output.",
+        "why_it_works": "Modern bands add narrow or dynamic control around the constrained model. Order becomes audible when dynamics or level-dependent model behavior makes the stages non-commutative.",
+        "caution": "With static linear stages, reversing order may make no audible difference; do not invent one. Re-check level whenever dynamics or modeled saturation is active.",
+        "basis": "documented",
+        "source_url": "https://www.softube.com/user-manuals/equalizers"
+      }
+    ],
+    "insider_note": "Documented behavior: the center VU meter is intentionally imprecise and is mainly useful for seeing level differences, especially in M/S mode; do not use it as a calibration meter.",
+    "avoid_when": "Avoid Dual when you will keep both sides linked throughout; Single gives the same signal processing with less interface overhead.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Core Vintage Equalizers user manual",
+          "url": "https://www.softube.com/user-manuals/core-vintage-equalizers"
+        },
+        {
+          "title": "Softube Equalizers user manual",
+          "url": "https://www.softube.com/user-manuals/equalizers"
+        }
+      ]
+    }
+  },
+  {
+    "name": "British Class A Equalizer",
+    "section": 1,
+    "comparative_edge": "Choose it over American Class A when a stepped British circuit response and the distinction between band OFF and 0 dB are part of the tone. Choose American Class A for proportional-Q punch and gain multipliers; choose Trident A-Range for more obvious cross-band interaction and post-EQ saturation.",
+    "advanced_moves": [
+      {
+        "setup": "With all gains at 0 dB, move every Frequency selector from OFF to a musically plausible position before boosting or cutting.",
+        "action": "A/B the engaged-zero state against true band OFF, then keep only the bands whose baseline coloration helps. Make gain changes after choosing that circuit state.",
+        "listen_for": "Low-mid solidity or top contour may change even without indicated gain; reject engaged bands that make the source smaller before any EQ move.",
+        "why_it_works": "The modeled bands are not perfectly flat at 0 dB, while OFF removes each band from the circuit."
+      },
+      {
+        "setup": "On a drum bus or bass source, set the low shelf for weight and use the nearest low-cut filter in a preceding or host stage if available.",
+        "action": "Raise the shelf into the cutoff rather than boosting an unrestricted low end, then use one mid band with higher Q only for attack definition.",
+        "listen_for": "The low end should feel concentrated rather than simply louder; kick and bass pitch should remain separable.",
+        "why_it_works": "A broad shelf working against a nearby cut can form a focused low-frequency shoulder while the stepped mid retains the console vocabulary."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Roots reggae — Bass guitar",
+        "source_or_bus": "Bass guitar",
+        "application": "Use the low shelf for controlled foundation and one mid band for audibility on small speakers, preserving the engaged-zero circuit color if helpful.",
+        "why_this_plugin": "Its fixed points and modeled baseline tone make a few decisive moves easier than managing a fully parametric curve."
+      },
+      {
+        "context_type": "bus",
+        "context": "Garage rock — Drum bus",
+        "source_or_bus": "Drum bus",
+        "application": "Use stepped low and upper-mid moves to add mass and stick attack without smoothing the source into a mastering-style contour.",
+        "why_this_plugin": "It sits between the thicker restraint of passive EQs and the more unruly band interaction of Trident A-Range."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented behavior: moving a band to OFF produces less coloration than leaving its gain at 0 dB. This makes the frequency selector part of circuit auditioning, not only center selection.",
+    "avoid_when": "Avoid it when you need exact frequency matching, continuous Q, or a guaranteed flat baseline with all gains at zero.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube British Class A user manual",
+          "url": "https://www.softube.com/user-manuals/british-class-a"
+        },
+        {
+          "title": "Softube British Class A Equalizer product page",
+          "url": "https://www.softube.com/plug-ins/british-class-a-equalizer"
+        }
+      ]
+    }
+  },
+  {
+    "name": "American Class A Equalizer",
+    "section": 1,
+    "comparative_edge": "Choose it over British Class A for proportional-Q focus, four mastering-derived bands, and switchable gain resolution. Choose British for its engaged-band circuit tone and console shelving vocabulary; choose Curve Bender when a gentler mastering contour matters more than forward band definition.",
+    "advanced_moves": [
+      {
+        "setup": "On drums or guitars, set Gain Multiplier to X1 and use a deliberately larger boost to identify the frequency that creates the right attack or body.",
+        "action": "Without changing Frequency, step the multiplier to X0.5 or X0.25 and retain only the amount that survives level-matched context.",
+        "listen_for": "The chosen feature should remain easier to follow without the source jumping ahead in level or developing a narrow ring.",
+        "why_it_works": "The multiplier preserves the hardware gain positions while scaling maximum moves from ±12 dB to ±6 or ±3 dB."
+      },
+      {
+        "setup": "For a resonant but underpowered source, choose a mid frequency with a small boost first, then increase gain one hardware step at a time.",
+        "action": "Let proportional Q narrow the response as boost grows instead of reaching for a separate Q control; compare against a wider, smaller move at the adjacent frequency.",
+        "listen_for": "The source should gain localized punch rather than a broad tonal tilt; stop when the center begins to sound detached from the instrument.",
+        "why_it_works": "The modeled proportional-Q design becomes more focused as gain increases, coupling intensity and bandwidth."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Funk — Drum close-mic bus",
+        "source_or_bus": "Drum close-mic bus",
+        "application": "Use X1 to find the band that releases snare and kick attack, then reduce the multiplier for mix-level precision.",
+        "why_this_plugin": "Proportional Q turns stronger stepped boosts into focused punch without a separate bandwidth search."
+      },
+      {
+        "context_type": "bus",
+        "context": "Synthwave — Analog polysynth bus",
+        "source_or_bus": "Analog polysynth bus",
+        "application": "Use one outer shelf for scale and a mid band for articulation, then reduce both with the common multiplier for a repeatable smaller version.",
+        "why_this_plugin": "The multiplier makes a committed broad shape easy to scale down while retaining fixed frequency relationships."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented behavior: the displayed parameter values always correspond to X1 even when X0.5 or X0.25 is active. A recalled panel value can therefore overstate the actual gain unless the multiplier is noted.",
+    "avoid_when": "Avoid it for arbitrary notch frequencies, continuously variable stereo correction, or when the stepped architecture slows rather than accelerates the decision.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube American Class A user manual",
+          "url": "https://www.softube.com/user-manuals/american-class-a"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Trident A-Range",
+    "section": 1,
+    "comparative_edge": "Choose it over British or American Class A when audible cross-band interaction and a dedicated post-EQ saturation stage are useful, especially on sources that should feel altered rather than merely balanced. Choose either Class A model for more repeatable stepped contour, or Equalizers for correction.",
+    "advanced_moves": [
+      {
+        "setup": "Set both mid gains to zero, choose a useful High Mid frequency, and play sustained material while moving the Low Mid frequency selector.",
+        "action": "Keep the zero-gain Low Mid position that improves the High Mid response, then add gain only after the interaction helps. Repeat with the outer bands bypassed.",
+        "listen_for": "The chosen upper-mid feature should change shape or urgency even before Low Mid gain moves; avoid combinations that introduce a nasal ring.",
+        "why_it_works": "The modeled filters interact electrically, so a zero-gain band's frequency selection can alter another band's response."
+      },
+      {
+        "setup": "On a parallel drum or guitar bus, establish the EQ shape with Saturation switched OFF and output matched.",
+        "action": "Enable Saturation and raise it until only peaks light the indicator, then revisit any large boosts because they now drive the post-EQ stage harder.",
+        "listen_for": "Peaks should round and the EQ should feel more integrated without continuous fuzz or a collapsed transient envelope.",
+        "why_it_works": "Saturation follows the EQ and is level-dependent; the control is compensated input gain into that modeled stage."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Post-punk — Electric guitar bus",
+        "source_or_bus": "Electric guitar bus",
+        "application": "Use interacting mid selectors to find a wiry shape, then let occasional peaks reach the saturation stage rather than adding broadband distortion.",
+        "why_this_plugin": "Its band coupling can create a more complex upper-mid signature than the isolated bands in the Class A alternatives."
+      },
+      {
+        "context_type": "bus",
+        "context": "Broken beat — Drum parallel",
+        "source_or_bus": "Drum parallel",
+        "application": "Combine stacked pass-filter buttons with a mid boost and sparse saturation, then blend under the unprocessed kit.",
+        "why_this_plugin": "Combinable irregular filters and post-EQ drive turn one instance into a constrained, animated parallel color path."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Equalizers",
+        "goal": "Precise cleanup plus Trident A-Range's broad character in one reorderable EQ environment.",
+        "order": "Equalizers Modern → Trident A-Range in the Vintage slot",
+        "setup": "Create only the necessary modern cuts or dynamic bands, load Trident A-Range, then compare M→V with V→M at matched output.",
+        "why_it_works": "Modern bands add narrow or dynamic control around the constrained model. Order becomes audible when dynamics or level-dependent model behavior makes the stages non-commutative.",
+        "caution": "With static linear stages, reversing order may make no audible difference; do not invent one. Re-check level whenever dynamics or modeled saturation is active.",
+        "basis": "documented",
+        "source_url": "https://www.softube.com/user-manuals/equalizers"
+      }
+    ],
+    "insider_note": "Documented behavior: the three high- or low-pass buttons work independently and may be engaged together, creating progressively stronger, non-ideal cutoff behavior rather than selecting one mutually exclusive frequency.",
+    "avoid_when": "Avoid it when band independence, exact repeatability from nominal values, or distortion-free large boosts are requirements.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Trident A-Range user manual",
+          "url": "https://www.softube.com/user-manuals/trident-a-range"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Abbey Road RS127 Rack",
+    "section": 1,
+    "comparative_edge": "Choose Rack over RS127 Box when you want the original 2.7/3.5/10 kHz centers and the less exaggerated response without transformer interaction. Choose RS135 for a single fixed 8 kHz lift, or a modern EQ when the center or bandwidth must move continuously.",
+    "advanced_moves": [
+      {
+        "setup": "On a source needing more presence than one ±10 dB unit can supply, insert two Rack instances in series at zero before setting either.",
+        "action": "Split the intended boost between the two units, optionally choosing adjacent frequency points, rather than maxing one instance.",
+        "listen_for": "Presence should build as a wider, layered emphasis; stop if consonants or pick noise form one obvious whistle.",
+        "why_it_works": "Abbey Road historically used two RS127s in series for heavier treatment, and the Rack's boost is a broad bell rather than a shelf."
+      },
+      {
+        "setup": "For a crowded vocal or guitar, begin with a 2 dB cut at each frequency choice instead of sweeping a boost.",
+        "action": "Select the cut that creates the most space around the source, then add a smaller boost at another center in a second instance only if presence was lost.",
+        "listen_for": "The source should become easier to place without turning dull; reject any cut that merely reduces apparent level.",
+        "why_it_works": "Rack cuts use a somewhat sharper bell than boosts, so subtractive placement and additive presence are different curve choices."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "1960s-inspired pop — Backing-vocal bus",
+        "source_or_bus": "Backing-vocal bus",
+        "application": "Use one broad stepped presence move to place the stack, or two series instances when a stronger period-style contour is intentional.",
+        "why_this_plugin": "The three historical centers impose a specific presence vocabulary that a freely swept bell does not."
+      },
+      {
+        "context_type": "bus",
+        "context": "Orchestral soundtrack — Woodwind bus",
+        "source_or_bus": "Woodwind bus",
+        "application": "Use a small 3.5 or 10 kHz step to improve audibility, comparing the asymmetric cut curve if the same region is already congested.",
+        "why_this_plugin": "Its broad boost and slightly sharper cut encourage small, role-based ensemble placement rather than detailed surgery."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Abbey Road RS127 Rack",
+        "goal": "Build a heavier or wider historical presence contour than one three-frequency unit permits.",
+        "order": "Abbey Road RS127 Rack → second Abbey Road RS127 Rack",
+        "setup": "Split the intended gain between two instances; use the same center for intensity or adjacent centers for a broader compound lift.",
+        "why_it_works": "Two broad bell responses in series create a stronger or layered contour, mirroring the documented Abbey Road practice of cascading RS127 units.",
+        "caution": "Series boosts accumulate level and sibilance quickly. Match output and do not assume 2 dB plus 2 dB sounds subtle.",
+        "basis": "attributed",
+        "source_url": "https://www.softube.com/user-manuals/abbey-road-brilliance-pack"
+      },
+      {
+        "partner": "Equalizers",
+        "goal": "Precise cleanup plus Abbey Road RS127 Rack's broad character in one reorderable EQ environment.",
+        "order": "Equalizers Modern → Abbey Road RS127 Rack in the Vintage slot",
+        "setup": "Create only the necessary modern cuts or dynamic bands, load Abbey Road RS127 Rack, then compare M→V with V→M at matched output.",
+        "why_it_works": "Modern bands add narrow or dynamic control around the constrained model. Order becomes audible when dynamics or level-dependent model behavior makes the stages non-commutative.",
+        "caution": "With static linear stages, reversing order may make no audible difference; do not invent one. Re-check level whenever dynamics or modeled saturation is active.",
+        "basis": "documented",
+        "source_url": "https://www.softube.com/user-manuals/equalizers"
+      }
+    ],
+    "insider_note": "Documented behavior: boost has a broad 'blunt' bell, while cut is described as a 'medium blunt' bell. Equal positive and negative settings are not mirrored responses.",
+    "avoid_when": "Avoid it for sibilance control, air shelving, or any target outside its three fixed centers; use Equalizers or RS135 as appropriate.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Abbey Road Brilliance Pack user manual",
+          "url": "https://www.softube.com/user-manuals/abbey-road-brilliance-pack"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Abbey Road RS127 Box",
+    "section": 1,
+    "comparative_edge": "Choose Box over Rack when stronger, sharper high boosts and transformer-shifted centers are the desired event, not when you merely need more of the same setting. Choose Rack for gentler historical presence and RS135 for a simpler 8 kHz-only lift.",
+    "advanced_moves": [
+      {
+        "setup": "Place Rack and Box on matched duplicate paths, choose the same faceplate frequency and 2 dB gain, and level-match their outputs.",
+        "action": "Raise both one step at a time, listening for when Box's transformer interaction becomes the useful differentiator; keep only the version that solves the source.",
+        "listen_for": "Box should become more focused and assertive at high boosts, not simply louder; if the distinction vanishes after matching, use Rack.",
+        "why_it_works": "The Box models interfacing-transformer interaction that shifts centers and produces sharper Q and more effective boost at high settings."
+      },
+      {
+        "setup": "On a room or effects return, insert Box before a compressor that has no sidechain EQ.",
+        "action": "Boost the presence region into the compressor, set compression from the newly emphasized transients, then reduce Box output or downstream makeup to match bypass.",
+        "listen_for": "Bright events should pull the return backward dynamically while quieter ambience stays alive; stop if cymbals pump the whole image.",
+        "why_it_works": "The Box's stronger presence curve changes what the following broadband detector sees, creating frequency-biased movement without a dynamic EQ."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Garage rock — Drum-room parallel",
+        "source_or_bus": "Drum-room parallel",
+        "application": "Use Box to exaggerate upper-room transients before compression, then blend the return beneath the direct kit.",
+        "why_this_plugin": "Its transformer-shifted, sharper boost creates a more obvious period-textured trigger path than the cleaner Rack version."
+      },
+      {
+        "context_type": "bus",
+        "context": "Industrial pop — Distorted synth bus",
+        "source_or_bus": "Distorted synth bus",
+        "application": "Use a small Box cut to control the same broad region its boost would exaggerate, retaining its non-mirrored curve character.",
+        "why_this_plugin": "The fixed, transformer-affected response imposes an identifiable contour without adding another general-purpose distortion stage."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Equalizers",
+        "goal": "Precise cleanup plus Abbey Road RS127 Box's broad character in one reorderable EQ environment.",
+        "order": "Equalizers Modern → Abbey Road RS127 Box in the Vintage slot",
+        "setup": "Create only the necessary modern cuts or dynamic bands, load Abbey Road RS127 Box, then compare M→V with V→M at matched output.",
+        "why_it_works": "Modern bands add narrow or dynamic control around the constrained model. Order becomes audible when dynamics or level-dependent model behavior makes the stages non-commutative.",
+        "caution": "With static linear stages, reversing order may make no audible difference; do not invent one. Re-check level whenever dynamics or modeled saturation is active.",
+        "basis": "documented",
+        "source_url": "https://www.softube.com/user-manuals/equalizers"
+      }
+    ],
+    "insider_note": "Documented behavior: the labels remain 2.7, 3.5, and 10 kHz, but modeled centers are about 2.9, 4.2, and 11.5 kHz. Do not copy Rack settings by label and expect a match.",
+    "avoid_when": "Avoid it when you need the labeled frequency to be literal, a subtle broad lift at high gain, or independent transformer drive control.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Abbey Road Brilliance Pack user manual",
+          "url": "https://www.softube.com/user-manuals/abbey-road-brilliance-pack"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Abbey Road RS135",
+    "section": 1,
+    "comparative_edge": "Choose RS135 when the decision is specifically a stepped 8 kHz bell lift. RS127 Rack offers three centers plus cut, RS127 Box adds transformer-altered aggression, and Tonelux Tilt or Equalizers are better when brightness must include a broader spectral rebalance.",
+    "advanced_moves": [
+      {
+        "setup": "On a vocal bus, place RS135 before a de-esser or HF limiter and begin with one 2 dB step.",
+        "action": "Increase RS135 until articulation is right, then set the dynamic processor to catch only newly excessive consonants rather than reversing the entire lift.",
+        "listen_for": "Vowels should stay present while sharp consonants return to their previous apparent level; stop if the chain creates a lisp or constant top-end suppression.",
+        "why_it_works": "A fixed 8 kHz lift can establish stable presence while a following level-dependent stage controls only events that overshoot it."
+      },
+      {
+        "setup": "For arrangement emphasis, automate bypass rather than Gain so every active section uses the same stepped hardware-style setting.",
+        "action": "Engage RS135 only in choruses or featured phrases and cross-check the transition on cymbals and breaths.",
+        "listen_for": "The section should step forward as a deliberate production change without an audible click or a sudden noise-floor jump.",
+        "why_it_works": "With only one fixed curve and stepped gain, bypass automation preserves a repeatable tonal state instead of introducing intermediate settings."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Soul ballad — Lead vocal",
+        "source_or_bus": "Lead vocal",
+        "application": "Place the fixed 8 kHz lift before gentle de-essing to hold articulation while containing only the newly exposed sibilants.",
+        "why_this_plugin": "Its one-purpose curve makes the presence decision stable and easy to automate across an expressive performance."
+      },
+      {
+        "context_type": "bus",
+        "context": "Lo-fi house — Sampled hi-hat and percussion bus",
+        "source_or_bus": "Sampled hi-hat and percussion bus",
+        "application": "Use one or two steps to recover a narrow historical-style presence after bandwidth reduction, then leave the lower mids untouched.",
+        "why_this_plugin": "The fixed bell restores attack without behaving like a wide modern air shelf that would also raise hiss broadly."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Equalizers",
+        "goal": "Precise cleanup plus Abbey Road RS135's broad character in one reorderable EQ environment.",
+        "order": "Equalizers Modern → Abbey Road RS135 in the Vintage slot",
+        "setup": "Create only the necessary modern cuts or dynamic bands, load Abbey Road RS135, then compare M→V with V→M at matched output.",
+        "why_it_works": "Modern bands add narrow or dynamic control around the constrained model. Order becomes audible when dynamics or level-dependent model behavior makes the stages non-commutative.",
+        "caution": "With static linear stages, reversing order may make no audible difference; do not invent one. Re-check level whenever dynamics or modeled saturation is active.",
+        "basis": "documented",
+        "source_url": "https://www.softube.com/user-manuals/equalizers"
+      }
+    ],
+    "insider_note": "Documented behavior: the original boxes were designed for 16.4 kHz, then modified at Abbey Road so the operating center became 8 kHz; the plug-in models the modified 8 kHz version.",
+    "avoid_when": "Avoid it if you need a cut, a movable center, or a shelf; this is a boost-only medium-sharp bell with 2 dB steps.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Abbey Road Brilliance Pack user manual",
+          "url": "https://www.softube.com/user-manuals/abbey-road-brilliance-pack"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Passive Equalizer",
+    "section": 1,
+    "comparative_edge": "Choose it over Active Equalizer for coupled, broad tonal shaping where every move can influence the whole response. Choose Active for firmer three-band focus and more predictable cuts; choose Core Vintage when you want a modernized passive-parallel layout with explicit Q and cut modes.",
+    "advanced_moves": [
+      {
+        "setup": "On acoustic material, begin with all gains neutral and decide the desired high-frequency change first.",
+        "action": "Set High Gain, then re-check Low and Mid before touching them; compensate only after hearing how the passive network has already moved those regions.",
+        "listen_for": "Top-end openness should arrive without thinning body or overfilling the midrange; do not assume an apparent low change needs its own equal-and-opposite knob move.",
+        "why_it_works": "The modeled passive controls interact like a guitar tone stack, so a treble adjustment can alter bass and mid response."
+      },
+      {
+        "setup": "For a snare, guitar, or piano needing broad mid character, raise Mid Boost moderately and step through its frequency choices.",
+        "action": "After choosing the center, reduce gain and compare the neighboring frequency; treat the changing bandwidth as part of the selection.",
+        "listen_for": "Lower centers should feel broad and weighty while higher centers become more focused; stop when the resonance separates from the instrument.",
+        "why_it_works": "The mid filter becomes narrower at higher frequency settings, so frequency selection simultaneously changes spectral focus."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Acoustic jazz — Drum overheads",
+        "source_or_bus": "Drum overheads",
+        "application": "Set the high control for cymbal openness, then use the resulting network interaction as the starting point for body rather than independently boosting lows.",
+        "why_this_plugin": "Its coupled response can rebalance a coherent stereo capture with fewer isolated-sounding band decisions."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Neo-soul — Electric piano",
+        "source_or_bus": "Electric piano",
+        "application": "Choose a low-mid Mid setting for body, then adjust High Gain while monitoring how the chord's center shifts.",
+        "why_this_plugin": "The frequency-dependent mid width and passive coupling favor whole-instrument reshaping over narrow key-noise correction."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Equalizers",
+        "goal": "Precise cleanup plus Passive Equalizer's broad character in one reorderable EQ environment.",
+        "order": "Equalizers Modern → Passive Equalizer in the Vintage slot",
+        "setup": "Create only the necessary modern cuts or dynamic bands, load Passive Equalizer, then compare M→V with V→M at matched output.",
+        "why_it_works": "Modern bands add narrow or dynamic control around the constrained model. Order becomes audible when dynamics or level-dependent model behavior makes the stages non-commutative.",
+        "caution": "With static linear stages, reversing order may make no audible difference; do not invent one. Re-check level whenever dynamics or modeled saturation is active.",
+        "basis": "documented",
+        "source_url": "https://www.softube.com/user-manuals/equalizers"
+      }
+    ],
+    "insider_note": "Documented behavior: the Low control is labeled like stepped gain at 60 Hz, but actually shifts a shelving filter so the measured gain at 60 Hz changes. The panel is not a literal description of the circuit action.",
+    "avoid_when": "Avoid it for independent band automation, repeatable narrow cuts, or cases where changing treble must leave bass and mids untouched.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Passive-Active Pack user manual",
+          "url": "https://www.softube.com/user-manuals/passive-active-pack"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Active Equalizer",
+    "section": 1,
+    "comparative_edge": "Choose it over Passive Equalizer when the source needs firmer, more localized boosts or cuts and less cross-control interaction. Choose Equalizers when full-range overlap, notches, dynamic behavior, or exact summed attenuation matters; Active retains the Filtek circuit's non-additive overlap.",
+    "advanced_moves": [
+      {
+        "setup": "On a congested source, set two neighboring bands to overlap the same broad problem and start with moderate cuts.",
+        "action": "Increase both toward the same nominal attenuation while moving their centers apart until the congestion clears without a deep central hole.",
+        "listen_for": "The region should flatten broadly rather than collapse at the overlap; stop if the source loses its main pitch or vowel.",
+        "why_it_works": "The modeled Filtek circuit limits the summed effect of overlapping cuts instead of arithmetically doubling them like typical digital bands."
+      },
+      {
+        "setup": "For a forward guitar or snare, bypass two bands and use only the band whose native range contains the target.",
+        "action": "Select Width before final Gain: choose the narrow position to expose the attack center, then widen only if it sounds detached in context.",
+        "listen_for": "The source should become readable at lower fader level without adding a whistle or hollowing adjacent tone.",
+        "why_it_works": "The three bands occupy intentionally different ranges, and their width/bypass choices preserve the active unit's focused response."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Post-hardcore — Guitar bus",
+        "source_or_bus": "Guitar bus",
+        "application": "Use overlapping moderate low-mid cuts to clear the vocal without producing the deep notch two ordinary digital bands would create.",
+        "why_this_plugin": "Its non-additive cut overlap supports broad congestion control while retaining a hard-edged active character."
+      },
+      {
+        "context_type": "bus",
+        "context": "Electro — Snare and clap bus",
+        "source_or_bus": "Snare and clap bus",
+        "application": "Use one focused high band for crack and the low cut to constrain body before committing the sound to saturation downstream.",
+        "why_this_plugin": "The independent active bands define a compact trigger-ready spectrum more predictably than the coupled Passive model."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Equalizers",
+        "goal": "Precise cleanup plus Active Equalizer's broad character in one reorderable EQ environment.",
+        "order": "Equalizers Modern → Active Equalizer in the Vintage slot",
+        "setup": "Create only the necessary modern cuts or dynamic bands, load Active Equalizer, then compare M→V with V→M at matched output.",
+        "why_it_works": "Modern bands add narrow or dynamic control around the constrained model. Order becomes audible when dynamics or level-dependent model behavior makes the stages non-commutative.",
+        "caution": "With static linear stages, reversing order may make no audible difference; do not invent one. Re-check level whenever dynamics or modeled saturation is active.",
+        "basis": "documented",
+        "source_url": "https://www.softube.com/user-manuals/equalizers"
+      }
+    ],
+    "insider_note": "Documented behavior: two overlapping bands each set to –16 dB do not sum to –32 dB; the combined attenuation remains around –16 dB because of the modeled topology.",
+    "avoid_when": "Avoid it when you need ordinary additive band math, full-range bands, or a visual analyzer to match an exact target curve.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Passive-Active Pack user manual",
+          "url": "https://www.softube.com/user-manuals/passive-active-pack"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Focusing Equalizer",
+    "section": 1,
+    "comparative_edge": "Choose it over the separate Passive or Active Equalizer when the useful spectrum can be defined first and you want three automatically placed bands inside it. Choose Equalizers when exact centers or dynamic bands matter; choose Focusing when constrained range, selectable analog character, and saturation should act as one workflow.",
+    "advanced_moves": [
+      {
+        "setup": "Bypass saturation, set Equalizer Type to Active, and ignore Low/Mid/High Gain while defining the source's useful bandwidth with the cut faders.",
+        "action": "Move Low and High Cut until only necessary range remains, then shape with the three gains. Toggle Passive without changing gains and retain the topology that better fits the source width.",
+        "listen_for": "Band moves should stay musically relevant as the range changes; the Passive version should broaden, not simply darken, the result.",
+        "why_it_works": "All three band centers follow the two cutoff settings, and the topology switch changes both character and cut slope."
+      },
+      {
+        "setup": "After the EQ balance is settled, switch EQ Type to OFF temporarily and audition the saturation circuit alone.",
+        "action": "Choose Keep Low, Neutral, or Keep High from the source's vulnerable region, add only enough Saturation to register movement, then re-enable the EQ and re-check output.",
+        "listen_for": "Energy should rise without the protected extreme becoming fuzzy or thin; stop if saturation masks the range decisions already made.",
+        "why_it_works": "The EQ and saturation circuits can be bypassed independently, and the saturation modes spectrally bias what remains intact."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Tech house — Percussion loop",
+        "source_or_bus": "Percussion loop",
+        "application": "Constrain the loop between the kick and hats, let the three derived bands rebalance that window, then use Keep Low saturation to preserve residual thump.",
+        "why_this_plugin": "Its frequency window and automatically following bands make a sample occupy a deliberate arrangement slot quickly."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Singer-songwriter — Acoustic guitar",
+        "source_or_bus": "Acoustic guitar",
+        "application": "Use Passive topology inside a carefully chosen bandwidth, then add restrained Keep High saturation if body needs density without extra pick grit.",
+        "why_this_plugin": "It combines broad acoustic-style curves with explicit range management, reducing the need for separate filters and color stages."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Equalizers",
+        "goal": "Precise cleanup plus Focusing Equalizer's broad character in one reorderable EQ environment.",
+        "order": "Equalizers Modern → Focusing Equalizer in the Vintage slot",
+        "setup": "Create only the necessary modern cuts or dynamic bands, load Focusing Equalizer, then compare M→V with V→M at matched output.",
+        "why_it_works": "Modern bands add narrow or dynamic control around the constrained model. Order becomes audible when dynamics or level-dependent model behavior makes the stages non-commutative.",
+        "caution": "With static linear stages, reversing order may make no audible difference; do not invent one. Re-check level whenever dynamics or modeled saturation is active.",
+        "basis": "documented",
+        "source_url": "https://www.softube.com/user-manuals/equalizers"
+      }
+    ],
+    "insider_note": "Documented behavior: Passive mode uses 6 dB/octave cuts and Active uses 18 dB/octave cuts. Also, full Low and High boosts in Passive mode can effectively cancel the Mid control.",
+    "avoid_when": "Avoid it when band centers must remain fixed while filters move, or when full Low and High boosts are essential in Passive mode.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Passive-Active Pack user manual",
+          "url": "https://www.softube.com/user-manuals/passive-active-pack"
+        },
+        {
+          "title": "Softube Equalizers user manual",
+          "url": "https://www.softube.com/user-manuals/equalizers"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Tube-Tech PE 1C",
+    "section": 1,
+    "comparative_edge": "Use this legacy single chiefly for recalling sessions that already contain it. For new work, Equalizers Mk II provides the same PE role beside ME 1B in a current container. Reference 1956 adds M/S, independent channels, and Headroom; PE 1C retains the specific Tube-Tech frequency set and filter interaction.",
+    "advanced_moves": [
+      {
+        "setup": "On a bass-heavy source, set Low Frequency to the musical weight area and begin with Boost alone at a conservative amount.",
+        "action": "Raise Atten until the low-mid shoulder clears, then reduce both controls together if the contour is right but the effect is oversized. Match output before deciding.",
+        "listen_for": "Fundamental weight should remain while boxiness above it recedes; stop when short notes lose body or the low end separates from the source.",
+        "why_it_works": "The low Boost and Atten shelves use slightly different cutoff positions despite sharing a selector, creating a contour rather than cancellation."
+      },
+      {
+        "setup": "For a bright source needing openness without edge, set High Boost to a broad Bandwidth and choose a frequency below the apparent air region.",
+        "action": "Add boost, then use the independent high Atten shelf at 5, 10, or 20 kHz to restrain the extreme top while preserving the bell's lower shoulder.",
+        "listen_for": "Presence should expand without hiss or consonants dominating; avoid a scooped transition between the bell and shelf.",
+        "why_it_works": "High boost is a variable-width bell, while attenuation is a separate shelf with its own three frequency choices."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Classic soul — Electric bass",
+        "source_or_bus": "Electric bass",
+        "application": "Use interacting low Boost and Atten for weight plus space, with output matching to separate tone from level.",
+        "why_this_plugin": "The specific Tube-Tech offset shelves produce a familiar passive program-EQ contour without the newer M/S or headroom extensions."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Acoustic pop — Lead vocal",
+        "source_or_bus": "Lead vocal",
+        "application": "Combine a broad high bell with light high shelving attenuation to open articulation while containing extreme brightness.",
+        "why_this_plugin": "Its two independent high-frequency paths can create lift and restraint in one deliberately limited interface."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Tube-Tech ME 1B",
+        "goal": "Add cut-only midrange control and low/high bell boosts around PE 1C's program shelves.",
+        "order": "Tube-Tech PE 1C → Tube-Tech ME 1B",
+        "setup": "Set PE low/high scale first, then use ME Mid Dip for leftover projection and its outer peaks only where PE lacks bell control.",
+        "why_it_works": "Tube-Tech designed ME 1B to cover frequencies and curve directions PE 1C cannot address; Softube now combines them in Mk II.",
+        "caution": "Overlapping passive boosts accumulate level. For new sessions prefer the current Equalizers Mk II container over these legacy singles.",
+        "basis": "documented",
+        "source_url": "https://www.softube.com/plug-ins/tube-tech-equalizers-mk-ii"
+      }
+    ],
+    "insider_note": "Compatibility note: Softube lists Tube-Tech PE 1C as a legacy product with support ending October 31, 2026. Preserve it for recall, but prefer Mk II for new session dependencies.",
+    "avoid_when": "Avoid starting new long-lived projects with this legacy single when Equalizers Mk II is available, and avoid it for midrange cuts or dynamic control.",
+    "evidence": {
+      "basis": "compatibility-note",
+      "sources": [
+        {
+          "title": "Softube Tube-Tech PE 1C user manual",
+          "url": "https://www.softube.com/user-manuals/tube-tech-pe-1c-pultec-equalizer"
+        },
+        {
+          "title": "Softube legacy products support policy",
+          "url": "https://www.softube.com/support/system-requirements/which-products-are-legacy-products"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Tube-Tech ME 1B",
+    "section": 1,
+    "comparative_edge": "Use this legacy single for recall; use Equalizers Mk II for new work and direct access to its PE 1C complement. Choose ME 1B over PE 1C when the decision is midrange-only: it provides a low boost bell, broad cut-only mid band, and high boost bell rather than shelves.",
+    "advanced_moves": [
+      {
+        "setup": "On a thick guitar, piano, or vocal, choose the same overlapping center for Low Peak and Mid Dip at a moderate amount.",
+        "action": "Increase Mid Dip first, then restore selected body with Low Peak until the cut develops a useful lower shoulder instead of a hollow center.",
+        "listen_for": "Mud should recede while the source retains weight just below the removed region; stop if the overlap creates a honk at the shoulder.",
+        "why_it_works": "The boost-only low bell and cut-only mid bell overlap from 200 Hz to 1 kHz and interact as a compound curve."
+      },
+      {
+        "setup": "Pair ME 1B after PE 1C when the program EQ's broad high lift leaves the source too forward in the middle.",
+        "action": "Use ME 1B Mid Dip to remove the offending center, then use High Peak only if articulation was lost. Compare both units together against bypass at matched output.",
+        "listen_for": "The source should keep PE 1C scale while the middle relaxes; avoid replacing one broad excess with a narrow upper-mid spike.",
+        "why_it_works": "ME 1B was designed to cover the bell-shaped low/high boosts and mid attenuation that PE 1C does not provide."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Jazz fusion — Electric piano",
+        "source_or_bus": "Electric piano",
+        "application": "Overlap Low Peak and Mid Dip to retain chord weight while making room for bass and guitar in the lower middle.",
+        "why_this_plugin": "Its one-directional overlapping bands encourage a shaped pocket rather than a generic bell cut."
+      },
+      {
+        "context_type": "bus",
+        "context": "Alternative R&B — Lead-vocal bus",
+        "source_or_bus": "Lead-vocal bus",
+        "application": "Use the broad Mid Dip to relax projection, then a small High Peak to restore intelligibility without adding a shelf.",
+        "why_this_plugin": "The three-band midrange architecture can reposition a vocal's apparent distance without broadly changing lows or air."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Tube-Tech PE 1C",
+        "goal": "Combine dedicated midrange shaping with PE 1C's low shelves and high-frequency program contour.",
+        "order": "Tube-Tech PE 1C → Tube-Tech ME 1B",
+        "setup": "Build the broad PE contour first; use ME's cut-only middle and boost-only outer bells only to complete missing roles.",
+        "why_it_works": "ME 1B was designed as PE 1C's complement rather than as a redundant second program EQ.",
+        "caution": "For new sessions use Equalizers Mk II; the separate PE and ME plug-ins are legacy recall dependencies.",
+        "basis": "documented",
+        "source_url": "https://www.softube.com/plug-ins/tube-tech-equalizers-mk-ii"
+      }
+    ],
+    "insider_note": "Compatibility note: Softube lists Tube-Tech ME 1B as legacy with support ending October 31, 2026. Its curves also depend on control interaction and the modeled source impedance, so numeric settings are not universal hardware matches.",
+    "avoid_when": "Avoid starting new long-lived sessions with this legacy single, and avoid it when outer bands must cut or the middle must boost.",
+    "evidence": {
+      "basis": "compatibility-note",
+      "sources": [
+        {
+          "title": "Softube Tube-Tech ME 1B user manual",
+          "url": "https://www.softube.com/user-manuals/tube-tech-me-1b-midrange-equalizer"
+        },
+        {
+          "title": "Softube legacy products support policy",
+          "url": "https://www.softube.com/support/system-requirements/which-products-are-legacy-products"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Tube-Tech Equalizers Mk II",
+    "section": 1,
+    "comparative_edge": "Choose Mk II over the PE 1C or ME 1B singles for new sessions: it places their complementary program and midrange roles in one current interface. Choose Reference 1956 for independent M/S and adjustable transformer headroom, or Reference 1998 for four bands per side and stronger parallel overlap.",
+    "advanced_moves": [
+      {
+        "setup": "Start with PE 1C alone to establish the source's low and high scale; keep ME 1B bypassed and output matched.",
+        "action": "Enable ME 1B only to solve what PE leaves behind: use Mid Dip for excess projection, Low Peak for missing lower-mid continuity, or High Peak for presence below the PE air region.",
+        "listen_for": "ME should complete the contour without making the combined chain sound like six independent EQ bands; use the fewest active sections possible.",
+        "why_it_works": "The two units were designed as complements: PE emphasizes shelves/program shaping, while ME supplies overlapping boost bells and a wide cut-only mid."
+      },
+      {
+        "setup": "On a bus, create the desired PE low boost/atten relationship and note the apparent gain increase before engaging any ME band.",
+        "action": "Level-match the PE stage, add ME changes, then match again. Bypass each unit separately to verify that its tonal role survives without loudness bias.",
+        "listen_for": "Each stage should have an identifiable purpose; if bypassing either only makes the signal quieter, reduce its boosts.",
+        "why_it_works": "Multiple passive boost paths accumulate level even when the resulting curve sounds smooth, making staged matching essential for judging contribution."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Gospel — Piano and keys bus",
+        "source_or_bus": "Piano and keys bus",
+        "application": "Use PE for low/high scale and ME Mid Dip to clear the vocal range, adding High Peak only if chord articulation recedes.",
+        "why_this_plugin": "The complementary units can enlarge a harmonically dense keyboard bus while creating a broad vocal pocket in the same interface."
+      },
+      {
+        "context_type": "bus",
+        "context": "Drum and bass — Breakbeat bus",
+        "source_or_bus": "Breakbeat bus",
+        "application": "Use PE's low contour for kick weight and ME's overlapping peaks/dip to separate snare body from break noise.",
+        "why_this_plugin": "It offers two distinct passive interaction systems, useful when a sampled break needs scale and internal midrange rebalancing rather than surgical cleanup."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Equalizers",
+        "goal": "Precise cleanup plus Tube-Tech Equalizers Mk II's broad character in one reorderable EQ environment.",
+        "order": "Equalizers Modern → Tube-Tech Equalizers Mk II in the Vintage slot",
+        "setup": "Create only the necessary modern cuts or dynamic bands, load Tube-Tech Equalizers Mk II, then compare M→V with V→M at matched output.",
+        "why_it_works": "Modern bands add narrow or dynamic control around the constrained model. Order becomes audible when dynamics or level-dependent model behavior makes the stages non-commutative.",
+        "caution": "With static linear stages, reversing order may make no audible difference; do not invent one. Re-check level whenever dynamics or modeled saturation is active.",
+        "basis": "documented",
+        "source_url": "https://www.softube.com/user-manuals/equalizers"
+      },
+      {
+        "partner": "Tube-Tech CL 1B Mk II",
+        "goal": "Follow passive tone shaping with smooth optical leveling as a current-generation Tube-Tech channel chain.",
+        "order": "Tube-Tech Equalizers Mk II → Tube-Tech CL 1B Mk II",
+        "setup": "Establish low/high scale and midrange pocket with PE/ME, level-match, then ask CL 1B for restrained leveling rather than peak repair.",
+        "why_it_works": "The equalizers shape what reaches the opto detector, while CL 1B supplies envelope control absent from the passive EQ pair; Softube combines these roles in Classic Channel.",
+        "caution": "Large EQ boosts can make one region dominate compression. Re-set threshold after every meaningful pre-compressor EQ change.",
+        "basis": "documented",
+        "source_url": "https://www.softube.com/plug-ins/tube-tech-complete-collection-2"
+      }
+    ],
+    "insider_note": "Documented behavior: Mk II is explicitly a combined PE 1C and ME 1B, not a redesigned generic six-band EQ. Their one-directional bands and interactions remain the organizing logic.",
+    "avoid_when": "Avoid it when you need narrow cuts, moving resonances, sidechain dynamics, or independent M/S channels; add Equalizers for those tasks.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Tube-Tech Equalizer Collection user manual",
+          "url": "https://www.softube.com/user-manuals/tube-tech-equalizer-collection"
+        },
+        {
+          "title": "Softube Tube-Tech PE 1C user manual",
+          "url": "https://www.softube.com/user-manuals/tube-tech-pe-1c-pultec-equalizer"
+        },
+        {
+          "title": "Softube Tube-Tech ME 1B user manual",
+          "url": "https://www.softube.com/user-manuals/tube-tech-me-1b-midrange-equalizer"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Summit Audio EQF-100",
+    "section": 1,
+    "comparative_edge": "Choose it over Tube-Tech Equalizers when four boost-or-cut bands with variable bandwidth and deliberate tube-output drive are more useful than one-directional passive bands. Choose Reference 1998 for dual M/S parallel shaping, or Equalizers when the goal is transparent correction rather than EQ-fed saturation.",
+    "advanced_moves": [
+      {
+        "setup": "Build the desired four-band curve with Output Volume low enough that the VU stays below the red, then level-match externally.",
+        "action": "Raise Output into the red to audition the tube stage, compensating after the plugin rather than turning Output back down. Reduce individual boosts if they drive saturation unevenly.",
+        "listen_for": "Transients should thicken and sustain should gain wood-like density without fuzzy high mids or a permanently flattened envelope.",
+        "why_it_works": "Output Volume precedes the modeled output distortion, which begins around the red VU region and is rich in second harmonic."
+      },
+      {
+        "setup": "For a difficult resonance, select the nearest fixed Frequency, choose Bell, set Cut, maximum Gain, and initially wide Bandwidth as the manual recommends.",
+        "action": "Narrow Bandwidth until the problem is isolated, then reduce Gain to the least attenuation that works in context.",
+        "listen_for": "The defect should disappear without a hollow ring around it; if the nearest fixed point never centers the problem, change tools.",
+        "why_it_works": "The seven fixed centers are made more precise by continuously variable bandwidth, but only within each band's available frequency choices."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Americana — Drum and percussion bus",
+        "source_or_bus": "Drum and percussion bus",
+        "application": "Use broad bands for balance, then let only the strongest hits enter the output-stage red zone before matching level downstream.",
+        "why_this_plugin": "The EQ curve determines which parts drive the modeled tube stage, combining tone shaping and peak color in one causal chain."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Industrial techno — Synth percussion",
+        "source_or_bus": "Synth percussion",
+        "application": "Use a narrow cut to remove one metallic resonance, then deliberately push the remaining spectrum into thick output distortion.",
+        "why_this_plugin": "Few vintage models combine usable variable-bandwidth cuts with a separately controllable, strongly second-harmonic output stage."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Equalizers",
+        "goal": "Precise cleanup plus Summit Audio EQF-100's broad character in one reorderable EQ environment.",
+        "order": "Equalizers Modern → Summit Audio EQF-100 in the Vintage slot",
+        "setup": "Create only the necessary modern cuts or dynamic bands, load Summit Audio EQF-100, then compare M→V with V→M at matched output.",
+        "why_it_works": "Modern bands add narrow or dynamic control around the constrained model. Order becomes audible when dynamics or level-dependent model behavior makes the stages non-commutative.",
+        "caution": "With static linear stages, reversing order may make no audible difference; do not invent one. Re-check level whenever dynamics or modeled saturation is active.",
+        "basis": "documented",
+        "source_url": "https://www.softube.com/user-manuals/equalizers"
+      }
+    ],
+    "insider_note": "Documented behavior: Output Volume is placed before output distortion; turning it down reduces saturation. Use a later gain stage for loudness matching if you want to preserve the driven tone.",
+    "avoid_when": "Avoid it when output gain must be transparent, exact centers are required between its seven choices, or stereo channels need independent treatment.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Summit Audio EQF-100 user manual",
+          "url": "https://www.softube.com/user-manuals/summit-audio-eqf-100"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Tonelux Tilt",
+    "section": 1,
+    "comparative_edge": "Choose it over conventional multi-band EQ when the problem is overall spectral balance or apparent distance, not a discrete region. Choose Tilt Live for feedback-safe boost ceilings and lower DSP without transformer modeling; choose Equalizers when the pivot must move or a narrow defect remains.",
+    "advanced_moves": [
+      {
+        "setup": "On two sources competing broadly, set one instance to Loud and the other to Tilt, both initially at center with filters bypassed.",
+        "action": "Move the featured source slightly positive in Loud while tilting the supporting source away from the masking extreme. Match their output levels before changing faders.",
+        "listen_for": "The sources should separate in apparent distance and brightness without either developing a narrow EQ signature.",
+        "why_it_works": "Loud raises or lowers both extremes together, while Tilt trades one extreme against the other around a fixed pivot."
+      },
+      {
+        "setup": "For a source that already balances well but needs Tonelux output color, center Tilt, bypass the Tilt/Loud EQ, and set the pass filters wide.",
+        "action": "A/B the engaged plugin at matched Gain, then narrow the filters only if their smooth slopes improve placement.",
+        "listen_for": "Low-frequency density may change subtly without a new visible EQ curve; reject it if the source loses transient openness.",
+        "why_it_works": "The standard version models the Tonelux output transformer separately from the switchable Tilt/Loud section."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Dream pop — Vocal-reverb return",
+        "source_or_bus": "Vocal-reverb return",
+        "application": "Use negative Loud to push the return farther away, then trim bandwidth with the smooth pass filters.",
+        "why_this_plugin": "Loud mode changes both spectral extremes together, creating distance more directly than a one-sided shelf."
+      },
+      {
+        "context_type": "bus",
+        "context": "Afrobeats — Percussion and guitar groups",
+        "source_or_bus": "Percussion and guitar groups",
+        "application": "Apply small opposing Tilt moves so bright percussion and warm guitar occupy complementary broad balances without multiple bells.",
+        "why_this_plugin": "A shared fixed pivot creates coherent, fast separation across several rhythm sources."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Equalizers",
+        "goal": "Precise cleanup plus Tonelux Tilt's broad character in one reorderable EQ environment.",
+        "order": "Equalizers Modern → Tonelux Tilt in the Vintage slot",
+        "setup": "Create only the necessary modern cuts or dynamic bands, load Tonelux Tilt, then compare M→V with V→M at matched output.",
+        "why_it_works": "Modern bands add narrow or dynamic control around the constrained model. Order becomes audible when dynamics or level-dependent model behavior makes the stages non-commutative.",
+        "caution": "With static linear stages, reversing order may make no audible difference; do not invent one. Re-check level whenever dynamics or modeled saturation is active.",
+        "basis": "documented",
+        "source_url": "https://www.softube.com/user-manuals/equalizers"
+      }
+    ],
+    "insider_note": null,
+    "avoid_when": "Avoid it when the fixed pivot lands on the wrong part of the source or when one narrow band—not the whole balance—is responsible for masking.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Tonelux Tilt and Tilt Live user manual",
+          "url": "https://www.softube.com/user-manuals/tonelux-tilt-and-tilt-live"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Tonelux Tilt Live",
+    "section": 1,
+    "comparative_edge": "Choose Live over standard Tilt for stage monitors or any path where tonal rebalancing must obey a strict maximum boost. Standard Tilt retains modeled transformer color and normal makeup Gain; Equalizers remains better for corrective work or a movable center.",
+    "advanced_moves": [
+      {
+        "setup": "On a wedge-monitor bus, set Boost Ceiling to minimum before moving Tilt or Loud away from center.",
+        "action": "Create the needed balance using attenuation-only curves, then raise Boost Ceiling only if additional apparent clarity is required and feedback margin is known.",
+        "listen_for": "The mix should rebalance without any frequency becoming louder than bypass; stop raising the ceiling if ringing or feedback margin worsens.",
+        "why_it_works": "At minimum, Boost Ceiling offsets the curve so its highest point is 0 dB while preserving the Tilt or Loud shape below it."
+      },
+      {
+        "setup": "For in-ear monitoring, start with Boost Ceiling at its full in-ear position and a neutral Tilt.",
+        "action": "Make small broad changes for fatigue, then lower the ceiling until perceived balance remains but peaks no longer rise unnecessarily.",
+        "listen_for": "Clarity should improve without the entire monitor feed seeming louder; compare after enough time for ear-fatigue judgment, not one transient.",
+        "why_it_works": "The ceiling continuously interpolates between normal ±6 dB behavior and cut-only operation, allowing the same curve at lower maximum gain."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Live rock — Vocal wedge monitor",
+        "source_or_bus": "Vocal wedge monitor",
+        "application": "Use a cut-only Tilt to reduce warmth and expose intelligibility without boosting the feedback-prone top end.",
+        "why_this_plugin": "Boost Ceiling turns a familiar tilt gesture into an attenuation-only response suitable for limited stage gain-before-feedback."
+      },
+      {
+        "context_type": "bus",
+        "context": "Electronic live set — Performer in-ear mix",
+        "source_or_bus": "Performer in-ear mix",
+        "application": "Use restrained Loud mode to manage apparent closeness as fatigue develops, then cap the maximum boost below the standard response.",
+        "why_this_plugin": "It permits a global monitoring adjustment without revisiting many individual channel EQs during performance."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Equalizers",
+        "goal": "Precise cleanup plus Tonelux Tilt Live's broad character in one reorderable EQ environment.",
+        "order": "Equalizers Modern → Tonelux Tilt Live in the Vintage slot",
+        "setup": "Create only the necessary modern cuts or dynamic bands, load Tonelux Tilt Live, then compare M→V with V→M at matched output.",
+        "why_it_works": "Modern bands add narrow or dynamic control around the constrained model. Order becomes audible when dynamics or level-dependent model behavior makes the stages non-commutative.",
+        "caution": "With static linear stages, reversing order may make no audible difference; do not invent one. Re-check level whenever dynamics or modeled saturation is active.",
+        "basis": "documented",
+        "source_url": "https://www.softube.com/user-manuals/equalizers"
+      }
+    ],
+    "insider_note": "Documented behavior: Tilt Live omits standard Tilt's transformer modeling to preserve DSP power and replaces output Gain with Boost Ceiling. It is therefore not merely the same sound with an added safety control.",
+    "avoid_when": "Avoid it when transformer color is part of the goal, when makeup gain is needed inside the plugin, or when a narrow feedback mode must be notched.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Tonelux Tilt and Tilt Live user manual",
+          "url": "https://www.softube.com/user-manuals/tonelux-tilt-and-tilt-live"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Weiss EQ1",
+    "section": 1,
+    "comparative_edge": "Choose it over Equalizers when you need Weiss's exact hardware-code lineage, true linear-phase operation, selectable dithering, or expansion as well as compression per band. Choose Equalizers for a vintage insert stage and lighter everyday sidechain workflow; choose Weiss EQ MP when static minimum-phase mixing is enough.",
+    "advanced_moves": [
+      {
+        "setup": "On a kick or transient whose desirable attack appears only on strong hits, enter DYN mode, create a peaking boost, and choose an expansion Ratio below 1:1.",
+        "action": "Set Threshold so only featured hits cross it, use Boost as the maximum enhancement, then tune Attack/Release to follow the envelope without chatter.",
+        "listen_for": "Strong hits should gain definition while quieter ones retain their original balance; reject settings that make ambience or bleed trigger the lift.",
+        "why_it_works": "Expansion ratios move gain upward above threshold, with Boost limiting the maximum dynamic change."
+      },
+      {
+        "setup": "For a static mastering correction, create the same curve in DYN minimum-phase and LP modes, with all dynamics disabled and output matched.",
+        "action": "Audition on attacks and low-frequency transitions, then retain LP only if reduced phase shift outweighs pre-ringing and roughly 250 ms latency.",
+        "listen_for": "LP may sound cleaner on sustained material but can soften or precede sharp events; decide from transients, not the graph.",
+        "why_it_works": "The two modes are different architectures: LP uses lookahead to remove phase shift, while DYN is lower-latency minimum phase."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Contemporary classical — Stereo master",
+        "source_or_bus": "Stereo master",
+        "application": "Compare a restrained static curve in LP and DYN modes, choosing from transient behavior and stereo depth rather than assuming LP wins.",
+        "why_this_plugin": "It provides both verified Weiss linear-phase and minimum-phase paths in one instance with detailed mastering metering."
+      },
+      {
+        "context_type": "bus",
+        "context": "UK garage — Drum bus",
+        "source_or_bus": "Drum bus",
+        "application": "Use a dynamic expansion band to enhance only the strongest kick or snare attacks, with Boost setting a hard maximum lift.",
+        "why_this_plugin": "Its variable expansion ratios extend beyond ordinary dynamic-EQ attenuation and can be run with low dynamic latency."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Weiss Exciter",
+        "goal": "Remove narrow or dynamic excess before adding tightly targeted mastering harmonics.",
+        "order": "Weiss EQ1 → Weiss Exciter",
+        "setup": "Solve resonances or level-dependent harshness in EQ1 DYN mode, then define Exciter Pre/Post bands around the remaining useful source range.",
+        "why_it_works": "Correction prevents unwanted peaks from seeding new harmonics; Exciter then adds overtones in a parallel, frequency-bounded path rather than restoring brightness with another EQ boost.",
+        "caution": "Match phase modes and account for EQ1 latency. Excess correction can leave the exciter generating harmonics from an unnaturally hollow source.",
+        "basis": "engineering-inference",
+        "source_url": null
+      }
+    ],
+    "insider_note": "Documented behavior: low-latency DYN disables dynamics lookahead, while LP latency is typically around 250 ms. Low latency is a behavior trade-off, not just a host-reporting preference.",
+    "avoid_when": "Avoid LP mode for tracking or rhythm-critical live paths, and avoid EQ1 altogether when seven static minimum-phase bands are all you need—EQ MP is simpler.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Weiss EQ1 user manual",
+          "url": "https://www.softube.com/user-manuals/weiss-eq1"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Weiss EQ MP",
+    "section": 1,
+    "comparative_edge": "Choose EQ MP over EQ1 for faster static mix work with the same low-noise code and seven freely typed bands, without dynamic or linear-phase decisions. Choose Equalizers when sidechain dynamics or a vintage stage matters; choose a modeled analog EQ when its nonlinear constraints are the desired result.",
+    "advanced_moves": [
+      {
+        "setup": "On a mix bus, create the necessary high- or low-pass filter at the gentlest 6 dB/octave slope and solo its difference signal.",
+        "action": "Increase slope through 12, 24, 48, and 96 dB/octave only until unwanted content is removed; re-check un-soloed transients after every step.",
+        "listen_for": "The audible removed signal should contain the problem, not the source's timing or body; reject brickwall slopes that create an unnaturally detached edge.",
+        "why_it_works": "All seven bands can become minimum-phase cut filters with five documented slopes, and Solo auditions the processed difference."
+      },
+      {
+        "setup": "Build a linked stereo curve first, then copy Channel 1 to Channel 2 before disengaging Ganged and entering M/S.",
+        "action": "Make one small Side-only correction while preserving the copied baseline, and use A/B states to compare against the fully linked version.",
+        "listen_for": "The stereo adjustment should solve a clear imbalance without moving the phantom center or changing mono tonality unexpectedly.",
+        "why_it_works": "Copy-before-ungang preserves identical starting states; otherwise the second channel may retain unrelated previous values."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Singer-songwriter — Mix bus",
+        "source_or_bus": "Mix bus",
+        "application": "Use two or three static bands and the gentlest effective cuts, relying on difference Solo to verify that musical fundamentals remain.",
+        "why_this_plugin": "It keeps Weiss's low-noise static path without EQ1's mastering-mode overhead or an analog model's added nonlinearity."
+      },
+      {
+        "context_type": "bus",
+        "context": "Progressive house — Wide synth group",
+        "source_or_bus": "Wide synth group",
+        "application": "Copy linked settings, ungang in M/S, and make one Side-only low or upper-mid correction while monitoring mono.",
+        "why_this_plugin": "Seven equal bands and explicit channel-copy workflow support precise stereo repair without dynamic processing."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Weiss Exciter",
+        "goal": "Separate static spectral balance from additive harmonic brightness in a low-noise Weiss chain.",
+        "order": "Weiss EQ MP → Weiss Exciter",
+        "setup": "Finish broad balance and cuts in EQ MP, level-match, then target Exciter's input fundamentals and output harmonics without repeating the same shelf.",
+        "why_it_works": "EQ MP establishes the source spectrum; Exciter can add new overtones with reduced fundamental leakage instead of creating more static EQ tilt.",
+        "caution": "Do not use both processors to lift the same top region. Compare against EQ MP alone at matched loudness.",
+        "basis": "engineering-inference",
+        "source_url": null
+      }
+    ],
+    "insider_note": "Documented behavior: EQ MP runs the same code as EQ1 but removes mastering-specific use cases. Its cut filters are minimum phase even at the 96 dB/octave setting; it is not a hidden linear-phase mode.",
+    "avoid_when": "Avoid it when a band must react to level, when true linear phase is required, or when analog-stage color is part of the assignment.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Weiss EQ MP user manual",
+          "url": "https://www.softube.com/user-manuals/weiss-eq-mp"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Tape",
+    "section": 4,
+    "comparative_edge": "Choose Tape over Dirty Tape for controllable machine family, speed, crosstalk, and mastering-scale cohesion rather than overt damage. Choose Harmonics when transient reconstruction and distortion family matter more than tape motion; choose Overstayer M-A-S when peak bending without wow, noise, or tape bandwidth is the goal.",
+    "advanced_moves": [
+      {
+        "setup": "On a bus, set 15 or 30 ips, disable Noise, Stability modulation, and Crosstalk, then switch the VU meters to THD.",
+        "action": "For each Type, adjust Input and Amount to the same subtle THD reading and match Output before comparing. Add HF Trim only after selecting the machine behavior.",
+        "listen_for": "Compare transient rounding, low-frequency contour, and sustain at equal distortion and loudness; reject a type that wins only because it is hotter.",
+        "why_it_works": "The three tape types are input-dependent, and both Input and Amount change their color; matching THD and loudness reduces drive-level bias without pretending the harmonic spectra are identical."
+      },
+      {
+        "setup": "On a stereo pad, echo, or backing-vocal return, select a stable Type and set Dry/Wet below full.",
+        "action": "Reduce Speed Stability until modulation becomes audible, then adjust Dry/Wet for deliberate chorus depth. Add Crosstalk separately and re-check mono before touching HF Trim.",
+        "listen_for": "Pitch motion should enlarge the return without pulling the dry center off pitch; mono should not reveal phasey thinning.",
+        "why_it_works": "Blending dry with a speed-varying tape path creates chorusing, while Crosstalk adds a separate left/right leakage mechanism."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Melodic techno — Mix bus",
+        "source_or_bus": "Mix bus",
+        "application": "Compare Types at equal THD and output, use a higher speed for restrained transient control, then compensate only the high-frequency loss that remains.",
+        "why_this_plugin": "Tape exposes machine family, speed, THD, and HF compensation directly; Dirty Tape bundles those concerns into a degradation effect."
+      },
+      {
+        "context_type": "bus",
+        "context": "Indie folk — Harmony-vocal return",
+        "source_or_bus": "Harmony-vocal return",
+        "application": "Use partial Dry/Wet with slight instability for ensemble spread, then add restrained crosstalk and check mono.",
+        "why_this_plugin": "Its separately adjustable motion and stereo leakage can make a clean return feel recorded together without the overt dropouts of Dirty Tape."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Equalizers",
+        "goal": "Remove drive-dominating excess before adding Tape.",
+        "order": "Equalizers → Tape",
+        "setup": "High-pass or make one restrained corrective cut first, level-match, then raise the color stage until the intended harmonics or peak bending appear.",
+        "why_it_works": "Nonlinear processors respond to incoming level by frequency, so removing unwanted energy first prevents it from consuming headroom and generating disproportionate harmonics.",
+        "caution": "Over-correction can starve the nonlinear stage and make the result smaller. Re-check the EQ after harmonics are generated.",
+        "basis": "engineering-inference",
+        "source_url": null
+      }
+    ],
+    "insider_note": "Documented behavior: Dry/Wet combined with Speed Stability can create chorusing. Crosstalk in Studio One Mix FX controls leakage across session channels, not only within one stereo insert.",
+    "avoid_when": "Avoid it when the production needs obvious dropouts or decoupled damage—use Dirty Tape—or when timing modulation must be absent but peak density is wanted—use Overstayer M-A-S.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Tape user manual",
+          "url": "https://www.softube.com/user-manuals/tape"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Dirty Tape",
+    "section": 4,
+    "comparative_edge": "Choose Dirty Tape over Tape when wow, flutter, dropouts, darker low-speed color, and channel-to-channel instability are arrangement elements. Choose Tape for separable speed, crosstalk, noise, and machine types; choose OTO Biscuit for clocked digital reduction or Bad Speaker for a physical playback perspective.",
+    "advanced_moves": [
+      {
+        "setup": "On a static loop, set Dirt to minimum, Stereo Mode to Normal, and match Output before raising Drive.",
+        "action": "Find the distortion density with Drive alone, then return Drive slightly and raise Dirt until mechanical motion contributes as much as the saturation. Re-match after each stage.",
+        "listen_for": "You should be able to identify harmonic thickening and transport damage as two separate contributions; stop when dropouts erase the loop's groove anchor.",
+        "why_it_works": "Drive increases tape distortion, while Dirt is a macro for wow, flutter, dropouts, crosstalk, and lower-speed coloration."
+      },
+      {
+        "setup": "On a stereo effects return rather than the dry source, switch from Normal to De-coupled after setting a moderate Dirt amount.",
+        "action": "Automate Dirt into transitions and compare coupled versus independent channel variation. Narrow the return downstream if the center wanders too far.",
+        "listen_for": "The return should breathe wider at transitions while the dry signal preserves pitch and center; avoid random image jumps on featured notes.",
+        "why_it_works": "De-coupled mode allows wow, flutter, and dropout variations to differ between left and right channels."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Lo-fi hip-hop — Sampled-key return",
+        "source_or_bus": "Sampled-key return",
+        "application": "Build distortion with Drive, introduce Dirt separately for motion, and keep the dry keys outside the insert so note attacks remain stable.",
+        "why_this_plugin": "Its two macros separate nonlinear density from compound mechanical wear more clearly than a generic lo-fi preset."
+      },
+      {
+        "context_type": "bus",
+        "context": "Cinematic sound design — Memory-flashback ambience",
+        "source_or_bus": "Memory-flashback ambience",
+        "application": "Automate De-coupled Dirt upward across a transition while lowering the high cut, then return abruptly to a stable dry scene.",
+        "why_this_plugin": "Independent-channel transport defects create temporal and spatial deterioration that Bad Speaker's static device responses do not."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented behavior: Dirt at maximum also applies coloration associated with low tape speed; at minimum it corresponds to high speed. It is not a modulation-depth control with otherwise constant tone.",
+    "avoid_when": "Avoid it for subtle mastering glue, separately tuned crosstalk/noise, or repeatable wow rate; Tape exposes those decisions more cleanly.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Dirty Tape user manual",
+          "url": "https://www.softube.com/user-manuals/dirty-tape"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Harmonics Analog Saturation Processor",
+    "section": 4,
+    "comparative_edge": "Choose Harmonics over Saturation Knob when the nonlinear family, pre-emphasis, filters, blend, and post-distortion dynamics need separate control. Choose Overstayer M-A-S for hardware-specific peak bending and emphasis profiles, or Weiss Exciter when additive, frequency-targeted harmonics with minimal fundamental/EQ change are the priority.",
+    "advanced_moves": [
+      {
+        "setup": "On drums or bass, choose a Drive Type and amount with Dynamics switched off, matching Input and Output around the processed path.",
+        "action": "Turn Dynamics clockwise until attacks recover, then compare against reducing Drive. If the source needs density instead, move Dynamics counterclockwise and reduce Dry/Wet to retain a clean transient layer.",
+        "listen_for": "Clockwise should restore envelope without removing harmonic tone; counterclockwise should lift detail without turning sustain into flat noise.",
+        "why_it_works": "Dynamics analyzes the pre-distortion waveform and can reconstruct its movement clockwise or increase energy and low-level detail counterclockwise."
+      },
+      {
+        "setup": "For a full-range source, duplicate Harmonics in series at low drive rather than pushing one full-band instance.",
+        "action": "Use the first instance's filters and Character to color the lower region with one Type, and the second to treat the upper region with another. Match each stage before judging the chain.",
+        "listen_for": "Low and high regions should acquire distinct textures without a single shared clipping ceiling flattening the whole source.",
+        "why_it_works": "Each Drive Type has tailored pre-distortion Character filtering, and serial low-drive stages can generate different harmonic structures in different spectral regions."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Techno — Sequenced synth bus",
+        "source_or_bus": "Sequenced synth bus",
+        "application": "Use Character to focus drive on the useful register, then restore clocked attack with clockwise Dynamics rather than simply lowering Drive.",
+        "why_this_plugin": "Its dynamics reconstruction separates transient preservation from harmonic density, which Saturation Knob cannot."
+      },
+      {
+        "context_type": "bus",
+        "context": "Modern metal — Bass split bus",
+        "source_or_bus": "Bass split bus",
+        "application": "Treat lower and upper bands with two low-drive instances using different Types, preserving pick attack on the upper stage with Dynamics.",
+        "why_this_plugin": "Multiple nonlinear families, filters, and reconstruction allow controlled division of weight and grind without a separate multiband saturator."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Equalizers",
+        "goal": "Remove drive-dominating excess before adding Harmonics Analog Saturation Processor.",
+        "order": "Equalizers → Harmonics Analog Saturation Processor",
+        "setup": "High-pass or make one restrained corrective cut first, level-match, then raise the color stage until the intended harmonics or peak bending appear.",
+        "why_it_works": "Nonlinear processors respond to incoming level by frequency, so removing unwanted energy first prevents it from consuming headroom and generating disproportionate harmonics.",
+        "caution": "Over-correction can starve the nonlinear stage and make the result smaller. Re-check the EQ after harmonics are generated.",
+        "basis": "engineering-inference",
+        "source_url": null
+      }
+    ],
+    "insider_note": "Documented behavior: in Master Type, Drive changes harmonic composition as well as amount. Comparing two Drive positions is therefore not equivalent to comparing more or less of one fixed transfer curve.",
+    "avoid_when": "Avoid it when one protected-band macro is enough—Saturation Knob is faster—or when the goal is only newly generated, precisely targeted harmonics—use Weiss Exciter.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Harmonics Analog Saturation Processor user manual",
+          "url": "https://www.softube.com/user-manuals/harmonics-analog-saturation-processor"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Saturation Knob",
+    "section": 4,
+    "comparative_edge": "Choose it over Harmonics when speed and one protected spectral extreme are more valuable than choosing a distortion family or rebuilding dynamics. Choose Harmonics for filters, Character, Dry/Wet, THD metering, and transient control; choose Overstayer M-A-S when subtle peak bending with auto gain is the job.",
+    "advanced_moves": [
+      {
+        "setup": "On a bass source, duplicate to a parallel bus, high-pass that bus if the host permits, and set Saturation Knob to Keep Low.",
+        "action": "Drive until upper harmonics make the bass readable on small speakers, then blend under the clean track and verify the fundamental in mono.",
+        "listen_for": "Pitch should translate at low playback level while the original sub envelope remains stable; stop if the parallel path produces fizzy note edges.",
+        "why_it_works": "Keep Low applies more saturation to higher frequencies, preserving the lower region relative to Neutral mode."
+      },
+      {
+        "setup": "On bright percussion, set Keep High and begin from no saturation with output matched downstream.",
+        "action": "Raise the knob until snare or body thickens beneath the cymbal band, then automate bypass for sections that need unprocessed transient contrast.",
+        "listen_for": "Lower percussion body should gain density while hats retain definition; reject settings that turn the complete bus dull.",
+        "why_it_works": "Keep High biases saturation toward lower frequencies so the high-frequency material remains comparatively intact."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Punk rock — Drum parallel",
+        "source_or_bus": "Drum parallel",
+        "application": "Use Keep High to densify kick and snare beneath cymbals, then blend the bus rather than driving the full kit insert.",
+        "why_this_plugin": "The three-position spectral bias reaches a useful protected-top parallel sound faster than configuring Harmonics."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Ambient — Sine-based drone",
+        "source_or_bus": "Sine-based drone",
+        "application": "Use Neutral as a waveshaper to introduce harmonics, then control the resulting brightness with a later filter or the arrangement.",
+        "why_this_plugin": "Its simple clipping stage can turn spectrally sparse waveforms into audible overtone material without tape motion or speaker coloration."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Equalizers",
+        "goal": "Remove drive-dominating excess before adding Saturation Knob.",
+        "order": "Equalizers → Saturation Knob",
+        "setup": "High-pass or make one restrained corrective cut first, level-match, then raise the color stage until the intended harmonics or peak bending appear.",
+        "why_it_works": "Nonlinear processors respond to incoming level by frequency, so removing unwanted energy first prevents it from consuming headroom and generating disproportionate harmonics.",
+        "caution": "Over-correction can starve the nonlinear stage and make the result smaller. Re-check the EQ after harmonics are generated.",
+        "basis": "engineering-inference",
+        "source_url": null
+      }
+    ],
+    "insider_note": "Documented behavior: the labels describe what is preserved. Keep Low saturates the higher portion more; Keep High saturates the lower portion more. Reading them as the processed band reverses the intended choice.",
+    "avoid_when": "Avoid it when precise level matching, blend, filtering, or transient recovery must live inside the plugin; Harmonics supplies those controls.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Saturation Knob for Modular user manual",
+          "url": "https://www.softube.com/user-manuals/saturation-knob"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Overstayer M-A-S",
+    "section": 4,
+    "comparative_edge": "Choose standard M-A-S over Extended when six musically constrained emphasis profiles are faster than drawing a four-band emphasis curve. Choose Extended for exact spectral targeting; choose Harmonics for multiple analog-family models and dynamics reconstruction, or Tape when speed, crosstalk, and transport behavior are part of the sound.",
+    "advanced_moves": [
+      {
+        "setup": "On a track or bus, enable Auto Gain, set Mix fully wet, choose Classic M-A-S, and raise Input until the first saturation LED responds.",
+        "action": "Cycle all six Emphasis Types, re-adjusting Input each time to equalize the amount of saturation before selecting by tone. Restore parallel balance only after choosing.",
+        "listen_for": "Judge which region bends first and how steady versus transient material reacts; reject a mode that wins only because it is driven harder.",
+        "why_it_works": "Emphasis changes the operating range and frequency weighting before the M-A-S stages, so equal Input settings do not create equal saturation."
+      },
+      {
+        "setup": "On a vocal or bright instrument that dulls as peaks bend, establish the desired Input and Mix with Dual and 2nd off.",
+        "action": "Engage Dual, then 2nd separately, retaining the smallest addition that restores clarity. Revisit Emphasis Type before adding top EQ downstream.",
+        "listen_for": "Presence should return as harmonic energy without sibilance becoming brittle or the fundamental losing weight.",
+        "why_it_works": "Dual and 2nd add more second harmonics and brighten the distorted result rather than applying a conventional high-frequency boost."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Dance pop — Drum and instrument buses",
+        "source_or_bus": "Drum and instrument buses",
+        "application": "Use low-drive M-A-S across several buses with source-specific Emphasis Types, re-matching Input whenever the type changes.",
+        "why_this_plugin": "The standard profiles make cumulative peak bending faster to distribute than building a custom Extended curve on every bus."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Trap — 808 bass",
+        "source_or_bus": "808 bass",
+        "application": "Compare Classic and Bass Distortion at equal LED activity, then add Dual only if the bent bass loses audibility above the fundamental.",
+        "why_this_plugin": "Its emphasis profiles decide which spectral regions clip while the broad M-A-S operating range can bend peaks without compressor release motion."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Equalizers",
+        "goal": "Remove drive-dominating excess before adding Overstayer M-A-S.",
+        "order": "Equalizers → Overstayer M-A-S",
+        "setup": "High-pass or make one restrained corrective cut first, level-match, then raise the color stage until the intended harmonics or peak bending appear.",
+        "why_it_works": "Nonlinear processors respond to incoming level by frequency, so removing unwanted energy first prevents it from consuming headroom and generating disproportionate harmonics.",
+        "caution": "Over-correction can starve the nonlinear stage and make the result smaller. Re-check the EQ after harmonics are generated.",
+        "basis": "engineering-inference",
+        "source_url": null
+      }
+    ],
+    "insider_note": "Documented behavior: the first meter LED marks where bending begins, but low-order harmonic color exists below that point. 'No LED' is not necessarily a null-processing state.",
+    "avoid_when": "Avoid standard M-A-S when a specific emphasis frequency or cutoff must be set; use M-A-S Extended. Avoid it for time instability or tape noise.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Overstayer M-A-S user manual",
+          "url": "https://www.softube.com/user-manuals/overstayer-mas"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Overstayer M-A-S Extended",
+    "section": 4,
+    "comparative_edge": "Choose Extended over standard M-A-S when the saturation must be aimed at exact regions with a four-band emphasis EQ and resonant pre-filters. Choose standard for faster repeatable profiles across many tracks; choose Drawmer 1976 when saturation and stereo width must be independently controlled in three explicit crossover bands.",
+    "advanced_moves": [
+      {
+        "setup": "On a full-range bus, enable Emphasis, set filters wide, Auto Gain on, disengage Compensation for the target band, and establish low-level bending with Input before moving the EQ.",
+        "action": "Boost the pre-emphasis band feeding the target into saturation, then adjust its independent outer-ring post control toward the original tonal balance. Compare with the same apparent EQ but less Input.",
+        "listen_for": "The target region should gain harmonic density while the final broad spectrum stays close to bypass; reject a move that is only audible as EQ.",
+        "why_it_works": "Extended exposes the pre/post emphasis shaping that the standard version packages into fixed profiles, separating what drives from what is heard after."
+      },
+      {
+        "setup": "For a bass-heavy or harsh source, engage only the pre-saturation HPF or LPF with resonance at minimum.",
+        "action": "Move the cutoff until the vulnerable extreme stops driving the stage, then add only enough Resonance to restore energy at the boundary. Re-set Input after filtering.",
+        "listen_for": "The protected extreme should stay cleaner while the cutoff area remains connected; stop if resonance becomes a new note or whistle.",
+        "why_it_works": "The 12 dB/octave resonant filters precede saturation, changing both the driven spectrum and the harmonics subsequently generated."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Industrial rock — Mix bus parallel",
+        "source_or_bus": "Mix bus parallel",
+        "application": "Use pre/post emphasis to make the middle distort while returning lows and highs near the original balance, then blend beneath the clean mix.",
+        "why_this_plugin": "It offers continuous control over the spectral drive/de-emphasis relationship that standard M-A-S only approximates with profiles."
+      },
+      {
+        "context_type": "bus",
+        "context": "Experimental R&B — Lead-vocal effects bus",
+        "source_or_bus": "Lead-vocal effects bus",
+        "application": "High-pass before saturation, emphasize a chosen presence zone, and use filter resonance sparingly to keep the effect voiced around the singer.",
+        "why_this_plugin": "The pre-saturation filters and editable emphasis can isolate vocal color more precisely than Harmonics' global Character control."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented behavior: the hardware's emergency op-amp safety-clipping circuit was deliberately omitted from both plug-ins after consultation with Overstayer. Very hot digital input can therefore reach a different final failure mode than the hardware.",
+    "avoid_when": "Avoid Extended when one of the six standard profiles already fits; its extra pre/post and resonant controls add ways to mis-level the comparison.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Overstayer M-A-S user manual",
+          "url": "https://www.softube.com/user-manuals/overstayer-mas"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Drawmer 1976 Three Band Saturator",
+    "section": 4,
+    "comparative_edge": "Choose Drawmer 1976 over Harmonics when the production decision is explicitly low/mid/high saturation plus independent stereo width. Choose Harmonics for nonlinear families and transient reconstruction without crossovers; choose M-A-S Extended for continuous pre/post emphasis and peak bending rather than three recombined bands.",
+    "advanced_moves": [
+      {
+        "setup": "On a full mix or drum-and-bass bus, set both crossovers around musical role boundaries, all Width controls centered, and Mono Check available.",
+        "action": "Keep Low Width at or near mono, widen Mid and High in separate passes, then toggle Mono Check after each. Add saturation only after the stereo architecture translates.",
+        "listen_for": "Sub energy and the phantom center should remain fixed while upper ambience expands; mono should preserve impact rather than exposing a scooped band.",
+        "why_it_works": "Each crossover band has independent width before recombination, so stereo expansion can be limited to regions that tolerate side energy."
+      },
+      {
+        "setup": "For a source whose midrange needs density but whose extremes are already controlled, bypass or zero all three saturators and set crossovers by soloed musical roles.",
+        "action": "Drive Mid first, then add smaller Low or High amounts only if the recombined source feels disconnected. Revisit crossovers after saturation because generated harmonics may cross the chosen boundaries.",
+        "listen_for": "Mid density should increase without a seam at either crossover or a softer sub transient.",
+        "why_it_works": "The signal is split before three independent nonlinear stages, so crossover placement decides which fundamentals generate harmonics in each processor."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Drum and bass — Bass and drum master bus",
+        "source_or_bus": "Bass and drum master bus",
+        "application": "Keep the low band narrow and lightly driven, saturate the mid growl, and widen only upper bands while checking mono.",
+        "why_this_plugin": "Its three parallel width and saturation zones protect sub localization more directly than a full-band saturator."
+      },
+      {
+        "context_type": "bus",
+        "context": "Orchestral trailer — Percussion and low-brass stem",
+        "source_or_bus": "Percussion and low-brass stem",
+        "application": "Use light low/mid saturation for scale, leaving high saturation restrained while widening only the upper room contribution.",
+        "why_this_plugin": "Frequency-specific density and width can enlarge a composite stem without putting cymbal air and low impacts through the same nonlinear stage."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Engineering inference from the documented split-band architecture: crossover changes after drive is set alter not only band level but which fundamentals feed each nonlinear stage, so always re-evaluate saturation after moving a crossover.",
+    "avoid_when": "Avoid it when crossover phase/partitioning is undesirable or when one continuous full-band transfer curve is the goal; use Harmonics or Overstayer M-A-S.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Drawmer 1976 Three Band Saturator user manual",
+          "url": "https://www.softube.com/user-manuals/drawmer-1976-three-band-saturator"
+        },
+        {
+          "title": "Softube Drawmer 1976 Three Band Saturator product page",
+          "url": "https://www.softube.com/plug-ins/drawmer-1976-three-band-saturator"
+        }
+      ]
+    }
+  },
+  {
+    "name": "OTO Biscuit 8-bit Effects",
+    "section": 4,
+    "comparative_edge": "Choose Biscuit over Dirty Tape for clock-rate reduction, individual bit mutation, a multimode analog-modeled filter, and tempo-capable digital effects. Choose Dirty Tape for continuous mechanical instability, or Bad Speaker when the illusion should be a physical playback device rather than exposed data conversion.",
+    "advanced_moves": [
+      {
+        "setup": "Set all eight bits on, Brain off, Naked at unity, Dressed low, and Clock high enough that the source remains recognizable.",
+        "action": "Mute or invert LSBs one at a time before touching higher bits; lower Clock only after a useful bit pattern emerges. Keep a limiter or conservative monitoring level downstream.",
+        "listen_for": "Low-order changes should add texture while preserving rhythm and pitch; stop before an MSB change creates uncontrolled level or replaces the source with static.",
+        "why_it_works": "LSBs create subtler changes than MSBs, whose inversion or removal radically changes the 8-bit sample value and can produce loud noise."
+      },
+      {
+        "setup": "On a drum fill or synth sequence, establish the core bit/Clock sound, engage Brain's Step effect, and tempo-reference the pattern.",
+        "action": "Sequence filter movement while using the analog-modeled multimode Filter for the final bandwidth. Blend Naked and Dressed rather than filtering the dry path externally.",
+        "listen_for": "Rhythmic degradation should reinforce the phrase grid while transients remain locatable in the dry component.",
+        "why_it_works": "One Brain effect can run alongside sample-rate reduction and bit mutation, followed by a resonant low-, band-, or high-pass filter and parallel mixer."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Electro — Drum-fill resample",
+        "source_or_bus": "Drum-fill resample",
+        "application": "Develop an LSB-first bit pattern, lower Clock for bandwidth, then animate the Step filter for one resampled transition.",
+        "why_this_plugin": "It combines data-level mutation, clock artifacts, rhythmic effect, and analog-style filtering in one repeatable digital instrument."
+      },
+      {
+        "context_type": "bus",
+        "context": "Glitch pop — Vocal-chop bus",
+        "source_or_bus": "Vocal-chop bus",
+        "application": "Blend Dressed beneath Naked, automate one or two bit inversions, and use Pitch as the single active Brain effect for phrase-end mutations.",
+        "why_this_plugin": "Individual bit states create discrete timbral events that Dirty Tape's continuous Dirt macro cannot reproduce."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented behavior: the bit switches have three states—on, muted, and inverted—and the most significant bit is the most drastic. Shift-click changes all switches to the same state, which can cause an abrupt full-pattern jump.",
+    "avoid_when": "Avoid it on uncontrolled full-level masters or when smooth analog degradation is required; bit inversions can be very loud, and Dirty Tape is the safer continuous-motion choice.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube OTO Biscuit 8-bit Effects user manual",
+          "url": "https://www.softube.com/user-manuals/oto-biscuit-8-bit-effects"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Bad Speaker",
+    "section": 4,
+    "comparative_edge": "Choose Bad Speaker over OTO Biscuit when the cue should read as a radio, cassette deck, or speaker-in-room rather than abstract bit reduction. Choose Dirty Tape for time-varying wear and dropouts; choose Bad Speaker for repeatable device response, breakup, width, and dry/wet placement.",
+    "advanced_moves": [
+      {
+        "setup": "On a mono source, audition all three Speaker modes at low Drive, Width fully mono, and Mix fully wet before adding stereo processing.",
+        "action": "Choose the physical response first, then increase Width until the treated component separates from the dry center. Blend Mix last and verify mono.",
+        "listen_for": "The effect should widen around a stable core; reject settings where mono loses the intended device tone or the source's location becomes ambiguous.",
+        "why_it_works": "Speaker selection, nonlinear Drive, Width, and parallel Mix are independent decisions; widening before choosing the model can disguise the actual response."
+      },
+      {
+        "setup": "For dialogue, vocal, or drum perspective, place Bad Speaker on a parallel bus and begin with Cassette Deck or Hi-Fi rather than the most restricted Portable Radio.",
+        "action": "Use Tone to fit the return behind the clean source, drive until the speaker character becomes identifiable, then automate the return send rather than changing Drive every section.",
+        "listen_for": "The clean source should remain intelligible while the return adds location and grit; avoid comb-like hollowness at intermediate Mix values.",
+        "why_it_works": "The dedicated dry/wet and modeled speaker responses let device perspective be layered without forcing the direct signal through the same bandwidth restriction."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Boom bap — Snare and percussion parallel",
+        "source_or_bus": "Snare and percussion parallel",
+        "application": "Use Cassette Deck for mid bite, add moderate Drive, and narrow Width until the dirty layer reinforces rather than smears the center.",
+        "why_this_plugin": "Its measured device response supplies resonant speaker breakup that an EQ plus Saturation Knob would not recreate as one behavior."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Narrative ambient — Found-voice texture",
+        "source_or_bus": "Found-voice texture",
+        "application": "Use Hi-Fi Speaker for a room perspective, automate Width and send level, and reserve Portable Radio for brief contrast events.",
+        "why_this_plugin": "Three repeatable physical perspectives make spatial storytelling easier than Dirty Tape's random transport damage."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented behavior: Bad Speaker can occupy either Shape or Drive in Console 1 and can be placed freely in Amp Room Studio mode, enabling placement before or after other nonlinear modules as a meaningful tone change.",
+    "avoid_when": "Avoid it when exact bit depth, sample clock, or moving tape defects define the effect; use OTO Biscuit or Dirty Tape respectively.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Bad Speaker user manual",
+          "url": "https://www.softube.com/user-manuals/bad-speaker"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Empirical Labs Professor Punch-Knuckles",
+    "section": 4,
+    "comparative_edge": "Choose Professor over Mike-E Comp when you want its three ELI nonlinearities without configuring a full preamp/compressor. Choose Mike-E for controllable attack, ratio, external sidechain, and separate preamp staging; choose Harmonics when transient reconstruction and non-ELI distortion families are more important than Toasty, Crunchy, or Distress.",
+    "advanced_moves": [
+      {
+        "setup": "At moderate gain-compensated Drive, compare Toasty, Crunchy, and Distress with post Low Cut, Tone, and High Cut neutral.",
+        "action": "Select the transfer behavior first, then compare XFRM, Wide, and Tape at that same moderate amount. Add post filters only after both stages are chosen.",
+        "listen_for": "You should hear mode-specific spectral emphasis before heavy distortion makes them converge; reject a choice that is only louder or darker after filtering.",
+        "why_it_works": "Distortion selects the nonlinear circuit, while Mode changes its tonal emphasis; Mode differences are documented as clearer at moderate drive."
+      },
+      {
+        "setup": "On a parallel drum or vocal bus, select Distress, Mix fully wet, and begin below 3 dB of gain reduction.",
+        "action": "Increase Drive into roughly 3–5 dB of reduction, then lower Mix to restore dry attacks. Use the post filters to keep the crushed layer out of vulnerable extremes.",
+        "listen_for": "The source should sit forward with controlled peaks while dry transients remain legible; stop before room noise or breath becomes a continuous floor.",
+        "why_it_works": "Distress is the Distressor/Mike-E compressor circuit at its fastest aggressive setting, while Mix blends the pre-effect dry signal back in."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Breakbeat — Drum parallel",
+        "source_or_bus": "Drum parallel",
+        "application": "Use Distress for several dB of fast reduction, blend back dry transients, and high-pass the crushed layer after distortion.",
+        "why_this_plugin": "It reaches the ELI compression-distortion behavior faster than building the equivalent Mike-E chain."
+      },
+      {
+        "context_type": "bus",
+        "context": "Hyperpop — Vocal-adlib bus",
+        "source_or_bus": "Vocal-adlib bus",
+        "application": "Compare Crunchy and Toasty at moderate THD, select Tape emphasis if top-edge breakup should lead, then automate Mix between phrases.",
+        "why_this_plugin": "Three ELI circuit types plus separate emphasis and post filtering make vocal aggression repeatable without a full multistage processor."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented behavior: the meter changes meaning by distortion type—THD percentage for Toasty and Crunchy, gain reduction for Distress. A visually identical reading is not the same measurement across modes.",
+    "avoid_when": "Avoid it when compressor timing, external sidechain, or a clean preamp state must be controlled explicitly; Mike-E Comp is the fuller ELI tool.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Empirical Labs Prof Punch-Knuckles user manual",
+          "url": "https://www.softube.com/user-manuals/empirical-labs-prof-punch-knuckles"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Empirical Labs Mike-E Comp",
+    "section": 4,
+    "comparative_edge": "Choose Mike-E over Professor Punch-Knuckles when the preamp, high-pass, attack, ratio, CompSat timing, emphasis, external sidechain, and parallel mix must be engineered as stages. Choose Professor for rapid ELI color; choose a Softube FET compressor when saturation should not be frequency-dependent CompSat behavior.",
+    "advanced_moves": [
+      {
+        "setup": "Set the preamp CLEAN, CompSat Ratio to 1:1, Mix fully processed, and watch the Warm/Toasty indicators rather than compressor gain reduction.",
+        "action": "Raise Drive until Warm remains active and Toasty catches peaks, then compare HF emphasis for earlier high-frequency clipping. Follow with another compressor only after output matching.",
+        "listen_for": "Peaks should flatten by a small amount while body gains heat; HF emphasis should soften buildup without making the source dull.",
+        "why_it_works": "At 1:1, CompSat's soft-clipping remains while conventional compression is removed; emphasis changes which frequencies hit saturation first."
+      },
+      {
+        "setup": "On drums or bass, set CompSat for only 2–3 dB of reduction and establish the envelope before adding preamp gain.",
+        "action": "Toggle the preamp from CLEAN and raise its Gain separately, then compensate Output. If attack blurs, reduce preamp distortion instead of changing CompSat timing first.",
+        "listen_for": "Preamp grit should add a first layer of texture while CompSat continues controlling the same envelope; the BAD LED should not remain lit from unintended clipping.",
+        "why_it_works": "Mike-E has a distinct preamp distortion stage before the frequency-dependent CompSat circuit, so their contributions can be isolated."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Alternative hip-hop — Lead vocal",
+        "source_or_bus": "Lead vocal",
+        "application": "Use 1:1 soft clipping with HF emphasis to shave harsh peaks, then add restrained CompSat reduction and parallel Mix for stable density.",
+        "why_this_plugin": "It combines ELI preamp, frequency-dependent clipping, compression, and emphasis with control that Professor intentionally hides."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Hard rock — Snare close mic",
+        "source_or_bus": "Snare close mic",
+        "application": "Set the CompSat envelope first, then add a separate preamp-distortion layer and use Mix to retain the original hit onset.",
+        "why_this_plugin": "The serial preamp and CompSat stages can shape texture and decay independently before parallel recovery."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Empirical Labs Lil FrEQ",
+        "goal": "Build a complete ELI tracking chain with filtering/de-essing before CompSat compression and color.",
+        "order": "Empirical Labs Lil FrEQ → Empirical Labs Mike-E Comp",
+        "setup": "High-pass and solve resonances in Lil FrEQ, place its DS for needed sibilance control, then set Mike-E preamp and CompSat from the conditioned signal.",
+        "why_it_works": "Lil FrEQ removes spectral triggers before Mike-E's frequency-dependent saturation/compression; Softube's Trak Pak combines these product roles in this channel-strip order.",
+        "caution": "Heavy high-frequency limiting can starve Mike-E emphasis and dull the chain. Re-set CompSat drive after every input-EQ change.",
+        "basis": "documented",
+        "source_url": "https://www.softube.com/user-manuals/empirical-labs-trak-pak"
+      }
+    ],
+    "insider_note": "Documented behavior: the BAD LED indicates clipping somewhere that was not intended to clip; it is different from the Warm and Toasty indicators used to judge the designed CompSat saturation range.",
+    "avoid_when": "Avoid it when you only need quick ELI saturation—Professor is faster—or when clean, transparent level control is the assignment.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Empirical Labs Mike-E Comp user manual",
+          "url": "https://www.softube.com/user-manuals/empirical-labs-mike-e-comp"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Empirical Labs Lil FrEQ",
+    "section": 4,
+    "comparative_edge": "Choose Lil FrEQ over Equalizers when the ELI analog path, steep resonant high-pass, four overlapping parametrics, and level-independent de-ess/HF limiter are one tracking-style chain. Choose Equalizers for multiple dynamic bands and M/S sidechain work; choose Mike-E when saturation/compression, not high-frequency containment, is the center of the job.",
+    "advanced_moves": [
+      {
+        "setup": "On a vocal, set the broad shelves and parametrics for the desired bright tone before engaging the DS section.",
+        "action": "Compare DS pre-EQ and post-EQ. Use post-EQ when the new boost should trigger control; use pre-EQ when de-essing should remain independent of later tone shaping.",
+        "listen_for": "Sibilants should return to the intended level while vowels keep the added brightness; reject constant reduction or lisping.",
+        "why_it_works": "The DS block can be moved before or after EQ, changing whether boosted high-frequency energy reaches its detector."
+      },
+      {
+        "setup": "For a source whose harshness grows with level rather than only on sibilants, select HF Limit instead of De-ess and begin around the offending range.",
+        "action": "Set the level-dependent threshold to react only on loud phrases, then drive Input slightly harder to audition the documented tape-like increase in high-frequency smoothing.",
+        "listen_for": "Loud events should darken gently while quiet articulation remains; stop if every phrase loses air or the BAD LED indicates unintended clipping.",
+        "why_it_works": "HF Limit uses a normal level-dependent soft-knee limiter, unlike the de-esser's level-independent high-versus-low comparison."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Contemporary R&B — Lead vocal",
+        "source_or_bus": "Lead vocal",
+        "application": "Brighten with shelves/parametrics, place DS post-EQ, and choose level-independent de-ess so only spectral imbalance triggers control.",
+        "why_this_plugin": "Its movable DS block lets one analog-modeled chain establish brightness and contain the exact excess that brightness creates."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Acoustic folk — Close-miked guitar",
+        "source_or_bus": "Close-miked guitar",
+        "application": "Use the 18 dB/octave high-pass conservatively, then tune De-ess toward intermittent finger-slide squeaks rather than the entire top end.",
+        "why_this_plugin": "The level-independent detector can catch spectral squeaks that a conventional threshold-based compressor may miss as performance level changes."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Empirical Labs Mike-E Comp",
+        "goal": "Turn Lil FrEQ's corrective and HF-control stages into the front end of an ELI compression/saturation channel.",
+        "order": "Empirical Labs Lil FrEQ → Empirical Labs Mike-E Comp",
+        "setup": "Remove subs and resonances, choose DS pre/post EQ, level-match, then use Mike-E for peak shaving, envelope, and controlled analog color.",
+        "why_it_works": "Frequency cleanup keeps unwanted regions from dominating CompSat, while Mike-E supplies the dynamics and distortion Lil FrEQ does not; Trak Pak documents the combined roles.",
+        "caution": "Avoid large Lil FrEQ boosts into Mike-E unless the resulting frequency-biased compression is intentional.",
+        "basis": "documented",
+        "source_url": "https://www.softube.com/user-manuals/empirical-labs-trak-pak"
+      }
+    ],
+    "insider_note": "Documented behavior: plugin Bypass does not bypass the Input and Output volume controls. For valid A/B tests, use section bypasses or verify gain staging rather than assuming global Bypass is a wire.",
+    "avoid_when": "Avoid it for several independent moving resonances or M/S dynamic repair; Equalizers is more flexible. Its steep high-pass also deserves caution during tracking.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Empirical Labs Lil FrEQ user manual",
+          "url": "https://www.softube.com/user-manuals/empirical-labs-lil-freq"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Tube-Tech Blue Tone",
+    "section": 4,
+    "comparative_edge": "Choose Blue Tone over Tape or Harmonics when the desired polish is actually coordinated three-band optical compression, de-essing, PE/ME equalization, and possibly width—not simple saturation. Choose Tape for machine color without macro compression, Harmonics for explicit nonlinear control, or Tube-Tech SMC 2B when crossover and band timing must be exposed.",
+    "advanced_moves": [
+      {
+        "setup": "Set Amount to zero, Low/High Band neutral, Dry/Wet fully wet, and audition every Mode on the same source before raising Amount.",
+        "action": "Select by the mode's movement and spectral priorities, then raise Amount toward its designed 50% center while watching gain reduction. Correct only afterward with the post-compression Low/High controls.",
+        "listen_for": "Compression should solve a source-specific problem before the tone knobs flatter it; reject modes that sound exciting only because they are wider or brighter.",
+        "why_it_works": "Mode changes hidden crossovers, ratios, timing, de-essing, EQ, and sometimes width; Amount moves several of those parameters together."
+      },
+      {
+        "setup": "On drums, guitars, or a mix bus, choose the closest Mode and drive Amount beyond the subtle range to hear its full envelope.",
+        "action": "Back Amount down until gain reduction is useful, then reduce Dry/Wet to reintroduce uncompressed transients. Re-trim post-compression Low/High bands only after the blend is stable.",
+        "listen_for": "The wet path should supply density and tone while the dry path restores hit onset; avoid a phasey or detached parallel balance.",
+        "why_it_works": "Blue Tone's Dry/Wet blends the coordinated multiband compression/EQ result with the unprocessed signal, preserving transients without changing hidden timing."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Gospel pop — Lead-vocal bus",
+        "source_or_bus": "Lead-vocal bus",
+        "application": "Compare Vocal Clarify and Vocal Focus from Amount zero, choose by gain-reduction behavior, then use post High Band only after de-essing is correct.",
+        "why_this_plugin": "Its vocal modes coordinate multiband optical compression, de-essing, and Tube-Tech EQ faster than assembling separate Blue-series stages."
+      },
+      {
+        "context_type": "bus",
+        "context": "Indie rock — Drum bus",
+        "source_or_bus": "Drum bus",
+        "application": "Drive Drum Bus mode until glue is obvious, back Amount down, and use Dry/Wet to restore transient contrast before touching Low/High tone.",
+        "why_this_plugin": "The macro controls a tuned multiband envelope and tone recipe, not just the harmonic density available from Tape or Harmonics."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented behavior: Low and High Band controls apply up to ±6 dB after compression, and their cutoff points change with Mode. Identical knob positions across modes do not describe identical curves.",
+    "avoid_when": "Avoid it when exact crossover, attack, release, ratio, or saturation behavior must be known; use SMC 2B/Equalizers or a dedicated saturator instead.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Tube-Tech Blue Tone user manual",
+          "url": "https://www.softube.com/user-manuals/tube-tech-blue-tone"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Weiss Exciter",
+    "section": 4,
+    "comparative_edge": "Choose Weiss Exciter over Harmonics when you want additive harmonics targeted by independent input/output bands, adaptive level behavior, M/S width, and minimal fundamental-EQ shift. Choose Harmonics for full-waveform analog-family distortion and dynamics reconstruction; choose Weiss EQ MP when a static high-frequency lift is sufficient and no new overtones are needed.",
+    "advanced_moves": [
+      {
+        "setup": "Enable Adaptive and Mastering, choose a harmonic Mode, and define a narrow Pre target band around the fundamentals you want to excite.",
+        "action": "Place the Post band at least an octave above the Pre high-pass region, raise Harmonics while monitoring the wet/difference signal, then widen Post only if useful overtones are being excluded.",
+        "listen_for": "The added signal should sound related to the source rather than like filtered hiss; bypass should remove vibrancy without collapsing the original tonal balance.",
+        "why_it_works": "Generated harmonics occur above their fundamentals, and independent pre/post filters separate what creates harmonics from which harmonics reach the output."
+      },
+      {
+        "setup": "On a stereo master or ambience bus, establish a linked stereo setting, then switch to M/S with Width neutral and channels ganged.",
+        "action": "Reduce wet Width or process Side more conservatively if excitation exaggerates ambience; compare minimum-phase and linear-phase only after the harmonic balance is stable.",
+        "listen_for": "Crispness should rise without cymbals pulling outward or the phantom center narrowing; check mono for unchanged dry integrity.",
+        "why_it_works": "Width changes only the wet contribution. Minimum-phase mode phase-compensates the dry path for coherent summing; linear-phase mode leaves that dry path unprocessed."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Acoustic pop — Stereo master",
+        "source_or_bus": "Stereo master",
+        "application": "Use Adaptive Mastering mode, target fundamentals below the desired sparkle, and monitor only the generated band before blending subtly.",
+        "why_this_plugin": "It can add level-stable overtones with reduced fundamental leakage instead of relying on a broad EQ shelf or full-waveform saturation."
+      },
+      {
+        "context_type": "bus",
+        "context": "Ambient techno — Reverb and texture bus",
+        "source_or_bus": "Reverb and texture bus",
+        "application": "Generate harmonics from a bounded midrange Pre band, constrain their Post band, and reduce wet Side width if the return becomes diffuse.",
+        "why_this_plugin": "Independent target/output bands and wet-width control provide more spatial discipline than Harmonics' full-signal drive."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Weiss EQ MP",
+        "goal": "Set transparent static balance first, then add bounded harmonics instead of another high shelf.",
+        "order": "Weiss EQ MP → Weiss Exciter",
+        "setup": "Complete cuts and broad balance in EQ MP, match output, then select Exciter Pre fundamentals and Post harmonic range while monitoring the wet contribution.",
+        "why_it_works": "EQ MP changes existing spectrum; Exciter adds new overtones on a parallel path and can reduce fundamental leakage in Mastering mode.",
+        "caution": "Do not duplicate brightness with an EQ shelf and excitation. Match loudness and check fatigue at low monitor level.",
+        "basis": "engineering-inference",
+        "source_url": null
+      }
+    ],
+    "insider_note": "Documented behavior: in minimum-phase mode the internal dry/wet paths are phase-compensated to prevent cancellation without linear-phase latency. Linear phase is optional, not required for coherent parallel blending.",
+    "avoid_when": "Avoid it when obvious clipping, low-frequency thickening, or transient rounding is the goal; Harmonics, Overstayer M-A-S, or Tape is the more direct Softube choice.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Weiss Exciter user manual",
+          "url": "https://www.softube.com/user-manuals/weiss-exciter"
+        },
+        {
+          "title": "Softube Weiss Exciter product page",
+          "url": "https://www.softube.com/plug-ins/weiss-exciter"
+        }
+      ]
+    }
+  }
+]
