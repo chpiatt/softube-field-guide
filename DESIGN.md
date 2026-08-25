@@ -172,14 +172,14 @@ The palette is near-monochrome equipment black and paper white, with mint acting
 
 ### Primary
 
-- **Signal Mint** (`mint`): Active indicators, authored signal marks, focused borders, selection, filled source-confirmed lineage dots, and the one-load wordmark sweep.
+- **Signal Mint** (`mint`): Active indicators, authored signal marks, focused borders, selection, filled official-partnership lineage dots, and the one-load wordmark sweep.
 - **Grounded Mint** (`mint-dark`): Links and recommendation text on light surfaces, section numbers, counts, and labels that need reliable contrast against white.
 - **Signal Wash** (`mint-wash`): Expanded catalog-entry data and active search feedback. Use it for informative disclosure, not as a generic panel fill.
 - **Signal Divider** (`mint-detail-line`): Internal rules within mint-wash entry bodies.
 
 ### Secondary
 
-- **Research Blue** (`lineage-unlicensed`): Dashed field-guide-identification indicators only. It communicates evidence status and must not become a second general accent.
+- **Research Blue** (`lineage-unlicensed`): Dashed unlicensed-identification indicators only. It communicates evidence status and must not become a second general accent.
 - **Fault Red** (`error`): Empty-search and true error communication only.
 
 ### Neutral
@@ -187,7 +187,7 @@ The palette is near-monochrome equipment black and paper white, with mint acting
 - **Equipment Black** (`black`): Page ground, masthead, hero, category rail, and footer.
 - **Soft Equipment Black** (`black-soft`): Primary text on white and the navigation drawer surface.
 - **Graphite** (`graphite`): Secondary body copy with strong legibility.
-- **Muted Graphite** (`graphite-muted`): Supporting descriptions, metadata, icons, and counts.
+- **Muted Graphite** (`graphite-muted`): Supporting descriptions, metadata, icons, counts, and ringed Softube-original lineage indicators.
 - **Paper White** (`white`): Reading canvas, catalog rows, and light content surfaces.
 - **Mist** (`mist`): Reserved light neutral in the implemented palette.
 - **Soft Mist** (`mist-soft`): Quiet row hover, alternating table bands, methodology surfaces, and blockquotes.
@@ -296,12 +296,13 @@ Each record is a native disclosure row, square and shadowless, with a 68px minim
 
 Below those fast-scan fields, a white “Why this one?” comparison explains the record's advantage over nearby choices. A second native disclosure labeled “Producer deep dive” contains the heavier working material: advanced techniques with audible checkpoints, instrument/source/bus applications, conservative pairings, non-obvious behavior when evidence supports it, reasons to choose something else, and official evidence links. Keep this two-level hierarchy: comparison guidance is immediately visible when a record opens, while reference-heavy material remains optional. Search indexes both levels even when the nested disclosure is closed.
 
-Lineage dots use two evidence states, explained by a compact key above the catalog:
+Lineage dots use three provenance states, explained by a compact key above the catalog:
 
-- Softube-stated identities use a filled mint dot with a grounded-mint border.
-- Field-guide hardware identifications use a transparent dot with a dashed research-blue outline.
+- Unlicensed hardware identifications use a transparent dot with a dashed research-blue outline.
+- Softube originals use a ringed graphite dot.
+- Official brand partnerships use a filled mint dot with a grounded-mint border.
 
-The detailed lineage text preserves distinctions among official models, licensed archetypes, Softube originals, hybrids, collections, and legacy products. Lifecycle and product type do not create additional dot styles.
+The detailed lineage text remains authoritative for exact models, archetypes, hybrids, collections, and legacy status. Lifecycle and product type do not create additional dot styles.
 
 On mobile, the hidden summary-line lineage must be repeated as the first expanded field labeled “Model / inspiration.” Do not remove it from the data model.
 

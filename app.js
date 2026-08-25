@@ -45,11 +45,33 @@
       .replaceAll("-", " ")
       .replace(/\b\w/g, (letter) => letter.toUpperCase());
 
-  const lineageEvidence = (value) => {
+  const unlicensedLineageNames = new Set([
+    "Bus Processor",
+    "Tape Echoes",
+    "Amp Room Metal Suite",
+    "Amp Room Vintage Suite",
+    "Amp Room Bass Suite",
+    "Icons Compressor Collection",
+    "Reference Equalizers Bundle"
+  ]);
+
+  const partnershipLineageNames = new Set([
+    "Drawmer S73 Intelligent Master Processor",
+    "Chandler Zener-Bender for Console 1",
+    "Weiss Complete Collection 3",
+    "Empirical Labs Complete Collection 2",
+    "Tube-Tech Complete Collection 2",
+    "Passive-Active Pack",
+    "Tube-Tech CL 1B Mk I",
+    "Tube-Tech Classic Channel Mk I",
+    "Tube-Tech PE 1C / ME 1B legacy standalones"
+  ]);
+
+  const lineageKind = (name, value) => {
     const label = String(value).toUpperCase();
-    return /UNLICENSED|HYBRID LINEAGE|SSL G-SERIES BUS-COMPRESSOR LINEAGE/.test(label)
-      ? "editorial"
-      : "confirmed";
+    if (/\bUNLICENSED\b/.test(label) || unlicensedLineageNames.has(name)) return "unlicensed";
+    if (/\bOFFICIAL\b|\bLICENSED\b/.test(label) || partnershipLineageNames.has(name)) return "partnership";
+    return "original";
   };
 
   function makeElement(tagName, className, text) {
@@ -727,7 +749,7 @@
     });
 
     details.dataset.lineage = (details.dataset.lineage || lineage).toUpperCase();
-    details.dataset.lineageEvidence = lineageEvidence(details.dataset.lineage);
+    details.dataset.lineageKind = lineageKind(name, details.dataset.lineage);
     details.dataset.pluginName = name;
     details.id = `plugin-${slugify(name)}`;
     details.dataset.search = normalize(details.dataset.search || card.textContent || `${name} ${lineage}`);
@@ -735,7 +757,7 @@
     const summary = document.createElement("summary");
     summary.className = "plugin-summary";
     summary.innerHTML = `
-      <span class="plugin-name"><span class="lineage-dot lineage-dot--${details.dataset.lineageEvidence}" aria-hidden="true"></span>${name}</span>
+      <span class="plugin-name"><span class="lineage-dot lineage-dot--${details.dataset.lineageKind}" aria-hidden="true"></span>${name}</span>
       <span class="plugin-lineage">${lineage}</span>
       <span class="plugin-platform-context"></span>
       ${icon("i-chevron", "chevron")}`;
@@ -858,8 +880,9 @@
       <h2>Catalog index</h2>
       <p>Mixing and mastering lead. Open any category or search the complete researched catalog from the masthead.</p>
       <ul class="lineage-key" aria-label="Lineage evidence key">
-        <li><span class="lineage-dot lineage-dot--confirmed" aria-hidden="true"></span>Softube-stated identity</li>
-        <li><span class="lineage-dot lineage-dot--editorial" aria-hidden="true"></span>Field-guide identification</li>
+        <li><span class="lineage-dot lineage-dot--unlicensed" aria-hidden="true"></span>Unlicensed identification</li>
+        <li><span class="lineage-dot lineage-dot--original" aria-hidden="true"></span>Softube original</li>
+        <li><span class="lineage-dot lineage-dot--partnership" aria-hidden="true"></span>Official brand partnership</li>
       </ul>
     </div>
     <span class="catalog-total">${cards.length} catalog entries</span>`;

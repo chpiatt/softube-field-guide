@@ -1256,18 +1256,25 @@ main {
   width: 10px;
   height: 10px;
   flex: 0 0 auto;
-  border: 1.5px solid var(--mint-dark);
+  border: 1.5px solid var(--graphite-2);
   border-radius: 50%;
 }
 
-.lineage-dot--confirmed {
-  background: var(--mint);
-}
-
-.lineage-dot--editorial {
+.lineage-dot--unlicensed {
   border-style: dashed;
   border-color: var(--lineage-unlicensed);
   background: transparent;
+}
+
+.lineage-dot--original {
+  border-color: var(--graphite-2);
+  background: var(--white);
+  box-shadow: inset 0 0 0 2px var(--graphite-2);
+}
+
+.lineage-dot--partnership {
+  border-color: var(--mint-dark);
+  background: var(--mint);
 }
 
 .plugin-lineage {
