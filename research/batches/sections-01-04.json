@@ -1918,7 +1918,7 @@
   },
   {
     "name": "Empirical Labs Mike-E Comp",
-    "section": 4,
+    "section": 2,
     "comparative_edge": "Choose Mike-E over Professor Punch-Knuckles when the preamp, high-pass, attack, ratio, CompSat timing, emphasis, external sidechain, and parallel mix must be engineered as stages. Choose Professor for rapid ELI color; choose a Softube FET compressor when saturation should not be frequency-dependent CompSat behavior.",
     "advanced_moves": [
       {
@@ -1976,7 +1976,7 @@
   },
   {
     "name": "Empirical Labs Lil FrEQ",
-    "section": 4,
+    "section": 1,
     "comparative_edge": "Choose Lil FrEQ over Equalizers when the ELI analog path, steep resonant high-pass, four overlapping parametrics, and level-independent de-ess/HF limiter are one tracking-style chain. Choose Equalizers for multiple dynamic bands and M/S sidechain work; choose Mike-E when saturation/compression, not high-frequency containment, is the center of the job.",
     "advanced_moves": [
       {
@@ -2034,7 +2034,7 @@
   },
   {
     "name": "Tube-Tech Blue Tone",
-    "section": 4,
+    "section": 2,
     "comparative_edge": "Choose Blue Tone over Tape or Harmonics when the desired polish is actually coordinated three-band optical compression, de-essing, PE/ME equalization, and possibly width—not simple saturation. Choose Tape for machine color without macro compression, Harmonics for explicit nonlinear control, or Tube-Tech SMC 2B when crossover and band timing must be exposed.",
     "advanced_moves": [
       {

@@ -161,6 +161,13 @@
     "match_basis": "exact-title"
   },
   {
+    "name": "Empirical Labs Lil FrEQ",
+    "product_url": "https://www.softube.com/plug-ins/mixing/empirical-labs-lil-freq",
+    "image_url": "https://cdn.softube.com/storage/C3B125F1EFD6B670C6938F8F4613D3362949B94076B21455B28B9362DAEEA2FC/6757f09a84fa484bbd75a1f1f39dbb31/590-590-1-jpg.Jpeg/media/2c78059f2cb34ad295bd583abf0e80cb/empirical-labs-lil-freq-product-thumbnail-dark-1200x1200.jpeg",
+    "page_kind": "product",
+    "match_basis": "exact-title"
+  },
+  {
     "name": "FET Compressor Mk II",
     "product_url": "https://www.softube.com/plug-ins/mixing/fet-compressor-mk-ii",
     "image_url": "https://cdn.softube.com/storage/E63C0F5576880373491C9A603B4785179C679F79CA4F22608C375626847D5A3F/ae502e3d47da49178613512b633b0c6c/590-590-1-jpg.Jpeg/media/46f8eafff0014107a4a997ea33d3e5b3/fet-compressor-mk-ii-product-thumbnail-dark-1200x1200.jpeg",
@@ -336,6 +343,20 @@
     "match_basis": "exact-title"
   },
   {
+    "name": "Empirical Labs Mike-E Comp",
+    "product_url": "https://www.softube.com/plug-ins/mixing/empirical-labs-mike-e-comp",
+    "image_url": "https://cdn.softube.com/storage/6779ACE63FF9B3EA9861CF825F75055C8F2C9C61AD8C32A2CAC881F2C4A0F57F/78f3eff46cf047acae2ba3cef326a291/590-590-1-jpg.Jpeg/media/31f4b086ac65420bb944217a99d41a2f/empirical-labs-mike-e-comp-product-thumbnail-dark-1200x1200.jpeg",
+    "page_kind": "product",
+    "match_basis": "exact-title"
+  },
+  {
+    "name": "Tube-Tech Blue Tone",
+    "product_url": "https://www.softube.com/plug-ins/mixing/tube-tech-blue-tone",
+    "image_url": "https://cdn.softube.com/storage/2C096F150432E5E11784E57DBC3D6C8C115D92ECA000EAB7CD85779C96960E26/0795ff362bd74f05b53a9dedb835ac51/590-590-1-jpg.Jpeg/media/8dfea54a6f604099870039cc172b32d3/tube-tech-blue-tone-product-thumbnail-dark-1200x1200.jpeg",
+    "page_kind": "product",
+    "match_basis": "exact-title"
+  },
+  {
     "name": "Console 1 Core Mixing Suite",
     "product_url": "https://www.softube.com/plug-ins/mixing/console-1-core-mixing-suite",
     "image_url": "https://cdn.softube.com/storage/5B49486CD955BAF68C914CD88EB421865852CDE6ED49C82D770600DD2719D12E/ce7c0c1f864b472d9fb58ae2377a9381/590-590-1-jpg.Jpeg/media/120a46e946424dce8da01100d3a776a7/core-mixing-suite-product-thumbnail-dark-1200x1200.jpeg",
@@ -486,27 +507,6 @@
     "name": "Empirical Labs Professor Punch-Knuckles",
     "product_url": "https://www.softube.com/plug-ins/mixing/empirical-labs-professor-punch-knuckles",
     "image_url": "https://cdn.softube.com/storage/B048B7F35BF75A87ADFF0DA2F0B301DB4A362CCDF80A00ADDF555550519B79A0/6295fe9c14c245f0be85a9be76675fdb/590-590-1-jpg.Jpeg/media/84284481efb449da8eee7442bb5f4060/empirical-labs-professor-punch-knuckles-product-thumbnail-dark-1200x1200.jpeg",
-    "page_kind": "product",
-    "match_basis": "exact-title"
-  },
-  {
-    "name": "Empirical Labs Mike-E Comp",
-    "product_url": "https://www.softube.com/plug-ins/mixing/empirical-labs-mike-e-comp",
-    "image_url": "https://cdn.softube.com/storage/6779ACE63FF9B3EA9861CF825F75055C8F2C9C61AD8C32A2CAC881F2C4A0F57F/78f3eff46cf047acae2ba3cef326a291/590-590-1-jpg.Jpeg/media/31f4b086ac65420bb944217a99d41a2f/empirical-labs-mike-e-comp-product-thumbnail-dark-1200x1200.jpeg",
-    "page_kind": "product",
-    "match_basis": "exact-title"
-  },
-  {
-    "name": "Empirical Labs Lil FrEQ",
-    "product_url": "https://www.softube.com/plug-ins/mixing/empirical-labs-lil-freq",
-    "image_url": "https://cdn.softube.com/storage/C3B125F1EFD6B670C6938F8F4613D3362949B94076B21455B28B9362DAEEA2FC/6757f09a84fa484bbd75a1f1f39dbb31/590-590-1-jpg.Jpeg/media/2c78059f2cb34ad295bd583abf0e80cb/empirical-labs-lil-freq-product-thumbnail-dark-1200x1200.jpeg",
-    "page_kind": "product",
-    "match_basis": "exact-title"
-  },
-  {
-    "name": "Tube-Tech Blue Tone",
-    "product_url": "https://www.softube.com/plug-ins/mixing/tube-tech-blue-tone",
-    "image_url": "https://cdn.softube.com/storage/2C096F150432E5E11784E57DBC3D6C8C115D92ECA000EAB7CD85779C96960E26/0795ff362bd74f05b53a9dedb835ac51/590-590-1-jpg.Jpeg/media/8dfea54a6f604099870039cc172b32d3/tube-tech-blue-tone-product-thumbnail-dark-1200x1200.jpeg",
     "page_kind": "product",
     "match_basis": "exact-title"
   },

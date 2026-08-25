@@ -1388,6 +1388,64 @@
     }
   },
   {
+    "name": "Empirical Labs Lil FrEQ",
+    "section": 1,
+    "comparative_edge": "Choose Lil FrEQ over Equalizers when the ELI analog path, steep resonant high-pass, four overlapping parametrics, and level-independent de-ess/HF limiter are one tracking-style chain. Choose Equalizers for multiple dynamic bands and M/S sidechain work; choose Mike-E when saturation/compression, not high-frequency containment, is the center of the job.",
+    "advanced_moves": [
+      {
+        "setup": "On a vocal, set the broad shelves and parametrics for the desired bright tone before engaging the DS section.",
+        "action": "Compare DS pre-EQ and post-EQ. Use post-EQ when the new boost should trigger control; use pre-EQ when de-essing should remain independent of later tone shaping.",
+        "listen_for": "Sibilants should return to the intended level while vowels keep the added brightness; reject constant reduction or lisping.",
+        "why_it_works": "The DS block can be moved before or after EQ, changing whether boosted high-frequency energy reaches its detector."
+      },
+      {
+        "setup": "For a source whose harshness grows with level rather than only on sibilants, select HF Limit instead of De-ess and begin around the offending range.",
+        "action": "Set the level-dependent threshold to react only on loud phrases, then drive Input slightly harder to audition the documented tape-like increase in high-frequency smoothing.",
+        "listen_for": "Loud events should darken gently while quiet articulation remains; stop if every phrase loses air or the BAD LED indicates unintended clipping.",
+        "why_it_works": "HF Limit uses a normal level-dependent soft-knee limiter, unlike the de-esser's level-independent high-versus-low comparison."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Contemporary R&B — Lead vocal",
+        "source_or_bus": "Lead vocal",
+        "application": "Brighten with shelves/parametrics, place DS post-EQ, and choose level-independent de-ess so only spectral imbalance triggers control.",
+        "why_this_plugin": "Its movable DS block lets one analog-modeled chain establish brightness and contain the exact excess that brightness creates."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Acoustic folk — Close-miked guitar",
+        "source_or_bus": "Close-miked guitar",
+        "application": "Use the 18 dB/octave high-pass conservatively, then tune De-ess toward intermittent finger-slide squeaks rather than the entire top end.",
+        "why_this_plugin": "The level-independent detector can catch spectral squeaks that a conventional threshold-based compressor may miss as performance level changes."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Empirical Labs Mike-E Comp",
+        "goal": "Turn Lil FrEQ's corrective and HF-control stages into the front end of an ELI compression/saturation channel.",
+        "order": "Empirical Labs Lil FrEQ → Empirical Labs Mike-E Comp",
+        "setup": "Remove subs and resonances, choose DS pre/post EQ, level-match, then use Mike-E for peak shaving, envelope, and controlled analog color.",
+        "why_it_works": "Frequency cleanup keeps unwanted regions from dominating CompSat, while Mike-E supplies the dynamics and distortion Lil FrEQ does not; Trak Pak documents the combined roles.",
+        "caution": "Avoid large Lil FrEQ boosts into Mike-E unless the resulting frequency-biased compression is intentional.",
+        "basis": "documented",
+        "source_url": "https://www.softube.com/user-manuals/empirical-labs-trak-pak"
+      }
+    ],
+    "insider_note": "Documented behavior: plugin Bypass does not bypass the Input and Output volume controls. For valid A/B tests, use section bypasses or verify gain staging rather than assuming global Bypass is a wire.",
+    "avoid_when": "Avoid it for several independent moving resonances or M/S dynamic repair; Equalizers is more flexible. Its steep high-pass also deserves caution during tracking.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Empirical Labs Lil FrEQ user manual",
+          "url": "https://www.softube.com/user-manuals/empirical-labs-lil-freq"
+        }
+      ]
+    }
+  },
+  {
     "name": "FET Compressor Mk II",
     "section": 2,
     "comparative_edge": "Choose it over OPTO when the front edge must be actively redesigned, and over VCA Compressor when amplifier/transformer attitude belongs in the result. Unlike British Class A Compressor, separate FET and transformer drives let you decide where the urgency comes from instead of accepting one fixed color.",
@@ -2614,6 +2672,111 @@
     }
   },
   {
+    "name": "Empirical Labs Mike-E Comp",
+    "section": 2,
+    "comparative_edge": "Choose Mike-E over Professor Punch-Knuckles when the preamp, high-pass, attack, ratio, CompSat timing, emphasis, external sidechain, and parallel mix must be engineered as stages. Choose Professor for rapid ELI color; choose a Softube FET compressor when saturation should not be frequency-dependent CompSat behavior.",
+    "advanced_moves": [
+      {
+        "setup": "Set the preamp CLEAN, CompSat Ratio to 1:1, Mix fully processed, and watch the Warm/Toasty indicators rather than compressor gain reduction.",
+        "action": "Raise Drive until Warm remains active and Toasty catches peaks, then compare HF emphasis for earlier high-frequency clipping. Follow with another compressor only after output matching.",
+        "listen_for": "Peaks should flatten by a small amount while body gains heat; HF emphasis should soften buildup without making the source dull.",
+        "why_it_works": "At 1:1, CompSat's soft-clipping remains while conventional compression is removed; emphasis changes which frequencies hit saturation first."
+      },
+      {
+        "setup": "On drums or bass, set CompSat for only 2–3 dB of reduction and establish the envelope before adding preamp gain.",
+        "action": "Toggle the preamp from CLEAN and raise its Gain separately, then compensate Output. If attack blurs, reduce preamp distortion instead of changing CompSat timing first.",
+        "listen_for": "Preamp grit should add a first layer of texture while CompSat continues controlling the same envelope; the BAD LED should not remain lit from unintended clipping.",
+        "why_it_works": "Mike-E has a distinct preamp distortion stage before the frequency-dependent CompSat circuit, so their contributions can be isolated."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "instrument",
+        "context": "Alternative hip-hop — Lead vocal",
+        "source_or_bus": "Lead vocal",
+        "application": "Use 1:1 soft clipping with HF emphasis to shave harsh peaks, then add restrained CompSat reduction and parallel Mix for stable density.",
+        "why_this_plugin": "It combines ELI preamp, frequency-dependent clipping, compression, and emphasis with control that Professor intentionally hides."
+      },
+      {
+        "context_type": "instrument",
+        "context": "Hard rock — Snare close mic",
+        "source_or_bus": "Snare close mic",
+        "application": "Set the CompSat envelope first, then add a separate preamp-distortion layer and use Mix to retain the original hit onset.",
+        "why_this_plugin": "The serial preamp and CompSat stages can shape texture and decay independently before parallel recovery."
+      }
+    ],
+    "pairings": [
+      {
+        "partner": "Empirical Labs Lil FrEQ",
+        "goal": "Build a complete ELI tracking chain with filtering/de-essing before CompSat compression and color.",
+        "order": "Empirical Labs Lil FrEQ → Empirical Labs Mike-E Comp",
+        "setup": "High-pass and solve resonances in Lil FrEQ, place its DS for needed sibilance control, then set Mike-E preamp and CompSat from the conditioned signal.",
+        "why_it_works": "Lil FrEQ removes spectral triggers before Mike-E's frequency-dependent saturation/compression; Softube's Trak Pak combines these product roles in this channel-strip order.",
+        "caution": "Heavy high-frequency limiting can starve Mike-E emphasis and dull the chain. Re-set CompSat drive after every input-EQ change.",
+        "basis": "documented",
+        "source_url": "https://www.softube.com/user-manuals/empirical-labs-trak-pak"
+      }
+    ],
+    "insider_note": "Documented behavior: the BAD LED indicates clipping somewhere that was not intended to clip; it is different from the Warm and Toasty indicators used to judge the designed CompSat saturation range.",
+    "avoid_when": "Avoid it when you only need quick ELI saturation—Professor is faster—or when clean, transparent level control is the assignment.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Empirical Labs Mike-E Comp user manual",
+          "url": "https://www.softube.com/user-manuals/empirical-labs-mike-e-comp"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Tube-Tech Blue Tone",
+    "section": 2,
+    "comparative_edge": "Choose Blue Tone over Tape or Harmonics when the desired polish is actually coordinated three-band optical compression, de-essing, PE/ME equalization, and possibly width—not simple saturation. Choose Tape for machine color without macro compression, Harmonics for explicit nonlinear control, or Tube-Tech SMC 2B when crossover and band timing must be exposed.",
+    "advanced_moves": [
+      {
+        "setup": "Set Amount to zero, Low/High Band neutral, Dry/Wet fully wet, and audition every Mode on the same source before raising Amount.",
+        "action": "Select by the mode's movement and spectral priorities, then raise Amount toward its designed 50% center while watching gain reduction. Correct only afterward with the post-compression Low/High controls.",
+        "listen_for": "Compression should solve a source-specific problem before the tone knobs flatter it; reject modes that sound exciting only because they are wider or brighter.",
+        "why_it_works": "Mode changes hidden crossovers, ratios, timing, de-essing, EQ, and sometimes width; Amount moves several of those parameters together."
+      },
+      {
+        "setup": "On drums, guitars, or a mix bus, choose the closest Mode and drive Amount beyond the subtle range to hear its full envelope.",
+        "action": "Back Amount down until gain reduction is useful, then reduce Dry/Wet to reintroduce uncompressed transients. Re-trim post-compression Low/High bands only after the blend is stable.",
+        "listen_for": "The wet path should supply density and tone while the dry path restores hit onset; avoid a phasey or detached parallel balance.",
+        "why_it_works": "Blue Tone's Dry/Wet blends the coordinated multiband compression/EQ result with the unprocessed signal, preserving transients without changing hidden timing."
+      }
+    ],
+    "use_cases": [
+      {
+        "context_type": "bus",
+        "context": "Gospel pop — Lead-vocal bus",
+        "source_or_bus": "Lead-vocal bus",
+        "application": "Compare Vocal Clarify and Vocal Focus from Amount zero, choose by gain-reduction behavior, then use post High Band only after de-essing is correct.",
+        "why_this_plugin": "Its vocal modes coordinate multiband optical compression, de-essing, and Tube-Tech EQ faster than assembling separate Blue-series stages."
+      },
+      {
+        "context_type": "bus",
+        "context": "Indie rock — Drum bus",
+        "source_or_bus": "Drum bus",
+        "application": "Drive Drum Bus mode until glue is obvious, back Amount down, and use Dry/Wet to restore transient contrast before touching Low/High tone.",
+        "why_this_plugin": "The macro controls a tuned multiband envelope and tone recipe, not just the harmonic density available from Tape or Harmonics."
+      }
+    ],
+    "pairings": [],
+    "insider_note": "Documented behavior: Low and High Band controls apply up to ±6 dB after compression, and their cutoff points change with Mode. Identical knob positions across modes do not describe identical curves.",
+    "avoid_when": "Avoid it when exact crossover, attack, release, ratio, or saturation behavior must be known; use SMC 2B/Equalizers or a dedicated saturator instead.",
+    "evidence": {
+      "basis": "documented-plus-editorial-inference",
+      "sources": [
+        {
+          "title": "Softube Tube-Tech Blue Tone user manual",
+          "url": "https://www.softube.com/user-manuals/tube-tech-blue-tone"
+        }
+      ]
+    }
+  },
+  {
     "name": "Console 1 Core Mixing Suite",
     "section": 3,
     "comparative_edge": "Choose it over a named console when one control surface must support different processors by source. It reaches beyond SSL, British, or American Class A: tape/preamp choices, three shapers, vintage/modern/dynamic EQ, and FET/opto/bus compression can be swapped without leaving Console 1.",
@@ -3708,169 +3871,6 @@
         {
           "title": "Softube Empirical Labs Prof Punch-Knuckles user manual",
           "url": "https://www.softube.com/user-manuals/empirical-labs-prof-punch-knuckles"
-        }
-      ]
-    }
-  },
-  {
-    "name": "Empirical Labs Mike-E Comp",
-    "section": 4,
-    "comparative_edge": "Choose Mike-E over Professor Punch-Knuckles when the preamp, high-pass, attack, ratio, CompSat timing, emphasis, external sidechain, and parallel mix must be engineered as stages. Choose Professor for rapid ELI color; choose a Softube FET compressor when saturation should not be frequency-dependent CompSat behavior.",
-    "advanced_moves": [
-      {
-        "setup": "Set the preamp CLEAN, CompSat Ratio to 1:1, Mix fully processed, and watch the Warm/Toasty indicators rather than compressor gain reduction.",
-        "action": "Raise Drive until Warm remains active and Toasty catches peaks, then compare HF emphasis for earlier high-frequency clipping. Follow with another compressor only after output matching.",
-        "listen_for": "Peaks should flatten by a small amount while body gains heat; HF emphasis should soften buildup without making the source dull.",
-        "why_it_works": "At 1:1, CompSat's soft-clipping remains while conventional compression is removed; emphasis changes which frequencies hit saturation first."
-      },
-      {
-        "setup": "On drums or bass, set CompSat for only 2–3 dB of reduction and establish the envelope before adding preamp gain.",
-        "action": "Toggle the preamp from CLEAN and raise its Gain separately, then compensate Output. If attack blurs, reduce preamp distortion instead of changing CompSat timing first.",
-        "listen_for": "Preamp grit should add a first layer of texture while CompSat continues controlling the same envelope; the BAD LED should not remain lit from unintended clipping.",
-        "why_it_works": "Mike-E has a distinct preamp distortion stage before the frequency-dependent CompSat circuit, so their contributions can be isolated."
-      }
-    ],
-    "use_cases": [
-      {
-        "context_type": "instrument",
-        "context": "Alternative hip-hop — Lead vocal",
-        "source_or_bus": "Lead vocal",
-        "application": "Use 1:1 soft clipping with HF emphasis to shave harsh peaks, then add restrained CompSat reduction and parallel Mix for stable density.",
-        "why_this_plugin": "It combines ELI preamp, frequency-dependent clipping, compression, and emphasis with control that Professor intentionally hides."
-      },
-      {
-        "context_type": "instrument",
-        "context": "Hard rock — Snare close mic",
-        "source_or_bus": "Snare close mic",
-        "application": "Set the CompSat envelope first, then add a separate preamp-distortion layer and use Mix to retain the original hit onset.",
-        "why_this_plugin": "The serial preamp and CompSat stages can shape texture and decay independently before parallel recovery."
-      }
-    ],
-    "pairings": [
-      {
-        "partner": "Empirical Labs Lil FrEQ",
-        "goal": "Build a complete ELI tracking chain with filtering/de-essing before CompSat compression and color.",
-        "order": "Empirical Labs Lil FrEQ → Empirical Labs Mike-E Comp",
-        "setup": "High-pass and solve resonances in Lil FrEQ, place its DS for needed sibilance control, then set Mike-E preamp and CompSat from the conditioned signal.",
-        "why_it_works": "Lil FrEQ removes spectral triggers before Mike-E's frequency-dependent saturation/compression; Softube's Trak Pak combines these product roles in this channel-strip order.",
-        "caution": "Heavy high-frequency limiting can starve Mike-E emphasis and dull the chain. Re-set CompSat drive after every input-EQ change.",
-        "basis": "documented",
-        "source_url": "https://www.softube.com/user-manuals/empirical-labs-trak-pak"
-      }
-    ],
-    "insider_note": "Documented behavior: the BAD LED indicates clipping somewhere that was not intended to clip; it is different from the Warm and Toasty indicators used to judge the designed CompSat saturation range.",
-    "avoid_when": "Avoid it when you only need quick ELI saturation—Professor is faster—or when clean, transparent level control is the assignment.",
-    "evidence": {
-      "basis": "documented-plus-editorial-inference",
-      "sources": [
-        {
-          "title": "Softube Empirical Labs Mike-E Comp user manual",
-          "url": "https://www.softube.com/user-manuals/empirical-labs-mike-e-comp"
-        }
-      ]
-    }
-  },
-  {
-    "name": "Empirical Labs Lil FrEQ",
-    "section": 4,
-    "comparative_edge": "Choose Lil FrEQ over Equalizers when the ELI analog path, steep resonant high-pass, four overlapping parametrics, and level-independent de-ess/HF limiter are one tracking-style chain. Choose Equalizers for multiple dynamic bands and M/S sidechain work; choose Mike-E when saturation/compression, not high-frequency containment, is the center of the job.",
-    "advanced_moves": [
-      {
-        "setup": "On a vocal, set the broad shelves and parametrics for the desired bright tone before engaging the DS section.",
-        "action": "Compare DS pre-EQ and post-EQ. Use post-EQ when the new boost should trigger control; use pre-EQ when de-essing should remain independent of later tone shaping.",
-        "listen_for": "Sibilants should return to the intended level while vowels keep the added brightness; reject constant reduction or lisping.",
-        "why_it_works": "The DS block can be moved before or after EQ, changing whether boosted high-frequency energy reaches its detector."
-      },
-      {
-        "setup": "For a source whose harshness grows with level rather than only on sibilants, select HF Limit instead of De-ess and begin around the offending range.",
-        "action": "Set the level-dependent threshold to react only on loud phrases, then drive Input slightly harder to audition the documented tape-like increase in high-frequency smoothing.",
-        "listen_for": "Loud events should darken gently while quiet articulation remains; stop if every phrase loses air or the BAD LED indicates unintended clipping.",
-        "why_it_works": "HF Limit uses a normal level-dependent soft-knee limiter, unlike the de-esser's level-independent high-versus-low comparison."
-      }
-    ],
-    "use_cases": [
-      {
-        "context_type": "instrument",
-        "context": "Contemporary R&B — Lead vocal",
-        "source_or_bus": "Lead vocal",
-        "application": "Brighten with shelves/parametrics, place DS post-EQ, and choose level-independent de-ess so only spectral imbalance triggers control.",
-        "why_this_plugin": "Its movable DS block lets one analog-modeled chain establish brightness and contain the exact excess that brightness creates."
-      },
-      {
-        "context_type": "instrument",
-        "context": "Acoustic folk — Close-miked guitar",
-        "source_or_bus": "Close-miked guitar",
-        "application": "Use the 18 dB/octave high-pass conservatively, then tune De-ess toward intermittent finger-slide squeaks rather than the entire top end.",
-        "why_this_plugin": "The level-independent detector can catch spectral squeaks that a conventional threshold-based compressor may miss as performance level changes."
-      }
-    ],
-    "pairings": [
-      {
-        "partner": "Empirical Labs Mike-E Comp",
-        "goal": "Turn Lil FrEQ's corrective and HF-control stages into the front end of an ELI compression/saturation channel.",
-        "order": "Empirical Labs Lil FrEQ → Empirical Labs Mike-E Comp",
-        "setup": "Remove subs and resonances, choose DS pre/post EQ, level-match, then use Mike-E for peak shaving, envelope, and controlled analog color.",
-        "why_it_works": "Frequency cleanup keeps unwanted regions from dominating CompSat, while Mike-E supplies the dynamics and distortion Lil FrEQ does not; Trak Pak documents the combined roles.",
-        "caution": "Avoid large Lil FrEQ boosts into Mike-E unless the resulting frequency-biased compression is intentional.",
-        "basis": "documented",
-        "source_url": "https://www.softube.com/user-manuals/empirical-labs-trak-pak"
-      }
-    ],
-    "insider_note": "Documented behavior: plugin Bypass does not bypass the Input and Output volume controls. For valid A/B tests, use section bypasses or verify gain staging rather than assuming global Bypass is a wire.",
-    "avoid_when": "Avoid it for several independent moving resonances or M/S dynamic repair; Equalizers is more flexible. Its steep high-pass also deserves caution during tracking.",
-    "evidence": {
-      "basis": "documented-plus-editorial-inference",
-      "sources": [
-        {
-          "title": "Softube Empirical Labs Lil FrEQ user manual",
-          "url": "https://www.softube.com/user-manuals/empirical-labs-lil-freq"
-        }
-      ]
-    }
-  },
-  {
-    "name": "Tube-Tech Blue Tone",
-    "section": 4,
-    "comparative_edge": "Choose Blue Tone over Tape or Harmonics when the desired polish is actually coordinated three-band optical compression, de-essing, PE/ME equalization, and possibly width—not simple saturation. Choose Tape for machine color without macro compression, Harmonics for explicit nonlinear control, or Tube-Tech SMC 2B when crossover and band timing must be exposed.",
-    "advanced_moves": [
-      {
-        "setup": "Set Amount to zero, Low/High Band neutral, Dry/Wet fully wet, and audition every Mode on the same source before raising Amount.",
-        "action": "Select by the mode's movement and spectral priorities, then raise Amount toward its designed 50% center while watching gain reduction. Correct only afterward with the post-compression Low/High controls.",
-        "listen_for": "Compression should solve a source-specific problem before the tone knobs flatter it; reject modes that sound exciting only because they are wider or brighter.",
-        "why_it_works": "Mode changes hidden crossovers, ratios, timing, de-essing, EQ, and sometimes width; Amount moves several of those parameters together."
-      },
-      {
-        "setup": "On drums, guitars, or a mix bus, choose the closest Mode and drive Amount beyond the subtle range to hear its full envelope.",
-        "action": "Back Amount down until gain reduction is useful, then reduce Dry/Wet to reintroduce uncompressed transients. Re-trim post-compression Low/High bands only after the blend is stable.",
-        "listen_for": "The wet path should supply density and tone while the dry path restores hit onset; avoid a phasey or detached parallel balance.",
-        "why_it_works": "Blue Tone's Dry/Wet blends the coordinated multiband compression/EQ result with the unprocessed signal, preserving transients without changing hidden timing."
-      }
-    ],
-    "use_cases": [
-      {
-        "context_type": "bus",
-        "context": "Gospel pop — Lead-vocal bus",
-        "source_or_bus": "Lead-vocal bus",
-        "application": "Compare Vocal Clarify and Vocal Focus from Amount zero, choose by gain-reduction behavior, then use post High Band only after de-essing is correct.",
-        "why_this_plugin": "Its vocal modes coordinate multiband optical compression, de-essing, and Tube-Tech EQ faster than assembling separate Blue-series stages."
-      },
-      {
-        "context_type": "bus",
-        "context": "Indie rock — Drum bus",
-        "source_or_bus": "Drum bus",
-        "application": "Drive Drum Bus mode until glue is obvious, back Amount down, and use Dry/Wet to restore transient contrast before touching Low/High tone.",
-        "why_this_plugin": "The macro controls a tuned multiband envelope and tone recipe, not just the harmonic density available from Tape or Harmonics."
-      }
-    ],
-    "pairings": [],
-    "insider_note": "Documented behavior: Low and High Band controls apply up to ±6 dB after compression, and their cutoff points change with Mode. Identical knob positions across modes do not describe identical curves.",
-    "avoid_when": "Avoid it when exact crossover, attack, release, ratio, or saturation behavior must be known; use SMC 2B/Equalizers or a dedicated saturator instead.",
-    "evidence": {
-      "basis": "documented-plus-editorial-inference",
-      "sources": [
-        {
-          "title": "Softube Tube-Tech Blue Tone user manual",
-          "url": "https://www.softube.com/user-manuals/tube-tech-blue-tone"
         }
       ]
     }
