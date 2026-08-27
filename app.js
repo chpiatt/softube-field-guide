@@ -53,7 +53,8 @@
     "Amp Room Vintage Suite",
     "Amp Room Bass Suite",
     "Icons Compressor Collection",
-    "Reference Equalizers Bundle"
+    "Reference Equalizers Bundle",
+    "Passive-Active Pack"
   ]);
 
   const partnershipLineageNames = new Set([
@@ -62,7 +63,6 @@
     "Weiss Complete Collection 3",
     "Empirical Labs Complete Collection 2",
     "Tube-Tech Complete Collection 2",
-    "Passive-Active Pack",
     "Tube-Tech CL 1B Mk I",
     "Tube-Tech Classic Channel Mk I",
     "Tube-Tech PE 1C / ME 1B legacy standalones"
